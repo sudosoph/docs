@@ -1,7 +1,7 @@
 +++
 title = "Guides"
 description = ""
-weight = 1
+weight = 2
 alwaysopen = true
 +++
 ## Learn how to accomplish specific tasks in the proxy of your choice.
