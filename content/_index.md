@@ -3,10 +3,8 @@ title = "section.io Docs"
 +++
 # DOCS
 
-## Getting Started
+Welcome to the section.io documentation! This documentation is more of a reference guide for all available features and options of section.io.
 
-## How to guides
+If you're just getting started with section.io, the Quickstart guides are the place to begin.
 
-## Reference
-
-## Discussion
+{{% children description="true" style="h3" %}}
