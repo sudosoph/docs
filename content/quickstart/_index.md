@@ -2,7 +2,6 @@
 title = "Quickstarts"
 description = ""
 weight = 1
-alwaysopen = true
 +++
 ## Get started quickly with a section.io product.
 
