@@ -13,13 +13,13 @@ As soon as we've created your application, you'll be able to change your DNS. Th
 
 You can use [section.io’s hosted DNS](#sectionio-hosted-dns) or change your DNS records at your [current provider](#dns-hosting-with-your-current-provider).
 
-# section.io Hosted DNS
+## section.io Hosted DNS
 
 To simplify management for your websites, section.io can provide DNS hosting. This is especially useful for pointing a zone-apex record (ie bare domain) at a section.io endpoint if your current DNS hosting provider does not support the `ALIAS` or `ANAME` record types.
 
 Hosting your DNS with section.io also provides convenient access to DNS management within the Aperture portal.
 
-## Begin hosting DNS with section.io
+### Begin hosting DNS with section.io
 
 To enable Hosted DNS with section.io, navigate to the DNS page for your section.io application's hosted environment (eg Production).
 
@@ -37,7 +37,7 @@ The `Verify` button on the DNS page will test if HTTP requests for your site are
 
 Once you have changed your DNS, please ensure you've setup [HTTPS](/docs/setup-https).
 
-## Manage your DNS hosted with section.io
+### Manage your DNS hosted with section.io
 
 Once Hosted DNS has been enabled for a section.io application you can access the zone management page in two ways:
 
@@ -56,7 +56,7 @@ From the records table you can:
 3. **Edit** existing records by clicking the corresponding `Edit` button. The record types `A`, `ALIAS`, or `CNAME` can be changed to another record type in this same set and when saved the change will be applied so the record does not appear missing during the transition.
 
 
-# DNS Hosting with your current provider
+## DNS Hosting with your current provider
 
 To continue hosting with your current provider you'll need to go to your domain name provider and replace any existing 'CNAME' or A records with the 'CNAME' we've provided for you in your account. After making the DNS change (and allowing time for your DNS ttl expiry) you will start to see metrics showing in the Production environment for your site.
 
@@ -73,11 +73,11 @@ To stay with section.io, don’t remove or change the DNS record, even after ver
 
 Having trouble? Contact your domain name provider directly for further assistance.
 
-# Additional Notes on DNS
+## Additional Notes on DNS
 
 Below are some additional notes on changing DNS on two main questions. How do I setup a CNAME record for my [bare domain](#bare-domains) and how do I setup my application for [multple domains](#multiple-domains).
 
-## Bare Domains
+### Bare Domains
 
 Bare Domains are DNS records without www, also called Zone Apex, Naked Domain and Root Domain. To go live on section.io you need to setup a CNAME record pointing to the section.io platform.
 
@@ -92,7 +92,7 @@ We recommend using section.io Hosted DNS so that you do not need to create a CNA
 
 For technical background on CNAME’s and the bare domains see: [RFC 1034 section 3.6.2](https://tools.ietf.org/html/rfc1034#section-3.6.2).
 
-## Multiple Domains
+### Multiple Domains
 
 The section.io platform  will only respond to requests using exactly the same domain name that was used to create the application on section.io. For example, if you register your application on section.io as `www.example.com` but then choose to create a `blog.example.com` CNAME record directed at the `www.example.com.c.section.io.` endpoint specified on your application's DNS page in the Aperture portal, visitors to the `http://blog.example.com` will receive an error page (`HTTP 409 Conflict` specifically).
 

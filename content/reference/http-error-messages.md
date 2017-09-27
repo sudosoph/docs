@@ -23,7 +23,7 @@ Have a look in Chrome's development tools, on the network tab, to discover the H
 Here are some things to check:
 
 1. Is your server running? Sometimes your web server (for example, Apache or nginx) may not be running. It may be refusing TCP connections.
-1. Is your origin server address correct? Try browsing directly to your server IP (you may need to override DNS with hosts file entries). If not, [update your origin address]({{site.baseurl}}/howto-change-origin/).
+1. Is your origin server address correct? Try browsing directly to your server IP (you may need to override DNS with hosts file entries). If not, [update your origin address]({{< relref "/how-to/change-origin.md" >}}).
 
 ### HTTP 504
 
@@ -31,7 +31,7 @@ Here are some things to check:
 
 Here are some things to check:
 
-1. Is your server under heavy load? Perhaps you could [improve your cache hit rate]({{site.baseurl}}/varnish-cache-hit-rate/).
+1. Is your server under heavy load? Perhaps you could [improve your cache hit rate]({{< relref "/how-to/varnish-cache-hit-rate.md" >}}).
 
 ## Custom Error Messages
 

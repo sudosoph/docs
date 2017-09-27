@@ -38,7 +38,7 @@ The contents of this file are [here](/assets/files/section-user-throttling.vcl).
 
 In the varnish file of your repo, edit the default.vcl to add the following:
 
-{% gist mkilbo/45165c30ecf3ea141f2a12b91a486216 %}
+{{< gist mkilbo 45165c30ecf3ea141f2a12b91a486216 >}}
 
 Be sure to update the secret and threshold values to match what you added for your GoSquared Credentials.
 

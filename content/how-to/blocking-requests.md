@@ -49,4 +49,4 @@ The request blacklist is specified via a `ip_blacklist` property inside one of t
         }
     }
 
-This would stop all requests from the IP address of 192.0.2.1, and all requests from any IP address in the range of 198.51.100.0-198.51.100.255 progressing any further and returning a 403 Forbidden HTTP status response ([custom response](../http-error-messages/#custom-error-messages) if provided).
+This would stop all requests from the IP address of 192.0.2.1, and all requests from any IP address in the range of 198.51.100.0-198.51.100.255 progressing any further and returning a 403 Forbidden HTTP status response ([custom response]({{< relref "/reference/http-error-messages.md#custom-error-messages" >}}) if provided).

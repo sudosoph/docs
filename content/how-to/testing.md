@@ -13,15 +13,15 @@ While synthetic tests do not neccessarily provide an accurate indication of how 
 
 These tests assumes you have [signed up](https://www.section.io/sign-up) with section.io and that you have [added your application](https://www.section.io/docs/create-application/).
 
-# Testing using WebPageTest
+## Testing using WebPageTest
 
-## A. BASIC TEST
+### A. BASIC TEST
 
 Visit [webpagetest.org](http://webpagetest.org) and run a test against a sample page from your website.  Run say 5 tests with first and repeat views from a location which may be relevant to your users.
 
 ![/assets/images/docs/webpagetestbasic.png](/assets/images/docs/webpagetestbasic.png)
 
-## B. TEST WTH SECTION.IO
+### B. TEST WTH SECTION.IO
 
 #### **1  Find the cname Record for Your Application**
 
@@ -68,7 +68,7 @@ Once you have made your DNS change, these tests become even more simple as the s
 
 
 
-# Testing Locally
+## Testing Locally
 
 Instead of using WebPageTest, you may wish to test the site through section.io locally using your own browser. You can achieve this by changing how DNS to the site is resolved on your local test machine.
 
@@ -116,61 +116,61 @@ We recommend focusing on functional testing of the site, such as user login, add
 
 Performance testing when the site is not live on our platform can yield varying results due to the cache being cold from lack of real world traffic. Remember that the busier a site is, the better it should perform as the cache will be better populated.
 
-# What should I be testing on my website?
+## What should I be testing on my website?
 
 Now that you have the ability to test your site on section.io the next step is to work through your testing process.
 
 The actions below will enable you to test 99.9% of your core site functionality and be ready to go live with confidence.
 
-## Testing key actions
+### Testing key actions
 
 The following steps will enable you to prime the CDN caches and follow a process that identifies caching issues for resolution ahead of actual customer traffic:
 
-### **1 Load your site's Homepage 3-4 times**
+#### **1 Load your site's Homepage 3-4 times**
 
 This will ensure that assets are stored in cache and any optimisations that are being applied are activated
 
-### **2 Browse to another page (eg Product page)**
+#### **2 Browse to another page (eg Product page)**
 
 If your site is an ecommerce site add a product to cart (or perform a similar action that personalises the users experience)
 
 Test checklist item: Confirm that add to cart action works
 
-### **3 Browse back to the Homepage**
+#### **3 Browse back to the Homepage**
 
 This tests the experience when a user has performed some actions elsewhere and returns to a cached / optimised page
 
 Test checklist item: Confirm that user still has products in cart and page rendering looks normal
 
-### **4 Login to your sites User portal**
+#### **4 Login to your sites User portal**
 
 If your site has an area for users to manage their username and password and other account related settings login now
 
 Test checklist item: Confirm that login works and user portal rendering looks normal
 
-### **5 Browse back to the Homepage**
+#### **5 Browse back to the Homepage**
 
 This tests that your site renders properly after logging in when browsing a cached / optimised page.
 
 Test checklist item: Confirm that the page displays the user logged in status correctly
 
-### **5a (Optional) Load the Homepage in a new Incognito window**
+#### **5a (Optional) Load the Homepage in a new Incognito window**
 
 Loading your website in an Incognito window (in Chrome browser for example) simulates a new user that is not related to your existing user on the site. This enables you to confirm that things like cart/logged in status are unique per user.
 
 Test checklist item: Confirm that the page displays correctly and that the page does not have any cart items or logged in status
 
-### **6 Complete Checkout/Key call to action**
+#### **6 Complete Checkout/Key call to action**
 
 Complete the primary call to action on your site to ensure that users can complete this step without any issues.
 
 Test checklist item: Confirm that an order / booking / enquiry has been placed and that your user has received any confirmation emails as appropriate
 
-### **7 Login to your sites Admin (CMS) portal and reload 3-4 times**
+#### **7 Login to your sites Admin (CMS) portal and reload 3-4 times**
 
 Tests that the user portal of your site is functioning when assets may have been cached / optimised
 
 Test checklist item: Ensure that you can perform 1-2 of your most common CMS functions
 
-## Testing Complete - Go live!
+### Testing Complete - Go live!
 Now that you have followed the above process, you have tested the core functionality of your site. Through the above process it's critical to focus on the functional elements of testing. Seeing actual user performance will only be relevant when you have actual users on your website.

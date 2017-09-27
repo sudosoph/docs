@@ -9,7 +9,7 @@ aliases:
 
 To make it easy to get started configuring your reverse proxies, section.io offers a few basic confguration options for [Varnish](#varnish) and [Modsecurity](#modsecurity).
 
-# Varnish
+## Varnish
 
 To make getting your CDN setup easier we have a number of configuration options you can enable without having to know how to use Varnish's VCL programming language. To use these go to the Proxy page under the Configuration menu in Aperture.  To use these features the following line needs to be in your `default.vcl` file under the `backend` declaration (it will be there by default). Note, these basic options work for VCL 4.0 only.
 
@@ -35,7 +35,7 @@ Changes made to these options will be reflected in the `proxy-features.json` fil
 
 To start writing your own VCL, you'll need to head over to the [repo](/docs/advanced-configuration).
 
-# Modsecurity
+## Modsecurity
 
 To make getting your CDN setup easier we have a number of configuration options you can enable without writing any code. We've defined rules that you can view by going to the Proxy page under the Configuration menu in Aperture. If you have both Varnish and Modsecurity setup, you will need to click Proxy in the top nav to display a drop down menu to view both of your reverse proxies and select Modsecurity.
 

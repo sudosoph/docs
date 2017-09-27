@@ -9,7 +9,7 @@ aliases:
 
 Here you will find instructions on how to [split your application](#splitting-applications) into multiple content delivery network configurations, as well as how to [delete an application](#deleting-applications) if you wish to start afresh.
 
-# Splitting Applications
+## Splitting Applications
 
 A new section.io application is configured to handle all HTTP requests on its associated domain, e.g. www.example.com. Many websites, though, will serve different types of responses (e.g. static assets versus user-tailored pages) or even different applications (e.g. a public e-commerce store and a CMS admin site).
 
@@ -42,7 +42,7 @@ All applications handling requests for a given domain must be within the same se
 
 
 
-# Deleting Applications
+## Deleting Applications
 
 Sometimes you may wish to start an application from scratch or simply remove an unused application.
 

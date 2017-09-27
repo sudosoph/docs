@@ -37,7 +37,7 @@ section.io CLI will send commands to the Vagrant-managed virtual machine via SSH
 
     The section.io CLI is currently distributed via a public repository on GitHub. The preferred way to obtain the CLI is to clone the public repository to your local machine. For this you will need Git installed.
 
-    You can download Git for most platforms from <http://git-scm.com/>. If you prefer a graphical interface you might consider [GitHub for Windows], [GitHub for Mac], or [SourceTree] (for both).
+    You can download Git for most platforms from <http://git-scm.com/>. If you prefer a graphical interface you might consider [GitHub for Windows], [GitHub for Mac], or [SourceTree].
 
     Once you have git installed you can clone the section.io CLI repository using this clone URL:
 
