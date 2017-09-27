@@ -15,7 +15,7 @@ In the repository you can see all the files in your repository, commits to those
 
 When you open the repostory view, you will see your files. Here you should see one folder for every reverse proxy you have setup for your application and one 'section.config.json' file, where you can add additional reverse proxies to your stack.
 
-# Add another Reverse Proxy
+## Add another Reverse Proxy
 The config files order the reverse proxy in the order that traffic will flow through, so be aware of the location you put the new reverse proxy in.
 
 For example, if your application is setup with Varnish 4.0.3, you should see this at the top of your config file:
@@ -69,39 +69,33 @@ You can also do this using CLI with the command [append](/docs/cli/#section-appe
 
 In either case, once you have edited the files or used the append command, please send us a [support ticket](https://support.section.io/hc/en-us/requests/new) so we can push those changes live for you.
 
-# Varnish Configuration
+## Varnish Configuration
 
 Advanced configuration is done via the Varnish Control Language file `default.vcl`. You can access this file by going to Repository under the Configuration menu in the left nav of Aperture and then clicking on the Varnish file.
 
 To help you get started, we've written some VCL snippets for you to review.
 
-Cache Static Content
---------------------
+#### Cache Static Content
 
 {% gist section-io-gists/2a9e40238fffec56d3be %}
 
-Normalise Accept-Encoding
--------------------------
+#### Normalise Accept-Encoding
 
 {% gist section-io-gists/8ea78c06271d7e824431 %}
 
-Enforce HTTPS
--------------
+#### Enforce HTTPS
 
 {% gist section-io-gists/02dba4113b8caf5da473 %}
 
-Block Access
-------------
+#### Block Access
 
 {% gist section-io-gists/12e0e35369e3b95ed996 %}
 
-Cache Everything
-----------------
+#### Cache Everything
 
 {% gist section-io-gists/56391f3af9dff65dda36 %}
 
-Wordpress Caching
------------------
+#### Wordpress Caching
 
 {% gist section-io-gists/1a1ca70f1b0528442f8c %}
 
@@ -124,7 +118,7 @@ Requesting the Varnish Log simply executes varnishlog for each Varnish instance 
 
 Varnishncsa is also running, logging request and response details, including cache effectiveness. This data is used to drive the charts seen in Aperture.
 
-# Modsecurity Configuration
+## Modsecurity Configuration
 
 The initial configuration in a repository starts ModSecurity’s SecRuleEngine in DetectionOnly mode (this writes log entries but never executes any disruptive actions) with rules from base\_rules & optional\_rules. This is a great starting point, as you can immediately see possible threats without stopping legitimate traffic to your site.
 

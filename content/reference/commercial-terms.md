@@ -7,16 +7,15 @@ aliases:
 
 ---
 
-Per Gb Rates
-------------
+## Per GB Rates
 
-Each 1000 pages served on the section.io platform includes 3Gb of data.  Where data used exceeds 3Gb on average per 1000 pages served in any billing period, the following excess Gb charges will apply:
+Each 1000 pages served on the section.io platform includes 3GB of data.  Where data used exceeds 3GB on average per 1000 pages served in any billing period, the following excess GB charges will apply:
 
-| Region           | Rate per Gb|         
-|------------------|------------|
-| US               | $0.05      |
-| Europe           | $0.05      |
-| Singapore        | $0.08      |
-| Tokyo            | $0.12      |
-| Australia        | $0.12      |
-| South America    | $0.19      |
+Region           | Rate per GB        
+---------------- |------------:
+US               | $0.05      
+Europe           | $0.05      
+Singapore        | $0.08      
+Tokyo            | $0.12      
+Australia        | $0.12      
+South America    | $0.19      

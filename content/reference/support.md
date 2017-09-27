@@ -11,8 +11,7 @@ aliases:
 
 You choose the level of support which suits your needs.
 
-Support Plans
--------------
+## Support Plans
 
 1. Basic - [section.io] supports platform availability and functionality in business hours.
 2. Enterprise - for teams needing immediate, 24x7 platform support.
@@ -35,10 +34,9 @@ Support Plans
 | Price                      | Free               | $750 pm                       | $1500 pm           |
 
 
-*Business hours defined as 8am US EST to 5pm US PT or 8am to 5pm AEST subject to your preferred support region.
+*Business hours defined as 8am US EST to 5pm US PT or 8am to 5pm AEST subject to your preferred support region.*
 
-Need More Help?
-----------------
+## Need More Help?
 
 If you would like section.io’s engineers to take a deeper look at your code, application, hosting or performance and security mangement practices generally, consider our [professional services] offerings.
 

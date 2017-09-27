@@ -51,9 +51,6 @@ Second, is asset cache hit rates which shows the hit rate by content type. You c
 
 ![/assets/images/docs/https-ratio-kibana.png](/assets/images/docs/https-ratio-kibana.png)
 
-
--------
-
 ##### **Completed all 7 steps?**
 
 Awesome! Steps 5 through 7 are meant to be an iterative process. Focus on big wins first using your metrics evaluation. Then after you’ve improved those areas, you can focus on other areas to fine tune.

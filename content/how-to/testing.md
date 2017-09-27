@@ -11,7 +11,7 @@ This is a guide to help you run some basic tests against your website using eith
 
 While synthetic tests do not neccessarily provide an accurate indication of how fast your site will be in the hands of your users, they can be useful to help you understand which items you can work on to the improve performance of individual pages.   By focussing on key pages, you can thence improve the overall performance of your website.
 
-These tests assumes you have [signed up](http://section.io/sign-up) with section.io and that you have [added your application](https://www.section.io/docs/create-application/).
+These tests assumes you have [signed up](https://www.section.io/sign-up) with section.io and that you have [added your application](https://www.section.io/docs/create-application/).
 
 # Testing using WebPageTest
 

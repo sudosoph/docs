@@ -9,17 +9,15 @@ aliases:
 
 Magento is a common eCommerce platform that is well known for suffering performance related issues. section.io delivers huge speed improvements to Magento through caching HTML pages (and static assets) inside Varnish.
 
-Different Approaches for Different Magento Versions
----------------------------------------------------
+## Different Approaches for Different Magento Versions
 
 [Prior to Magento 2.0](#magento-19-and-earlier), Varnish support is provided by the [free Turpentine Magento extension].
 
 [As of Magento 2.0](#magento-20-and-later), support for Varnish to cache page content is integrated into Magento. section.io offers ["Instant Global Cache"](#magento-2-extension), an extension that will let you get setup with Varnish and distribute it globally on section.io’s CDN directly from the Magento Admin portal.
 
-Magento 1.9 and Earlier
------------------------
+### Magento 1.9 and Earlier
 
-### Process overview
+#### Process overview
 
 Magento 1.9 and earlier does not support Varnish out of the box. Support is instead provided by the [free Turpentine Magento extension].
 
@@ -33,19 +31,19 @@ Follow the [official instructions] in order to install Turpentine. Since Varnish
 4.  Apply the Varnish configuration from within Turpentine Configuration, to update section.io.
 5.  Update your public DNS records to direct traffic to section.io for your site.
 
-### Creating an application
+#### Creating an application
 
 section.io provides a customized Varnish image already configured for Magento Turpentine. Create your application using the Stack “Varnish v3 Magento Turpentine”.
 
-### Set up the varnish-cli-bridge
+#### Set up the varnish-cli-bridge
 
 This program will listen for Varnish commands and foward them to the section.io hosted Varnish platform.
 
-#### Download
+##### Download
 
 Download the [lastest section.io cli bridge here]. You will want the varnish-cli-bridge-vN.N.N-linux-amd64.tar.gz file.
 
-#### Collect configuration details
+##### Collect configuration details
 
 There are 3 pieces of information required to run the bridge:
 
@@ -53,8 +51,7 @@ There are 3 pieces of information required to run the bridge:
 2.  API username: This is a username that has permission to perform API actions.
 1.  API password: This is a password for the specified user to perform API actions.
 
-Run as a service
-================
+##### Run as a service
 
 We have an [Upstart](http://upstart.ubuntu.com/) [script available](https://github.com/section-io/varnish-cli-bridge/blob/master/upstart.conf) to to run the bridge as a service.
 
@@ -81,8 +78,7 @@ Install Upstart if it is not already installed on your server. Copy the script a
 
 Otherwise, use whatever solution is available with your distribution to run the binary as a service.
 
-Configure Turpentine to talk to the bridge
-==========================================
+##### Configure Turpentine to talk to the bridge
 
 In your Magento admin portal, you will want to navigate to the Turpentine "Varnish Options" section. Here we will be updating the `Server List` option with the endpoint for the Varnish CLI Bridge you just installed. Add the entry `127.0.0.1:6082` to the list and hit "Save Config" in the upper right hand corner.
 
@@ -92,43 +88,36 @@ If you get an error (sample error in picture below), you should revisit the brid
 
 ![/assets/images/docs/turpentine-error.png](/assets/images/docs/turpentine-error.png)
 
-Deviations from official Turpentine instructions
-------------------------------------------------
+##### Deviations from official Turpentine instructions
 
-Installation
-============
+###### Installation
 
 See the [turpentine installation guide](https://github.com/nexcess/magento-turpentine/wiki/Installation).
 
 Step 1-3: Skip these steps. There is no need to install or configure a local Varnish server.
 
-Configuration
-=============
+###### Configuration
 
 See the [turpentine configuration guide](https://github.com/nexcess/magento-turpentine/wiki/Configuration).
 
 No special configuration is required to use Turpentine with the bridge & section.io.
 
-Upload Turpentine configuration to section.io
----------------------------------------------
+###### Upload Turpentine configuration to section.io
 
 The configuration must be applied/uploaded into section.io by manually hitting the Apply Varnish Configuration button on the Cache Management page.
 
-Testing
--------
+###### Testing
 
 There are 2 recommended tests to validate your implementation:
 
 1.  Test Pages Are Coming From Cache - Reload your browser 3-5 times on a single page, You should start to see multiple Varnish ID’s in the HTTP response headers (In a browser debugger such as Chromes debugger) and see page response times around ~50-100ms
 2.  Test Bans Are Reaching the section.io Platform - Using a Product page on your site refresh 3-5 times to ensure pages are in cache. Once the page is in cache, Add a product to your shopping cart. This will cause Turpentine to send a Ban statement to section.io to clear out the block on all pages for the user that contains the shopping cart. You should see the shopping cart updated successfully on page refresh.
 
-Magento 2.0 and Later
-=====================
+### Magento 2.0 and Later
 
 With the release of Magento 2, Varnish is required for production usage. The means that you have to have a Varnish implementation to run your Magento 2 site. We offer an extension, [Instant Global Cache](#magento-2-extension), for you to get setup within the Magento portal. If you are experiencing a low cache hit rate with Magento 2 and Varnish Cache make sure you’ve [checked these settings within Magento](https://community.section.io/t/varnish-for-magento-2-setup/87).
 
-Magento 2 extension
-=====================
+#### Magento 2 extension
 
 To get started with section.io and Varnish directly from the Magento Admin portal, you first must download the "Instant Global Cache" extension from the [Magento Marketplace](https://marketplace.magento.com/sectionio-metrics.html).
 
@@ -154,15 +143,14 @@ There is also a button to pull in free HTTPS certificate. This will ensure your 
 
 To go live with Varnish and your section.io application, you willl need to change a DNS record to point to section.io. Detailed instructions can be found [here](https://www.section.io/docs/change-dns/#dns-hosting-with-your-current-provider). You can also find more information from your hosting provider as to where to go to make this change. Once you have made the change, you can click verify to see if the change was successful and traffic is currently flowing through section.io.
 
-Magento CLI Commands
---------------------
+#### Magento CLI Commands
 
 The section.io extension adds some new Magento CLI commands to allow you to automate the configuration of your site
 
-### `sectionio:setup <username> <password> <account_id> <application_id>`
+`sectionio:setup <username> <password> <account_id> <application_id>`
 Setup the section.io extension with your section.io account and application details `<username> <password>` are your [https://aperture.section.io](https://aperture.section.io) username & password.
 
-### `sectionio:updatevcl`
+`sectionio:updatevcl`
 Update Varnish with the Magento VCL. This has the same effect as pressing the "Update varnish configuration" button in the extension UI.
 
   [free Turpentine Magento extension]: http://www.magentocommerce.com/magento-connect/turpentine-varnish-cache.html

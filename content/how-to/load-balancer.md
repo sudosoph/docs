@@ -9,17 +9,15 @@ aliases:
 
 Load balancing distributes traffic across origin servers so that your website can handle more visitors at once and visitors are always directed to the best server for their requests. If one of your servers is not responding or a network is experiencing an outage, you can automatically redirect traffic to the closest functioning server so that your site stays up for all visitors.
 
-Technical details
-=================
+## Technical details
 
 section.io provides a layer 7 load balancer to immediately route HTTP requests based on rules you set that can include request location, device or browser type, and cookies or headers. In addition, you can utilize our load balancer to randomly distribute requests to your origin servers so that no one server is overloaded. 
 
 section.io has uses VCL to create common load balancing scenarios that can be easily set up in your section.io portal by editing your VCL files.
 
-Examples
-========
+## Examples
 
-## Static asset origin
+### Static asset origin
 
 Below is an example of how to configure your Content Delivery Grid to direct all requests for static assets to a separate origin.
 
@@ -30,7 +28,7 @@ Prerequisites:
 
 In your `default.vcl` file you can set a header that's recognizable in section.io's `last-proxy` to determine which origin address and host header to make the request with. So you are going to need to define that origin first in your `section.config.json` file located in the root of your applications git repo. You will be adding a key called `alternate_origins` under `environments.Production`.
 
-### `section.config.json`
+#### `section.config.json`
     
     ...
     "environments": {
@@ -47,7 +45,7 @@ In your `default.vcl` file you can set a header that's recognizable in section.i
         },
     ...
 
-### `default.vcl`
+#### `default.vcl`
 
 Next we need to tell Varnish when to use and how to define this origin for static assets. We will be using the name we defined in your `section.config.json`.
 
@@ -63,11 +61,11 @@ Next we need to tell Varnish when to use and how to define this origin for stati
 
     set req.http.X-Forwarded-Proto = "http";
 
-### Overview
+#### Overview
 
 This use case is especially helpful if you are requesting your static assets on the same domain (e.g. `www.example.com`) to utilize HTTP/2, but want to take the load off your default origin when requesting static assets. section.io handles all the internals of actually making the request to your `assets` origin and all you have to do is configure your reverse proxy setup in your git repo!
 
-## More examples coming soon
+### More examples coming soon
 
 section.io’s load balancing allows you to:
 
@@ -77,7 +75,3 @@ section.io’s load balancing allows you to:
 * Create unlimited custom rules to route traffic based on its characteristics.
 
 *Note:* If you have a specific request, please email support@section.io and we will get the docs up ASAP!
-
-
-
-

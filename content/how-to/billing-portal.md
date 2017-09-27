@@ -13,16 +13,16 @@ To navigate to the Billing Portal, first click on the "gear" icon in your menu t
 
 The Billing Portal Features:
 
-My Account:
------------
+## My Account
+
 Update the contact information for your subscriptions or choose a password for your account
 
-Subscriptions:
---------------
+## Subscriptions
+
 Provides an overview of each subscription on section.io.  Each website you set up on your section.io account will have a seperate subsctiption so you can track billing seperately for each website.  You can also attach different payment methods to each website.
 
 You can also cancel individual subscriptions from this interface.  Click on the "Cancel" link in the particular subscription.
 
-Statements
-----------
+## Statements
+
 View each statement/invoice for your account.

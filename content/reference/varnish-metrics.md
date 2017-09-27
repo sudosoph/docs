@@ -9,13 +9,11 @@ aliases:
 
 Out of the box, section.io brings up Varnish Cache metrics. The following is a description of these metrics.
 
-Varnish Glossary
-----------------
+## Varnish Glossary
 
 Key Varnish concepts are described in the [Varnish Glossary.]
 
-Varnish Counters
-----------------
+## Varnish Counters
 
 Further detail with respect to key Varnish Counters (Source; [Mankier])
 
@@ -389,8 +387,7 @@ Overflow VSM space (DIAG) Number of bytes which does not fit in the shared memor
 vsm\_overflowed  
 Overflowed VSM space (DIAG) Total number of bytes which did not fit in the shared memory used to communicate with tools like varnishstat, varnishlog etc.
 
-Lock Counters
-=============
+### Lock Counters
 
 creat  
 Created locks (DEBUG)
@@ -401,8 +398,7 @@ Destroyed locks (DEBUG)
 locks  
 Lock Operations (DEBUG)
 
-Per Malloc Storage Counters
-===========================
+### Per Malloc Storage Counters
 
 c\_req  
 Allocator requests (INFO)
@@ -425,8 +421,7 @@ Bytes outstanding (INFO)
 g\_space  
 Bytes available (INFO)
 
-Per File Storage Counters
-=========================
+### Per File Storage Counters
 
 c\_req  
 Allocator requests (INFO)
@@ -458,8 +453,7 @@ N small free smf (INFO)
 g\_smf\_large  
 N large free smf (INFO)
 
-Per Backend Counters
-====================
+### Per Backend Counters
 
 vcls  
 VCL references (DEBUG)

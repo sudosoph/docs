@@ -42,8 +42,7 @@ In the **Operations** column of the table, there will be a button for you to "Co
 
 On the contrary you can connect your devpop to your section.io's Aperture account and import these configurations. This is really handy if you have multiple hosted names and/or multiple origins (We will cover how to add these manually later on).
 
-Connecting to Aperture
-----------------------
+### Connecting to Aperture
 
 *Note: If you don't have an Aperture account and want to use the devpop to simply test reverse proxies, feel free to skip this section.*
 
@@ -51,8 +50,7 @@ In the upper right hand corner of the devpop UI, there is a **Connect to Apertur
 
 This will enable an **Import** button on the **Operations** column of the services table, which will open up a modal prompting you to select the application you want to import.
 
-Testing your website
---------------------
+### Testing your website
 
 You will need to modify your local host file and point the **Hosted Name(s)** for your service at `192.168.99.100`.
 
@@ -62,8 +60,7 @@ This will override the DNS endpoint for that domain and force traffic through th
 
 Now if you browse to your site the HTTP traffic will be flowing through the devpop which gives you the ability to test all configurations without affecting any other users. 
 
-Updating your configurations
-----------------------------
+### Updating your configurations
 
 Now that you have traffic flowing through the devpop you will be able to change any configuration and see it live within a few seconds. Navigate to your favorite test editor and bring up the directory of the repository you cloned from Aperture. Whether you have Varnish, PageSpeed, or a Web Application Firewall, you can change any of the configurations to see how your application will perform.
 
@@ -75,8 +72,7 @@ Once you have made changes to your config, you will want to push them to the dev
 
 Make sure you have no syntax errors via the git feedback, and wait a few moments for you changes to take affect. Now go back to your browser, reload the page, and see what type of optimizations your changes made!
 
-Known issues
-------------
+### Known issues
 
 1. Your minikube may change IP address on restart. Run `minikube ip` to get the IP address of your Developer Pop. Substitute the IP address into the following command to update the git remote in your Developer PoP `git remote set-url developer-pop http://192.168.99.100:30090/application-name.git`
 1. Re-initializing is not supported, you may get `The Service "developer-pop" is invalid: spec.ports[0].nodePort: Invalid value: 32080: provided port is already allocated`

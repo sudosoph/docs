@@ -16,8 +16,7 @@ This page is show where section.io responds with a HTTP 502 or HTTP 504 response
 
 Have a look in Chrome's development tools, on the network tab, to discover the HTTP response code.
 
-HTTP 502
---------
+### HTTP 502
 
 [HTTP 502](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#502) means that we had trouble establishing a TCP connection to your server.
 
@@ -26,8 +25,7 @@ Here are some things to check:
 1. Is your server running? Sometimes your web server (for example, Apache or nginx) may not be running. It may be refusing TCP connections.
 1. Is your origin server address correct? Try browsing directly to your server IP (you may need to override DNS with hosts file entries). If not, [update your origin address]({{site.baseurl}}/howto-change-origin/).
 
-HTTP 504
---------
+### HTTP 504
 
 [HTTP 504](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#504) means your application took too long to respond.
 
@@ -35,7 +33,7 @@ Here are some things to check:
 
 1. Is your server under heavy load? Perhaps you could [improve your cache hit rate]({{site.baseurl}}/varnish-cache-hit-rate/).
 
-# Custom Error Messages
+## Custom Error Messages
 
 If you would like to customise what HTML we return in case of specific HTTP error codes you can place a file in the `custom_errors` folder in your application repository.
 

@@ -14,8 +14,7 @@ To get started you'll first need to [create a user on section.io](https://www.se
 
 Between when you create a user and create your own application you'll be able to access Bootcamp, which provides a demo of our application so you can see how it works once your account is all setup.
 
-Create An Application
-==========
+## Create An Application
 
 To create an application you will be taken through a series of steps so that you can start sending traffic through your section.io reverse proxy configuration. You will be asked to do this immediately upon creating a user, but you can also select setup website from the demo account (bootcamp) at any time.
 
@@ -29,8 +28,7 @@ To complete your application setup you'll need to:
 
 Once your account and application have been created you will want to start [developing locally](/docs/local-development) so you can test your configurations against your origin.
 
-Application Hostname
--------------------------
+### Application Hostname
 
 First you will need to enter your application's hostname, which is usually your website's url. When you enter your url, we will identify your Hostname and Origin.  
 
@@ -40,8 +38,7 @@ It is also important to note, you will not go live with section.io when you crea
 
 If you want to use section.io on multiple client accounts, check out our [agency setup guide](/docs/agency-account-setup/) which walks through our recommended setup.
 
-Reverse Proxy Selection
--------------------------
+### Reverse Proxy Selection
 
 After we've identified your host name and origin, we'll ask you to select a reverse proxy.
 
@@ -49,8 +46,7 @@ You can only choose one reverse proxy during setup. If you want to select multip
 
 If you are unsure on which proxy is right for you, check out our [available proxy templates page](/docs/proxy-list/). If you don't have a preference, we recommend starting with Varnish v4.
 
-Account Creation
--------------------------
+### Account Creation
 
 For this application, you will need to setup an account for the purposes of billing and granting other people permission to access your account.
 

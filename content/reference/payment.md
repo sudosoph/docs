@@ -9,8 +9,8 @@ aliases:
 
 section.io supports a number of payment methods.  
 
-Credit Card
------------
+## Credit Card
+
 The default payment method is by credit card which can be added to your account in the billing portal.  
 
 section.io stores all credit card details in secure vaults provided by our payment gateway providers.  We do not store any credit card information on the section.io platform.
@@ -21,6 +21,6 @@ Within the Billing Portal, you can attach different payment methods to each webs
 
 Note: section.io does not currently support American Express as a valid credit card payment method.
 
-Other Billing Methods
----------------------
-section.io also supports invoice and 12 and 24 month contracts with discounts available for longer term agreements.  Please [contact us](https://section.io/contact-us) to discuss alternate billing methods.
+## Other Billing Methods
+
+section.io also supports invoice and 12 and 24 month contracts with discounts available for longer term agreements.  Please [contact us](https://www.section.io/contact-us) to discuss alternate billing methods.

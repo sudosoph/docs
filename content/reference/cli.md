@@ -9,8 +9,7 @@ aliases:
 
 The CLI is the primary mechanism for working with a section.io Proxy Stack on your local machine. It will help you provision a local virtual machine configured with the same components as used by section.io for your application in production.
 
-Prerequisites
--------------
+## Prerequisites
 
 ### Summary
 
@@ -32,8 +31,7 @@ section.io CLI has been implemented in Ruby and should utilise the same version 
 
 section.io CLI will send commands to the Vagrant-managed virtual machine via SSH. As SSH is not normally present on Windows, the CLI will try to use version of SSH included with your Git installation. If this fails, you will need to install SSH separately and ensure it is on your PATH.
 
-Installation
-------------
+## Installation
 
 1.  **Clone the repository**
 
@@ -87,8 +85,7 @@ Installation
 
     From this point on, all section.io CLI commands should be run from within the directory created when you ran `section up`.
 
-Usage
------
+## Usage
 
 The general usage pattern for the section.io CLI is:
 
@@ -144,8 +141,7 @@ If you want to have a copy of your section.io application repository locally for
 
 The repository will be cloned to the same directory as per `section up`.
 
-Previous Behaviour
-------------------
+## Previous Behaviour
 
 Previously the section.io CLI required you to run commands from the directory that the CLI was cloned into and application repositories were cloned into an `apps` directory under that location. If you have previously setup the CLI to work this way, run `section` (without parameters) once from the directory where the CLI is cloned from and it will help you transition to the new way of using the CLI.
 

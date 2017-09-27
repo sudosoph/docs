@@ -14,8 +14,8 @@ If you have added [multiple domains](/docs/change-dns/#multiple-domains) to the 
 
 Each certificate has a short validity period and will be renewed 30 days prior to expiry. If you require wildcards, multi hostname or extended validation (EV) certificates you will need to provide your own certificate.
 
-Custom certificate
-------------------
+## Custom certificate
+
 To switch your application to use a custom certificate you will need to obtain an certificate and private key pair. For production use you should use a certificate signed by a trusted root Certificate Authority (CA). In development scenarios you may find a [self-signed certificate is sufficient](https://info.ssl.com/ssl-made-easy-for-beginners/).
 
 First, you will need to ensure you have the public certificate in Base64-encoded DER-encoded (PEM) format. It will look something like this:
@@ -75,8 +75,7 @@ It is important for Section to function that the private key is **not** password
 
 In most scenarios the openssl software can help produce the required files and convert them to the appropriate format.
 
-Where to put your custom certificate and key
-============================================
+## Where to put your custom certificate and key
 
 Once you have your certificate and key in the formats described above, you can install them into section.io.
 
@@ -86,8 +85,7 @@ This will deploy your certificate out to our delivery nodes.
 
 Once you have saved your public certificates and private key, when you come back to the HTTPS page the private key will not be displayed on screen as it would be a security risk to display it.
 
-Certificate API Upload
-----------------------
+### Certificate API Upload
 
 To add an additional domain to your application via the API:
 
@@ -120,8 +118,7 @@ with the following body payload:
     }
 
 
-Server Name Indication
-----------------------
+### Server Name Indication
 
 Parts of the section.io platform are using shared infrastructure. One component important in this context is the TLS Offload Proxy, implicit in all Proxy Stacks. Its role is to accept end-user HTTP and HTTPS connections for multiple web applications on multiple domains, handle any TLS handshake and then route requests to the correct Proxy Stack.
 
