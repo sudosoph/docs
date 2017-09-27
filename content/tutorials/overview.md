@@ -38,7 +38,7 @@ Multiple Environments means you can have a configuration you are working on in a
 
 Each Environment can have a number of Domain names attached to it, this means you could have the Production Environment listening to multiple domain names or Test and Staging Environments listending to multiple other domain names.
 
- ![/assets/images/docs/AccountApplicationEnvironmentStructure.jpeg](/assets/images/docs/AccountApplicationEnvironmentStructure.jpeg)
+ {{% figure src="/docs/images/AccountApplicationEnvironmentStructure.jpeg" %}}
 
 You manage a configuration for each Environment that is stored in source control (git). We let you control that configuration via our portal (or for advanced users you can clone the git repository locally to your PC). This gives you a complete history of exactly what was changed and when so that you can 
 

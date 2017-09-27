@@ -32,4 +32,4 @@ It is also important to note, you the website will not go live with section.io w
 
 #### **Example** - Here is an example setup using this structure:
 
-![/assets/images/docs/agency-account-setup.png](/assets/images/docs/agency-account-setup.png)
+{{% figure src="/docs/images/agency-account-setup.png" %}}

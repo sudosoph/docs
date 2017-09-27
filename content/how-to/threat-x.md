@@ -25,7 +25,7 @@ You can add Threat X to your section.io setup Content Delivery Grid very quickly
 
 When creating your application you will want to select the **Threat-X** on the second page of the setup process.
 
-![/assets/images/docs/select-threatx.png](/assets/images/docs/select-threatx.png)
+{{% figure src="/docs/images/select-threatx.png" %}}
 
 You will then want to follow the steps below:
 

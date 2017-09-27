@@ -28,4 +28,4 @@ For example:
 
 To view your real user monitoring metrics [login to your section.io account](https://aperture.section.io/) and go to "Monitoring" under "Real time" in the left navigation. From there you can click on "Synthetics" in the left hand corner of the screen to view your Data.
 
-![/assets/images/docs/grafana-synthetics.png](/assets/images/docs/grafana-synthetics.png)
+{{% figure src="/docs/images/grafana-synthetics.png" %}}

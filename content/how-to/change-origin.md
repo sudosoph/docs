@@ -11,7 +11,7 @@ section.io is a proxy service, so at the end of the day, any requests for your s
 
 When your first setup your site on section.io we resolve the DNS of the hostname you enter and set that as the origin address. This origin address is stored in a JSON file in the root of the git repository for your application. You can view this by going to <https://aperture.section.io/>, selecting your site and then going to the “Advanced Config” page.
 
-![/assets/images/docs/howto-change-origin-repository.png](/assets/images/docs/howto-change-origin-repository.png)
+{{% figure src="/docs/images/howto-change-origin-repository.png" %}}
 
 This gives you a view of the git repository for your site. From there you can open `section.config.json`.
 
@@ -19,7 +19,7 @@ This is the configuration file for your site on section.io. It contains the prox
 
 Each environment has its own section in the file where you can specify config options for that environment. There are a number of possible config settings but for now the one we are interested in is `origin.address`.
 
-![/assets/images/docs/howto-change-origin-configfile.png](/assets/images/docs/howto-change-origin-configfile.png)
+{{% figure src="/docs/images/howto-change-origin-configfile.png" %}}
 
 To change the address of your production environment Click the Edit button on the page. This will open the online file editor. From there you can change the value of the origin address to the new IP address or CNAME. To save the change, put a description in the Commit Message field (remember, this is all git) and click Commit. This will do a git commit & push which will trigger a deploy to the section.io delivery nodes to apply the new orgin address.
 

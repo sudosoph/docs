@@ -12,10 +12,10 @@ This is a guide for users who want to share access to their account(s). When inv
 
 To get started, navigate to the **Account** section and then **Users and Access** (outlined by the small red rectangle on the image below).
 
-<img src="/assets/images/docs/add-user-new.png" alt="add user" width="700px" />
+<img src="/docs/images/add-user-new.png" alt="add user" width="700px" />
 
 At the bottom of your list of current users there will be a section to add a user with their **First Name**, **Last Name**, and **Email** inputs (shown below). The user will then get an email from section.io with the invitation to join the account.
 
 **Note: The email invitation will only be valid for 48 hours.**
 
-<img src="/assets/images/docs/add-user-new2.png" alt="add user" width="700px" />
+<img src="/docs/images/add-user-new2.png" alt="add user" width="700px" />

@@ -12,7 +12,7 @@ weight: 1
 **How do you see it?:** This is the first chart we show you on the section.io dashboard. For the Bootcamp application, the url is [here](https://aperture.section.io/account/1/application/1/environment/Production/overview).
 
 
-![/assets/images/docs/varnish-cache-usage-metrics.png](/assets/images/docs/varnish-cache-usage-metrics.png)
+{{% figure src="/docs/images/varnish-cache-usage-metrics.png" %}}
 
 For more detailed information, such as the absolute number of requests and size of those requests, you can view Trending Metrics [here](https://aperture.section.io/account/1/application/1/environment/Production/metrics##1).
 
@@ -35,11 +35,11 @@ Most of the time, images and CSS will be the easiest to get some cache wins and 
 
 First, is request performance which shows throughput and time to serve by status. You can access this for Bootcamp [here](https://aperture.section.io/account/1/application/1/grafana-web).
 
-![/assets/images/docs/content-type-cache-performance-metrics.png](/assets/images/docs/content-type-cache-performance-metrics.png)
+{{% figure src="/docs/images/content-type-cache-performance-metrics.png" %}}
 
 Second, is asset cache hit rates which shows the hit rate by content type. You can access this for Bootcamp [here](https://aperture.section.io/account/1/application/1/grafana-web).
 
-![/assets/images/docs/content-type-hit-rate.png](/assets/images/docs/content-type-hit-rate.png)
+{{% figure src="/docs/images/content-type-hit-rate.png" %}}
 
 ##### **3 Secure Delivery** - Uncover how often you are using HTTPS
 
@@ -49,7 +49,7 @@ Second, is asset cache hit rates which shows the hit rate by content type. You c
 
 **How do you see it?:** You can your websites breakdown of HTTP vs HTTPS by going into your logs. To build a nice pie chart, you want to filter by `_type:edge-access-log` which limits the count to only requests to the edge proxy and then split by `scheme` which indicates HTTP or HTTPS. You can see this for Bootcamp [here](https://aperture.section.io/account/1/application/1/kibana/#/visualize/create?_a=(filters:!(),linked:!f,query:(query_string:(analyze_wildcard:!t,query:'*')),vis:(aggs:!((id:'1',params:(),schema:metric,type:count),(id:'2',params:(filters:!((input:(query:(query_string:(analyze_wildcard:!t,query:'_type:edge-access-log'))))),row:!t),schema:split,type:filters),(id:'3',params:(field:scheme,order:desc,orderBy:'1',size:5),schema:segment,type:terms)),listeners:(),params:(addLegend:!t,addTooltip:!t,isDonut:!f,shareYAxis:!t),type:pie))&indexPattern=account1-app1-*&type=pie&_g=()). (note our Bootcamp application is showing a low HTTPS ratio)
 
-![/assets/images/docs/https-ratio-kibana.png](/assets/images/docs/https-ratio-kibana.png)
+{{% figure src="/docs/images/https-ratio-kibana.png" %}}
 
 ##### **Completed all 7 steps?**
 

@@ -20,4 +20,4 @@ To add RUM to your website, simply [login to your section.io account](https://ap
 
 To view your real user monitoring metrics [login to your section.io account](https://aperture.section.io/) and go to "Monitoring" under "Real time" in the left navigation. From there you can click on "Real User Monitoring" in the left hand corner of the screen to view your Data
 
-![/assets/images/responsive/features/graphana.png](/assets/images/responsive/features/graphana.png)
+{{% figure src="/docs/images/grafana.png" title="Real User Monitoring in Grafana" %}}

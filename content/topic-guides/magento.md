@@ -82,11 +82,11 @@ Otherwise, use whatever solution is available with your distribution to run the 
 
 In your Magento admin portal, you will want to navigate to the Turpentine "Varnish Options" section. Here we will be updating the `Server List` option with the endpoint for the Varnish CLI Bridge you just installed. Add the entry `127.0.0.1:6082` to the list and hit "Save Config" in the upper right hand corner.
 
-![/assets/images/docs/turpentine-server-list.png](/assets/images/docs/turpentine-server-list.png)
+{{% figure src="/docs/images/turpentine-server-list.png" %}}
 
 If you get an error (sample error in picture below), you should revisit the bridge installation process and ensure you have done that correctly.
 
-![/assets/images/docs/turpentine-error.png](/assets/images/docs/turpentine-error.png)
+{{% figure src="/docs/images/turpentine-error.png" %}}
 
 ##### Deviations from official Turpentine instructions
 
@@ -123,7 +123,7 @@ To get started with section.io and Varnish directly from the Magento Admin porta
 
 Once the extension is added, go to Reports in the left Nav and then find section.io listed in your Reports.
 
-![/assets/images/docs/magento-extension-location.png](/assets/images/docs/magento-extension-location.png)
+{{% figure src="/docs/images/magento-extension-location.png" %}}
 
 We will ask you to login with section.io credentials. You can either create them in the Magento portal or use credentials you have created from [section.io/sign-up/](https://www.section.io/sign-up/). When you create your login we will also send you an email to verify your email address. This is required for us to setup your application.
 
@@ -131,13 +131,13 @@ When you are logged in on your Magento Admin Portal with your section.io credent
 
 If you do not have Varnish Cache as your chosen Full Page Cache Caching Application, will will show an error message for you to update this. To update this field, go to Stores -> Configuration (under Settings) -> Advanced -> System. Then toggle the Caching Application under Full Page Cache to Varnish Cache.
 
-![/assets/images/docs/magento-cache-settings.png](/assets/images/docs/magento-cache-settings.png)
+{{% figure src="/docs/images/magento-cache-settings.png" %}}
 
 Now you have a section.io application created with Varnish 4 and Varnish Cache setup as your Full Page Cache solution in Magento.
 
 Next, on the section.io extension, you will see a Management section. The first button says “Update varnish configuration.” Clicking this button will pull in the recommended Magento VCL (Varnish Configuration Language) into your section.io application.
 
-![/assets/images/docs/magento-extention-management.png](/assets/images/docs/magento-extention-management.png)
+{{% figure src="/docs/images/magento-extention-management.png" %}}
 
 There is also a button to pull in free HTTPS certificate. This will ensure your website has the green padlock next to the url. This is a free certificate included with your section.io application that we will managed on your behalf, to include prourement, installation, and renewal. Please ensure your website has an endpoint exposed to the internet so we can validate the certificate before you go live.
 

@@ -26,7 +26,7 @@ Example:
 
 Where to find Gosquared ID:
 
-![/assets/images/docs/gosquared-id.png](/assets/images/docs/gosquared-id.png)
+{{% figure src="/docs/images/gosquared-id.png" %}}
 
 ## Step 2: Add VCL for Overload Prevention
 

@@ -33,7 +33,7 @@ Each User may have access to multiple Environments within any Account. e.g. Deve
 
 Each User’s copy of the Proxy Stack for the application is referred to as an Instance. Generally, there will be multiple Instances of the Development Environment where there are multiple users working on the Proxy Stack for that Application. Usually, there will be only one Production instance and in normal development workflows, a limited number of instances for Test or Staging Environments.
 
-![Account Example]
+{{% figure src="/docs/images/peterman-account.png" title="Account Example" %}}
 
 ## Proxy
 
@@ -42,5 +42,3 @@ A Proxy (or more technically correct “Reverse Proxy”) is the server handling
 ## Proxy Stack
 
 Where more than one Proxy is “chained” together we refer to this as a Proxy Stack. E.g Combining two Proxies to work together such as Varnish Cache and Mod Security or Varnish Cache and Nginx would provide the user with a Proxy stack.
-
-  [Account Example]: /assets/images/docs/peterman-account.png

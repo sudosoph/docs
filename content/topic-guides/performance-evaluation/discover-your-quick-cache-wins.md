@@ -22,8 +22,8 @@ Most of the time, images and CSS will be the easiest to get some cache wins and 
 
 First, is request performance which shows throughput and time to serve by status. You can access this for Bootcamp [here](https://aperture.section.io/account/1/application/1/grafana-web).
 
-![/assets/images/docs/content-type-cache-performance-metrics.png](/assets/images/docs/content-type-cache-performance-metrics.png)
+{{% figure src="/docs/images/content-type-cache-performance-metrics.png" %}}
 
 Second, is asset cache hit rates which shows the hit rate by content type. You can access this for Bootcamp [here](https://aperture.section.io/account/1/application/1/grafana-web).
 
-![/assets/images/docs/content-type-hit-rate.png](/assets/images/docs/content-type-hit-rate.png)
+{{% figure src="/docs/images/content-type-hit-rate.png" %}}

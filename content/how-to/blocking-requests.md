@@ -15,7 +15,7 @@ Requests for an application can be blocked by IP address or routing prefix.
 
 The simplest interface to view/edit these values is available via "Configuration" > "Restrictions".
 
-![/assets/images/docs/request-restrictions.png](/assets/images/docs/request-restrictions.png)
+{{% figure src="/docs/images/request-restrictions.png" %}}
 
 For each requesting IP you wish to block requests from, click the "Add Another" button on the page and enter the address or range that you wish to block to the "IP address/CIDR block" text box. Once complete, press the "Save" button.
 

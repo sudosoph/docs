@@ -19,7 +19,7 @@ These tests assumes you have [signed up](https://www.section.io/sign-up) with se
 
 Visit [webpagetest.org](http://webpagetest.org) and run a test against a sample page from your website.  Run say 5 tests with first and repeat views from a location which may be relevant to your users.
 
-![/assets/images/docs/webpagetestbasic.png](/assets/images/docs/webpagetestbasic.png)
+{{% figure src="/docs/images/webpagetestbasic.png" %}}
 
 ### B. TEST WTH SECTION.IO
 
@@ -35,11 +35,11 @@ Copy this as you will need it for the next step.
 
 At the home screen of webpagetest, select the "Script" tab and enter a DNS reroute so that webpage test thinks the origin server for your website is at section.io.
 
-![/assets/images/docs/webpagetestscript.png](/assets/images/docs/webpagetestscript.png)
+{{% figure src="/docs/images/webpagetestscript.png" %}}
 
 You may also need to set webpagetest so that it ignores any SSL errors assuming you have a cert installed on your website which you have not yet installed on section.io.
 
-![/assets/images/docs/webpagetestssl.png](/assets/images/docs/webpagetestssl.png)
+{{% figure src="/docs/images/webpagetestssl.png" %}}
 
 Run another 5 tests with first and repeat views.
 
@@ -47,7 +47,7 @@ Run another 5 tests with first and repeat views.
 
 You should be able to see the section.io markers in the responses for the items.  Select one of the webpagetest waterfalls and click on the response.  The section.io id provides you with confirmation that the test has traversed the section.io platform.
 
-![/assets/images/docs/webpagetestsection.png](/assets/images/docs/webpagetestsection.png)
+{{% figure src="/docs/images/webpagetestsection.png" %}}
 
 #### **4 Optimise Your Website Performance**
 
@@ -57,7 +57,7 @@ The cache hit headers will be apparent on the responses you see in webpagetest.
 
 You can also then correlate the responses to your logs and metrics in section.io's portal.  Simply take a copy of the section.io ID for a particular response anc copy and paste it into the query frame in Kibana in section.io's portal.  This will provide you with detail for that particular request and how it was dealt with at the section.io platform.
 
-![/assets/images/docs/webpagetestlogs.png](/assets/images/docs/webpagetestlogs.png)
+{{% figure src="/docs/images/webpagetestlogs.png" %}}
 
 
 #### **5 Rinse and Repeat**
@@ -105,7 +105,7 @@ Please note that if you have not uploaded an SSL certificate for the site on to 
 You can by-pass this warnining in Chrome by clicking Advanced then Proceed to site.
 The warning will disappear once you have either uploaded a custom SSL certificate or after you have pointed DNS at our platform and have provisioned our free SSL certificate.
 
-![/assets/images/docs/testing_section_header.png](/assets/images/docs/testing_section_header.png)
+{{% figure src="/docs/images/testing_section_header.png" %}}
 
 If this header isn't present, check that the HOST file is correctly edited and saved. You may also need to flush the DNS cache of the browser. For Chrome enter the following in the address bar: chrome://net-internals/#dns  then clear the host cache.
 

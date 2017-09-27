@@ -11,4 +11,4 @@ weight: 3
 
 **How do you see it?:** You can your websites breakdown of HTTP vs HTTPS by going into your logs. To build a nice pie chart, you want to filter by `_type:edge-access-log` which limits the count to only requests to the edge proxy and then split by `scheme` which indicates HTTP or HTTPS. You can see this for Bootcamp [here](https://aperture.section.io/account/1/application/1/kibana/#/visualize/create?_a=(filters:!(),linked:!f,query:(query_string:(analyze_wildcard:!t,query:'*')),vis:(aggs:!((id:'1',params:(),schema:metric,type:count),(id:'2',params:(filters:!((input:(query:(query_string:(analyze_wildcard:!t,query:'_type:edge-access-log'))))),row:!t),schema:split,type:filters),(id:'3',params:(field:scheme,order:desc,orderBy:'1',size:5),schema:segment,type:terms)),listeners:(),params:(addLegend:!t,addTooltip:!t,isDonut:!f,shareYAxis:!t),type:pie))&indexPattern=account1-app1-*&type=pie&_g=()). (note our Bootcamp application is showing a low HTTPS ratio)
 
-![/assets/images/docs/https-ratio-kibana.png](/assets/images/docs/https-ratio-kibana.png)
+{{% figure src="/docs/images/https-ratio-kibana.png" %}}

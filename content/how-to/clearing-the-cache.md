@@ -14,13 +14,13 @@ However if you need to remove things from the cache before they expire you can d
 
 Log into your Aperture dashboard and under **Content Delivery Grid** navigate to the **Clear Cache** page.
 
-<img src="/assets/images/docs/clear-cache.png" alt="clear cache" width="700px" />
+{{% figure src="/docs/images/clear-cache.png" title="clear cache" %}}
 
 ## Individual setup
 
 Once you are on the **Manage** page, based on your reverse proxy setup, you will have different button group options to choose from. For example, if my reverse proxy setup consists of Varnish and Pagespeed then I will see a Varnish and Pagespeed button in the subnavbar at the top of my screen. Each reverse proxy's cache is independent of one another so you will need to navigate to each reverse proxy's page in order to view the options and clear the cache for that corresponding reverse proxy.
 
-![/assets/images/docs/cache-clear-nav.png](/assets/images/docs/cache-clear-nav.png)
+{{% figure src="/docs/images/cache-clear-nav.png" %}}
 
 ## Clearing Varnish Cache
 

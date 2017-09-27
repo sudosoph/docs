@@ -10,7 +10,7 @@ aliases:
 
 If your origin server is down or running slowly, you or your users might be presented with the following screen:
 
-![Generic HTTP Error Screenshot](/assets/images/docs/generic-error-http.png)
+{{% figure src="/docs/images/generic-error-http.png" %}}
 
 This page is show where section.io responds with a HTTP 502 or HTTP 504 response code.
 
@@ -39,7 +39,7 @@ If you would like to customise what HTML we return in case of specific HTTP erro
 
 The repository is initialized with a `custom_errors` folder containing a `500.html.sample` file.
 
-![/assets/images/docs/custom-errors.png](/assets/images/docs/custom-errors.png)
+{{% figure src="/docs/images/custom-errors.png" %}}
 
 To customise the HTML returned in case of a 500 error the file should be renamed to `500.html` and the HTML inside customized to what they want. Other error codes can be implemented in the same way, eg. `503.html`, `404.html`, etc.
 

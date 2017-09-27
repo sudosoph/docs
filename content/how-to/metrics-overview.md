@@ -13,11 +13,11 @@ Logs and Metrics can be used to analyze your website and identify where you can 
 
 In the Dashboard section of aperture, the first view you see is the Overview page which can be found under the **Content Delivery Grid** section on the left nav. The overview page starts by showing your stack, ie. how traffic flows through each of the proxies setup for your application. All stack’s begin with the edge proxy and ends with the origin proxy. The middle proxies selection and order can be configured using [advanced configuration](/docs/advanced-configuration/). The [log](#logs) view will allow you to see what traffic is passing through each proxy in more detail.
 
-![/assets/images/docs/proxy-stack.png](/assets/images/docs/proxy-stack.png)
+{{% figure src="/docs/images/proxy-stack.png" %}}
 
 We also show you an overview graph that can be toggled between three metrics: Number of HTTP responses served per minute, Breakdown of error requests for the last hour, and Downstream response bandwidth served per minute. This data is pulled from Graphite in the [Metrics](#metrics) view, so you can go here to dig deeper into the data.
 
-![/assets/images/docs/http-response-count.png](/assets/images/docs/http-response-count.png)
+{{% figure src="/docs/images/http-response-count.png" %}}
 
 Number of HTTP responses served per minute shows the total number of HTTP responses served per minute for your site, which represents the overall volume of traffic hitting your website. This includes all HTML content and all static resources like images & CSS files. You can use this graph to see traffic spikes to your website.
 
@@ -31,7 +31,7 @@ In addition to the overview graph, we also show data depending on whether your a
 
 For Varnish we show Cache hit, pass and misses for the last hour and Upstream request bandwidth served per minute.
 
-![/assets/images/docs/varnish-cache-hit-miss-pass.png](/assets/images/docs/varnish-cache-hit-miss-pass.png)
+{{% figure src="/docs/images/varnish-cache-hit-miss-pass.png" %}}
 
 Cache hit, pass and misses for the last hour shows the breakdown of how Varnish Cache handled your requests.  The higher the hit percentage, the faster your website will perform and the less work required by your servers. You can dig in deeper on the [Varnish Statistics](#varnish-statistics) view.
 
@@ -42,7 +42,7 @@ Upstream request bandwidth served per minute shows the volume of data sent by th
 
 For Modsecurity we show Intercepts, audits and passes % for the last hour and Upstream request bandwidth served per minute.
 
-![/assets/images/docs/modsecurity-audits-intercepts.png](/assets/images/docs/modsecurity-audits-intercepts.png)
+{{% figure src="/docs/images/modsecurity-audits-intercepts.png" %}}
 
 Intercepts, audits and passes % for the last hour shows you the breakdown of how Modsecurity handled your requests. Intercepted means that modsecurity blocked the request (a function that must be activated in your configuration). Audits means that modsecurity looked at the request based on the rules you have turned on. Passes means that modsecurity did not look at the request. You can dig in deeper on the [Modsecurity Statistics](#modsecurity-statistics) view.
 
@@ -58,13 +58,13 @@ When you open the Monitoring view, you first see the Grafana view. You can toggl
 
 The Grafana view shows you aggregate level visualization using queries from Graphite. We’ve created 4 dashboards that can be accessed in the top right of the Grafana frame under the section "Content Delivery Grid."
 
-![/assets/images/docs/grafana-navigate-metrics.png](/assets/images/docs/grafana-navigate-metrics.png)
+{{% figure src="/docs/images/grafana-navigate-metrics.png" %}}
 
 You can also toggle the display and time frame for each of the graphs just above the "Content Delivery Grid" button.
 
 You can open up Grafana in a new window for better viewing by clicking “Open in new window” button at the top of the frame.
 
-![/assets/images/docs/grafana-new-window.png](/assets/images/docs/grafana-new-window.png)
+{{% figure src="/docs/images/grafana-new-window.png" %}}
 
 #### Traffic Summary
 
@@ -111,7 +111,7 @@ It may be helpful for you to create a custom dashboard that is specific to your 
 
 To create a dashboard from scratch, you can click on the **Grafana** logo in the left hand corner `->` Open the **Dashboards** dropdown `->` and clicking on **New**. From there you can select the type of panel you want to display (Graph, singlestat, table, pie chart, etc).
 
-![/assets/images/docs/add-dashboard-scratch.png](/assets/images/docs/add-dashboard-scratch.png)
+{{% figure src="/docs/images/add-dashboard-scratch.png" %}}
 
 ### Duplicating an existing dashboard
 
@@ -119,7 +119,7 @@ To create a dashboard from an existing dashboard you will have to click on the *
 
 In order for these changes to be permanent you **MUST** remove the `system` tag from this dashboard. To do this you will need to click on the same **cog** wheel, and click on **Make editable**. This will allow you to make changes in the dashboard. Then you will need to click on the same **cog** wheel `->` then **Settings**. In the section called **tags**, you will want to remove the **system** tag (image below).
 
-![/assets/images/docs/add-dashboard-duplicate.png](/assets/images/docs/add-dashboard-duplicate.png)
+{{% figure src="/docs/images/add-dashboard-duplicate.png" %}}
 
 ## Graphite
 
@@ -127,15 +127,15 @@ By toggling the view at the top of the screen from "Grafana Dashboards" to "Grap
 
 You will see some folder on the left with different environments. The first environment will usually be your production environment, the second your development environment, and then any other environments. To see production data for Varnish, you would go to the first environment > section hosted > varnish.
 
-![/assets/images/docs/graphite-metrics-folders.png](/assets/images/docs/graphite-metrics-folders.png)
+{{% figure src="/docs/images/graphite-metrics-folders.png" %}}
 
 You can use this data to create graphs. For example: Varnish > content_type > text-html > status > 200 > time_taken > mean will show me the mean time it took to serve a successful html doc.
 
-![/assets/images/docs/graphite-metrics-create-graph.png](/assets/images/docs/graphite-metrics-create-graph.png)
+{{% figure src="/docs/images/graphite-metrics-create-graph.png" %}}
 
 By clicking “Graph Data” under the graph, I can edit the data in the graph. For instance, “edit” allows me to manually update the query and if I replace “text-html” with “\*” it will show me all content types, not just html docs. Keep in mind when you edit, Graphite will try to auto fill your response. You can click out of the drop down to have it keep your entered text (required when using \*), or you can select from the drop down.
 
-![/assets/images/docs/graphite-metrics-edit-graph.png](/assets/images/docs/graphite-metrics-edit-graph.png)
+{{% figure src="/docs/images/graphite-metrics-edit-graph.png" %}}
 
 You can also “apply function” to the data which can sum different queries, change the time interval for the data points, add a second axis, change legends, and much more.
 
