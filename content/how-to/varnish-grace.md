@@ -9,8 +9,6 @@ aliases:
 
 ---
 
-# Varnish Grace Config
-
 Configuring Varnish to serve stale content is very useful for when your origin crashes. This behavior is achievable when running Varnish as a reverse proxy within the section.io's Content Delivery Grid.
 
 #### Prerequisites

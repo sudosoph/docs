@@ -7,8 +7,6 @@ aliases:
 
 ---
 
-# HTTP Logs
-
 section.io is built with operational visibility in mind. One aspect of this is providing you with access to detailed logs of your site's behavior on the section.io platform. You can find your logs by clicking the **HTTP Logs** link below the **Real Time** section in Aperture's left-hand side navigation menu.
 
 All web access logs for all traffic flowing through the section.io proxies are stored in Elasticsearch and retained for 7 days. We provide you with direct access to Elastic's Kibana tool for querying your log data.

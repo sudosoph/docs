@@ -1,13 +1,11 @@
 ---
-title: Origin Address Migration
+title: Change your Origin Address
 description: Guide for changing the origin address of a section.io application.
 keywords: origin address, origin server, origin, cache, cached data, content delivery network, CDN
 aliases:
   - /howto-change-origin/
 
 ---
-How to change your origin address
-=================================
 
 section.io is a proxy service, so at the end of the day, any requests for your site that have not been offloaded by the cache or redirected or blocked by the firewall will be passed on to be served by your webserver. The address of this server (or the address of the load balancer in front of your servers) is the origin address.
 

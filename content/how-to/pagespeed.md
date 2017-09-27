@@ -1,12 +1,11 @@
 ---
-title: PageSpeed
+title: Using PageSpeed with section.io
 description: Using Google's PageSpeed inside section.io.
 keywords: content delivery network, CDN, pagespeed, reverse proxies, proxy, proxy template
 aliases:
   - /pagespeed/
 
 ---
-# Using PageSpeed with section.io
 
 Because section.io is the only CDN that offers you the choice of reverse proxy, you can choose to bring the PageSpeed Module created by Google into your reverse proxy chain. PageSpeed was created by Google to improve your website's performance by rewriting web pages and optimizing static assets. You can accomplish many things with PageSpeed like: optimizing images, minifying JavaScript and CSS files, defer JavaScript libraries, and much more. Below are the following steps you will need to take to get PageSpeed up and running within your [section.io](https://www.section.io) reverse proxy chain.
 

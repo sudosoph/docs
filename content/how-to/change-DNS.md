@@ -1,5 +1,5 @@
 ---
-title: Go live -> Change DNS
+title: Configure DNS
 description: Guide for changing your DNS to go live with section.io or using section.io hosted DNS.
 keywords: DNS, DNS records, DNS hosting, bare domain, zone apex, naked domain and root domain
 aliases:
@@ -8,8 +8,6 @@ aliases:
   - /change-dns/
 
 ---
-Change your DNS (Domain Name System)
-========================
 
 As soon as we've created your application, you'll be able to change your DNS. This is required for your production traffic to flow through our application.
 

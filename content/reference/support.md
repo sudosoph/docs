@@ -6,8 +6,6 @@ aliases:
   - /support/
 
 ---
-Support
-=======
 
 [section.io] provides free online support and paid support options.
 

@@ -6,8 +6,6 @@ aliases:
   - /varnish-cache-hit-rate/
 
 ---
-Improve Varnish Cache Hit Rate
-==============================
 
 The Varnish Cache project provides some high level instructions on [improving cache hit rate](https://varnish-cache.org/docs/4.0/users-guide/increasing-your-hitrate.html).
 

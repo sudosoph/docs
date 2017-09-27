@@ -7,8 +7,6 @@ aliases:
 
 ---
 
-# User Security
-
 *A guide for securing your user access.*
 
 ## Two-factor authentication

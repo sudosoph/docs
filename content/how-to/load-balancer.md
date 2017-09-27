@@ -1,13 +1,11 @@
 ---
-title: Load Balancer
+title: Load Balancing
 description: Use VCL to configure a layer 7 load balancer.
 keywords: content delivery network, CDN, load balancer, VCL, HTTP
 aliases:
   - /load-balancer/
 
 ---
-Load Balancer
-=============
 
 Load balancing distributes traffic across origin servers so that your website can handle more visitors at once and visitors are always directed to the best server for their requests. If one of your servers is not responding or a network is experiencing an outage, you can automatically redirect traffic to the closest functioning server so that your site stays up for all visitors.
 

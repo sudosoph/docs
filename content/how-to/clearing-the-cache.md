@@ -5,8 +5,6 @@ keywords: cache, cached data, website performance, content delivery network, CDN
 aliases:
   - /clearing-the-cache/
 ---
-Clearing the cache
-=================
 
 URLs that get cached will expire based on the Time To Live (TTL) set either by the Cache-Control headers sent from the origin or by the logic in the VCL code.
 

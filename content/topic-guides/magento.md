@@ -6,8 +6,6 @@ aliases:
   - /magento/
 
 ---
-Magento Setup
-=============
 
 Magento is a common eCommerce platform that is well known for suffering performance related issues. section.io delivers huge speed improvements to Magento through caching HTML pages (and static assets) inside Varnish.
 

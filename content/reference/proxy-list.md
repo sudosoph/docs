@@ -6,8 +6,6 @@ aliases:
   - /proxy-list/
 
 ---
-Available Proxy Templates
-=========================
 
 section.io offers a number of different proxies that can be used in your reverse proxy chain. A proxy template is a combination of the proxy software (eg. Varnish) and a set of default files to configure the proxy (eg. the `default.vcl` file).
 

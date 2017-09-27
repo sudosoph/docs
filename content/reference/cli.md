@@ -6,8 +6,6 @@ aliases:
   - /cli/
 
 ---
-section.io Command Line Interface (CLI)
-=================================
 
 The CLI is the primary mechanism for working with a section.io Proxy Stack on your local machine. It will help you provision a local virtual machine configured with the same components as used by section.io for your application in production.
 

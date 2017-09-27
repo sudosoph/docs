@@ -6,9 +6,6 @@ aliases:
   - /commercial-terms/
 
 ---
-Commercial Terms
-=======================================
-
 
 Per Gb Rates
 ------------

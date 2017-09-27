@@ -8,8 +8,7 @@ aliases:
   - /vcl-samples/
   - /advanced-configuration/
 ---
-Repository
-========================
+
 When you are ready to start doing more advanced configurations, you can start editing the configuration files directly. All of the files in your repository can be accessed by going to Repository under the Configuration menu in the left nav of Aperture.
 
 In the repository you can see all the files in your repository, commits to those files, stats, and a braching diagram. All of your advanced configuration for [varnish](#varnish-configuration) or [modsecurity](#modsecurity-configuration) will be done through editing the files here.

@@ -6,8 +6,6 @@ aliases:
   - /monitoring-and-alerting/
 
 ---
-Monitoring and Alerting
-=======================
 
 section.io is designed to easily integrate with your existing synthetic monitoring solution. We have tested with [New Relic], [Pingdom], [Site 24x7] and other popular options.
 

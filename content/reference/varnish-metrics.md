@@ -6,8 +6,6 @@ aliases:
   - /varnish-metrics/
 
 ---
-Varnish Metrics
-===============
 
 Out of the box, section.io brings up Varnish Cache metrics. The following is a description of these metrics.
 

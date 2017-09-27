@@ -6,8 +6,6 @@ aliases:
   - /blocking-requests/
 
 ---
-Blocking Requests
-=================
 
 If visitors, crawlers, or spammers are degrading the performance of your site, it may be appropriate to block these from accessing your website content. Rather than letting these requests be processed by section.io and your origin server, you can block them as they enter section.io.
 

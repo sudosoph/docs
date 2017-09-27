@@ -6,8 +6,6 @@ aliases:
   - /payment/
 
 ---
-Payment Methods
-=================================
 
 section.io supports a number of payment methods.  
 

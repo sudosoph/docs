@@ -6,7 +6,6 @@ aliases:
   - /edge-proxy/
 
 ---
-# What is section.io's Edge Proxy?
 
 Every section.io application proxy stack implicitly begins with the Edge proxy. The Edge proxy is the endpoint to which the User-Agent (eg web browser) connects and it has a few responsibilities:
 

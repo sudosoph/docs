@@ -6,7 +6,6 @@ aliases:
   - /threat-x/
 
 ---
-# Using Threat-X with section.io
 
 Because section.io is the only CDN that offers your choice of reverse proxy, you can choose to bring the Web Application Firewall created by the security experts at Threat X into your web site's delivery infrastructure.
 

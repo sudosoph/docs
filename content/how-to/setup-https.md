@@ -8,8 +8,6 @@ aliases:
 
 ---
 
-Setup HTTPS
-=====
 When your application is first created it will be served over HTTP and via HTTPS using a default network certificate. Once we detect DNS has been changed on to our platform we will provide a signed and valid certificate through [Let's Encrypt](https://letsencrypt.org/).
 
 If you have added [multiple domains](/docs/change-dns/#multiple-domains) to the application, a Let's Encrypt certificate will be provided for each domain. If you have provided your own custom certificate, you need to upload a certificate for each domain (even if they are listed as alternate names on the same certificate) using our [API](#certificate-api-upload). You can choose to upload a custom certificate for only some of the domains in the application if you choose, the others will use the Let's Encrypt certificate issues by section.io.

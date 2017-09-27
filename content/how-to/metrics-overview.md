@@ -7,9 +7,6 @@ aliases:
 
 ---
 
-Metrics (Monitoring) Overview
-========================
-
 Logs and Metrics can be used to analyze your website and identify where you can focus resources to improve your site.
 
 ## Overview Page

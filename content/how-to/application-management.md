@@ -6,8 +6,6 @@ aliases:
   - /application-management/
 
 ---
-Application Management
-==================
 
 Here you will find instructions on how to [split your application](#splitting-applications) into multiple content delivery network configurations, as well as how to [delete an application](#deleting-applications) if you wish to start afresh.
 

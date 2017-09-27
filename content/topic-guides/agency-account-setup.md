@@ -7,9 +7,6 @@ aliases:
 
 ---
 
-Recommended Setup for Agency Users
-========================
-
 If you want to use section.io for your clients, section.io can easily separate your clients into their own accounts to handle user access and billing concerns.
 
 #### **Structure** - Here are the structures within section.io and our recommended use for agencies:

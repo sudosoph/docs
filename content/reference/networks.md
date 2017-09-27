@@ -6,8 +6,6 @@ aliases:
   - /networks/
 
 ---
-Networks
-========
 
 section.io offers a network of highly availabile, redundant, multi-datacenter and globally distributed proxy containers to form a content delivery network like edge.
 

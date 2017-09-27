@@ -1,16 +1,13 @@
 ---
 title: Magento Metrics
-description: Guide for section.io Magento Metrics extension that provisdes visibility into the impact caching has on your website.
+description: Guide for section.io Magento Metrics extension that provides visibility into the impact caching has on your website.
 keywords: magento, varnish, varnish cache, metrics, magento extension, cache, page speed, webpage speed
 aliases:
   - /magento-metrics-extension/
 
 ---
-Magento Varnish Metrics Extension
-========================
 
-
-section.io has an extension for Magento customers that allows business managers to access section.io site metrics. These metrics provide visibility into the impact caching has on your website, without having to login to the seciton.io application. You can get the extension for your Magento website by going to the [Magento Marketplace](https://marketplace.magento.com/sectionio-metrics.html).
+section.io has an extension for Magento customers that allows business managers to access section.io site metrics. These metrics provide visibility into the impact caching has on your website, without having to login to the section.io application. You can get the extension for your Magento website by going to the [Magento Marketplace](https://marketplace.magento.com/sectionio-metrics.html).
 
 There are three metrics we show in the extension: Overall Cache Hit, HTML Cache Hit, and HTTP Response Codes. The extension in Magento is meant to give you an overview on the current status, but by having a developer look into your [Varnish configuration settings](/docs/basic-configuration/#varnish) or your logs in the in the section.io application, you can improve all of these metrics.
 

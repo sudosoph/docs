@@ -6,8 +6,6 @@ aliases:
   - /entities-and-nomenclature/
 
 ---
-Entities and Nomenclature
-=========================
 
 Overview of the key entities and account structure referred to throughout section.io
 

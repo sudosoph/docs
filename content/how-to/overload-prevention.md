@@ -7,9 +7,6 @@ aliases:
 
 ---
 
-Traffic Overload Prevention
-==================
-
 In order to use the Traffic Overload Prevention feature, you must have a GoSquared Account and Varnish 4 on your application. To setup the feature you will 1) add your gosquared credentials, 2) add VCL for overload prevention, and then 3) call the new VCL in your default VCL file. Optionally, you can 4) edit the default Overload page that will be shown to your customers. The following page will walk you through each step.
 
 ## Step 1: Add GoSquared Credentials

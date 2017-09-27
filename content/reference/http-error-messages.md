@@ -7,8 +7,6 @@ aliases:
   - /http-error-messages/
 
 ---
-HTTP Error Messages
-===================
 
 If your origin server is down or running slowly, you or your users might be presented with the following screen:
 

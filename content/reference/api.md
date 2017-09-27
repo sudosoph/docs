@@ -5,8 +5,6 @@ keywords: API, Swagger, cURL, content delivery network, CDN
 aliases:
   - /api/
 ---
-API (Application Programming Interface)
-=======================================
 
 Overview of the key entities and account structure referred to throughout section.io
 

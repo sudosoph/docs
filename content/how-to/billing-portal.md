@@ -6,8 +6,6 @@ aliases:
   - /billing-portal/
 
 ---
-Navigating the Billing Portal
-=================================
 
 In each section.io Account you will have access to your billing portal after you have set up your aaccount.  The Billing Portal is where you can update your card, view your invoices or cancel your account, all from one convenient interface.
 

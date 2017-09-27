@@ -6,8 +6,6 @@ aliases:
   - /basic-configuration/
 
 ---
-Basic Configuration
-========================
 
 To make it easy to get started configuring your reverse proxies, section.io offers a few basic confguration options for [Varnish](#varnish) and [Modsecurity](#modsecurity).
 

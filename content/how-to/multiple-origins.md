@@ -6,7 +6,6 @@ aliases:
   - /multiple-origins/
 
 ---
-# How to use Multiple Origins to Deliver Content
 
 When you have a single origin or upstream server, your section.config.json file will contain something like this:
 
