@@ -2,7 +2,7 @@ baseURL = "docs/"
 languageCode = "en-us"
 DefaultContentLanguage = "en"
 
-title = "section.io Docs"
+title = "section.io Documentation"
 theme = "docdock"
 # themesdir = "../.."
 

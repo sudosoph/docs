@@ -1,10 +1,13 @@
 +++
 title = "section.io Docs"
 +++
-# DOCS
 
-Welcome to the section.io documentation! This documentation is more of a reference guide for all available features and options of section.io.
+# section.io Documentation
 
-If you're just getting started with section.io, the Quickstart guides are the place to begin.
+Everything you need to know about section.io.
+
+## How the documentation is organized
+
+section.io has a lot of documentation. A high-level overview of how it’s organized will help you know where to look for certain things:
 
 {{% children description="true" style="h3" %}}

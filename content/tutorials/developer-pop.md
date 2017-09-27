@@ -2,7 +2,7 @@
 title: Developer PoP
 description: How to get your local development environment setup to test section.io CDN on your local machine.
 keywords: content delivery network, CDN, virtual machine, vagrant, virtualbox, git, cli, local development, local machine, staging environment, developer pop
-
+weight: 2
 ---
 
 section.io’s local development environment is designed to develop and test changes to your content delivery configuration without having to work in production or spin up another copy of the production environment to test on. This is done by replicating the production delivery environment in a virtual machine (VM) running on your computer. You now have the ability to test all the levels of your architecture and see what works best before actually putting it in front of your website and users.

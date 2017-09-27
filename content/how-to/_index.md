@@ -1,7 +1,7 @@
 +++
-title = "Guides"
+title = "How-to Guides"
 description = ""
-weight = 2
+weight = 3
 +++
 ## Learn how to accomplish specific tasks in the proxy of your choice.
 

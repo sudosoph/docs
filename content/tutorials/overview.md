@@ -1,23 +1,27 @@
 ---
-title: Training - Platform Overview
+title: section.io at a Glance
 description: Training area, section.io platform overview.
 keywords: section.io, training, platform overview
+weight: 1
 ---
-Training - Platform Overview
-=================
 
-Welcome to the platform overview training session, the objective of this module is to have you learn about:
+Here’s an informal overview of how to add Varnish Cache to your website using section.io.
 
-* section.io Overview (Platform structure, Locations, Account architecture, Single configuration management)
-* DNS
-* HTTPS
-* Go live steps
+The goal of this document is to give you enough technical specifics to understand how section.io works, but this isn’t intended to be a tutorial or reference – but we’ve got both! When you’re ready to engage your website, you can [start with the tutorial]({{< ref "developer-pop.md" >}}) or [dive right into more detailed documentation]({{< relref "topic-guides/_index.md" >}}).
 
-There are practical examples and processes for you to follow in each of the above areas
+## Application Edge Overview
 
-## section.io Overview
+An Application Edge is a system that lets you control how your application delivers content to the destination.
 
-section.io is a global platform that runs the configuration you have setup, This configuration is deployed at all of our delivery nodes globally. Users connect to the delivery node closest to them wherever they are in the world.
+{{<mermaid align="left">}}
+graph LR;
+    A[Web Browser] -->|"HTTP(S)"| B(section.io)
+    B -->|"HTTP(S)"| C[Application Server]
+    C --> D[Database]
+    style B fill:#f9f
+{{< /mermaid >}}
+
+When a web browser connects to your site, they actually connect to section.io. Section.io will talk to your servers to get content, and deliver it to your users.
 
 Each configuration is built of a number of modules (Which are actually Docker containers running as reverse proxies under the hood), you get to pick which modules you want to run in your configuration.
 
