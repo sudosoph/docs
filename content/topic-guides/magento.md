@@ -11,13 +11,18 @@ Magento is a common eCommerce platform that is well known for suffering performa
 
 ## Different Approaches for Different Magento Versions
 
-[Prior to Magento 2.0](#magento-19-and-earlier), Varnish support is provided by the [free Turpentine Magento extension].
+[Prior to Magento 2.0](#magento-19-and-earlier), Varnish support is provided by HTML Streaming, Anonymous user caching or the [free Turpentine Magento extension]
 
 [As of Magento 2.0](#magento-20-and-later), support for Varnish to cache page content is integrated into Magento. section.io offers ["Instant Global Cache"](#magento-2-extension), an extension that will let you get setup with Varnish and distribute it globally on section.io’s CDN directly from the Magento Admin portal.
 
 ### Magento 1.9 and Earlier
 
-#### Process overview
+#### HTML optimisation options:
+1.  HTML Streaming - https://www.section.io/html-streaming/
+2.  Anonymous User Caching (Recommended) - https://community.section.io/t/a-novel-way-to-cache-html/79
+3.  Turpentine - Detail below
+
+#### Turpentine Process overview
 
 Magento 1.9 and earlier does not support Varnish out of the box. Support is instead provided by the [free Turpentine Magento extension].
 
