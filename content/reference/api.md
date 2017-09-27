@@ -2,6 +2,8 @@
 title: API
 description: Guide for section.io API including definition, authentication, and version.
 keywords: API, Swagger, cURL, content delivery network, CDN
+aliases:
+  - /api/
 ---
 API (Application Programming Interface)
 =======================================

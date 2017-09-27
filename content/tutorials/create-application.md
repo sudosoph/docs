@@ -2,8 +2,10 @@
 title: Set up an application
 description: A step-by-step guide on how to get started with section.io's CDG.
 keywords: guide, getting started, website performance, page speed, webpage speed, website security, content delivery network, CDN
-redirect_from:
-  - /docs/quickstart/
+aliases:
+  - /quickstart/
+  - /create-application/
+
 ---
 
 With section.io you can choose your preferred reverse proxy combination and we'll take care of setting it up for you. You will have access to real time data, and have complete control of the integration of section.io into your application's development process. Your account will instantly be synchronized with your local, staging, and production environments so you can check your application's configurations before deploying to production. You can also test how different configurations impact your site to maximize the improvements.

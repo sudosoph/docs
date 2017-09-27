@@ -2,6 +2,9 @@
 title: Magento
 description: How to setup a Magento website on section.io CDN with Vanish Cache.
 keywords: magento, varnish, varnish cache, install varnish, turpentine, magento 1, magento 2, magento extension, cache, page speed, webpage speed
+aliases:
+  - /magento/
+
 ---
 Magento Setup
 =============

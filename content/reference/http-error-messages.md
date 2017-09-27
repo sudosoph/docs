@@ -2,8 +2,10 @@
 title: HTTP Error Messages
 description: How to review http response codes. How to upload a custom error page for your website with section.io.
 keywords: website performance, error message, http response code, content delivery network, CDN
-redirect_from:
+aliases:
   - /custom-errors/
+  - /http-error-messages/
+
 ---
 HTTP Error Messages
 ===================

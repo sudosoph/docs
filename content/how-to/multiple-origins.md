@@ -2,6 +2,9 @@
 title: Multiple Origins
 description: Set up section.io so that it can deliver content from multiple origin servers
 keywords: multiple origins, multiple upstreams, origin address, origin server, origin, cache, cached data, content delivery network, CDN
+aliases:
+  - /multiple-origins/
+
 ---
 # How to use Multiple Origins to Deliver Content
 

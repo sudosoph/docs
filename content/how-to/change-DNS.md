@@ -2,9 +2,11 @@
 title: Go live -> Change DNS
 description: Guide for changing your DNS to go live with section.io or using section.io hosted DNS.
 keywords: DNS, DNS records, DNS hosting, bare domain, zone apex, naked domain and root domain
-redirect_from:
+aliases:
   - /dns/
   - /hosted-dns/
+  - /change-dns/
+
 ---
 Change your DNS (Domain Name System)
 ========================

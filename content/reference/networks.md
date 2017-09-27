@@ -2,6 +2,9 @@
 title: Networks and POPs
 description: How to construct your own content delivery network using section.io templates.
 keywords: CDN, content delivery network, AWS, AWS Cloudformation, AWS Cloudformation templates, AWS Route 53, Route 53
+aliases:
+  - /networks/
+
 ---
 Networks
 ========

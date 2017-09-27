@@ -2,6 +2,9 @@
 title: Commercial Terms
 description: Commercial terms for use of section.io.
 keywords: content delivery network, CDN, Commercial Terms
+aliases:
+  - /commercial-terms/
+
 ---
 Commercial Terms
 =======================================

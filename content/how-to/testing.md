@@ -2,6 +2,9 @@
 title: Testing
 description: How to evaluate your website performance using webpagetest.org.
 keywords: webpagetest, performance testing, metrics, website performance, page speed, webpage speed, website security
+aliases:
+  - /testing/
+
 ---
 
 How to Test Your Website on section.io

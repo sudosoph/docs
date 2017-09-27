@@ -2,6 +2,9 @@
 title: Real User Monitoring
 description: Section.io's real user monitoring
 keywords: content delivery network, CDN, rum, performance, baseline, testing
+aliases:
+  - /rum/
+
 ---
 # Real User Monitoring - RUM
 

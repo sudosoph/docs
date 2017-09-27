@@ -2,6 +2,9 @@
 title: Application Environments
 description: Guide for deleting your application or splitting your application into multiple content delivery network configurations.
 keywords: cache, cached data, multi domains, content delivery network, CDN, CDN configurations
+aliases:
+  - /application-management/
+
 ---
 Application Management
 ==================

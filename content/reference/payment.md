@@ -2,6 +2,9 @@
 title: Payment Methods
 description: Information on how to setup payment for section.io.
 keywords: CDN, billing, account management, payment, credit card
+aliases:
+  - /payment/
+
 ---
 Payment Methods
 =================================

@@ -1,7 +1,10 @@
 ---
 title: ThreatX WAF
 description: Using the Threat X Web Application Firewall (WAF) inside section.io.
-keywords: WAF, web application firewall, security, Layer 7 attacks,
+keywords: WAF, web application firewall, security, Layer 7 attacks
+aliases:
+  - /threat-x/
+
 ---
 # Using Threat-X with section.io
 

@@ -2,6 +2,9 @@
 title: Magento Metrics
 description: Guide for section.io Magento Metrics extension that provisdes visibility into the impact caching has on your website.
 keywords: magento, varnish, varnish cache, metrics, magento extension, cache, page speed, webpage speed
+aliases:
+  - /magento-metrics-extension/
+
 ---
 Magento Varnish Metrics Extension
 ========================

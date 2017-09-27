@@ -2,6 +2,8 @@
 title: Add a user to your account
 description: Guide for adding additional users to your account.
 keywords: users, portal, access, account, authentication
+aliases:
+  - /add-users/
 ---
 
 This is a guide for users who want to share access to their account(s). When inviting new users to your account, they will receive an email inviting them to join section.io and have immediate access to your account. Currently section.io does not allow you to change the roles of these users, but if you want the user to have a different role (e.g. only be able to clear cache) please [submit a support ticket](https://support.section.io) and we will get the user's role changed as soon as possible.

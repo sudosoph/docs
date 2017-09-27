@@ -2,6 +2,8 @@
 title: Clearing Cache
 description: How to clear the cache for your website, specific pages, or specific objects with Varnish ban expression.
 keywords: cache, cached data, website performance, content delivery network, CDN, clear cache, purge cache, empty cache, varnish ban expression
+aliases:
+  - /clearing-the-cache/
 ---
 Clearing the cache
 =================

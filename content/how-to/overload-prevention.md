@@ -2,6 +2,9 @@
 title: Overload Prevention
 description: How to set a limit on the number of visitors your site can safely handle.
 keywords: traffic management, varnish, VCL, traffic spikes
+aliases:
+  - /overload-prevention/
+
 ---
 
 Traffic Overload Prevention

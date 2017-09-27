@@ -2,6 +2,9 @@
 title: HTTP Logs
 description: Information on section.io logs including what information gets passed through logs.
 keywords: logs, kibana, elasticsearch, website performance, page speed, webpage speed, website security, content delivery network, CDN
+aliases:
+  - /logs/
+
 ---
 
 # HTTP Logs

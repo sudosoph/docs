@@ -2,6 +2,9 @@
 title: Monitoring
 description: Step-by-step guide on how to use section.io metrics to analyze and improve your website performance and security.
 keywords: metrics, grafana, graphite, kibana, varnish, modsecurity, website performance, website security, content delivery network, CDN
+aliases:
+  - /metrics-overview/
+
 ---
 
 Metrics (Monitoring) Overview

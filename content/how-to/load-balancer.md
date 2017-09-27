@@ -2,6 +2,9 @@
 title: Load Balancer
 description: Use VCL to configure a layer 7 load balancer.
 keywords: content delivery network, CDN, load balancer, VCL, HTTP
+aliases:
+  - /load-balancer/
+
 ---
 Load Balancer
 =============

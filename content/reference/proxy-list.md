@@ -2,6 +2,9 @@
 title: Available Proxies
 description: Information on which reverse proxies are available to use on section.io's content delivery network.
 keywords: content delivery network, CDN, varnish, turpentine, modsecurity, reverse proxies, proxy, proxy template
+aliases:
+  - /proxy-list/
+
 ---
 Available Proxy Templates
 =========================

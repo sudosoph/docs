@@ -2,6 +2,9 @@
 title: Glossary
 description: Glossary of terms used by section.io.
 keywords: account management, proxy, proxy configuration, reverse proxies, content delivery network, CDN
+aliases:
+  - /entities-and-nomenclature/
+
 ---
 Entities and Nomenclature
 =========================

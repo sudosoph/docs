@@ -2,9 +2,11 @@
 title: Varnish Grace Mode
 description: How to configure Varnish to serve stale content
 keywords: CDN, content delivery network, performance, stale content
-redirect_from:
-  - /docs/origin-shield/
-  - /docs/stale-content/
+aliases:
+  - /origin-shield/
+  - /stale-content/
+  - /varnish-grace/
+
 ---
 
 # Varnish Grace Config

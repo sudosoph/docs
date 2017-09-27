@@ -2,6 +2,9 @@
 title: Edge Proxy
 description: Explanation for section.io's edge proxy, which handles a number of tasks before being passed to your proxy configuration.
 keywords: edge proxy, tls, tls handshake, http2, http/2, proxy configuration, reverse proxies
+aliases:
+  - /edge-proxy/
+
 ---
 # What is section.io's Edge Proxy?
 

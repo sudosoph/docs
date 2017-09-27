@@ -3,6 +3,9 @@ title: section.io at a Glance
 description: Training area, section.io platform overview.
 keywords: section.io, training, platform overview
 weight: 1
+aliases:
+  - /training-platform-overview/
+
 ---
 
 Here’s an informal overview of how to use section.io's Application Edge to deploy a fast Content Delivery Network to your website.

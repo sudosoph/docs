@@ -2,10 +2,11 @@
 title: Advanced Config
 description: How to edit your varnish and modsecurity configuration files in your section.io repository.
 keywords: github, repository, varnish, VCL, modsecurity, CDN configuration
-redirect_from:
+aliases:
   - /its-just-modsecurity/
   - /its-just-varnish/
   - /vcl-samples/
+  - /advanced-configuration/
 ---
 Repository
 ========================

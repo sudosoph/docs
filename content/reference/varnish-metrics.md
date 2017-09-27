@@ -2,6 +2,9 @@
 title: Advanced Varnish Metrics
 description: Guide for understanding Varnish Counters and other Varnish Cache metrics.
 keywords: varnish, varnish cache, cache, cached data, varnish counters, vcl, varnish configuration language, metrics
+aliases:
+  - /varnish-metrics/
+
 ---
 Varnish Metrics
 ===============

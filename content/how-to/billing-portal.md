@@ -2,6 +2,9 @@
 title: Billing Portal
 description: Information on how to setup billing for section.io.
 keywords: CDN, billing, account management
+aliases:
+  - /billing-portal/
+
 ---
 Navigating the Billing Portal
 =================================

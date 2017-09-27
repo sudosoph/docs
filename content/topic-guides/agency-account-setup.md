@@ -2,6 +2,9 @@
 title: Agency Account Setup
 description: Guide for setting up section.io for multiple clients or websites. Reviews section.io account structures and instructions to get started.
 keywords: CDN, development agency, client websites, billing, staging environment, test environment
+aliases:
+  - /agency-account-setup/
+
 ---
 
 Recommended Setup for Agency Users

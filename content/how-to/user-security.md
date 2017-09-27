@@ -2,6 +2,9 @@
 title: User security
 description: A guide for securing your user access.
 keywords: users, portal, access, account, authentication
+aliases:
+  - /user-security/
+
 ---
 
 # User Security

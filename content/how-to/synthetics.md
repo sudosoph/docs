@@ -2,6 +2,9 @@
 title: Synthetic Tests
 description: Section.io's synthetic testing
 keywords: content delivery network, CDN, synthetics, performance, baseline, testing
+aliases:
+  - /synthetics/
+
 ---
 # Synthetic Testing
 

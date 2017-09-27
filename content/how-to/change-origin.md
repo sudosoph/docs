@@ -2,6 +2,9 @@
 title: Origin Address Migration
 description: Guide for changing the origin address of a section.io application.
 keywords: origin address, origin server, origin, cache, cached data, content delivery network, CDN
+aliases:
+  - /howto-change-origin/
+
 ---
 How to change your origin address
 =================================

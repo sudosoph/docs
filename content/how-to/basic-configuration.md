@@ -2,6 +2,9 @@
 title: Quick Config
 description: How to use section.io toggles to update your varnish and modsecurity configurations.
 keywords: website performance, page speed, webpage speed, website security, varnish, VCL, modsecurity, CDN configuration
+aliases:
+  - /basic-configuration/
+
 ---
 Basic Configuration
 ========================

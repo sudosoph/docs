@@ -2,6 +2,9 @@
 title: Support
 description: Information on support levels for section.io customers.
 keywords: support, customer service
+aliases:
+  - /support/
+
 ---
 Support
 =======

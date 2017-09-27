@@ -2,6 +2,9 @@
 title: IP Restrictions
 description: How to block bots or spammers from your website to improve website performance. How to create a blacklist to block IP addresses.
 keywords: bot, bot blocker, spammers, crawlers, website performance, webpage speed, website security, content delivery network, CDN
+aliases:
+  - /blocking-requests/
+
 ---
 Blocking Requests
 =================
