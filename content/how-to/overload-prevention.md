@@ -32,7 +32,7 @@ Where to find Gosquared ID:
 
 In the Varnish folder of your repo, add section-user-throttling.vcl
 
-The contents of this file are [here](/assets/files/section-user-throttling.vcl).
+{{< gist section-io-gists 0596b0765194996048e279a072eab492 >}}
 
 ## Step 3: Include Overload Prevention VCL
 
