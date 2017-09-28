@@ -1,10 +1,11 @@
 ---
-title: Send Traffic to section.io
+title: Send Traffic to Section.io
 description: A step-by-step guide on how to get started with section.io's CDG.
 keywords: guide, getting started, website performance, page speed, webpage speed, website security, content delivery network, CDN
 aliases:
   - /quickstart/
   - /create-application/
+  - /tutorials/create-application/
 weight: 2
 ---
 

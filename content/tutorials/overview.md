@@ -1,10 +1,11 @@
 ---
-title: section.io at a Glance
+title: Section.io at a Glance
 description: Training area, section.io platform overview.
 keywords: section.io, training, platform overview
 weight: 1
 aliases:
   - /training-platform-overview/
+  - /tutorials/overview/
 
 ---
 
