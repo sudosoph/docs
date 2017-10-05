@@ -20,7 +20,7 @@ section.io’s local development environment is based on [git], [Minikube], and 
 1. Start minikube: `minikube start`
 1. Initialize the Developer PoP: `minikube ssh "docker run --rm --net=host sectionio/section-init"`
 
-## Setting up you application
+## Setting up your application
 
 To make working with the devpop easier, section.io provides a user interface to interact with your configurations: `minikube service -n section-shared developer-pop`. Your browser will open when the endpoint for the service becomes ready.
 
