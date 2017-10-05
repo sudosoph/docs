@@ -11,7 +11,7 @@ aliases:
 
 Here’s an informal overview of how to use section.io's Application Edge to deploy a fast Content Delivery Network to your website.
 
-The goal of this document is to give you enough technical specifics to understand how section.io works, but this isn’t intended to be a tutorial or reference – but we’ve got both! When you’re ready to engage your website, you can [start with the tutorial]({{< ref "developer-pop.md" >}}) or [dive right into more detailed documentation]({{< relref "topic-guides/_index.md" >}}).
+The goal of this document is to give you enough technical specifics to understand how section.io works, but this isn’t intended to be a tutorial or reference – but we’ve got both! When you’re ready to engage your website, you can [start with the tutorial]({{< ref "tutorials/developer-workflow.md" >}}) or [dive right into more detailed documentation]({{< relref "topic-guides/_index.md" >}}).
 
 ## Application Edge Overview
 
