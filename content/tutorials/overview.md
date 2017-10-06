@@ -58,12 +58,7 @@ See the DNS menu in the left hand navigation of the portal for the details of th
 
 We also offer free DNS hosting which can be great if you need flexible options with your setup.
 
-Practical exercise: Checkout your current DNS setup
-1. Use either your computer or an online tool to checkout DNS settings for your domain name
-  1. On a PC open a command prompt at type: nslookup www.yourdomain.com
-  1. On a Mac open a terminal and type: dig +trace www.yourdomain.com
-    1. The output at the bottom of the command tells you both where your DNS record is pointed and also the TTL (Time To Live) on the record, which is how long in seconds it will take for your changes to be live after your update DNS. If this is a big number (> 600) it might be worth lowering this temporarily so that you can quickly implement DNS changes
-  1. If the above is unavaille leverage an online tool such as Kloth: http://www.kloth.net/services/dig.php
+Practical exercise: 
   
 ## HTTPS
 
@@ -75,11 +70,6 @@ To have your browsers use HTTPS you also need to have your origin servers open f
 
 Further information on HTTPS setup is available: https://www.section.io/docs/setup-https/
 
-Practical exercise: Check your current certificate setup before go live (you can do the same process after go live to ensure all ok)
-1. Browse to an online certificate checking service such as: https://www.digicert.com/help
-1. Enter your domain name and initiate the check
-1. Hopefully your setup receives a tick at the bottom of the test
-1. Once you Go Live on section.io you can repeat this test to ensure your HTTPS/SSL/TLS/Certificate setup is correct
 
 ## Go Live Steps
 
