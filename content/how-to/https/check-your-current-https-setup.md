@@ -9,7 +9,7 @@ description = ""
 1. Run `openssl s_client -showcerts -connect www.example.com:443 </dev/null`, with your domain name.
 1. If successful, you'll receive a complete output of what a browser uses to establish secure HTTP.
 
-## Using an online tool - Digicert
+## Using an online tool - DigiCert
 
 1. Browse to an online certificate checking service such as: https://www.digicert.com/help
 1. Enter your domain name and initiate the check
