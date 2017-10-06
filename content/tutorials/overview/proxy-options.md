@@ -16,4 +16,4 @@ Depending on your motivation:
 
 These are just some of the reverse proxies that are available to you. Pick the right combination, change them as your requirements change.
 
-All these proxies are available throughout the entire [development lifecycle]([[< relref "tutorials/overview/developer-ready.md"]]).
+All these proxies are available throughout the entire [development lifecycle]({{< relref "tutorials/overview/developer-ready.md" >}}).
