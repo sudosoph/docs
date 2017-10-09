@@ -15,7 +15,7 @@ section.io’s local development environment is based on [git], [Minikube], and 
 
 ## Setting up your Developer PoP
 
-1. Download and install [Minikube] v0.21
+1. Download and install [Minikube] v0.22.3
 1. Disable repeating messages about the `kubectl` component you won't need: `minikube config set WantKubectlDownloadMsg false`
 1. Start minikube: `minikube start`
 1. Initialize the Developer PoP: `minikube ssh "docker run --rm --net=host -v /var/lib/localkube:/var/lib/localkube:ro sectionio/section-init"`
@@ -80,5 +80,5 @@ Make sure you have no syntax errors via the git feedback, and wait a few moments
 
   [git]: http://git-scm.com/
   [Vagrant]: http://docs.vagrantup.com/v2/installation/
-  [Minikube]: https://github.com/kubernetes/minikube/releases/tag/v0.21.0
+  [Minikube]: https://github.com/kubernetes/minikube/releases/tag/v0.22.3
   [VirtualBox]: http://www.virtualbox.org/
