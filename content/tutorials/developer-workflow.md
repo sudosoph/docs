@@ -18,7 +18,7 @@ section.io’s local development environment is based on [git], [Minikube], and 
 1. Download and install [Minikube] v0.21
 1. Disable repeating messages about the `kubectl` component you won't need: `minikube config set WantKubectlDownloadMsg false`
 1. Start minikube: `minikube start`
-1. Initialize the Developer PoP: `minikube ssh "docker run --rm --net=host sectionio/section-init"`
+1. Initialize the Developer PoP: `minikube ssh "docker run --rm --net=host -v /var/lib/localkube:/var/lib/localkube:ro sectionio/section-init"`
 
 ## Setting up your application
 
