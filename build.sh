@@ -3,8 +3,8 @@
 set -o errexit
 set -o xtrace
 
-path=$(dirname "${0}")
+cd "$(dirname "${0}")"
 
-docker build --tag hugo "${path}"
+docker build --tag hugo .
 
-docker run --rm --volume "${path}:/src" --workdir /src hugo
+docker run --rm --volume "$(pwd):/src" --workdir /src hugo
