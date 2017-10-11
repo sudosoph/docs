@@ -1,5 +1,5 @@
 ---
-title: Varnish Grace Mode
+title: Serve stale content while the backend is offline
 description: How to configure Varnish to serve stale content
 keywords: CDN, content delivery network, performance, stale content
 aliases:
