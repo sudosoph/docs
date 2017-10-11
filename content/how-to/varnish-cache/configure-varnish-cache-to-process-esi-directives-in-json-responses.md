@@ -1,5 +1,5 @@
 ---
-title: Configure Varnish Cache to Process ESI Directives in JSON responses
+title: Process ESI Directives in JSON responses
 ---
 
 If you use Varnish Cache for Content composition using Edge Side Includes you may need to configure Varnish Cache to process ESI directives in files that don't look like XML.
