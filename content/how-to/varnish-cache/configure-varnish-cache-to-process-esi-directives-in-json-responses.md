@@ -12,7 +12,7 @@ To do this:
 1. Add the following content:
 ```
 {
-  "features/esi_disable_xml_check": true
+  "feature/esi_disable_xml_check": true
 }
 ```.
 1. Commit the file.
