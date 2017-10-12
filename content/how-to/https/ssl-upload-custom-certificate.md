@@ -62,3 +62,4 @@ Upload
 
 Once you have copy and pasted the certificates and private key, click the "Save Changes" button. The portal will perform a check to make sure the certificate is for the correct domain, and the private key is a match for the certificate. Once that is accepted, a deployment is made to the section.io platform and you should see the new certificate on the site in moments. You will also see the uploaded certificate information at the right hand side of the HTTPS page.
 
+You can also check your newly uploaded certificate using either a command line or 3rd party online tool. See [this page for more details](/docs/how-to/https/check-your-current-https-setup/)
