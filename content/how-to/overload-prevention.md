@@ -59,3 +59,24 @@ As GoSquared is an external service, it is possible that the current user count 
 ## Optional Step 4: Edit the Overload Page
 
 The default Overload Page will show your customers a blank page with unstyled text saying “threshold exceeded”. To implement the overload prevention feature, first update the VCL with this default setting. Then go in and edit the VCL. Specifically, line 16 of the above gist that will be added to the default.vcl calls the html that will be displayed. To add your own HTML, simply replace the `<html>threshold exceeded</html>` with your own html.
+
+
+## Operations
+
+### Increase user threshold
+Update both the threshold values in `gosquared-visitor-count` and VCL. 
+
+e.g.
+
+`700 GSN-000000-M a000000000bc111111111d00000` and `set req.http.Section-Visitors-Threshold = 700;` in the VCL.
+
+
+### Decrease user threshold
+Update both the threshold values in `gosquared-visitor-count` and VCL. 
+
+e.g.
+
+`100 GSN-000000-M a000000000bc111111111d00000` and `set req.http.Section-Visitors-Threshold = 100;` in VCL.
+
+You will also need to increment the overflow header version `set req.http.Section-Visitors-Version = "1479168057";` in VCL.
+
