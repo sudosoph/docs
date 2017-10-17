@@ -24,23 +24,7 @@ Once you are on the **Manage** page, based on your reverse proxy setup, you will
 
 ## Clearing Varnish Cache
 
-There are three ways to remove objects from the Varnish cache:
-
-### Purge particular URLs
-
-You can remove particular URLs from the cache by entering the URL and clicking **Purge**.
-This form accepts wildcards in the form of `*`, so entering `/images*` will purge all URLs starting with `/images`.
-
-### Empty the entire cache
-
-This will remove **everything** we have cached for your site.  Use this if the cache is completely out of date and it needs to be refreshed.
-
-NOTE: This may cause increased load on your origin server until we are able to refill the cache.
-
-### Custom Varnish ban expression
-
-Our cache is an instance of Varnish so you can use ban expressions to prevent objects from being served from the cache. To learn how
-to use bans, see the [Varnish Cache documentation](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html#bans).
+Visit the documentation specific to [clearing the cache for Varnish.]({{< relref "how-to/varnish-cache/clearing-the-cache.md" >}})
 
 ## Clearing Pagespeed Cache
 
