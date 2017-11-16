@@ -13,7 +13,7 @@ If you want to experiment with different proxies you can use our [developer POP]
 
 ## Varnish v5.2
 
-- varnish 5.2.0
+- varnish 5.2.1
 - Std VMOD - <https://www.varnish-cache.org/docs/5.2/reference/vmod_std.generated.html>
 - Cookie, Header, Softpurge, Var, and Xkey VMODs - <https://github.com/varnish/varnish-modules#readme>
 - UUID VMOD - <https://github.com/Sharecare/libvmod-uuid#readme>
@@ -29,7 +29,7 @@ If you want to experiment with different proxies you can use our [developer POP]
 
 Varnish 4.1 is available if you need this version
 
-- varnish 4.1.5
+- varnish 4.1.9
 - Std VMOD - <https://www.varnish-cache.org/docs/4.1/reference/vmod_std.generated.html>
 - Cookie, Header, Softpurge, Var, and Xkey VMODs - <https://github.com/varnish/varnish-modules#readme>
 - UUID VMOD - <https://github.com/Sharecare/libvmod-uuid#readme>
