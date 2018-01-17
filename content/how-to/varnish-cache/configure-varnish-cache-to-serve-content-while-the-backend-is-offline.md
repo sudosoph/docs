@@ -70,6 +70,7 @@ This part is where we actually tell Varnish to serve stale content is the restar
         }
 
         return (fetch);
+        # Varnish 5 needs to not fetch -> return (miss);
     }
 
 ## Testing
