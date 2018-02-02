@@ -1,13 +1,10 @@
 ---
-title: SSL - Determine certificate order 
-description: How to determine custom SSL certificate order 
+title: Determine TLS Certificate Order 
+description: How to determine custom TLS certificate order 
 keywords: SSL, certificate, custom, upload, update, CDN configuration
 ---
+## Getting started
 
-# How to determine custom SSL certificate order 
-
-Getting started
-------------
 Download or unzip the certificates in to a directory somewhere on your computer.
 The certificates should be PEM encorded and will look like the following in a text editor.
 
@@ -25,8 +22,8 @@ You should see output like `OpenSSL 1.0.2l  25 May 2017`
 In your command prompt go to the directory where you placed the certificates.
 
 
-Determine domain certificate
-------------
+## Determine domain certificate
+
 You will need to determine which certificate is the one issued to your site(s). 
 
 Run the following command in your command prompt window where `certificate1.pem` is the file name of a certificate you are testing:
@@ -52,8 +49,8 @@ For windows based command prompt, run:
 You should see a list of SAN domains on that certificate. If that list contains your domain name, then this certificate is your domain certificate.
 
 
-Determine intermediate certificate order
-------------
+## Determine intermediate certificate order
+
 Each certificate contains information about its issuer. The issuer is the next link in the SSL chain. 
 The SSL chain will be `domain certificate -> intermediate ceritificate(s) -> root certificate`
 
