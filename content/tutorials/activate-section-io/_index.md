@@ -13,10 +13,10 @@ To get started you'll first need to <a href="https://www.section.io/sign-up-rout
 
 Once you have a user account, this tutorial will guide you through the steps to route traffic through your Application Edge.
 
-At the end of this tutorial:
+At the end of this tutorial you'll have:
 
-* Your DNS records will be set up to point at section.io.
-* You'll have free, automatically renewing, SSL certificates.
-* All your HTTP traffic will be handled by section.io.
+* Your DNS records set up to point at section.io.
+* Free and automatically renewing SSL certificates.
+* All your HTTP traffic handled by section.io.
 
 [Let's proceed to step 1, creating your Application Edge]({{< relref "tutorials/activate-section-io/create-application-edge.md" >}}).
