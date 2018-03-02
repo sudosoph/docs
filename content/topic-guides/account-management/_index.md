@@ -11,10 +11,12 @@ If you want to use section.io for your clients, section.io can easily separate y
 
 #### **Structure** - Here are the structures within section.io and our recommended use for agencies:
 
-* **User** - A user can be assigned to multiple groups. We recommend having a user account for anyone who should have access to any of your accounts (more on this in a minute). There is no cost to add additional users.
-* **Account** - An account is a security and billing boundary that can have multiple applications and multiple users. We recommend using accounts for client-level separation and adding client users to that account and agency employees to all accounts they work on.
-* **Application** - An application is a configuration boundary, meaning that each application will be able to use the same proxy configurations, repository, and metrics. We recommend using an application per website that the client owns. You can also [split applications]({{< relref "/how-to/application-management.md#split-application" >}}) to set up different configurations for different areas of the domain.
-* **Environment** - An environment is different versions of the same application. This is typically production, development, and staging/qa.
+* **User** — When you first sign up for section.io, you register on the platform with an email address. This is the account is specific to you as a user. 
+* **Account(Organization)** - After logging in for the first time as a user, your dashboard will prompt you to create an account. This might be initially confusing because you created an account moments before when signing up for section.io. Think of this second account as an organization or company. The section.io platform supports a many-to-many relationship between user accounts and organization/company accounts. Users can belong to multiple organizations and organizations can have multiple users. Because software applications running with section.io are associated with an organization account and not your specific user account, you can seamlessly add other users and share full access to your section.io application. 
+* **Application** - At section.io, we use the term “application” a bit differently than you might be accustomed to. Rather than referring to a specific software application like an Express app or a Magento site, an application describes the section.io platform-specific entity that holds the configuration for your content-delivery and proxy setup, monitors HTTP traffic from the client through your proxy stack to your origin and back again, and manages the state of your website content. Each application holds a single git repository. Configuration changes are made to an application through a typical git workflow. An application supports multiple environments like staging, development, and production on git branches within the application repository. Each of these environments can have different proxy configurations. This gives you incredible flexibility by allowing you to test a new proxy configuration in a development branch and then easily merge that configuration to production.
+
+* **Domains** — Each application can also have multiple domains. This allows you to run any number of websites with the same proxy configuration setup, greatly simplifying the management process for many similar sites. This comes in particularly handy if you have one backend taking requests from a number of different domains. You can also [split applications]({{< relref "/how-to/application-management.md#split-application" >}}) to set up different configurations for different areas of the domain. 
+
 
 #### **Guide** - To use this structure, here is a step-by-step guide to get started:
 
@@ -27,7 +29,7 @@ If you want to use section.io for your clients, section.io can easily separate y
 
 *Please note: We strongly recommend entering the production hostname when creating a new application, even if you want to test with a staging hostname first. This is because the first hostname that gets entered will become the production environment for that application. You can then add a staging environment to the application and go live with that environment first if you choose.*
 
-It is also important to note, you the website will not go live with section.io when you create an application. To go live and start sending traffic through section.io, you will need to [change the dns](/docs/change-dns). Again, this means you can setup an application, add a staging environment, go live with a staging environment, and then finally go live with production environment.
+It is also important to note that the website will not automatically go live with section.io when you create an application. To go live and start sending traffic through section.io, you will need to [change the dns record](/docs/change-dns). Again, this means you can setup an application, add a staging environment, go live with a staging environment, and then finally go live with production environment.
 
 
 #### **Example** - Here is an example setup using this structure:
