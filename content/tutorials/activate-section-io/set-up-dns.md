@@ -6,9 +6,9 @@ weight: 2
 
 ---
 
-To get your users to connect to section.io servers you'll make updates to DNS.
+To get your users to connect to section.io servers you need to make updates to DNS.
 
-DNS will point the traffic to section.io servers.
+This DNS change will point the traffic to section.io servers.
 
 {{% notice note %}}
 This tutorial works with a domain name that contains a prefix, like the **www.** prefix in **www.section.io**. 
@@ -20,9 +20,9 @@ If you are working with a site that doesn't have a prefix please look at [bare d
 
 1. In the management console, click **DNS** in the left hand menu.
 ![DNS Menu in Management Console](/docs/images/screenshots/menu/highlight-dns-menu-option.png?height=80px)
-1. Copy the target CNAME record, ready to update in your DNS hosting.
+1. Copy the target CNAME record provided by section.io.
 ![CNAME value in Management Console](/docs/images/screenshots/dns/cname.png?height=80px)
-1. In your DNS Hosting, create or update your existing CNAME record.
+1. Go to your DNS Hosting Provider's configuration page and replace your existing CNAME record with the one from the previous step.
 1. Back in the management console, click **Verify**. You'll see a message that your DNS is correctly configured.
 
 {{% notice info %}}
