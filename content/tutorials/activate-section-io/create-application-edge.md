@@ -11,7 +11,7 @@ weight: 1
 ![Enter Domain Name](/docs/images/screenshots/account/highlight-domain-name-textbox-in-application-create.png?height=80px)
 1. Click **Performance**, then click **Varnish v5.2 Basic**. Click **Next**.
 ![Enter Domain Name](/docs/images/screenshots/account/highlight-preffered-starting-proxy-in-application-create.png?height=80px)
-1. Enter an account name. This associates your new Section.io application with a company or organization in addition to your specific user account so that you can easily add other users or additional websites in the future. Click **Next**.
+1. Enter an account name. Think of this as the organization/company that your website belongs to. (click [here](/docs/topic-guides/account-management/) a more in-depth explanation of an account). Click **Next**.
 ![Enter Account Name](/docs/images/screenshots/account/highlight-account-name-textbox-in-application-create.png?height=80px)
 1. Review the confirmation screen and click **Setup**.
 ![Enter Account Name](/docs/images/screenshots/account/create-account-confirmation.png?height=80px)
