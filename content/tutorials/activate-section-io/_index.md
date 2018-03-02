@@ -19,4 +19,4 @@ At the end of this tutorial you'll have:
 * Free and automatically renewing SSL certificates.
 * All your HTTP traffic handled by section.io.
 
-[Let's proceed to step 1, creating your Application Edge]({{< relref "tutorials/activate-section-io/create-application-edge.md" >}}).
+[Step 1: Creating your Application Edge]({{< relref "tutorials/activate-section-io/create-application-edge.md" >}}).
