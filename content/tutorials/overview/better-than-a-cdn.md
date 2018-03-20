@@ -3,22 +3,22 @@ title: Not a CDN
 weight: 2
 ---
 
-section.io realigns the CDN promises into a modern Application Edge system.
+The section.io platform provides superior application performance, availability,scalability, and security by putting architects, developers, and sysadmins in the driver's seat. 
 
-By focusing on putting architects, developers and sysadmins in the driver's seat, teams are able to get superior outcomes for application performance, availability, scalability and security.
+Unlike legacy CDN's, section.io has designed an Application Edge system for modern agile development. 
 
-section.io differs from contemporary CDN platforms by:
+section.io differs from contemporary CDN platforms by: 
 
 * allowing a choice of reverse proxy technology.
 * allowing engineers to use normal tooling to configure the system.
 * providing a real time devops toolset.
 
-This differs from legacy CDN approaches:
+Unlike with legacy CDNs, with section.io:
 
-* **there is no "one size fits all"**. Legacy CDNs have a single architecture that may, or may not, suit your architecture today and tomorrow.
-* **there is no "push and pray"**. With full integration into the development lifecycle you know, on your laptop, that things will work before go-live.
-* **there is no "visibility gap"**. Legacy CDNs are slow to deliver diagnostics, and offer no analytics tools to turn raw data into actionable insight.
+* **there is no "one size fits all"**. Legacy CDNs have a single architecture that may or may not suit your needs now and into the future.
+* **there is no "push and pray"**. With full integration into the development lifecycle, the section.io platform allows you to test new proxy configurations on your laptop before go-live.
+* **there is no "visibility gap"**. Legacy CDNs are slow to deliver diagnostics, and offer no analytics tools to turn raw data into actionable insight. We provide dynamic and detailed logs of how your traffic is passing through our system.  
 
-section.io is ready to handle your workload, whether you have a single large site or many large sites.
+section.io is ready to handle your workload regardless of the number of sites you have or the size of your traffic. 
 
 [Find out about how section.io is ready to help you manage multiple sites]({{< relref "tutorials/overview/agency-ready.md" >}}).
