@@ -1,5 +1,5 @@
 ---
-title: Not a CDN
+title: Better than a CDN
 weight: 2
 ---
 
@@ -16,7 +16,7 @@ section.io differs from contemporary CDN platforms by:
 Unlike with legacy CDNs, with section.io:
 
 * **there is no "one size fits all"**. Legacy CDNs have a single architecture that may or may not suit your needs now and into the future.
-* **there is no "push and pray"**. With full integration into the development lifecycle, the section.io platform allows you to test new proxy configurations on your laptop before go-live.
+* **there is no "push and pray"**. With full integration into the development lifecycle, the section.io platform allows you to test new proxy configurations on your laptop before go-live with our [Developer PoP]({{< relref "tutorials/developer-workflow/developing-with-the-developer-pop/" >}}).
 * **there is no "visibility gap"**. Legacy CDNs are slow to deliver diagnostics, and offer no analytics tools to turn raw data into actionable insight. We provide dynamic and detailed logs of how your traffic is passing through our system.  
 
 section.io is ready to handle your workload regardless of the number of sites you have or the size of your traffic. 
