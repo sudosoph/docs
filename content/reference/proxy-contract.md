@@ -1,3 +1,12 @@
+---
+title: Proxy Contract
+description: Requirements to run a reverse proxy on section.io.
+keywords: reverse proxy, CDN
+aliases:
+  - /proxy-contract/
+
+---
+
 This defines the interaction with the proxy container by the section.io proxy hosting platform:
 
 Essential:
