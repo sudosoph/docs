@@ -5,7 +5,7 @@ weight: 8
 
 section.io uses DNS to route requests to the most appropriate datacenter.
 
-In the usual case, users configure a CNAME record to point their traffic to their Application Edge, just like a legacy CDN.
+When you sign up for section.io, you configure a CNAME record to point your traffic to our Application Edge, just like a legacy CDN.
 
 section.io also includes a global anycast DNS network with all plans. This can be useful if you run your site as a bare domain.
 

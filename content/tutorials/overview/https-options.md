@@ -5,12 +5,9 @@ weight: 9
 
 All section.io plans include a complete HTTPS solution.
 
-You can:
+On our platform you can:
 
-1. Leverage free certificates that are automatically configured and renewed.
-1. Upload your own certificate:
- * Standard certificate.
- * Wildcard certifivate.
- * Extended Validation certificate.
+1. Take advantage of our free SSL certificates that are automatically configured and renewed.
+1. Upload your own Standard, Wildcard, or Extended Validation certificate
 
-[By now, you're probably ready to get started with a risk free trial]({{< relref "tutorials/overview/get-started.md" >}}).
+[Like what you see? Get started with our risk free trial]({{< relref "tutorials/overview/get-started.md" >}}).
