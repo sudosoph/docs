@@ -20,9 +20,9 @@ You will see a button entitled "Specify a custom certificate", or "Change custom
 
 ## 3) Paste certificate and key
 
-You will need to paste the site certificate and any intermediate certificates into the "Public certificate & chain" box. For a more in-depth guide on determining certificate order than what follows below, click [here](/docs/how-to/ssl-determine-certificate-order/).
+You will need to paste the site certificate and any intermediate certificates into the "Public certificate & chain" box. For a more in-depth guide on determining certificate order than what follows below, click [here](/docs/how-to/https/determine-tls-certificate-order/).
 
-The order of certificates needs to be domain certificate first (typically contains the website URL in the filename), followed by any intermediate certificate(s) in order. Make sure NOT to include the root certificate. The certificates should be PEM encoded and will look like this in a text editor:
+The order of certificates needs to be domain certificate first (might contain the website URL in the filename), followed by any intermediate certificate(s) in order. Make sure NOT to include the root certificate. The certificates should be PEM encoded and will look like this in a text editor:
 
     
     -----BEGIN CERTIFICATE-----
