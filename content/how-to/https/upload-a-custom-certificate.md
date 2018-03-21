@@ -11,7 +11,7 @@ Log into your Aperture dashboard and under **Set up** navigate to the **HTTPS** 
 
 ## 2) Select your desired domain
 
-The dropdown will automatically fill with first domain listed in your application. If that's not the one you want, select the correct one from the dropdown. 
+The dropdown will automatically fill with the first domain listed in your application. If that's not the one you want, select the correct one from the dropdown. 
 
 If you have multiple sub domains in this application and wish to upload a wild card certificate or a certificate with multiple domains in the Subject Alternate Name(SAN), you will need to upload the certificate for each domain.
 
