@@ -3,7 +3,7 @@ title = "Tutorials"
 description = ""
 weight = 1
 +++
-New to section.io? Or to Application Edge and Content Delivery in general? Well, you came to the right place: read this material to quickly get up and running.
+New to section.io? Or to Application Edge and Content Delivery in general? Read this material to quickly get up and running.
 
 {{% children %}}
 
