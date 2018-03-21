@@ -7,7 +7,7 @@ For too long, CDNs have remained in the dark ages of waterfall processes with no
 
 As application logic moves to the edge, section.io brings the tools and processes you need to build an ideal, flexible architecture.
 
-By allowing any engineer in your team to run a [Developer PoP]({{< relref "tutorials/developer-workflow/developing-with-the-developer-pop/" >}}), you can bring the Application Edge right down onto your laptop.
+By allowing any engineer in your team to run a [Developer PoP]({{< relref "tutorials/developer-workflow/developing-with-the-developer-pop.md" >}}), you can bring the Application Edge right down onto your laptop.
 
 This means you can adjust the Application Edge configuration on the fly, right where you write your code.
 
