@@ -107,7 +107,7 @@ At every opportunity, the implementation of Varnish on the section.io platform h
 
 section.io uses the official Varnish distributions published by [Varnish Cache]. section.io does not use custom-compiled builds of Varnish.
 
-Varnish is started, listening on port 80. Varnish will be initialised with the VCL found in the default.vcl file in the corresponding subdirectory of your section.io application repository.
+Varnish is started, listening on port 80. Varnish will be initialized with the VCL found in the default.vcl file in the corresponding subdirectory of your section.io application repository.
 
 Assuming Varnish is the first proxy in your proxy stack, Varnish will receive connections from the section.io TLS Offload Proxy with two additional HTTP request headers, X-Forwarded-For containing the downstream client IP address and any intermediate proxy IP addresses, and also X-Forwarded-Proto which will specify either http or https depending on the protocol with which the downstream client connected.
 
@@ -118,7 +118,7 @@ Requesting the Varnish Log simply executes varnishlog for each Varnish instance 
 
 Varnishncsa is also running, logging request and response details, including cache effectiveness. This data is used to drive the charts seen in Aperture.
 
-## Modsecurity Configuration
+<!-- ## Modsecurity Configuration
 
 The initial configuration in a repository starts ModSecurity’s SecRuleEngine in DetectionOnly mode (this writes log entries but never executes any disruptive actions) with rules from base\_rules & optional\_rules. This is a great starting point, as you can immediately see possible threats without stopping legitimate traffic to your site.
 
@@ -154,4 +154,4 @@ A set of client requests will likely be spread across different instances, and a
 
 Every rule set can have false positives in new environments and any new installation should initially run with Detection only. After running ModSecurity in detection only mode for a while, review the logs and decide if any further modifications to the rule sets should be made before switching to protection mode.
 
-To enabled protection edit the modsecurity.conf file and change the setting for SecRuleEngine from DetectionOnly to On.
+To enabled protection edit the modsecurity.conf file and change the setting for SecRuleEngine from DetectionOnly to On. -->
