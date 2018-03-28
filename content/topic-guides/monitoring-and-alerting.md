@@ -1,6 +1,6 @@
 ---
-title: Alerting
-description: Guide for setting up alerts on section.io metrics to monitor your website.  
+title: Synthetic Monitor Alerting
+description: Guide for setting up 3rd party alerts on section.io to monitor your website.  
 keywords: metrics, alerting, alerts, monitor, umpire, new relic, pingdom, website performance, website security, content delivery network, CDN
 aliases:
   - /monitoring-and-alerting/

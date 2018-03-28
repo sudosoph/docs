@@ -1,6 +1,6 @@
 ---
 title: Sample Varnish Snippets
-description: A collection of Varnish snippets to help get your varnish proxy up and running. 
+description: A collection of Varnish snippets to help get your varnish proxy up and running.
 keywords: [Varnish, snippets, caching, HTTPS, blocking, Wordpress]
 
 ---
@@ -9,7 +9,7 @@ keywords: [Varnish, snippets, caching, HTTPS, blocking, Wordpress]
 
 Advanced configuration is done via the Varnish Control Language file `default.vcl`. You can access this file by going to Repository under the Configuration menu in the left nav of Aperture and then clicking on the Varnish file.
 
-To help you get started, we've written some VCL snippets for you to review.
+To help you get started, we've written some VCL snippets that cover some basic aspects of functionality for you to review.
 
 #### Cache Static Content
 

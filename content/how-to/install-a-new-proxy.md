@@ -1,0 +1,38 @@
+---
+title: Install A New Proxy
+description: How to install a new proxy within an existing proxy configuration.
+keywords: proxy, installation
+
+---
+## The section.config.json file
+The config files dictates the order that traffic will flow through the proxy chain — be aware of the location you put the new reverse proxy in.
+
+For example, if your application is setup with Varnish 4.0.3, you should see this at the top of your config file:
+
+	"proxychain": [
+	        {
+	            "name": "modsecurity",
+	            "image": "modsecurity"
+	        },
+	    ],
+
+## 1) Add the proxy to your environment's section.config.json file
+  Let's add Varnish 4.0.3 to the example above.
+
+To add a proxy, we need to insert a json object containing the proxy's name and image (the specific version of the proxy you want). After adding the Varnish proxy, our file looks like:
+
+	"proxychain": [
+	        {
+	            "name": "modsecurity",
+	            "image": "modsecurity"
+	        },
+	        {
+	            "name": "varnish",
+	            "image": "varnish:4.0.3"
+	        }
+	    ],
+
+Note that different proxies have different ways of specifying the image. You can also do this using CLI with the command [append](/docs/cli/#section-append).
+
+## 2) Deploy your new configuration
+Whether you alter the section.config.json with the GUI or the CLI, you're going to need a section.io engineer to actually deploy the new configuration. Once you've changed the config.json file to your liking, please send us a [support ticket](https://support.section.io/hc/en-us/requests/new) so we can push those changes live for you.
