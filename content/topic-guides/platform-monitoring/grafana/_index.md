@@ -1,5 +1,5 @@
 ---
-title: Visualize Metrics With Grafana  
+title: Grafana Metric Visualization
 description: An overview of the Grafana tool and its application within the section.io platform
 keywords: monitoring, Grafana, metrics, varnish handling
 aliases:
