@@ -103,7 +103,7 @@ For each content type, you can view your hit rates, volume of requests, and time
 #### Modsecurity Statistics
 The fourth view is Modsecurity Statistics, which is only viewable if you have a Modsecurity proxy setup on your application. Here you can see the total amount of traffic (count and bytes) that went through the Modsecurity proxy, the time in took to process each, your most active rules and most active countries.
 
-## Grafana - Custom Dashboards
+<!-- ## Grafana - Custom Dashboards
 
 It may be helpful for you to create a custom dashboard that is specific to your application. You can create your own dashboard by either starting from scratch or duplicating an existing dashboard.
 
@@ -119,9 +119,9 @@ To create a dashboard from an existing dashboard you will have to click on the *
 
 In order for these changes to be permanent you **MUST** remove the `system` tag from this dashboard. To do this you will need to click on the same **cog** wheel, and click on **Make editable**. This will allow you to make changes in the dashboard. Then you will need to click on the same **cog** wheel `->` then **Settings**. In the section called **tags**, you will want to remove the **system** tag (image below).
 
-{{% figure src="/docs/images/add-dashboard-duplicate.png" %}}
+{{% figure src="/docs/images/add-dashboard-duplicate.png" %}} -->
 
-## Graphite
+<!-- ## Graphite
 
 By toggling the view at the top of the screen from "Grafana Dashboards" to "Graphite Metrics", you can pull your own data using the same data source. Each Grafana chart is built on these data points so you can use these create your own Grafana dashboards. You can click “Open in new window,” located at the top of the frame, to have more space to work.
 
@@ -139,9 +139,9 @@ By clicking “Graph Data” under the graph, I can edit the data in the graph. 
 
 You can also “apply function” to the data which can sum different queries, change the time interval for the data points, add a second axis, change legends, and much more.
 
-The “Graph Options” button under the graph will let you change the look of the graph. Clicking the clock or calendar icon above the graph will allow you to change the time range of the data. There is so much more you can do here, and you can follow the Graphite documentation to manipulate the data in the way that you need. This documentation for available functions is a great one to review.  https://graphite.readthedocs.io/en/latest/functions.html
+The “Graph Options” button under the graph will let you change the look of the graph. Clicking the clock or calendar icon above the graph will allow you to change the time range of the data. There is so much more you can do here, and you can follow the Graphite documentation to manipulate the data in the way that you need. This documentation for available functions is a great one to review.  https://graphite.readthedocs.io/en/latest/functions.html -->
 
-## HTTP Logs
+<!-- ## HTTP Logs
 
 Clicking on "HTTP Logs" in the left navigation bar opens up a view of Kibana. Kibana will allow you to search through your logs to dig deeper into trends you found in Graphite or Grafana. To open Kibana in its own window, click the “open in new window” button at the top of the Kibana frame.
 
@@ -156,4 +156,4 @@ On the Discover view in Kibana, you can either select items from the left nav, o
 
 You can then take these searches and turn them into different Graphs in the “Visualization” view. Then you can save these visualizations to a Dashboard to view later under the “Dashboard” view.
 
-If you want to analyze your website using GRaphite, start by grouping metrics such as error rates, cache hit and miss rates and then apply functions to help smooth data points for bigger trends or show variance between individual data sets.
+If you want to analyze your website using GRaphite, start by grouping metrics such as error rates, cache hit and miss rates and then apply functions to help smooth data points for bigger trends or show variance between individual data sets. -->
