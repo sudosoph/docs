@@ -1,13 +1,12 @@
 ---
-title: Application Environments
-description: Guide for deleting your application or splitting your application into multiple content delivery network configurations.
-keywords: cache, cached data, multi domains, content delivery network, CDN, CDN configurations
+title: Deleting an Application
+description: Guide for deleting your application.
+keywords: cache, cached data, content delivery network, CDN, CDN configurations
 aliases:
-  - /application-management/
 
 ---
 
-Here you will find instructions on how to [split your application](#splitting-applications) into multiple content delivery network configurations, as well as how to [delete an application](#deleting-applications) if you wish to start afresh.
+<!-- Here you will find instructions on how to [split your application](#splitting-applications) into multiple content delivery network configurations, as well as how to [delete an application](#deleting-applications) if you wish to start afresh.
 
 ## Splitting Applications
 
@@ -38,11 +37,7 @@ See the Split option under Overview for your application in section.io Aperture 
 
 A split application can later be [deleted](#deleting-applications) and requests for its URL prefix will resume being handled by the original application.
 
-All applications handling requests for a given domain must be within the same section.io account.
-
-
-
-## Deleting Applications
+All applications handling requests for a given domain must be within the same section.io account. -->
 
 Sometimes you may wish to start an application from scratch or simply remove an unused application.
 
