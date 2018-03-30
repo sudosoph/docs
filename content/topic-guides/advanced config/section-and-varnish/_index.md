@@ -4,7 +4,7 @@ description: A high level overview of how section.io runs Varnish Cache
 keywords: [Varnish,caching]
 
 ---
-### How Varnish Cache works with on section.io
+### How Varnish Cache works on section.io
 
 At every opportunity, the implementation of Varnish on the section.io platform has been designed to be as close as possible to how it would be if you had installed Varnish yourself locally.
 
