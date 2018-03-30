@@ -7,7 +7,7 @@ aliases:
 
 ---
 
-In order to use the Virtual Waiting Room feature, you must have Varnish 4+ running on your application. To setup the feature you will 1) add your gosquared credentials, 2) add VCL for overload prevention, and then 3) call the new VCL in your default VCL file. Optionally, you can 4) edit the default Overload page that will be shown to your customers. The following page will walk you through each step.
+In order to use the Virtual Waiting Room feature, you must have Varnish 4+ running on your application and add a GoSquared JavaScript snippet that section.io will provide. To setup the feature you will 1) add your gosquared credentials, 2) add VCL for virtual waiting room, and then 3) call the new VCL in your default VCL file. Optionally, you can 4) edit the default Virtual Waiting Room page that will be shown to your customers. The following page will walk you through each step.
 
 ## Step 1: Add GoSquared Credentials
 
@@ -59,7 +59,7 @@ As GoSquared is an external service, it is possible that the current user count 
 ## Optional Step 4: Edit the Virtual Waiting Room
 
 The default Overload Page will show your customers a blank page with unstyled text saying “threshold exceeded”. To implement the virtual waiting room feature, first update the VCL with this default setting. Then go in and edit the VCL. Specifically, line 16 of the above gist that will be added to the default.vcl calls the html that will be displayed. To add your own HTML, simply replace the `<html>threshold exceeded</html>` with your own html.
-
+  
 
 ## Operations
 
