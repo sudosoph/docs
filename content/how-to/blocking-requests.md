@@ -1,6 +1,6 @@
 ---
-title: IP Restrictions
-description: How to block bots or spammers from your website to improve website performance. How to create a blacklist to block IP addresses.
+title: Block an IP 
+description: How to block bots or spammers from your website to improve website performance via the Aperture UI or directly through config files. 
 keywords: bot, bot blocker, spammers, crawlers, website performance, webpage speed, website security, content delivery network, CDN
 aliases:
   - /blocking-requests/
@@ -9,9 +9,9 @@ aliases:
 
 If visitors, crawlers, or spammers are degrading the performance of your site, it may be appropriate to block these from accessing your website content. Rather than letting these requests be processed by section.io and your origin server, you can block them as they enter section.io.
 
-## By requesting IP address
+## Block an IP address via Aperture UI
 
-Requests for an application can be blocked by IP address or routing prefix.
+Requests can be blocked by IP address or routing prefix.
 
 The simplest interface to view/edit these values is available via "Configuration" > "Restrictions".
 
@@ -21,13 +21,13 @@ For each requesting IP you wish to block requests from, click the "Add Another" 
 
 Within a few seconds section.io will be blocking requests from your blacklist.
 
-## Format of the `ip_blacklist` field in ``section.config.json``
+## Manage your IP blacklist from within your application repository 
 
-The IP blacklist is stored in the ``section.config.json`` file in the root of the git repository for your web site. You can view this by going to <https://aperture.section.io/>, selecting your site and then going to the "Repository" page.
+The IP blacklist is stored in the ``section.config.json`` file in the root of the git repository for your web site. You can view this by going to <https://aperture.section.io/>, selecting your site and then going to the "Repository" page. Note that blocking an IP within Aperture as described above adds the IP to this file behind the scenes.
 
 The `ip_blacklist` field is applied to an environment (living at the same level as `origin` ). It is a list (array) of IP v4 addresses and/or [CIDR notation](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#CIDR_notation) routing prefixes.
 
-The request blacklist is specified via a `ip_blacklist` property inside one of the `environment` objects, for example:
+The request blacklist is specified via an `ip_blacklist` property inside one of the `environmene` objects found within the [Advanced Configuration]({{< relref "/topic-guides/advanced-config/" >}}) tab in aperture, for example:
 
     {
         "proxychain": [],
@@ -49,4 +49,7 @@ The request blacklist is specified via a `ip_blacklist` property inside one of t
         }
     }
 
-This would stop all requests from the IP address of 192.0.2.1, and all requests from any IP address in the range of 198.51.100.0-198.51.100.255 progressing any further and returning a 403 Forbidden HTTP status response ([custom response]({{< relref "/reference/http-error-messages.md#custom-error-messages" >}}) if provided).
+The section.config.json file blacklist accepts individual IP addresses as well as entire subnets. This configuration file would block all requests from 192.0.2.1 and from the IP range of 198.51.100.0-198.51.100.255. The origin server would never even see the requests and the section.io platform would deliver 403 forbidden errors directly to the (likely malicious) clients.
+
+ If you prefer, you can create a [custom response]({{< relref "/reference/http-error-messages.md#custom-error-messages" >}}) to entities on the IP blacklist.
+
