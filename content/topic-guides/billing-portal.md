@@ -19,7 +19,7 @@ Update the contact information for your subscriptions or choose a password for y
 
 ## Subscriptions
 
-Provides an overview of each subscription on section.io.  Each website you set up on your section.io account will have a seperate subsctiption so you can track billing seperately for each website.  You can also attach different payment methods to each website.
+Provides an overview of each subscription on section.io.  Each website you set up on your section.io account will have a seperate subsctiption so you can track billing separately for each website.  You can also attach different payment methods to each website.
 
 You can also cancel individual subscriptions from this interface.  Click on the "Cancel" link in the particular subscription.
 
