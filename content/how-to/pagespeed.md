@@ -1,5 +1,5 @@
 ---
-title: Using PageSpeed with section.io
+title: Run PageSpeed on section.io
 description: Using Google's PageSpeed inside section.io.
 keywords: content delivery network, CDN, pagespeed, reverse proxies, proxy, proxy template
 aliases:

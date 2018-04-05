@@ -1,5 +1,5 @@
 ---
-title: Virtual Waiting Room
+title: Install Virtual Waiting Room
 description: How to set a limit on the number of visitors your site can safely handle.
 keywords: traffic management, varnish, VCL, traffic spikes
 aliases:
@@ -59,7 +59,7 @@ As GoSquared is an external service, it is possible that the current user count 
 ## Optional Step 4: Edit the Virtual Waiting Room
 
 The default Overload Page will show your customers a blank page with unstyled text saying “threshold exceeded”. To implement the virtual waiting room feature, first update the VCL with this default setting. Then go in and edit the VCL. Specifically, line 16 of the above gist that will be added to the default.vcl calls the html that will be displayed. To add your own HTML, simply replace the `<html>threshold exceeded</html>` with your own html.
-  
+
 
 ## Operations
 
