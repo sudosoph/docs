@@ -14,11 +14,12 @@ If you have added [multiple domains](/docs/change-dns/#multiple-domains) to the 
 
 Each certificate has a short validity period and will be renewed 30 days prior to expiry. If you require wildcards, multi hostname or extended validation (EV) certificates you will need to provide your own certificate.
 
-## Custom certificate
+## Add custom certificate through aperture
 
-To switch your application to use a custom certificate you will need to obtain an certificate and private key pair. For production use you should use a certificate signed by a trusted root Certificate Authority (CA). In development scenarios you may find a [self-signed certificate is sufficient](https://info.ssl.com/ssl-made-easy-for-beginners/).
+To use a custom certificate for your application you will need to obtain a certificate and private key pair. For production use you should use a certificate signed by a trusted root Certificate Authority (CA). In development scenarios, you may find a [self-signed certificate is sufficient](https://info.ssl.com/ssl-made-easy-for-beginners/).
 
-First, you will need to ensure you have the public certificate in Base64-encoded DER-encoded (PEM) format. It will look something like this:
+### 1) Get your properly-formatted certificate
+You will need to ensure you have the public certificate in Base64-encoded DER-encoded (PEM) format. It will look something like this:
 
     -----BEGIN CERTIFICATE-----
     MIIF6DCCBNCgAwIBAgIQBBHej1O0YvalqGG3EuxrWTANBgkqhkiG9w0BAQsFADBw
@@ -30,7 +31,9 @@ First, you will need to ensure you have the public certificate in Base64-encoded
 
 We have omitted most of the lines in the example but expect 30 or more in yours.
 
-Next, if your certificate is signed by a CA then it will typically have been signed by an intermediate certificate or two, not by the CA root certificate. As an example, the certificate chain for www.example.com looks like this:
+### 2) Specify any intermediate certificates
+
+If your certificate is signed by a Certificate Authority, then it will typically have been signed by an intermediate certificate or two, not by the CA root certificate. As an example, the certificate chain for www.example.com looks like this:
 
     DigiCert (the CA root)
      \- DigiCert SHA2 High Assurance Server CA (an intermediate cert)
@@ -38,9 +41,9 @@ Next, if your certificate is signed by a CA then it will typically have been sig
 
 If you have any intermediate certificates in your chain you should have them in a separate file. You can and should omit the root certificate.
 
-The www.example.com result would look like this
+The certificate chain for www.example.com result would look like this:
 
-public certificate:
+public certificate at the top:
 
     -----BEGIN CERTIFICATE-----
     MIIF6DCCBNCgAwIBAgIQBBHej1O0YvalqGG3EuxrWTANBgkqhkiG9w0BAQsFADBw
@@ -50,7 +53,7 @@ public certificate:
     I5JUNzQIPHaH0kP40DdTBNmczS4UiWaoY3pnlw==
     -----END CERTIFICATE-----
 
-intermediate certificates:
+followed by any intermediate certificate(s):
 
     -----BEGIN CERTIFICATE-----
     MIIEsTCCA5mgAwIBAgIQBOHnpNxc8vNtwCtCuF0VnzANBgkqhkiG9w0BAQsFADBs
@@ -71,23 +74,23 @@ The last input you require is your certificate’s corresponding RSA private key
     37sJ5QsW+sJyoNde3xH8vdXhzU7eT82D6X/scw9RZz+/6rCJ4p0=
     -----END RSA PRIVATE KEY-----
 
-It is important for Section to function that the private key is **not** password protected. Also, unlike the default for some Base64 encoding tools, the line length must be 64 characters.
+It is important that the private key is **not password protected**. Also, unlike the default for some Base64 encoding tools, the line length must be 64 characters.
 
 In most scenarios the openssl software can help produce the required files and convert them to the appropriate format.
 
-## Where to put your custom certificate and key
+### 3) Install the certificate in section.io
 
 Once you have your certificate and key in the formats described above, you can install them into section.io.
 
-Log in to [Aperture](https://aperture.section.io) for your application, and under the **Set up** menu select **HTTPS**. Copy & paste the certificate files you prepared earlier into the input boxes as labeled, then click *Save Changes*.
+Log in to [Aperture](https://aperture.section.io) for your application, and in the sidebar under the **Set up** header select **HTTPS**. Copy & paste the certificate files you prepared earlier into the input boxes as labeled, then click *Save Changes*. Make sure the certificates are in the proper order. For help on that, check out [our guide] (/docs/how-to/https/determine-tls-certificate-order)
 
 This will deploy your certificate out to our delivery nodes.
 
 Once you have saved your public certificates and private key, when you come back to the HTTPS page the private key will not be displayed on screen as it would be a security risk to display it.
 
-### Certificate API Upload
+## Upload a certificate using the API
 
-To add an additional domain to your application via the API:
+### 1) To add an additional domain certificate  to your application via the API:
 
 `POST /account/{accountId}/application/{applicationId}/environment/{environmentName}/domain/{hostName}`
 
@@ -101,7 +104,7 @@ If there is no body payload, the domain name will have a Let's Encrypt certifica
     }
 
 
-To remove a domain via the API:
+### 2) To remove a domain via the API:
 
 `DELETE /account/{accountId}/application/{applicationId}/environment/{environmentName}/domain/{hostName}`
 

@@ -1,6 +1,6 @@
 ---
-title: Real User Monitoring
-description: Section.io's real user monitoring
+title: Set up Real User Monitoring
+description: section.io's real user monitoring
 keywords: content delivery network, CDN, rum, performance, baseline, testing
 aliases:
   - /rum/
