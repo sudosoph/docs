@@ -7,11 +7,11 @@ aliases:
 
 ---
 
-Because section.io is the only CDN that offers your choice of reverse proxy, you can choose to bring the Web Application Firewall created by the security experts at Threat X into your web site's delivery infrastructure.
+Because section.io is the only CDN that allows you to choose the reverse proxies that run in your stack, you can choose to bring the Web Application Firewall created by the security experts at Threat X into your web site's delivery infrastructure.
 
-## About Threat X
+## About Threat-X
 
-Threat X is a reverse proxy that inspects and adapts to web site attacks that can inflitrate your web site and cause problems for your business.
+Threat-X is a reverse proxy that inspects and adapts to web site attacks that can infiltrate your web site and cause problems for your business.
 
 Because Threat X doesn't simply rely upon statically defined rule sets like old WAFs (and CDNs based on those old WAFs) you can expect a higher degree of security.
 

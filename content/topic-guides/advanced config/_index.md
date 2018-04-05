@@ -4,7 +4,7 @@ description = ""
 weight = 1
 +++
 
-When you are ready to start creating more advanced configurations for your proxies, you can start editing the configuration files directly. All of the files in your repository can be accessed by visiting Repository under the Configuration menu in the left nav of Aperture.
+When you are ready to start creating more advanced configurations for your proxies, you can start editing the configuration files directly. All of the files in your repository can be accessed by visiting Repository under the Configuration menu in the left nav of Aperture. For more information on more basic configurations done through our GUI, check out [quick configuration](/docs/topic-guides/basic-configuration).
 
 In the repository you can see all the files in your repository, commits to those files, stats, and a branching diagram. All of your advanced configuration for Varnish cache or Modsecurity will be done by editing the files here.
 
