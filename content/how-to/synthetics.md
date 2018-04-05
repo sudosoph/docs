@@ -1,5 +1,5 @@
 ---
-title: Synthetic Tests
+title: Running Synthetic Tests
 description: Section.io's synthetic testing
 keywords: content delivery network, CDN, synthetics, performance, baseline, testing
 aliases:
