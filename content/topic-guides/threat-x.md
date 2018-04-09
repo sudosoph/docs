@@ -1,5 +1,5 @@
 ---
-title: ThreatX WAF
+title: Threat X WAF
 description: Using the Threat X Web Application Firewall (WAF) inside section.io.
 keywords: WAF, web application firewall, security, Layer 7 attacks
 aliases:
@@ -30,12 +30,12 @@ When creating your application you will want to select the **Threat-X** on the s
 You will then want to follow the steps below:
 
 1. Contact section.io support. Our engineers will organize an account with Threat X. The section.io team will provide you with credentials to access the Threat X management console.
-1. Threat X will then be running on your site, inspecting your traffic. This period allows the system to form a baseline of "good traffic".
-1. After a while, look at the threats that are hitting your site. You'll want to look for any false positives - this is where Threat X has detected an attack that could be a result of bugs in your site.
+1. Threat X will then be running on your site, inspecting your traffic. This period is referred to as "baselining" and allows the system to form a behavioral map of what good, normal traffic looks like for your website.
+1. After a while, look at the threats that are hitting your site with a representative from Threat X. Together you will assess the results of baselining mode and look for any false positives - this is where Threat X has detected an attack that could be a result of intended behavior or bugs in your site.
 1. Change Threat X from inspection mode into blocking mode.
 
 ## Other things to note
 
-Naturally, you can see when Threat X is on your site by looking at the Overview page in Aperture, section.io's management console.
+Naturally, you can see Threat X is on your site by looking at the Overview page in Aperture, section.io's management console.
 
-Also, our powerful Kibana interface will show you all the HTTP requests made in the Content Delivery Grid, and this also includes the HTTP traffic passing throught the Threat X console.
+The section.io platform writes a log for each HTTP request that passes through Threat X. These will be available in our powerful Kibana interface alongside logs from all of the other proxies in your stack.
