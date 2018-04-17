@@ -6,7 +6,7 @@ aliases:
   - /rum/
 
 ---
-section.io offers free real user monitoring for any customer that signs up and begins their trail. This enables you to see how your own visitors are experiencing your website performance with the use of a simple JavaScript snippet. Data includes:
+section.io offers free real user monitoring for any customer that signs up and begins their trial. This enables you to see how your own visitors are experiencing your website performance with the use of a simple JavaScript snippet. Data includes:
 
 * Back end, front end, and full page load time
 * Throughput
