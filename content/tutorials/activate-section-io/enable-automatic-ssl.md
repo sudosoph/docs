@@ -13,7 +13,7 @@ weight: 3
 ![HTTPS Menu in Management Console](/docs/images/screenshots/https/highlight-renew-certificate-button.png?height=80px)
 
 {{% notice info %}}
-If you have any trouble, consider looking at our [HTTPS Troubleshooting guides]({{< relref "how-to/dns/check-your-current-dns-setup" >}}).
+If you have any trouble, consider looking at our [HTTPS Troubleshooting guides]({{< relref "how-to/dns/check-your-current-dns-setup.md" >}}).
 
 {{% /notice %}}
 [That's it! Let's review what we've done.]({{< relref "tutorials/activate-section-io/tutorial-complete.md" >}})
