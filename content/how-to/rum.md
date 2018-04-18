@@ -42,6 +42,69 @@ To add the section.io RUM script within Google Tag Manager, please follow the st
 
 9) Once you've completed these steps, you're ready to start collecting performance metrics.
 
+## Set up RUM with Classifications
+
+section.io RUM can also provide user statistics subdivided by page classifications, allowing you to see pageload statistics for specific page classifications as well as your comprehensive, site-wide statistics. Although you can configure page classifications in whatever way you would like, common classifications include: `Home`, `Product`, or `Category`.
+
+### To setup RUM with page classifications:
+
+#### 1) Decide what classifications you want
+
+In order to build out the rest of your RUM script, you need to decide what page classifications you want to collect data for. Our available classifications are: `Home`,`Product`, `Checkout`, `Category`, and `Uncategorised`.
+
+**Note**: *Make sure you do not change the spelling of 'Uncategorised'. It will not collect the data.*
+
+These classifications would give you statistical metrics on your home page, your individual product pages, your product category pages, and your checkout process. Uncategorised collects metrics on everything that doesn't fall into one of those classifications.
+
+#### 2) Come up with a descriptive HTML classname for each one of your classifications
+
+A good classname for your Home classification would be something like `rum-home`.
+
+#### 3) Add these descriptive classnames to your HTML.
+
+In order for our script to recognize a given page under the classification you want, it needs to have the appropriate classname in its HTML body. For example, all your Product pages should have the same product classname in their HTML bodies.
+
+#### 4) Create a folder in your repository (found under Advanced Configuration) named `rum`. **Note**: *In order to do this, you will need to pull down your configuration repository. Folders and files cannot be created in the UI*.
+
+#### 5) Create a JavaScript file inside `rum` with the same name as your Hostname/Production domain name.
+
+ If your Production domain name is `www.example.com`, then your JS file should be `www.example.com.js`. Similarly, if you are using a bare domain such as `abc.com`, then your JS file should be named `abc.com.js`.
+
+#### 4) Tailor this template to fit your classifications and insert into your JS file:
+
+```
+(function (w) {
+
+  var pageUrl = w.location.pathname;
+
+  var pageName = "Uncategorised";
+
+  if (bodyHasClass("home")) {
+    pageName = "Home";
+  } else if (bodyHasClass("category-view")) {
+    pageName = "Category";
+  } else if (pageUrl.match("/checkout")) {
+    pageName = "Checkout";
+  } else if (bodyHasClass("product-view")) {
+    pageName = "Product";
+  } else {
+    pageName = "Uncategorised";
+  }
+
+  w.sq_pagetype_override = pageName ;
+
+  function bodyHasClass(className) {
+    return document.getElementsByTagName("BODY")[0].classList.contains(className);
+  }
+})(window);
+```
+
+The only sections you should need to configure are the if-statements. The page will default to `Uncategorised`, but that is overwritten if any of the if-statements resolves to true. The `bodyHasClass()` method will inspect the body for a given class and return a boolean, but you're free to make the if-logic pass in any other way that makes sense. In the example above, `Checkout` pages are identified by URL matching as opposed to HTML classnames. What matters is that pageName is set to the right value.
+
+#### 6) Contact section.io
+
+In order to go-live with your new RUM, you'll need a section.io engineer. Email us at `support@section.io`.
+
 ## Viewing your metrics
 
 To view your real user monitoring metrics [login to your section.io account](https://aperture.section.io/) and go to "Monitoring" under "Real time" in the left navigation. From there you can click on "Real User Monitoring" in the left hand corner of the screen to view your Data
