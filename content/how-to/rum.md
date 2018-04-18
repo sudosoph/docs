@@ -44,7 +44,7 @@ To add the section.io RUM script within Google Tag Manager, please follow the st
 
 ## Set up RUM with Classifications
 
-section.io RUM can also provide user statistics subdivided by page classifications, allowing you to see pageload statistics for specific page classifications as well as your comprehensive, site-wide statistics. Although you can configure page classifications in whatever way you would like, common classifications include: `Home`, `Product`, or `Category`.
+section.io RUM can also provide user statistics subdivided by page classifications, giving you pageload statistics for specific page classifications and site-wide statistics.
 
 ### To setup RUM with page classifications:
 
@@ -58,19 +58,21 @@ These classifications would give you statistical metrics on your home page, your
 
 #### 2) Come up with a descriptive HTML classname for each one of your classifications
 
-A good classname for your Home classification would be something like `rum-home`.
+A good classname for your Product classification would be something like `rum-product`. All that matters is that it makes sense and is easily replicable.
 
 #### 3) Add these descriptive classnames to your HTML.
 
-In order for our script to recognize a given page under the classification you want, it needs to have the appropriate classname in its HTML body. For example, all your Product pages should have the same product classname in their HTML bodies.
+In order for our script to recognize a given page under the classification you want, it needs to have the appropriate classname in its HTML body. For example, if you chose `rum-product` as your classname for Product in Step #2, then all your Product pages should have `rum-product` as one of the classes on their HTML body.
 
-#### 4) Create a folder in your repository (found under Advanced Configuration) named `rum`. **Note**: *In order to do this, you will need to pull down your configuration repository. Folders and files cannot be created in the UI*.
+#### 4) Create a folder in your repository (found under Advanced Configuration) named `rum`.
+
+**Note**: *In order to do this, you will need to pull down your configuration repository onto your local machine. Folders and files cannot be created in the UI*.
 
 #### 5) Create a JavaScript file inside `rum` with the same name as your Hostname/Production domain name.
 
  If your Production domain name is `www.example.com`, then your JS file should be `www.example.com.js`. Similarly, if you are using a bare domain such as `abc.com`, then your JS file should be named `abc.com.js`.
 
-#### 4) Tailor this template to fit your classifications and insert into your JS file:
+#### 6) Tailor this template to fit your classifications and insert into your JS file:
 
 ```
 (function (w) {
@@ -98,8 +100,9 @@ In order for our script to recognize a given page under the classification you w
   }
 })(window);
 ```
+**Note again**: *Don't change the spelling of Uncategorised*
 
-The only sections you should need to configure are the if-statements. The page will default to `Uncategorised`, but that is overwritten if any of the if-statements resolves to true. The `bodyHasClass()` method will inspect the body for a given class and return a boolean, but you're free to make the if-logic pass in any other way that makes sense. In the example above, `Checkout` pages are identified by URL matching as opposed to HTML classnames. What matters is that pageName is set to the right value.
+The only sections you should need to configure are the if-statements. The pageName variable will default to `Uncategorised`, but that default is overwritten if any if-statement resolves to true. The `bodyHasClass()` method will inspect the body for a given class and return a boolean, but you're free to make the if-logic pass in any other way that makes sense. In the example above, `Checkout` pages are identified by URL matching as opposed to HTML classnames. What matters is that pageName is set to the right value.
 
 #### 6) Contact section.io
 
