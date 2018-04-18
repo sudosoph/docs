@@ -1,12 +1,12 @@
 ---
-title: Determine TLS Certificate Order 
-description: How to determine custom TLS certificate order 
+title: Determine TLS Certificate Order
+description: How to determine custom TLS certificate order
 keywords: SSL, certificate, custom, upload, update, CDN configuration
 ---
 ## Getting started
 
 Download or unzip the certificates in to a directory somewhere on your computer.
-The certificates should be PEM encorded and will look like the following in a text editor.
+The certificates should be PEM encoded and will look like the following in a text editor.
 
     -----BEGIN CERTIFICATE-----
     /* contents of certificate */
@@ -24,11 +24,11 @@ In your command prompt go to the directory where you placed the certificates.
 
 ## Determine domain certificate
 
-You will need to determine which certificate is the one issued to your site(s). 
+You will need to determine which certificate is the one issued to your site(s).
 
 Run the following command in your command prompt window where `certificate1.pem` is the file name of a certificate you are testing:
 
-    openssl x509 -noout -subject -in certificate1.pem 
+    openssl x509 -noout -subject -in certificate1.pem
 
 If the certificate is the site certificate, you will see the domain of your site in the output. e.g.
 
@@ -51,7 +51,7 @@ You should see a list of SAN domains on that certificate. If that list contains 
 
 ## Determine intermediate certificate order
 
-Each certificate contains information about its issuer. The issuer is the next link in the SSL chain. 
+Each certificate contains information about its issuer. The issuer is the next link in the SSL chain.
 The SSL chain will be `domain certificate -> intermediate ceritificate(s) -> root certificate`
 
 Determine the intermediate certificate of your domain certificate by examining the issuer of your domain cert with the following command.
@@ -60,7 +60,7 @@ Determine the intermediate certificate of your domain certificate by examining t
 
 You should see output such as `issuer= /C=US/O=Let's Encrypt/CN=Let's Encrypt Authority X3`
 
-Then you can compare this against the subject of the other certificate files to find one that matches the issuer above. 
+Then you can compare this against the subject of the other certificate files to find one that matches the issuer above.
 
     openssl x509 -noout -subject -in certificate2.pem
 

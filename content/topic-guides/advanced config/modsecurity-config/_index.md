@@ -27,7 +27,7 @@ At every opportunity, the implementation of ModSecurity on the section.io platfo
 
 section.io uses the official ModSecurity distributions published by [Trustwave] running upon Apache. section.io does not use custom-compiled builds of modsecurity.
 
-ModSecurity will be initialised with the configuration found in the modsecurity.conf file, and matching rule files at rules/activated\_rules/\*.conf under the corresponding subdirectory of your section.io application repository.
+ModSecurity will be initialized with the configuration found in the modsecurity.conf file, and matching rule files at rules/activated\_rules/\*.conf under the corresponding subdirectory of your section.io application repository.
 
 *Note:* Like other proxies in section.io, ModSecurity will sit between a TLS offload system accepting incoming connections, and an outbound proxy making upstream connections. Two additional HTTP request headers will be added to carry connection information, X-Forwarded-For containing the downstream client IP address and any intermediate proxy IP addresses, and also X-Forwarded-Proto which will specify either http or https depending on the protocol with which the downstream client connected.
 

@@ -3,9 +3,9 @@ title: Devops Ready
 weight: 7
 ---
 
-Whether a website is yours or your client's, you need to have the right information available to you immediately when you're running a mission critical application. 
+Whether a website is yours or your client's, you need to have the right information available to you immediately when you're running a mission critical application.
 
-section.io runs a detailed,real-time logging and metrics platform to provide you with the vital diagnostics.
+section.io runs a detailed, real-time logging and metrics platform to provide you with the vital diagnostics.
 
 DevOps teams need a few things to get their job done well:
 

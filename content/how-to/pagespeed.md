@@ -17,7 +17,7 @@ To add PageSpeed to your reverse proxy chain, you must add it through the local 
 
 After running this command, you will notice a **pagespeed** directory within your repo containing two files named `http.conf` and `server.conf`.
 
-In the `http.conf` place any PageSpeed directives that need to be specified at the nginx "HTTP" level, and place all other directives withing the `server.conf` file.
+In the `http.conf` place any PageSpeed directives that need to be specified at the nginx "HTTP" level, and place all other directives within the `server.conf` file.
 
 ## Using PageSpeed alongside Varnish
 
