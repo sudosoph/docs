@@ -52,27 +52,29 @@ section.io RUM can also provide user statistics subdivided by page classificatio
 
 In order to build out the rest of your RUM script, you need to decide what page classifications you want to collect data for. Our available classifications are: `Home`,`Product`, `Checkout`, `Category`, and `Uncategorised`.
 
-**Note**: *Make sure you do not change the spelling of 'Uncategorised'. It will not collect the data.*
+**Note**: *Make sure you do not change the spelling of 'Uncategorised'. It will not collect the data*
 
-These classifications would give you statistical metrics on your home page, your individual product pages, your product category pages, and your checkout process. Uncategorised collects metrics on everything that doesn't fall into one of those classifications.
+If you choose to enable them all, these classifications give you statistical metrics on your home page, your individual product pages, your product category pages, and your checkout process. Uncategorised collects metrics on everything that doesn't fall into one of those classifications.
 
-#### 2) Come up with a descriptive HTML classname for each one of your classifications
+#### 2) Add HTML body classnames for each one of your classifications
 
-A good classname for your Product classification would be something like `rum-product`. All that matters is that it makes sense and is easily replicable.
+By the end of this step, all the pages you want tracked need to have a classification-specific class on their HTML body that identifies them to our RUM script. For example, all Product pages need to have some product class, all Category pages need to have a category class, etc.
 
-#### 3) Add these descriptive classnames to your HTML.
+If you are setting up RUM for a Magento application, you probably already have body classes you can use for this. These classnames are included below in the example code for Step #5. If you are using Magento, you'll want to verify that your bodies have these classes and then proceed to the next step.
 
-In order for our script to recognize a given page under the classification you want, it needs to have the appropriate classname in its HTML body. For example, if you chose `rum-product` as your classname for Product in Step #2, then all your Product pages should have `rum-product` as one of the classes on their HTML body.
+If you're not using Magento but already have classes that appear consistently on the bodies of your pages, feel free to use those and proceed to the next step as well.
 
-#### 4) Create a folder in your repository (found under Advanced Configuration) named `rum`.
+If you don't have any consistently applied body classes, you'll need to make some. A good classname for your Product classification would be something like `rum-product`. All that matters is that it makes sense and consistently appears on all pages that you want under that classification. Add these to the appropriate pages.
+
+#### 3) Create a folder in your repository (found under Advanced Configuration) named `rum`.
 
 **Note**: *In order to do this, you will need to pull down your configuration repository onto your local machine. Folders and files cannot be created in the UI*.
 
-#### 5) Create a JavaScript file inside `rum` with the same name as your Hostname/Production domain name.
+#### 4) Create a JavaScript file inside `rum` with the same name as your Hostname/Production domain name.
 
  If your Production domain name is `www.example.com`, then your JS file should be `www.example.com.js`. Similarly, if you are using a bare domain such as `abc.com`, then your JS file should be named `abc.com.js`.
 
-#### 6) Tailor this template to fit your classifications and insert into your JS file:
+#### 5) Tailor this template to fit your classifications and insert into your JS file:
 
 ```
 (function (w) {
@@ -81,13 +83,13 @@ In order for our script to recognize a given page under the classification you w
 
   var pageName = "Uncategorised";
 
-  if (bodyHasClass("home")) {
+  if (bodyHasClass("cms-home")) {
     pageName = "Home";
-  } else if (bodyHasClass("category-view")) {
+  } else if (bodyHasClass("catalog-category-view")) {
     pageName = "Category";
   } else if (pageUrl.match("/checkout")) {
     pageName = "Checkout";
-  } else if (bodyHasClass("product-view")) {
+  } else if (bodyHasClass("catalog-product-view")) {
     pageName = "Product";
   } else {
     pageName = "Uncategorised";
@@ -100,7 +102,8 @@ In order for our script to recognize a given page under the classification you w
   }
 })(window);
 ```
-**Note again**: *Don't change the spelling of Uncategorised*
+
+**Double Note**: *Don't change the spelling of Uncategorised*
 
 The only sections you should need to configure are the if-statements. The pageName variable will default to `Uncategorised`, but that default is overwritten if any if-statement resolves to true. The `bodyHasClass()` method will inspect the body for a given class and return a boolean, but you're free to make the if-logic pass in any other way that makes sense. In the example above, `Checkout` pages are identified by URL matching as opposed to HTML classnames. What matters is that pageName is set to the right value.
 
