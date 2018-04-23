@@ -10,22 +10,24 @@ URLs that get cached will expire based on the Time To Live (TTL) set either by t
 
 However if you need to remove things from the cache before they expire you can do that and we have outlined the steps to do so below.
 
-## Get started
-
-Log into your Aperture dashboard and under **Content Delivery Grid** navigate to the **Clear Cache** page.
+### 1) Log into your Aperture dashboard and under **Content Delivery Grid** navigate to the **Clear Cache** page.
 
 {{% figure src="/docs/images/clear-cache.png" title="clear cache" %}}
 
-## Individual setup
+### 2) Select the cache you want to clear
 
-Once you are on the **Manage** page, based on your reverse proxy setup, you will have different button group options to choose from. For example, if my reverse proxy setup consists of Varnish and Pagespeed then I will see a Varnish and Pagespeed button in the subnavbar at the top of my screen. Each reverse proxy's cache is independent of one another so you will need to navigate to each reverse proxy's page in order to view the options and clear the cache for that corresponding reverse proxy.
+After the completion of Step #1, you should be on the cache clearing management page. At the top you will see different button groups depending on your proxy configuration. A proxy configuration with Varnish Cache and Pagespeed would have the following set of buttons:
 
 {{% figure src="/docs/images/cache-clear-nav.png" %}}
 
-## Clearing Varnish Cache
+**Note**: Each reverse proxy's cache is independent of one another so you will need to navigate to each reverse proxy's page in order to view the options and clear the cache for that corresponding reverse proxy.
 
-Visit the documentation specific to [clearing the cache for Varnish.]({{< relref "how-to/varnish-cache/clearing-the-cache.md" >}})
+### 3) Check out the instructions below for the cache you want
 
-## Clearing Pagespeed Cache
+#### a) Clearing Varnish Cache
 
-To clear the Pagespeed cache, it is a lot more straight forward than the Varnish cache clear as there is only one option, empty the entire cache. To do this, all you need to do is click the red button labeled **Empty the entire cache**.
+  We have a whole article on [clearing the cache for Varnish.]({{< relref "how-to/varnish-cache/clearing-the-cache.md" >}}) Check it out.
+
+#### b) Clearing Pagespeed Cache
+
+  Clearing the Pagespeed cache is more straight forward than clearing a Varnish cache because there is only one option: empty the entire cache. To do this, all you need to do is click the red button labeled **Empty the entire cache**.
