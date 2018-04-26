@@ -29,9 +29,9 @@ Next, on the section.io extension, you will see a Management section. The first 
 
 {{% figure src="/docs/images/magento-extention-management.png" %}}
 
-There is also a button to pull in free HTTPS certificate. This will ensure your website has the green padlock next to the url. This is a free certificate included with your section.io application that we will managed on your behalf, to include prourement, installation, and renewal. Please ensure your website has an endpoint exposed to the internet so we can validate the certificate before you go live.
+There is also a button to pull in free HTTPS certificate. This will ensure your website has the green padlock next to the url. This is a free certificate included with your section.io application that we will managed on your behalf, to include procurement, installation, and renewal. Please ensure your website has an endpoint exposed to the internet so we can validate the certificate before you go live.
 
-To go live with Varnish and your section.io application, you willl need to change a DNS record to point to section.io. Detailed instructions can be found [here](https://www.section.io/docs/change-dns/#dns-hosting-with-your-current-provider). You can also find more information from your hosting provider as to where to go to make this change. Once you have made the change, you can click verify to see if the change was successful and traffic is currently flowing through section.io.
+To go live with Varnish and your section.io application, you will need to change a DNS record to point to section.io. Detailed instructions can be found [here](https://www.section.io/docs/change-dns/#dns-hosting-with-your-current-provider). You can also find more information from your hosting provider as to where to go to make this change. Once you have made the change, you can click verify to see if the change was successful and traffic is currently flowing through section.io.
 
 #### Magento CLI Commands
 
