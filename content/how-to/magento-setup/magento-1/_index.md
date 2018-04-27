@@ -1,15 +1,16 @@
 ---
-title: Magento 1 Performance
-description: Guide for evaluating your website performance and how to use section.io to make improvements.
+title: Set up and optimize Magento 1 on section.io
+description: Guide set up a Magento 1 application on section.io
 keywords: cache, https, website performance, page speed, webpage speed, website security, content delivery network, CDN
 weight: 20
 ---
-#### HTML optimisation options:
+#### Options to optimize HTML:
+
 1.  HTML Streaming - https://www.section.io/html-streaming/
 2.  Anonymous User Caching (Recommended) - https://community.section.io/t/a-novel-way-to-cache-html/79
 3.  Turpentine - Detail below
 
-#### Turpentine Process overview
+#### Set up Varnish Caching
 
 Magento 1.9 and earlier does not support Varnish out of the box. Support is instead provided by the [free Turpentine Magento extension].
 
