@@ -5,11 +5,11 @@ keywords: dynamic caching, caching, cache
 
 ---
 
-Caching is so effective at boosting website performance because delivering web content involves extreme repetition. Web servers receive requests for identical static assets and HTML documents thousands (or hundreds of thousands) of times per day. Caching allows the web server delegate this repetition to the caching proxy and only respond to a small fraction of these requests. Eliminating this repetition makes your web server significantly more efficient and can drastically reduce server costs.  
+Caching is so effective at boosting website performance because delivering web content involves extreme repetition. Web servers receive requests for identical static assets and HTML documents thousands (or hundreds of thousands) of times per day. Caching allows the web server delegate this repetition to the caching layer and only respond to a small fraction of these requests. Eliminating this repetition makes your web server significantly more efficient and can drastically reduce server costs.  
 
 This simple formula becomes more complicated, however, when a website introduces authenticated content. These assets are no longer identical — they have important personal information unique to the user making the request. When authentication is involved, caching becomes dangerous. The last thing you want is session leakage: a situation in which one user's personal information is cached and served to another user. Below are two techniques that have been developed to maximize caching while avoiding the potential downfalls of dealing with authenticated content.
 
-## 1) Intelligent Session Establishment (ISE)
+## Intelligent Session Establishment (ISE)
 
 Because of the significant risks around caching authenticated content, Varnish cache does not cache backend responses with any set-cookie headers by default. It also does not look up responses in cache for any requests with cookies on them. The thinking here is that if a backend is responding with a set-cookie header, the response is likely to have some authenticated, user-specific content, or if a client has a cookie, then they're asking for the same. This makes sense in theory, but the problem is that many modern web development frameworks set cookies on non-authenticated responses, greatly reducing Varnish's caching rate out of the box. To Varnish Cache, a much higher percentage of modern web traffic looks uncacheable than actually is.
 
@@ -19,11 +19,11 @@ In order to implement this, you need to know a few things about your platform. T
 
 For more information on implementing ISE, [check out this article](https://community.section.io/t/a-novel-way-to-cache-html/79).
 
-## 2) Hole-Punching
+## Hole-Punching
 
 Even though authenticated pages clearly have user-specific and therefore uncacheable personal information, they also have a lot of generic and reusable resources on them. User account pages, for example, are literally designed to display unique personal data, but they also reuse much of the same HTML and CSS for every customer. As long as we're sending a user account page via a single response, though, we miss out on caching all this generic content.
 
-Hole-punching is a design pattern that solves this problem by loading the authenticated and unauthenticated content for a single page with different requests. To implement hole-punching for a user account page, for example, you would configure the application to respond to such a request with the generic HTML document and other reusable resources, and then load the user-specific information with additional requests — either AJAX or ESI (**note**: ESI requires Varnish cache). This way, you can cache the generic content and leave the authenticated content completely alone.
+Hole-punching is a design pattern that solves this problem by loading the authenticated and unauthenticated content for a single page with different requests. To implement hole-punching for a user account page, for example, you would configure the application to respond to such a request with the generic HTML document and other reusable resources, and then load the user-specific information with additional requests — either AJAX or ESI calls (Edge Side Includes). This way, you can cache the generic content and leave the authenticated content completely alone.
 
 ## Summary
 
