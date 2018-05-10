@@ -9,6 +9,7 @@ Section.io's Developer PoP runs on Kubernetes. Minikube is a prepackaged Kuberne
 
 Minikube runs on your preference of virtual machine ([VirtualBox] is a free option).
 
+1. Verify that you have installed VirtualBox or another VM software.
 1. Download and install <a href="https://github.com/kubernetes/minikube/releases/tag/v0.26.1" target="Minikube" title="Minikube v0.26.1 download">Minikube v0.26.1</a>.
 1. Start minikube: `minikube start`
 1. Initialize the Developer PoP: `minikube ssh "docker run --rm --net=host -v /var/lib/localkube:/var/lib/localkube:ro sectionio/section-init"`
@@ -17,8 +18,9 @@ Minikube runs on your preference of virtual machine ([VirtualBox] is a free opti
 Disable repeating messages about the **kubectl** component you won't need: `minikube config set WantKubectlDownloadMsg false`
 {{% /notice %}}
 
-Now, your Developer PoP base is ready, but your section.io setup is not loaded.
 
-The next step is to [load your section.io setup into the Developer PoP]({{< relref "tutorials/developer-workflow/loading-your-setup-into-the-developer-pop.md" >}}).
+Now your Developer PoP base is ready, but it does not have all the proxies in your configuration.
+
+Lets change that by [loading your section.io setup into the Developer PoP]({{< relref "tutorials/developer-workflow/loading-your-setup-into-the-developer-pop.md" >}}).
 
   [VirtualBox]: http://www.virtualbox.org/
