@@ -68,7 +68,7 @@ If you have a need to run Varnish 3, eg. you have existing v3 VCL you want to ru
 
 ## PageSpeed
 
-- pagespeed 1.12.34.2
+- pagespeed 1.13.35.2
 
 ## Threat-X
 
@@ -76,3 +76,17 @@ Please contact support at [support@section.io](mailto:support@section.io) to con
 
   [Magento Turpentine extension]: https://github.com/nexcess/magento-turpentine
   [commit c63affc9dfa6294ecf8782ae4d1f1fb2c9fd5a18]: https://github.com/SpiderLabs/owasp-modsecurity-crs/tree/c63affc9dfa6294ecf8782ae4d1f1fb2c9fd5a18
+
+## Kraken Image Optimizer
+  - kraken 1.2.0
+
+## Shield Square Bot Blocking
+  -  shieldsquare 0.0.1
+
+## Signal Sciences
+  - sigsci 0.0.1
+  - Web Application Firewall
+  - Please contact support at [support@section.io](mailto:support@section.io) to configure your environment with Signal Sciences.
+
+## OpenResty
+  - openresty 1.13.6.1

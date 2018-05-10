@@ -43,7 +43,7 @@ for common hosts and DNS providers.
   * <a href="http://help.dnsmadeeasy.com/managed-dns/records/cname-record/">DNS Made Easy</a>
 
   * <a href="https://my.bluehost.com/cgi/help/559">Bluehost</a>
-
+  
   * <a href="https://support.dnsimple.com/articles/record-editor/">DNSimple</a>
 
   * <a href="https://support.hostgator.com/articles/cpanel/how-to-change-dns-zones-mx-cname-and-a-records">Hostgator</a>
