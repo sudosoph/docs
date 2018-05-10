@@ -81,11 +81,9 @@ Please contact support at [support@section.io](mailto:support@section.io) to con
   - kraken 1.2.0
 
 ## Shield Square Bot Blocking
-  -  shieldsquare 0.0.1
+  - shieldsquare 0.0.1
 
-## Signal Sciences
-  - sigsci 0.0.1
-  - Web Application Firewall
+## Signal Sciences Web Application Firewall
   - Please contact support at [support@section.io](mailto:support@section.io) to configure your environment with Signal Sciences.
 
 ## OpenResty
