@@ -79,9 +79,12 @@ Please contact support at [support@section.io](mailto:support@section.io) to con
 
 ## Kraken Image Optimizer
   - kraken 1.2.0
+  - Lossy and lossless compression.
+  - Resizing of images.
 
-## Shield Square Bot Blocking
+## Shield Square
   - shieldsquare 0.0.1
+  - Intelligent Bot Blocking
 
 ## Signal Sciences Web Application Firewall
   - Please contact support at [support@section.io](mailto:support@section.io) to configure your environment with Signal Sciences.
