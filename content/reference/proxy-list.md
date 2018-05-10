@@ -72,7 +72,7 @@ If you have a need to run Varnish 3, eg. you have existing v3 VCL you want to ru
 
 ## Threat-X
 
-Please contact support at [support@section.io](mailto:support@section.io) to configure your environment with Threat-X.
+- Please contact support at [support@section.io](mailto:support@section.io) to configure your environment with Threat-X.
 
   [Magento Turpentine extension]: https://github.com/nexcess/magento-turpentine
   [commit c63affc9dfa6294ecf8782ae4d1f1fb2c9fd5a18]: https://github.com/SpiderLabs/owasp-modsecurity-crs/tree/c63affc9dfa6294ecf8782ae4d1f1fb2c9fd5a18
