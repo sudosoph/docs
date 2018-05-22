@@ -18,7 +18,7 @@ weight: 2
   * Click on the Operations tab.
   ![operations tab](/docs/images/screenshots/dev-pop/operations-tab.png)
 
-  * Enter the git commands in your terminal inside the section.io proxy configuration repository you cloned down in step #1. Replace "site" with your domain. (**note** it won't actually break anything if you leave it as "site").
+  * Enter the git commands you see here inside the repository you cloned down in step #1. Replace "site" with your domain. (**note** it won't actually break anything if you leave it as "site").
 
 ### 3) Push your configuration files to the Developer PoP
   Once you have added the git remote you can push to the Dev PoP by running: `git push developer-pop`

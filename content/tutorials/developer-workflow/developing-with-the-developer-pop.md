@@ -5,7 +5,7 @@ keywords: content delivery network, CDN, virtual machine, vagrant, virtualbox, g
 weight: 3
 ---
 
-### Locally Override DNS to point at the Developer PoP
+### 1) Locally Override DNS to point at the Developer PoP
 
 You will need to modify your local host file and point the **Hosted Name(s)** for your service at `192.168.99.100`.
 
@@ -15,11 +15,15 @@ This will override the DNS endpoint for that domain and force traffic through th
 
 Now when you browse to your site URL, the HTTP traffic will be flowing through the Developer PoP!
 
-### Making changes to your configuration
+### 2) Provision SSL certificate
+
+If you visit your website at this point in the tutorial, you will likely see a browser security warning. While it is totally possible to skip this step, click through this warning and test your site without a problem, our Dev PoP can provision a certificate for your local cluster. On the top right hand side, click on the `download root certificate` button. The next step varies by system, but you'll need to find the `DO_NOT_TRUST_sectionio_root` certificate file and, of course, instruct your system to trust it.
+
+### 3) Making changes to your configuration
 
 Now that you have traffic flowing through the Dev PoP you will be able to change any configuration and see it live within a few seconds.
 
-Using your favorite IDE open the repository you cloned from Aperture. Whether you have Varnish, PageSpeed, or a Web Application Firewall, you can change the configuration to see how your application will behave.
+Using your favorite editor, open the repository you cloned from Aperture. Whether you have Varnish, PageSpeed, or a Web Application Firewall, you can change the configuration to see how your application will behave.
 
 Once you have made changes to your config, you will want to push them to the Dev PoP to see them in action. Again we will be using a typical git workflow:
 
@@ -28,3 +32,5 @@ Once you have made changes to your config, you will want to push them to the Dev
 3. Push your changes: `git push developer-pop`.
 4. If you have syntax errors git will provide feedback. You may need to make adjustments and go back to step 1.
 5. Go back to your browser, reload the page, and see what type of optimizations your changes made.
+
+Congratulations! You have successfully set up the section.io Developer PoP!

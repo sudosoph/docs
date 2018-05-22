@@ -19,7 +19,7 @@ Disable repeating messages about the **kubectl** component you won't need: `mini
 {{% /notice %}}
 
 
-Now your Developer PoP base is ready, but it does not have all the proxies in your configuration.
+Now your Developer PoP base is ready, but it does not have any of the proxies in your configuration.
 
 Lets change that by [loading your section.io setup into the Developer PoP]({{< relref "tutorials/developer-workflow/loading-your-setup-into-the-developer-pop.md" >}}).
 
