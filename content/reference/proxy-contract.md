@@ -47,7 +47,6 @@ The following defines the interaction between the proxy container and the sectio
  * stdout is ignored.
  * a non-zero exit code will fail the message handling and any output to stderr will be reported as the reason.
 
-# Proxy disclosures
+## Additional Considerations
 
-* section.io currently does not support an authorized docker registry which results in the following:
-  * The proxy image must be publicly accessible to allow for development in the section.io Developer PoP.
+* The proxy image will be published in a publicly accessible docker repository. This repository allows your image to be downloaded to developers computers and production servers.
