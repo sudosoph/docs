@@ -7,18 +7,20 @@ aliases:
 
 ---
 
+# Proxy Requirements
+
 The following defines the interaction between the proxy container and the section.io proxy hosting platform:
 
 ## Essential
 
-* Proxy should listen on TCP :80 for HTTP/1.1 — never HTTPS or any other port. 
+* Proxy should listen on TCP :80 for HTTP/1.1 — never HTTPS or any other port.
 * Proxy must connect upstream to `next-hop:80` as HTTP, never HTTPS. The platform will ensure "next-hop" resolves to the next proxy in the chain or the origin — whichever is next upstream.
 * Proxy must handle logs according to these requirements:  
-   * All log files must be written under the `/var/log/` directory. 
+   * All log files must be written under the `/var/log/` directory.
    * Any `/var/log/` subdirectories required must be created during start-up.
 * Return a zero exit code and zero output if config is valid.
 * Return non-zero exit code if config is invalid and output reason for invalidation to stderr (stdout is also accepted but discouraged).
-* `/opt/section/logrotate.sh` will be executed regularly (hourly) to rotate logs. 
+* `/opt/section/logrotate.sh` will be executed regularly (hourly) to rotate logs.
   * This script needs to perform the file rotation and signal processes to re-open file descriptors.
 * `/opt/section/validate.sh` will be executed by Aperture on git push pre-receive to validate that the user's Application git config is correct. Config will be in `/opt/proxy_config/` directory as above.
   * This script must exist, even if it takes no action.
@@ -44,3 +46,8 @@ The following defines the interaction between the proxy container and the sectio
  * $2 will be the message arguments.
  * stdout is ignored.
  * a non-zero exit code will fail the message handling and any output to stderr will be reported as the reason.
+
+# Proxy disclosures
+
+* section.io currently does not support an authorized docker registry which results in the following:
+  * The proxy image must be publicly accessible to allow for development in the section.io Developer PoP.
