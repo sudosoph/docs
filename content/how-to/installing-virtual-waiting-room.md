@@ -11,7 +11,7 @@ In order to use the Virtual Waiting Room feature, you must have Varnish 4+ runni
 
 ## Step 1: Add GoSquared Credentials
 
-First, you need to add a file to the repo called:
+First, you need to add a file to the root of the repository called:
 gosquared-visitor-count
 
 The content of file should be:
@@ -40,6 +40,7 @@ In the varnish file of your repo, edit the default.vcl to add the following:
 
 {{< gist mkilbo 45165c30ecf3ea141f2a12b91a486216 >}}
 
+The above code needs to be inserted separate to, and above any other instance of `sub vcl_recv`. 
 Be sure to update the secret and threshold values to match what you added for your GoSquared Credentials.
 
 
@@ -60,6 +61,8 @@ As GoSquared is an external service, it is possible that the current user count 
 
 The default Overload Page will show your customers a blank page with unstyled text saying “threshold exceeded”. To implement the virtual waiting room feature, first update the VCL with this default setting. Then go in and edit the VCL. Specifically, line 16 of the above gist that will be added to the default.vcl calls the html that will be displayed. To add your own HTML, simply replace the `<html>threshold exceeded</html>` with your own html.
 
+If you would also like to monitor how many users are currently being held in Overflow, simply create another GoSquared project with a new GoSquared ID and inject it into the HTML of the Overload page.
+This tracking ID would be different from the ID `GSN-000000-M` used to tracking how many active users are on the site.   
 
 ## Operations
 
