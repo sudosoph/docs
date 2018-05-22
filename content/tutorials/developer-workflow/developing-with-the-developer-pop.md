@@ -10,7 +10,7 @@ weight: 3
 You will need to modify your local host file and point the **Hosted Name(s)** for your service at `192.168.99.100`.
 
     192.168.99.100    www.example.com
-
+    
 This will override the DNS endpoint for that domain and force traffic through the Dev PoP and then to your origin address. That could be your production webserver, production load balancer, development webserver — whatever you configured for in the Dev PoP UI.
 
 Now when you browse to your site URL, the HTTP traffic will be flowing through the Developer PoP!

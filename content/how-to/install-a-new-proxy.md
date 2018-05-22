@@ -12,23 +12,23 @@ For example, if your application is setup with Varnish 4.0.3, you should see thi
 	"proxychain": [
 	        {
 	            "name": "modsecurity",
-	            "image": "modsecurity"
-	        },
-	    ],
+	            "image": "modsecurity:2.2.7"
+	        }
+	    ]
 
 ## 1) Add the proxy to your environment's section.config.json file
-Let's add Varnish 4.0.3 to the example above.
+Let's add Varnish 6.0.0 to the example above. You can find a list of current proxies [here]({{< relref "reference/proxy-list.md" >}})
 
 To add a proxy, we need to insert a json object containing the proxy's name and image (the specific version of the proxy you want). After adding the Varnish proxy, our file looks like:
 
 	"proxychain": [
 	        {
 	            "name": "modsecurity",
-	            "image": "modsecurity"
+	            "image": "modsecurity:2.2.7"
 	        },
 	        {
 	            "name": "varnish",
-	            "image": "varnish:4.0.3"
+	            "image": "varnish:6.0.0"
 	        }
 	    ],
 
