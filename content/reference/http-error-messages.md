@@ -43,4 +43,4 @@ The repository is initialized with a `custom_errors` folder containing a `500.ht
 
 To customise the HTML returned in case of a 500 error the file should be renamed to `500.html` and the HTML inside customized to what they want. Other error codes can be implemented in the same way, eg. `503.html`, `404.html`, etc.
 
-Only valid nginx error codes can be used, that is codes between 300 and 599. Any other files in that folder will be ignored.
+Only valid nginx error codes can be used, that is codes between 300 and 599 excluding 499. Any other files in that folder will be ignored.
