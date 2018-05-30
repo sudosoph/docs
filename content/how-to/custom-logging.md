@@ -1,5 +1,5 @@
 ---
-title: Log custom logging in section.io
+title: Custom logging in section.io
 description: Set up section.io so that it can log custom information in Varnish
 keywords: custom logging, logging, Edge logging, Varnish logging, Kibana, Elastic Search, content delivery network, CDN
 aliases:
