@@ -30,7 +30,6 @@ Varnish 4.1+ VCL can call `std.log("section-io-cache-tag:CUSTOM_VALUE_HERE");` i
 Here is an example usage where an origin response header named `origin-information` is captured and logged in `sub vcl_deliver` then removed so it is not visible downstream:
     
     import std;
-
     sub vcl_deliver {
         std.log("section-io-cache-tag:" + resp.http.origin-information);
         unset resp.http.origin-information;
@@ -40,3 +39,7 @@ Here is an example usage where an origin response header named `origin-informati
 If the value of `origin-information` header was `Hello again!` you would see following in Kibana.
 
 {{% figure src="/docs/images/section_io_cache_tag.png" %}}
+
+Note: Varnish is setup to only log these custom values from `sub vcl_recv` and `sub vcl_deliver`. Logging information from other subroutines such as `sub vcl_backend_response` will be ignored. 
+
+
