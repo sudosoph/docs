@@ -9,15 +9,23 @@ The following is a guide to going live on section.io with a Magento 2 applicatio
 
 ### 1) Download the section.io extension.
 
-To get started with section.io and Varnish directly from the Magento Admin portal, you first must download the "Instant Global Cache" extension from the [Magento Marketplace](https://marketplace.magento.com/sectionio-metrics.html).
+#### a) Via the Magento Marketplace
+  To get started with section.io and Varnish directly from the Magento Admin portal, you first must download the "Instant Global Cache" extension from the [Magento Marketplace](https://marketplace.magento.com/sectionio-metrics.html).
 
-### 2) Login with or create section.io credentials
+#### b) Via the command line
+  Add `"sectionio/metrics": "dev-master"` to your `composer.json` file and run `composer update`. This assumes that your application is configured to pull from Packagist.
 
-Once the extension is added, go to Reports in the left Nav and then find section.io listed in your Reports.
+### 2) Connect your Magento application to your section.io account.   
+
+Once the extension is added, click on Reports in the left Nav. A section.io option should now be listed among your reports.
 
 {{% figure src="/docs/images/magento-extension-location.png" %}}
 
-We will ask you to login with section.io credentials. You can either create them in the Magento portal or use credentials you have created from [section.io/sign-up/](https://www.section.io/sign-up/). When you create your login we will also send you an email to verify your email address. This is required for us to setup your application.
+#### a) Set up via the Admin portal
+Inside the section.io reports view, you will see fields requesting your section.io credentials. If you've already created an account on our platform, enter those credentials here. Othewise, You can also create an account from here in the Magento portal or on our website: [section.io/sign-up/] (https://www.section.io/sign-up/). When you create your login, we will also send you an email to verify your email address. This is required for us to setup your application.
+
+#### b) Set up via the command line  
+In order to link your section.io account to your Magento application via the command line, you need to have already created an account( [section.io/sign-up/](https://www.section.io/sign-up/)). Once your account is created and the section.io extension is installed inside your app, your magento binary should have access to the `sectionio:setup` command. From the root of your application, run `bin/magento sectionio:setup <username> <password> <account_id> <application_id>`. A successful execution produces no output. If it executed successfully, you should see your account information displayed in the section.io reports tab within your admin portal. *Note*: After running this command, run `bin/magento setup:upgrade` and `bin/magento setup:di:compile`.
 
 ### 3) Set up your application and Varnish Cache.
 
@@ -31,31 +39,24 @@ Now you have a section.io application created with Varnish 4 and Varnish Cache s
 
 ### 4) Import Magento Varnish cache configuration
 
+#### a) Import via the Admin portal
 On the section.io extension, you will see a Management section. The first button says “Update varnish configuration.” Clicking this button will pull in the recommended Magento VCL (Varnish Configuration Language) into your section.io application to optimize your caching for Magento.
 
 {{% figure src="/docs/images/magento-extention-management.png" %}}
+
+#### b) Import via the command line
+
+You can also import your vcl configuration using the `bin/magento sectionio:updatevcl` command. The effect of this is identical to the "Update varnish configuration" button described above. As with the other CLI commands, success is silent.
 
 ### 5) Provision a free section.io certificate (optional)
 
 There is also a button to pull in free HTTPS certificate. This will ensure your website has the green padlock next to the url. This is a free certificate included with your section.io application that we will managed on your behalf, to include procurement, installation, and renewal. Please ensure your website has an endpoint exposed to the internet so we can validate the certificate before you go live.
 
-**note:** if you do not perform this step, you will need to upload a custom certificate to the section.io portal in order to maintain HTTPS.
+**note:** if you do not perform this step, you will need to upload a custom certificate to the section.io portal in order to maintain HTTPS. (See [our guide]({{< relref "how-to/https/upload-a-custom-certificate.md" >}}) )
 
 ### 6) Change DNS and Go Live!
 
 To go live with Varnish and your section.io application, you will need to change a DNS record to point to section.io. Detailed instructions can be found [here](https://www.section.io/docs/change-dns/#dns-hosting-with-your-current-provider). You can also find more information from your hosting provider as to where to go to make this change. Once you have made the change, you can click verify to see if the change was successful and traffic is currently flowing through section.io.
-
-## Using the CLI
-
-You can also complete the above process using the CLI
-
-The section.io extension adds some new Magento CLI commands to allow you to automate the configuration of your site
-
-`sectionio:setup <username> <password> <account_id> <application_id>`
-Setup the section.io extension with your section.io account and application details `<username> <password>` are your [https://aperture.section.io](https://aperture.section.io) username & password.
-
-`sectionio:updatevcl`
-Update Varnish with the Magento VCL. This has the same effect as pressing the "Update varnish configuration" button in the extension UI.
 
   [free Turpentine Magento extension]: http://www.magentocommerce.com/magento-connect/turpentine-varnish-cache.html
   [official instructions]: https://github.com/nexcess/magento-turpentine/wiki/Installation
