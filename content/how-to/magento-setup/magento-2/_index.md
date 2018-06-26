@@ -64,7 +64,7 @@ When a product is updated either via checkout event, image update, description c
 
 Although the section.io Magento extension forwards all cache-clearing directives to your cloud varnish instances out of the box, it can be configured to ignore cache clear requests for CMS pages. To enable this feature, navigate to Stores->Configuration->Advanced->System->Full Page Cache->section.io settings. Here you can toggle whether CMS pages are included in automated cache purges.
 
-Note: enabling this feature means that if you change key elements of a product like the name, other pages that feature the product will need to be manually cleared. Overall, this configuration option will have a positive benefit on site performance at the cost of some manual overhead.  
+Note: enabling this feature means that if you change key elements of a product like the name, other pages that feature the product will need to be manually cleared. Overall, this configuration option will have a positive benefit on site performance at the cost of some manual overhead. Whenever you update a product, you need to clear the relevant caches in the admin console.  
 
 
   [free Turpentine Magento extension]: http://www.magentocommerce.com/magento-connect/turpentine-varnish-cache.html
