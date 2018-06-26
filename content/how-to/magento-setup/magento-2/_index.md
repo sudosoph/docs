@@ -58,6 +58,17 @@ There is also a button to pull in free HTTPS certificate. This will ensure your 
 
 To go live with Varnish and your section.io application, you will need to change a DNS record to point to section.io. Detailed instructions can be found [here](https://www.section.io/docs/change-dns/#dns-hosting-with-your-current-provider). You can also find more information from your hosting provider as to where to go to make this change. Once you have made the change, you can click verify to see if the change was successful and traffic is currently flowing through section.io.
 
+## Additional Settings: Include CMS in Product Purges
+
+When a product is updated either via checkout event, image update, description change or other similar event, Magento clears the cache for all pages where that product is mentioned, including the home page, category pages, and product pages. Although it is important to clear cache when product information changes, often this internal cache-clearing protocol clears the cache on non-product pages unnecessarily, exposing your origin to additional traffic and slowing down response times.
+
+Although the section.io Magento extension forwards all cache-clearing directives to your cloud varnish instances out of the box, it can be configured to ignore cache clear requests for CMS pages. To enable this feature, navigate to Stores->Configuration->Advanced->System->Full Page Cache->section.io settings. Here you can toggle whether CMS pages are included in automated cache purges.
+
+Note: enabling this feature means that if you change key elements of a product like the name, other pages that feature the product will need to be manually cleared. Overall, this configuration option will have a positive benefit on site performance at the cost of some manual overhead.  
+
+
+
+
   [free Turpentine Magento extension]: http://www.magentocommerce.com/magento-connect/turpentine-varnish-cache.html
   [official instructions]: https://github.com/nexcess/magento-turpentine/wiki/Installation
   [lastest section.io cli bridge here]: https://github.com/section-io/varnish-cli-bridge/releases/latest
