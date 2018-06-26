@@ -27,10 +27,12 @@ Hole-punching is a design pattern that solves this problem by loading the authen
 
 ## HTML Streaming
 
-No matter how session-specific and customized a page is, the head of the HTML document is the same for every user. From a website optimization perspective, anything that is reliably the same can be cached. HTML Streaming is a technique that leverages this consistent repetition of the head tag in order to optimize delivery. In particular, HTML Streaming offers extremely fast Time to First Byte, because regardless of the page our platform can serve the Head from cache no matter what  
+No matter how session-specific and customized a page is, typically the head of the HTML document for a given URL is the same for every user. From a website optimization perspective, anything that is reliably the same can be cached. HTML Streaming is a technique that leverages this consistent repetition of the head tag in order to optimize delivery. With HTML streaming implemented, our platform separates out the head and body of incoming HTML documents and then caches the head portion. For all subsequent requests for that URL, Varnish cache delivers the HTML head immediately with an embedded ESI tag which requests the body.
 
-In order to implement HTML streaming, we configure your section.io proxy stack to strip
+Beyond the obvious performance benefits of caching a piece of the HTML document, HTML streaming offers extremely fast time-to-first-byte on pages that cannot be cached according to traditional methods.
 
 ## Summary
 
-ISE is a technique that is implemented at the section.io level and allows us to cache as many valid responses as possible. Hole-punching is a design pattern implemented on your origin application that separates authenticated and unauthenticated information into separate requests to allow for maximum caching.
+ISE is a technique that is implemented at the section.io level and allows us to cache as many valid responses as possible. Hole-punching is a design pattern implemented on your origin application that separates authenticated and unauthenticated information into separate requests to allow for maximum caching. HTML streaming offers quick time-to-first-bytes by selectively caching HTML documents.
+
+For implementation questions on any of these, contact our engineering team at `support@section.io`

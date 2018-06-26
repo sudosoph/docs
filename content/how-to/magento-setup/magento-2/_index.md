@@ -67,8 +67,6 @@ Although the section.io Magento extension forwards all cache-clearing directives
 Note: enabling this feature means that if you change key elements of a product like the name, other pages that feature the product will need to be manually cleared. Overall, this configuration option will have a positive benefit on site performance at the cost of some manual overhead.  
 
 
-
-
   [free Turpentine Magento extension]: http://www.magentocommerce.com/magento-connect/turpentine-varnish-cache.html
   [official instructions]: https://github.com/nexcess/magento-turpentine/wiki/Installation
   [lastest section.io cli bridge here]: https://github.com/section-io/varnish-cli-bridge/releases/latest
