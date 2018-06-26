@@ -25,6 +25,12 @@ Even though authenticated pages clearly have user-specific and therefore uncache
 
 Hole-punching is a design pattern that solves this problem by loading the authenticated and unauthenticated content for a single page with different requests. To implement hole-punching for a user account page, for example, you would configure the application to respond to such a request with the generic HTML document and other reusable resources, and then load the user-specific information with additional requests — either AJAX or ESI calls (Edge Side Includes). This way, you can cache the generic content and leave the authenticated content completely alone.
 
+## HTML Streaming
+
+No matter how session-specific and customized a page is, the head of the HTML document is the same for every user. From a website optimization perspective, anything that is reliably the same can be cached. HTML Streaming is a technique that leverages this consistent repetition of the head tag in order to optimize delivery. In particular, HTML Streaming offers extremely fast Time to First Byte, because regardless of the page our platform can serve the Head from cache no matter what  
+
+In order to implement HTML streaming, we configure your section.io proxy stack to strip
+
 ## Summary
 
 ISE is a technique that is implemented at the section.io level and allows us to cache as many valid responses as possible. Hole-punching is a design pattern implemented on your origin application that separates authenticated and unauthenticated information into separate requests to allow for maximum caching.
