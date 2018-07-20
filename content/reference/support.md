@@ -1,35 +1,48 @@
 ---
-title: Sub Processors
-description: Information on Sub Processors and Other Providers for section.io
-keywords: sub processors
+title: Support
+description: Information on support levels for section.io customers.
+keywords: support, customer service
 aliases:
-  - /sub-processors/
+  - /support/
 
 ---
 
-In order to provide [section.io] services, [section.io] engages certain sub-processors. A sub-processor may be a [section.io] affiliate engaged in the processing of personal data or a third-party service provider engaged by [section.io] to process personal data on behalf of the customers or users of [section.io] services.
+[section.io] provides free online support and paid support options.
 
-For more information on [section.io] data processing obligations, please see our [Data Processing Addendum](https://www.section.io/legal-stuff/data-processing/).
+You choose the level of support which suits your needs.
 
-## Sub Processors
+## Support Plans
 
-
-| Name                       | Type                                               | Location           |
-|----------------------------|--------------------------------------------------- |--------------------|
-| Amazon Web Services Inc.   | Third-party sub-processor	                      | United States      |
-
-
-## Other Providers
-
-In addition, [section.io] uses certain providers which do not have access to personal data but are commonly used systems of distributed services that run [section.io] software content based on the geographic location of the individual accessing the content and the origin of the content provider. Website content served to website visitors and domain name information may be stored with a service provider to expedite transmission, and information transmitted across a service provider may be accessed by that service provider to enable its functions.
-
-| Name                       | Type                                               | Location           |
-|----------------------------|--------------------------------------------------- |--------------------|
-| Google Inc.	             | Other Provider                                     | United States      |
-| Microsoft Inc.             | Other Provider                                     | United States      |
-| Amazon Web Services Inc.   | Other Provider                                     | United States      |
-| Digital Ocean Inc.	     | Other Provider                                     | United States      |
-| Network Synergy Corporation| Other Provider                                     | Australia          |
+1. Basic - [section.io] supports platform availability and functionality in business hours.
+2. Enterprise - for teams needing immediate, 24x7 platform support.
+3. Managed Service - For development teams who would prefer [section.io]'s engineers to manage their content delivery solution and handle the reverse proxy configuration.
 
 
-Subscribers may subscribe to receive notifications of sub-processor changes by subscribing to https://github.com/section-io/docs. 
+| Support Item               | Basic              | Enterprise                    | Managed Service    |
+|----------------------------|--------------------|------------------------------ |--------------------|
+| Online self help           | Unlimited          | Unlimited                     | Unlimited          |
+| Support hours              | Business Hours*    | 24x7x365		              | 24x7x365           |
+| Slack Support              | Public Channel     | Public Channel                | Private Channel    |
+| Support Ticket System      | No                 | Yes                           | Yes                |
+| Phone Support              | No                 | No                            | Yes                |
+| Initial Response time      | Best Effort        | 15 minutes                    | 15 minutes         |
+| General Enquiries          | Yes                | Yes                           | Yes                |
+| Incident Reports           | Public Status Page | Public Status Page            | On Request         |
+| Emergency Escalation       | No                 | Yes                           | Yes                |
+| Proxy Configuration        | No                 | No                            | Yes                |
+| Dedicated Support Engineer | No                 | No                            | Optional           |
+| Price                      | Free               | $750 pm                       | $1500 pm           |
+
+
+*Business hours defined as 8am US EST to 5pm US PT or 8am to 5pm AEST subject to your preferred support region.*
+
+## Need More Help?
+
+If you would like section.io’s engineers to take a deeper look at your code, application, hosting or performance and security mangement practices generally, consider our [professional services] offerings.
+
+Our engineers can also provide you with a kickstarter package to get your proxy configuration tuned up or set up and running faster.
+
+
+  [section.io]: /
+  [professional services]: /consulting/
+  [fully managed service]: /fully-managed-service/
