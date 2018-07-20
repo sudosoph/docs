@@ -7,7 +7,7 @@ aliases:
 
 ---
 
-In order to provide section.io services, section.io engages certain sub-processors. A sub-processor may be a section.io affiliate engaged in the processing of personal data or a third-party service provider engaged by [section.io] to process personal data on behalf of the customers or users of section.io services.
+In order to provide section.io services, section.io engages certain sub-processors. A sub-processor may be a section.io affiliate engaged in the processing of personal data or a third-party service provider engaged by section.io to process personal data on behalf of the customers or users of section.io services.
 
 For more information on section.io data processing obligations, please see our [Data Processing Addendum](https://www.section.io/legal-stuff/data-processing/).
 
