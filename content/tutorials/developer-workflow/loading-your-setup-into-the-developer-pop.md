@@ -10,7 +10,7 @@ weight: 2
 ### 1) Clone your application's git repository located in the **Advanced Config** menu in the section.io portal.
   ![how to clone a repo](/docs/images/screenshots/dev-pop/how-to-clone-repo.png)
 
-  Clone with `git clone <url-from-advanced-configuration>`
+  Clone with `git clone <url-from-advanced-config>`
 
 ### 2) Add the Dev PoP remote to your repository.
   * Open the Dev Pop UI: `minikube service -n section-shared developer-pop`
