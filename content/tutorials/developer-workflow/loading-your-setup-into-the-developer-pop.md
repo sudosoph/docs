@@ -18,7 +18,8 @@ weight: 2
   * Click on the Operations tab.
   ![operations tab](/docs/images/screenshots/dev-pop/operations-tab.png)
 
-  * Enter the git commands you see here inside the repository you cloned down in step #1. Replace "site" with your domain. (**note** it won't actually break anything if you leave it as "site").
+  * Enter the git commands you see here inside the repository you cloned down in step #1. Replace "**www.site.com**" with your domain which is visible in the section.io portal. (**note** : it won't actually break anything if you leave it as "site").
+  ![domain name](/docs/images/screenshots/dev-pop/domain-name.png)
 
 ### 3) Push your configuration files to the Developer PoP
   Once you have added the git remote you can push to the Dev PoP by running: `git push developer-pop`
@@ -26,10 +27,15 @@ weight: 2
   If you get this message `Pulling required proxy images, please try again shortly`, that means that your machine does not have the images locally and has begun downloading them. Your terminal will look as though it has exited the process and nothing is happening, but the downloads are going on behind the scenes. Try `git push developer-pop` every few minutes until the downloads are complete and the push goes through.
 
 ### 4) Configure origin server details
-Now that your configurations are running on the Dev Pop, you will need to configure your egress settings (origin server details) to tell the Dev Pop where to pass the HTTP request to. To do this you will use the Dev Pop UI's **Services** tab where you will find information about the repository you just pushed up.
+Now that your configurations are running on the Dev Pop, you will need to configure your egress settings (origin server details) to tell the Dev Pop where to pass the HTTP request to. To do this you will use the Dev Pop UI's **Services** tab where you will find information about the repository you just pushed up. A page refresh might be needed.
 
 #### a) Connect Dev PoP to aperture
- The easiest way to do this is to connect your Dev PoP to your section.io Aperture account and import these configurations.
+ The easiest way to do this is to [connect your Dev PoP to your section.io Aperture account]({{< relref "how-to/developer-pop/connect-to-aperture.md" >}}) and **import** these configurations.
+
+To do this: 
+1. Click on **Import** under the *Operations* column in the **Services** tab.
+2. Select the **Environment** you want to test.
+3. Click on **Import** to finish importing the configurations.
 
 {{% notice tip %}}
 If you have an account in the section.io management console you can link your Developer PoP to your account.
