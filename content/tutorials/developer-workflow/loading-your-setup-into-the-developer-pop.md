@@ -32,7 +32,8 @@ Now that your configurations are running on the Dev Pop, you will need to config
 #### a) Connect Dev PoP to aperture
  The easiest way to do this is to [connect your Dev PoP to your section.io Aperture account]({{< relref "how-to/developer-pop/connect-to-aperture.md" >}}) and **import** these configurations.
 
-To do this: 
+To do this : 
+
 1. Click on **Import** under the *Operations* column in the **Services** tab.
 2. Select the **Environment** you want to test.
 3. Click on **Import** to finish importing the configurations.
