@@ -36,7 +36,7 @@ The latitude, longitude, country code, and city values are also available in the
 
 ## Client IP Detection
 
-For each request the edge proxy will also add a `True-Client-IP` request header which provides the IP address of the client that connected to us.  This is the same IP address used for the IP geolocation.
+Historically, section.io has logged a header called `remote_addr` that contained the connecting client's IP address. Due to GDPR compliance, however, the value of the address' last segment is now redacted and replaced with a zero. Despite this change, section.io still captures the connecting client's IP address and sends it upstream under a header called `True-Client-IP`. This header is not logged by our platform (and therefore is not visible in Kibana), but can be referenced within any proxy in your stack (varnish, pagespeed, etc.) and is visible to your origin server. `True-Client-IP` is the same IP address used for the IP geolocation.
 
 This request header can be used in a number of ways:
 
