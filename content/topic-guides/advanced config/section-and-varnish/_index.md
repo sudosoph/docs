@@ -8,7 +8,7 @@ keywords: [Varnish,caching]
 
 At every opportunity, the implementation of Varnish Cache on the section.io platform has been designed to be as close as possible to how it would be if you had installed Varnish Cache yourself locally.
 
-section.io uses the official Varnish Cache distributions published by [Varnish Cache ]. section.io does not use custom-compiled builds of Varnish.
+section.io uses the official Varnish Cache distributions published by [Varnish Cache ]. section.io does not use custom-compiled builds of Varnish Cache.
 
 Varnish Cache is started, listening on port 80. Varnish Cache will be initialized with the VCL found in the default.vcl file in the corresponding subdirectory of your section.io application repository.
 

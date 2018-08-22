@@ -19,7 +19,7 @@ _Note: This guide will be using VCL 4 syntax, so if you are interested in VCL 3 
 
 ## Set up
 
-_This guide assumes you know basic VCL and the flow of HTTP traffic through Varnish._
+_This guide assumes you know basic VCL and the flow of HTTP traffic through Varnish Cache._
 
 ### Step 1 - `vcl_backend_response`
 
