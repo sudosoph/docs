@@ -7,7 +7,7 @@ weight: 3
 
 ### 1) Locally Override DNS to point at the Developer PoP
 
-You will need to modify your local host file and point the **Hosted Name(s)** for your service at `192.168.99.100`.
+You will need to modify your **local host file** and point the **Hosted Name(s)** for your service at the IP address given by the command `minikube ip`.
 
     192.168.99.100    www.example.com
     
