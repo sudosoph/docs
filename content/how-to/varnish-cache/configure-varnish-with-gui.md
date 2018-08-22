@@ -2,7 +2,7 @@
 title: Configure Varnish Cache with the GUI
 ---
 
-Learning VCL can be a tricky thing so we have made a GUI that let's you cache your static assets and even HTML documents without knowing VCL. In the left hand side of your Aperture dashboard there is a section called *Quick Config* which contains the toggles and inputs to configure Varnish.
+Learning VCL can be a tricky thing so we have made a GUI that let's you cache your static assets and even HTML documents without knowing VCL. In the left hand side of your Aperture dashboard there is a section called *Quick Config* which contains the toggles and inputs to configure Varnish Cache.
 
 ### Configure static asset caching
 

@@ -14,7 +14,7 @@ weight: 20
 
 Magento 1.9 and earlier does not support Varnish Cache out of the box. Support is instead provided by the [free Turpentine Magento extension].
 
-The Turpentine extension issues commands required for correct operation to a management port intended for Varnish. A special “bridge” program listens on this port, and makes the section.io platform look like a normal Varnish Cache instance (Instead of a globally distributed platform that runs Varnish Cache for you).
+The Turpentine extension issues commands required for correct operation to a management port intended for Varnish Cache. A special “bridge” program listens on this port, and makes the section.io platform look like a normal Varnish Cache instance (Instead of a globally distributed platform that runs Varnish Cache for you).
 
 Follow the [official instructions] in order to install Turpentine. Since Varnish Cache itself is already configured inside section.io you’ll only need to complete the ‘Install this plugin’ steps.
 

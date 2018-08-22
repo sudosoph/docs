@@ -37,5 +37,5 @@ When you are ready for users to see the site again, click the Disengage button.
 ## 4) Outage page for specific Domains or URLs
 
 Right now the Outage Page portal covers all domains and URLs on a section.io environment.
-If you wish to only display an outage page for a select domain or URL path, you will need to do so using Varnish.
+If you wish to only display an outage page for a select domain or URL path, you will need to do so using Varnish Cache.
 See this [community article](https://community.section.io/t/how-to-display-a-custom-maintenance-page-using-varnish/112) for details.

@@ -10,7 +10,7 @@ aliases:
 
 By toggling the view at the top of the screen from "Grafana Dashboards" to "Graphite Metrics", you can pull your own data using the same data source. Each Grafana chart is built on these data points so you can use these create your own Grafana dashboards. You can click “Open in new window,” located at the top of the frame, to have more space to work.
 
-You will see some folder on the left with different environments. The first environment will usually be your production environment, the second your development environment, and then any other environments. To see production data for Varnish, you would go to the first environment > section hosted > varnish.
+You will see some folder on the left with different environments. The first environment will usually be your production environment, the second your development environment, and then any other environments. To see production data for Varnish, you would go to the first environment > section hosted > Varnish Cache.
 
 {{% figure src="/docs/images/graphite-metrics-folders.png" %}}
 
