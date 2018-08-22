@@ -16,7 +16,7 @@ These different resources and applications typically have different requirements
 
 Most of these scenarios can be catered for with conditional logic in the WAF or cache configuration to decide which requests to handle and which rules are applicable. Conditional configuration like this can quickly grow and become difficult to maintain leading to mistakes, or fear of making changes.
 
-section.io allows the URL space of a domain to be subdivided and routed to discrete section.io applications with independent configurations, unique proxy stacks, and potentially different origin servers. For example, this means that all URLs beginning with www.example.com/images/ could be handled by one section.io application with Varnish Cache while all other requests could be handled by another application with only ModSecurity.
+section.io allows the URL space of a domain to be subdivided and routed to discrete section.io applications with independent configurations, unique proxy stacks, and potentially different origin servers. For example, this means that all URLs beginning with www.example.com/images/ could be handled by one section.io application with Varnish Cache  while all other requests could be handled by another application with only ModSecurity.
 
 Only the domain name, HTTPS configuration, and points-of-presence are shared between split applications.
 

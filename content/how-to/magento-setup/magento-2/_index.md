@@ -10,7 +10,7 @@ The following is a guide to going live on section.io with a Magento 2 applicatio
 ### 1) Download the section.io extension.
 
 #### a) Via the Magento Marketplace
-  To get started with section.io and Varnish directly from the Magento Admin portal, you first must download the "Instant Global Cache" extension from the [Magento Marketplace](https://marketplace.magento.com/sectionio-metrics.html).
+  To get started with section.io and Varnish Cache directly from the Magento Admin portal, you first must download the "Instant Global Cache" extension from the [Magento Marketplace](https://marketplace.magento.com/sectionio-metrics.html).
 
 #### b) Via the command line
   Add `"sectionio/metrics": "dev-master"` to your `composer.json` file and run `composer update`. This assumes that your application is configured to pull from Packagist.
@@ -27,26 +27,26 @@ Inside the section.io reports view, you will see fields requesting your section.
 #### b) Set up via the command line  
 In order to link your section.io account to your Magento application via the command line, you need to have already created an account( [section.io/sign-up/](https://www.section.io/sign-up/)). Once your account is created and the section.io extension is installed inside your app, your magento binary should have access to the `sectionio:setup` command. From the root of your application, run `bin/magento sectionio:setup <username> <password> <account_id> <application_id>`. A successful execution produces no output. If it executed successfully, you should see your account information displayed in the section.io reports tab within your admin portal. *Note*: After running this command, run `bin/magento setup:upgrade` and `bin/magento setup:di:compile`.
 
-### 3) Set up your application and Varnish Cache.
+### 3) Set up your application and Varnish Cache .
 
 When you are logged in on your Magento Admin Portal with your section.io credentials, we will determine if you already have an application setup with us. If you do, we will show you the accounts you have with us. If you do not, we will create an application for you.
 
-If you do not have Varnish Cache as your chosen Full Page Cache Caching Application, we will show an error message for you to update this. To update this field, go to Stores -> Configuration (under Settings) -> Advanced -> System. Then toggle the Caching Application under Full Page Cache to Varnish Cache.
+If you do not have Varnish Cache  as your chosen Full Page Cache Caching Application, we will show an error message for you to update this. To update this field, go to Stores -> Configuration (under Settings) -> Advanced -> System. Then toggle the Caching Application under Full Page Cache to Varnish Cache .
 
 {{% figure src="/docs/images/magento-cache-settings.png" %}}
 
-Now you have a section.io application created with Varnish 4 and Varnish Cache setup as your Full Page Cache solution in Magento.
+Now you have a section.io application created with Varnish Cache 4 and Varnish Cache  setup as your Full Page Cache solution in Magento.
 
-### 4) Import Magento Varnish cache configuration
+### 4) Import Magento Varnish Cache  configuration
 
 #### a) Import via the Admin portal
-On the section.io extension, you will see a Management section. The first button says “Update varnish configuration.” Clicking this button will pull in the recommended Magento VCL (Varnish Configuration Language) into your section.io application to optimize your caching for Magento.
+On the section.io extension, you will see a Management section. The first button says “Update Varnish Cache configuration.” Clicking this button will pull in the recommended Magento VCL (Varnish Cache Configuration Language) into your section.io application to optimize your caching for Magento.
 
 {{% figure src="/docs/images/magento-extention-management.png" %}}
 
 #### b) Import via the command line
 
-You can also import your vcl configuration using the `bin/magento sectionio:updatevcl` command. The effect of this is identical to the "Update varnish configuration" button described above. As with the other CLI commands, success is silent.
+You can also import your vcl configuration using the `bin/magento sectionio:updatevcl` command. The effect of this is identical to the "Update Varnish Cache configuration" button described above. As with the other CLI commands, success is silent.
 
 ### 5) Provision a free section.io certificate (optional)
 
@@ -56,13 +56,13 @@ There is also a button to pull in free HTTPS certificate. This will ensure your 
 
 ### 6) Change DNS and Go Live!
 
-To go live with Varnish and your section.io application, you will need to change a DNS record to point to section.io. Detailed instructions can be found [here](https://www.section.io/docs/change-dns/#dns-hosting-with-your-current-provider). You can also find more information from your hosting provider as to where to go to make this change. Once you have made the change, you can click verify to see if the change was successful and traffic is currently flowing through section.io.
+To go live with Varnish Cache and your section.io application, you will need to change a DNS record to point to section.io. Detailed instructions can be found [here](https://www.section.io/docs/change-dns/#dns-hosting-with-your-current-provider). You can also find more information from your hosting provider as to where to go to make this change. Once you have made the change, you can click verify to see if the change was successful and traffic is currently flowing through section.io.
 
 ## Additional Settings: Include CMS in Product Purges
 
 When a product is updated either via checkout event, image update, description change or other similar event, Magento clears the cache for all pages where that product is mentioned, including the home page, category pages, and product pages. Although it is important to clear cache when product information changes, often this internal cache-clearing protocol clears the cache on non-product pages unnecessarily, exposing your origin to additional traffic and slowing down response times.
 
-Although the section.io Magento extension forwards all cache-clearing directives to your cloud varnish instances out of the box, it can be configured to ignore cache clear requests for CMS pages. To enable this feature, navigate to Stores->Configuration->Advanced->System->Full Page Cache->section.io settings. Here you can toggle whether CMS pages are included in automated cache purges.
+Although the section.io Magento extension forwards all cache-clearing directives to your cloud Varnish Cache instances out of the box, it can be configured to ignore cache clear requests for CMS pages. To enable this feature, navigate to Stores->Configuration->Advanced->System->Full Page Cache->section.io settings. Here you can toggle whether CMS pages are included in automated cache purges.
 
 Note: enabling this feature means that if you change key elements of a product like the name, other pages that feature the product will need to be manually cleared. Overall, this configuration option will have a positive benefit on site performance at the cost of some manual overhead. Whenever you update a product, you need to clear the relevant caches in the admin console.  
 
@@ -72,5 +72,5 @@ Note: enabling this feature means that if you change key elements of a product l
   [lastest section.io cli bridge here]: https://github.com/section-io/varnish-cli-bridge/releases/latest
   [Configure and use Varnish]: http://devdocs.magento.com/guides/v2.0/config-guide/varnish/config-varnish.html
   [Install Varnish]: http://devdocs.magento.com/guides/v2.0/config-guide/varnish/config-varnish-install.html
-  [Configure Varnish and your web server]: http://devdocs.magento.com/guides/v2.0/config-guide/varnish/config-varnish-configure.html
+  [Configure Varnish Cache and your web server]: http://devdocs.magento.com/guides/v2.0/config-guide/varnish/config-varnish-configure.html
   [Configure Magento to use Varnish]: http://devdocs.magento.com/guides/v2.0/config-guide/varnish/config-varnish-magento.html

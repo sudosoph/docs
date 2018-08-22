@@ -1,5 +1,5 @@
 ---
-title: Configure Varnish with the GUI
+title: Configure Varnish Cache with the GUI
 ---
 
 Learning VCL can be a tricky thing so we have made a GUI that let's you cache your static assets and even HTML documents without knowing VCL. In the left hand side of your Aperture dashboard there is a section called *Quick Config* which contains the toggles and inputs to configure Varnish.
@@ -17,7 +17,7 @@ Static asset caching is enabled by default to cache your statics for 6 hours and
 * swf
 * woff
 
-There are 3 settings for static caching as well the first is the TTL (Time to Live) which tells Varnish how long to cache your static assets for, the second is a toggle to remove the query strings for all static assets to increase your cache hit rate, and the third is a setting to set the **cache-control** header for browser caching.
+There are 3 settings for static caching as well the first is the TTL (Time to Live) which tells Varnish Cache how long to cache your static assets for, the second is a toggle to remove the query strings for all static assets to increase your cache hit rate, and the third is a setting to set the **cache-control** header for browser caching.
 
 **Note:** be careful with the browser cache setting as it becomes difficult to invalidate the browser cache if you don't have some type of version control for your static assets.
 

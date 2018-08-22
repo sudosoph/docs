@@ -23,7 +23,7 @@ The Umpire URLs are secured with HTTP Basic Authentication and you will find you
 
 The full set of section.io metrics is available for you to use with Umpire. This is the same set driving the Overview page and the Grafana dashboards in Aperture. You can browse the full set of metrics via your application’s section.io-provided Graphite Web interface.
 
-As another example, you could use a metric tracking the Varnish cache hit ratio of HTML responses and fire an alert if it becomes too low. This enables you to respond to changes in your web applications behavior that are more relevant to the overall user experience and not limited to ‘is the site down?’.
+As another example, you could use a metric tracking the Varnish Cache  hit ratio of HTML responses and fire an alert if it becomes too low. This enables you to respond to changes in your web applications behavior that are more relevant to the overall user experience and not limited to ‘is the site down?’.
 
 The Umpire component of section.io *is just Umpire* and you can read more about the [Umpire project], itself here.
 

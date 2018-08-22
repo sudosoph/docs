@@ -55,7 +55,7 @@ This request header then propagates through to each proxy in your application's 
 
 The `section-io-id` value is available in all the proxy logs provided by Aperture to enable easy correlation of log entries across the different proxies in the stack. You can also choose to log the `section-io-id` request header on your origin server to aid with diagnostics.
 
-By providing the identifier as a request header, its value can be consumed in your chosen proxies. For example, Varnish can refer to `req.http.section-io-id` in the VCL.
+By providing the identifier as a request header, its value can be consumed in your chosen proxies. For example, Varnish Cache can refer to `req.http.section-io-id` in the VCL.
 
 The format of the `section-io-id` identifier is subject to change without notice so it should be treated as an opaque string and no meaning should be inferred from its value.
 

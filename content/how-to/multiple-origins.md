@@ -51,7 +51,7 @@ The `address` field tells section.io the IP address or DNS name that it should c
 
 Once you have established multiple origins by configuring your `section.config.json` file, you can choose to route incoming requests to different origins based on criteria of your choosing. When an incoming request hits the LastProxy(The final proxy in your chain), LastProxy looks for request headers and routes the request to the specified origin.
 
-Generally speaking, this is done within the Varnish Cache proxy. Here's an example using Varnish VCL that you could incorporate into your `default.vcl`.
+Generally speaking, this is done within the Varnish Cache  proxy. Here's an example using Varnish Cache VCL that you could incorporate into your `default.vcl`.
 
     sub vcl_recv {
         if (req.url ~ "sitemap.xml" ) {

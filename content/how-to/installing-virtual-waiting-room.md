@@ -7,7 +7,7 @@ aliases:
 
 ---
 
-In order to use the Virtual Waiting Room feature, you must have Varnish 4+ running on your application and add a GoSquared JavaScript snippet that section.io will provide. To setup the feature you will 1) add your gosquared credentials, 2) add VCL for virtual waiting room, and then 3) call the new VCL in your default VCL file. Optionally, you can 4) edit the default Virtual Waiting Room page that will be shown to your customers. The following page will walk you through each step.
+In order to use the Virtual Waiting Room feature, you must have Varnish Cache 4+ running on your application and add a GoSquared JavaScript snippet that section.io will provide. To setup the feature you will 1) add your gosquared credentials, 2) add VCL for virtual waiting room, and then 3) call the new VCL in your default VCL file. Optionally, you can 4) edit the default Virtual Waiting Room page that will be shown to your customers. The following page will walk you through each step.
 
 ## Step 1: Add GoSquared Credentials
 
@@ -30,13 +30,13 @@ Where to find Gosquared ID:
 
 ## Step 2: Add VCL for Virtual Waiting
 
-In the Varnish folder of your repo, add section-user-throttling.vcl
+In the Varnish Cache folder of your repo, add section-user-throttling.vcl
 
 {{< gist section-io-gists 0596b0765194996048e279a072eab492 >}}
 
 ## Step 3: Include Virtual Waiting Room VCL
 
-In the varnish file of your repo, edit the default.vcl to add the following:
+In the Varnish Cache file of your repo, edit the default.vcl to add the following:
 
 {{< gist mkilbo 45165c30ecf3ea141f2a12b91a486216 >}}
 

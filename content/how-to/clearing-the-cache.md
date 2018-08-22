@@ -1,7 +1,7 @@
 ---
 title: Clear Cache
-description: How to clear the cache for your website, specific pages, or specific objects with Varnish ban expression.
-keywords: cache, cached data, website performance, content delivery network, CDN, clear cache, purge cache, empty cache, varnish ban expression
+description: How to clear the cache for your website, specific pages, or specific objects with Varnish Cache ban expression.
+keywords: cache, cached data, website performance, content delivery network, CDN, clear cache, purge cache, empty cache, Varnish Cache ban expression
 aliases:
   - /clearing-the-cache/
 ---
@@ -16,7 +16,7 @@ However if you need to remove things from the cache before they expire you can d
 
 ### 2) Select the cache you want to clear
 
-After the completion of Step #1, you should be on the cache clearing management page. At the top you will see different button groups depending on your proxy configuration. A proxy configuration with Varnish Cache and Pagespeed would have the following set of buttons:
+After the completion of Step #1, you should be on the cache clearing management page. At the top you will see different button groups depending on your proxy configuration. A proxy configuration with Varnish Cache  and Pagespeed would have the following set of buttons:
 
 {{% figure src="/docs/images/cache-clear-nav.png" %}}
 
@@ -24,10 +24,10 @@ After the completion of Step #1, you should be on the cache clearing management 
 
 ### 3) Check out the instructions below for the cache you want
 
-#### a) Clearing Varnish Cache
+#### a) Clearing Varnish Cache 
 
   We have a whole article on [clearing the cache for Varnish.]({{< relref "how-to/varnish-cache/clearing-the-cache.md" >}}) Check it out.
 
 #### b) Clearing Pagespeed Cache
 
-  Clearing the Pagespeed cache is more straight forward than clearing a Varnish cache because there is only one option: empty the entire cache. To do this, all you need to do is click the red button labeled **Empty the entire cache**.
+  Clearing the Pagespeed cache is more straight forward than clearing a Varnish Cache  because there is only one option: empty the entire cache. To do this, all you need to do is click the red button labeled **Empty the entire cache**.

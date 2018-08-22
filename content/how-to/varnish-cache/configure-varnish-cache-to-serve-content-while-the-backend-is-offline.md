@@ -1,6 +1,6 @@
 ---
 title: Serve stale content while the backend is offline
-description: How to configure Varnish to serve stale content
+description: How to configure Varnish Cache to serve stale content
 keywords: CDN, content delivery network, performance, stale content
 aliases:
   - /origin-shield/
@@ -9,11 +9,11 @@ aliases:
 
 ---
 
-Configuring Varnish to serve stale content is very useful for when your origin crashes. This behavior is achievable when running Varnish as a reverse proxy within the section.io's Content Delivery Grid.
+Configuring Varnish Cache to serve stale content is very useful for when your origin crashes. This behavior is achievable when running Varnish Cache as a reverse proxy within the section.io's Content Delivery Grid.
 
 #### Prerequisites
 
-Make sure you have an [account on section.io](https://www.section.io/sign-up/), and have selected Varnish to run in your proxy stack.
+Make sure you have an [account on section.io](https://www.section.io/sign-up/), and have selected Varnish Cache to run in your proxy stack.
 
 _Note: This guide will be using VCL 4 syntax, so if you are interested in VCL 3 syntax please reach out to us at support@section.io._
 
@@ -52,7 +52,7 @@ In `vcl_synth` we need to check the `resp.status` for a 503 code as this is the 
 
 ### Step 3 - `vcl_hit`
 
-This part is where we actually tell Varnish to serve stale content is the restart count is greater than 0 and the grace period plus the time to live is greater than 0. If both cases match, we serve the stale content.
+This part is where we actually tell Varnish Cache to serve stale content is the restart count is greater than 0 and the grace period plus the time to live is greater than 0. If both cases match, we serve the stale content.
 
     sub vcl_hit {
         if (obj.ttl < 0s && obj.ttl + obj.grace > 0s) {
@@ -70,7 +70,7 @@ This part is where we actually tell Varnish to serve stale content is the restar
         }
 
         return (fetch);
-        # Varnish 5 needs to not fetch -> return (miss);
+        # Varnish Cache 5 needs to not fetch -> return (miss);
     }
 
 ## Testing

@@ -14,7 +14,7 @@ You will see some folder on the left with different environments. The first envi
 
 {{% figure src="/docs/images/graphite-metrics-folders.png" %}}
 
-You can use this data to create graphs. For example: Varnish > content_type > text-html > status > 200 > time_taken > mean will show me the mean time it took to serve a successful html doc.
+You can use this data to create graphs. For example: Varnish Cache > content_type > text-html > status > 200 > time_taken > mean will show me the mean time it took to serve a successful html doc.
 
 {{% figure src="/docs/images/graphite-metrics-create-graph.png" %}}
 
