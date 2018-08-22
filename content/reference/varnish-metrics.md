@@ -1,21 +1,21 @@
 ---
-title: Advanced Varnish Metrics
-description: Guide for understanding Varnish Counters and other Varnish Cache metrics.
-keywords: varnish, varnish cache, cache, cached data, varnish counters, vcl, varnish configuration language, metrics
+title: Advanced Varnish Cache Metrics
+description: Guide for understanding Varnish Cache Counters and other Varnish Cache  metrics.
+keywords: varnish, Varnish Cache , cache, cached data, Varnish Cache counters, vcl, Varnish Cache configuration language, metrics
 aliases:
   - /varnish-metrics/
 
 ---
 
-Out of the box, section.io brings up Varnish Cache metrics. The following is a description of these metrics.
+Out of the box, section.io brings up Varnish Cache  metrics. The following is a description of these metrics.
 
-## Varnish Glossary
+## Varnish Cache Glossary
 
-Key Varnish concepts are described in the [Varnish Glossary.]
+Key Varnish Cache concepts are described in the [Varnish Cache Glossary.]
 
-## Varnish Counters
+## Varnish Cache Counters
 
-Further detail with respect to key Varnish Counters (Source; [Mankier])
+Further detail with respect to key Varnish Cache Counters (Source; [Mankier])
 
 ### Counter Levels
 
@@ -26,7 +26,7 @@ Diag- Diagnostic counters
 Counters giving diagnostic information
 
 Debug- Debug counters  
-Counters giving Varnish internals debug information
+Counters giving Varnish Cache internals debug information
 
 ### Main Counters
 
@@ -61,7 +61,7 @@ cache\_hit
 Cache hits (INFO) Count of cache hits. A cache hit indicates that an object has been delivered to a client without fetching it from a backend server.
 
 cache\_hitpass  
-Cache hits for pass (INFO) Count of hits for pass A cache hit for pass indicates that Varnish is going to pass the request to the backend and this decision has been cached in it self. This counts how many times the cached decision is being used.
+Cache hits for pass (INFO) Count of hits for pass A cache hit for pass indicates that Varnish Cache is going to pass the request to the backend and this decision has been cached in it self. This counts how many times the cached decision is being used.
 
 cache\_miss  
 Cache misses (INFO) Count of misses A cache miss indicates the object was fetched from the backend before delivering it to the backend.
@@ -482,5 +482,5 @@ Piped bytes to backend (INFO) Total number of bytes forwarded to backend in pipe
 pipe\_in  
 Piped bytes from backend (INFO) Total number of bytes forwarded from backend in pipe sessions
 
-  [Varnish Glossary.]: https://www.varnish-cache.org/docs/4.0/glossary/index.html
+  [Varnish Cache Glossary.]: https://www.varnish-cache.org/docs/4.0/glossary/index.html
   [Mankier]: https://www.mankier.com/7/varnish-counters)

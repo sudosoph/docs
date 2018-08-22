@@ -29,11 +29,11 @@ In addition to the overview graph, we also show data depending on whether your a
 
 #### Varnish
 
-For Varnish we show Cache hit, pass and misses for the last hour and Upstream request bandwidth served per minute.
+For Varnish Cache we show Cache hit, pass and misses for the last hour and Upstream request bandwidth served per minute.
 
 {{% figure src="/docs/images/varnish-cache-hit-miss-pass.png" %}}
 
-Cache hit, pass and misses for the last hour shows the breakdown of how Varnish Cache handled your requests.  The higher the hit percentage, the faster your website will perform and the less work required by your servers. You can dig in deeper on the [Varnish Statistics](#varnish-statistics) view.
+Cache hit, pass and misses for the last hour shows the breakdown of how Varnish Cache  handled your requests.  The higher the hit percentage, the faster your website will perform and the less work required by your servers. You can dig in deeper on the [Varnish Cache Statistics](#varnish-statistics) view.
 
 
 Upstream request bandwidth served per minute shows the volume of data sent by the origin proxy. The more content you cache using Varnish, the lower this will be. By lowering this number you decrease the amount of work required by your servers.  

@@ -1,6 +1,6 @@
 ---
 title: Quick Configuration
-description: How to use section.io toggles to update your varnish and modsecurity configurations.
+description: How to use section.io toggles to update your Varnish Cache and modsecurity configurations.
 keywords: website performance, page speed, webpage speed, website security, varnish, VCL, modsecurity, CDN configuration
 aliases:
   - /basic-configuration/
@@ -37,7 +37,7 @@ To start writing your own VCL, you'll need to head over to the [repo](/docs/topi
 
 ## Modsecurity
 
-To make getting your CDN setup easier we have a number of configuration options you can enable without writing any code. We've defined rules that you can view by going to the Proxy page under the Configuration menu in Aperture. If you have both Varnish and Modsecurity setup, you will need to click Proxy in the top nav to display a drop down menu to view both of your reverse proxies and select Modsecurity.
+To make getting your CDN setup easier we have a number of configuration options you can enable without writing any code. We've defined rules that you can view by going to the Proxy page under the Configuration menu in Aperture. If you have both Varnish Cache and Modsecurity setup, you will need to click Proxy in the top nav to display a drop down menu to view both of your reverse proxies and select Modsecurity.
 
 The initial configuration in a repository starts ModSecurity’s SecRuleEngine in DetectionOnly mode (this writes log entries but never executes any disruptive actions). This is a great starting point, as you can immediately see possible threats without stopping legitimate traffic to your site.
 

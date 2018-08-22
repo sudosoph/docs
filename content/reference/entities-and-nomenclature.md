@@ -37,8 +37,8 @@ Each User’s copy of the Proxy Stack for the application is referred to as an I
 
 ## Proxy
 
-A Proxy (or more technically correct “Reverse Proxy”) is the server handling requests within each environment (e.g. Varnish Cache). The nature and configuration of the Proxy is subject to the changes a user may make in the respective environments. section.io’s commands can then be called to synchonise the configuration of the Proxies between the Instances in each Environment.
+A Proxy (or more technically correct “Reverse Proxy”) is the server handling requests within each environment (e.g. Varnish Cache ). The nature and configuration of the Proxy is subject to the changes a user may make in the respective environments. section.io’s commands can then be called to synchonise the configuration of the Proxies between the Instances in each Environment.
 
 ## Proxy Stack
 
-Where more than one Proxy is “chained” together we refer to this as a Proxy Stack. E.g Combining two Proxies to work together such as Varnish Cache and Mod Security or Varnish Cache and Nginx would provide the user with a Proxy stack.
+Where more than one Proxy is “chained” together we refer to this as a Proxy Stack. E.g Combining two Proxies to work together such as Varnish Cache  and Mod Security or Varnish Cache  and Nginx would provide the user with a Proxy stack.

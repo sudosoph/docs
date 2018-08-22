@@ -1,17 +1,17 @@
 ---
-title: Improve Varnish Cache Hit Rate
-description: Guide for understanding Varnish Cache hit rate, metrics, and logs.
-keywords: varnish, varnish cache, cache, cached data, hit rates, varnish hit rates, vcl, varnish configuration language, metrics
+title: Improve Varnish Cache  Hit Rate
+description: Guide for understanding Varnish Cache  hit rate, metrics, and logs.
+keywords: varnish, Varnish Cache , cache, cached data, hit rates, Varnish Cache hit rates, vcl, Varnish Cache configuration language, metrics
 aliases:
   - /varnish-cache-hit-rate/
 
 ---
 
-The Varnish Cache project provides some high level instructions on [improving cache hit rate](https://varnish-cache.org/docs/4.0/users-guide/increasing-your-hitrate.html).
+The Varnish Cache  project provides some high level instructions on [improving cache hit rate](https://varnish-cache.org/docs/4.0/users-guide/increasing-your-hitrate.html).
 
 The following describes the work flow with section.io metrics and development processes to achieve optimal cache hit ratios.
 
-> 1.  Review section.io Varnish metrics
+> 1.  Review section.io Varnish Cache metrics
 > 2.  Review http logs
 > 3.  Make changes to VCL locally
 > 4.  Confirm change has been effective -> Logs
@@ -19,9 +19,9 @@ The following describes the work flow with section.io metrics and development pr
 > 6.  Confirm change has been effective -> Metrics
 > 7.  Rinse and repeat
 
-## Review Varnish Metrics
+## Review Varnish Cache Metrics
 
-Your section.io [Varnish metrics](/docs/metrics-overview/) provide an overview of cache hit ratios for all asset types in addition to cache hit ratios by type.
+Your section.io [Varnish Cache metrics](/docs/metrics-overview/) provide an overview of cache hit ratios for all asset types in addition to cache hit ratios by type.
 
 You can use these metrics to identify an object type for which you would like the cache hit ratio to be improved.
 

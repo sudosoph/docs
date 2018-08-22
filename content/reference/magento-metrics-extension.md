@@ -1,7 +1,7 @@
 ---
 title: Magento Metrics
 description: Guide for section.io Magento Metrics extension that provides visibility into the impact caching has on your website.
-keywords: magento, varnish, varnish cache, metrics, magento extension, cache, page speed, webpage speed
+keywords: magento, varnish, Varnish Cache , metrics, magento extension, cache, page speed, webpage speed
 aliases:
   - /magento-metrics-extension/
 
@@ -9,7 +9,7 @@ aliases:
 
 section.io has an extension for Magento customers that allows business managers to access section.io site metrics. These metrics provide visibility into the impact caching has on your website, without having to login to the section.io application. You can get the extension for your Magento website by going to the [Magento Marketplace](https://marketplace.magento.com/sectionio-metrics.html).
 
-There are three metrics we show in the extension: Overall Cache Hit, HTML Cache Hit, and HTTP Response Codes. The extension in Magento is meant to give you an overview on the current status, but by having a developer look into your [Varnish configuration settings](/docs/basic-configuration/#varnish) or your logs in the in the section.io application, you can improve all of these metrics.
+There are three metrics we show in the extension: Overall Cache Hit, HTML Cache Hit, and HTTP Response Codes. The extension in Magento is meant to give you an overview on the current status, but by having a developer look into your [Varnish Cache configuration settings](/docs/basic-configuration/#varnish) or your logs in the in the section.io application, you can improve all of these metrics.
 
 ## Overall Cache Hit
 Overall Cache Hit count shows the number of cache hits from all content types. A cache hit is when a customer requests content from your site (whether it's an image, html document, etc) and the cache is able to respond to that request. The chart shows successful responses (responses with a 200 HTTP response code) in 4 hour increments over the previous 7 days. The timezone is based on the location of the Magento user.

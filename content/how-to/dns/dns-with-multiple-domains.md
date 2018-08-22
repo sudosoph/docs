@@ -23,7 +23,7 @@ Please review our [HTTPS setup page](/docs/setup-https) to ensure all of your do
 
 *Note*: Wildcard domains (i.e. `*.example.com`) can be supported, please [contact section.io support](https://support.section.io/) to set this up.
 
-If the additional domain names should redirect to the canonical domain name to improve search engine ranking, this can be achieved with a basic Varnish configuration, for example:
+If the additional domain names should redirect to the canonical domain name to improve search engine ranking, this can be achieved with a basic Varnish Cache configuration, for example:
 
     vcl 4.0;
 

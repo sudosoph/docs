@@ -47,7 +47,7 @@ In your `default.vcl` file you can set a header that's recognizable in section.i
 
 #### `default.vcl`
 
-Next we need to tell Varnish when to use and how to define this origin for static assets. We will be using the name we defined in your `section.config.json`.
+Next we need to tell Varnish Cache when to use and how to define this origin for static assets. We will be using the name we defined in your `section.config.json`.
 
     sub vcl_recv {
         ...
