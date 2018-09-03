@@ -36,4 +36,5 @@ p {
 .children-h2 p, 
 .children-h3 p {
  	font-size: inherit;
+ 	margin-bottom: 30px;
  }
