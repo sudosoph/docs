@@ -44,3 +44,23 @@ Sync your section.io repo with production and confirm cache hit rates are improv
 ## Rinse and Repeat
 
 Until you hit a desirable cache hit rate across the site.
+
+---
+
+
+### **Completed all 7 steps?**
+
+Awesome! Steps 5 through 7 are meant to be an iterative process. Focus on big wins first using your metrics evaluation. Then after you’ve improved those areas, you can focus on other areas to fine tune.
+
+
+### **How do I know if I’ve been successful?**
+
+* You have improved your Cache Hit Rate
+* You have ensured your most requested content is being cached
+* You have increased the ratio of HTTPS on your site
+* Because you’ve achieved these three goals, you see your customers bouncing less frequently and viewing more pages on your website - which will translate into more revenue for you! Congrats!
+
+### **Need Help?**
+
+section.io is here to help with setup and can be reached by emailing contact@section.io. If you want help with configuration you can ask us about consulting engagements, and if you want a fully managed service please contact us for a quote.
+
