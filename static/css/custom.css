@@ -1,0 +1,32 @@
+
+/* override sidebar color */
+#sidebar {
+	background-color: #5f3dc4;
+}
+
+#header-wrapper,
+.searchbox,
+#sidebar ul.topics > li.parent, #sidebar ul.topics > li.active {
+	background: #5f3dc4;
+}
+
+/* make forward and back arrows slim */
+.fa-chevron-right:before {
+	content: "\f105";
+}
+
+.fa-chevron-left:before {
+	content: "\f104"
+}
+
+/* overrid header font */
+body,
+h1,
+h2 {
+	font-family: "Helvetica Neue", "Tahoma", "Geneva", "Arial", sans-serif;
+	letter-spacing: normal;
+}
+
+p {
+	line-height: 2;
+}
