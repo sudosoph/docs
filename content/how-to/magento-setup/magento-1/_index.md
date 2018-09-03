@@ -16,7 +16,7 @@ Magento 1.9 and earlier does not support Varnish Cache out of the box. Support i
 
 The Turpentine extension issues commands required for correct operation to a management port intended for Varnish Cache. A special “bridge” program listens on this port, and makes the section.io platform look like a normal Varnish Cache instance (Instead of a globally distributed platform that runs Varnish Cache for you).
 
-Follow the [official instructions] in order to install Turpentine. Since Varnish Cache itself is already configured inside section.io you’ll only need to complete the ‘Install this plugin’ steps.
+Follow the **[official instructions](https://github.com/nexcess/magento-turpentine/wiki/Installation)** in order to install Turpentine. Since Varnish Cache itself is already configured inside section.io you’ll only need to complete the ‘Install this plugin’ steps.
 
 1.  Sign up & create an application at section.io using the final DNS name that your site will be accessed as.
 2.  Download, install & configure the varnish-cli-bridge.
@@ -38,7 +38,7 @@ This program will listen for Varnish Cache commands and foward them to the secti
 
 #### Download
 
-Download the [lastest section.io cli bridge here]. You will want the varnish-cli-bridge-vN.N.N-linux-amd64.tar.gz file.
+Download the **[lastest section.io cli bridge here](https://github.com/section-io/varnish-cli-bridge/releases/)**. You will want the **varnish-cli-bridge-vN.N.N-linux-amd64.tar.gz** file.
 
 #### Collect configuration details
 
@@ -50,7 +50,7 @@ There are 3 pieces of information required to run the bridge:
 
 #### Run as a service
 
-We have an [Upstart](http://upstart.ubuntu.com/) [script available](https://github.com/section-io/varnish-cli-bridge/blob/master/upstart.conf) to to run the bridge as a service.
+We have an **[Upstart](http://upstart.ubuntu.com/) [script available](https://github.com/section-io/varnish-cli-bridge/blob/master/upstart.conf)** to to run the bridge as a service.
 
 Install Upstart if it is not already installed on your server. Copy the script above with the new name “varnish-cli-bridge.conf” into /etc/init/. Change the endpoint, username & password to match your application.
 
@@ -91,13 +91,13 @@ If you get an error (sample error in picture below), you should revisit the brid
 
 #### Installation
 
-See the [turpentine installation guide](https://github.com/nexcess/magento-turpentine/wiki/Installation).
+See the **[turpentine installation guide](https://github.com/nexcess/magento-turpentine/wiki/Installation)**.
 
 Step 1-3: Skip these steps. There is no need to install or configure a local Varnish Cache server.
 
 #### Configuration
 
-See the [turpentine configuration guide](https://github.com/nexcess/magento-turpentine/wiki/Configuration).
+See the **[turpentine configuration guide](https://github.com/nexcess/magento-turpentine/wiki/Configuration)**.
 
 No special configuration is required to use Turpentine with the bridge & section.io.
 
