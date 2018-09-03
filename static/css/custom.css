@@ -19,7 +19,7 @@
 	content: "\f104"
 }
 
-/* overrid header font */
+/* override header font */
 body,
 h1,
 h2 {
@@ -27,6 +27,13 @@ h2 {
 	letter-spacing: normal;
 }
 
+/* override text formatting */
+
 p {
 	line-height: 2;
 }
+
+.children-h2 p, 
+.children-h3 p {
+ 	font-size: inherit;
+ }
