@@ -13,7 +13,7 @@ Load balancing distributes traffic across origin servers so that your website ca
 
 section.io provides a layer 7 load balancer to immediately route HTTP requests based on rules you set that can include request location, device or browser type, and cookies or headers. In addition, you can utilize our load balancer to randomly distribute requests to your origin servers so that no one server is overloaded. 
 
-section.io has uses VCL to create common load balancing scenarios that can be easily set up in your section.io portal by editing your VCL files.
+section.io uses VCL to create common load balancing scenarios that can be easily set up in your section.io portal by editing your VCL files.
 
 ## Examples
 
@@ -22,6 +22,7 @@ section.io has uses VCL to create common load balancing scenarios that can be ea
 Below is an example of how to configure your Content Delivery Grid to direct all requests for static assets to a separate origin.
 
 Prerequisites:
+
 * section.io account
 * section.io application running Varnish
 * A separate origin for your static assets (e.g. S3 bucket)
