@@ -17,15 +17,14 @@ Now when you browse to your site URL, the HTTP traffic will be flowing through t
 
 ### 2) Provision SSL certificate
 
-### 2) Provision SSL certificate
-
 If you visit your website at this point in the tutorial, you will likely see a browser security warning. While it is totally possible to skip this step, click through this warning and test your site without a problem, our Dev PoP can provision a certificate for your local cluster. On the top right hand side, click on the `download root certificate` button.
 
-#### a) For Windows
+#### For Windows
 
-    Right click on the `section.io-developer-pop-root` certificate in your downloads folder and select `install certificate`. Click through the wizard and install the certificate. Once installed, you should see the `DO_NOT_TRUST_sectionio_root` in the security tab of your browser dev tools.
-#### b) For Mac
-    DoubleClick on the certificate in your downloads folder and add it to the appropriate keychain. Once completed, you should be able to see `DO_NOT_TRUST_sectionio_root` under Category `certificates`. As with Windows, once installed properly the `DO_NOT_TRUST_sectionio_root` should appear in the security section of dev tools.
+Right click on the `section.io-developer-pop-root` certificate in your downloads folder and select `install certificate`. Click through the wizard and install the certificate. Once installed, you should see the `DO_NOT_TRUST_sectionio_root` in the security tab of your browser dev tools.
+#### For Mac
+
+DoubleClick on the certificate in your downloads folder and add it to the appropriate keychain. Once completed, you should be able to see `DO_NOT_TRUST_sectionio_root` under Category `certificates`. As with Windows, once installed properly the `DO_NOT_TRUST_sectionio_root` should appear in the security section of dev tools.
 
 ### 3) Making changes to your configuration
 
