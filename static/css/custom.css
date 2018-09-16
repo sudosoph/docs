@@ -1,13 +1,13 @@
 
 /* override sidebar color */
 #sidebar {
-	background-color: #5f3dc4;
+	background-color: #7030f0;
 }
 
 #header-wrapper,
 .searchbox,
 #sidebar ul.topics > li.parent, #sidebar ul.topics > li.active {
-	background: #5f3dc4;
+	background: #7030f0;
 }
 
 /* make forward and back arrows slim */
