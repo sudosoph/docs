@@ -14,13 +14,15 @@ Minikube runs on your preference of virtual machine ([VirtualBox] is a free opti
 1. Start minikube: `minikube start`
 1. Initialize the Developer PoP: `minikube ssh "docker run --rm --net=host -v /var/lib/localkube:/var/lib/localkube:ro sectionio/section-init"`
 
+Note that after each one of these terminal commands, you will need to wait a few moments for Minikube to fully launch all the section.io containers. If you, for example, try and do the git pushes in the next section immediately after completing the `minikube ssh` command above, you may find that the git daemon or some other relevant component has not yet come online. In this case, just wait for a few minutes — the exact time depends upon the speed of your internet connection and specifications of your machine. 
+
 {{% notice tip %}}
 Disable repeating messages about the **kubectl** component you won't need: `minikube config set WantKubectlDownloadMsg false`
 {{% /notice %}}
 
 
-Now your Developer PoP base is ready, but it does not have any of the proxies in your configuration.
+Now your Developer PoP base is ready, but it has not yet launched any of the specific proxies in your configuration.
 
-Lets change that by [loading your section.io setup into the Developer PoP]({{< relref "tutorials/developer-workflow/loading-your-setup-into-the-developer-pop.md" >}}).
+Let's change that by [loading your section.io setup into the Developer PoP]({{< relref "tutorials/developer-workflow/loading-your-setup-into-the-developer-pop.md" >}}).
 
   [VirtualBox]: http://www.virtualbox.org/
