@@ -24,7 +24,7 @@ weight: 2
 ### 3) Push your configuration files to the Developer PoP
   Once you have added the git remote you can push to the Dev PoP by running: `git push developer-pop`
 
-  If you get this message `Pulling required proxy images, please try again shortly`, that means that your machine does not have the images locally and has begun downloading them. Your terminal will look as though it has exited the process and nothing is happening, but the downloads are going on behind the scenes. Try `git push developer-pop` every few minutes until the downloads are complete and the push goes through.
+  If you get this message `Pulling required proxy images, please try again shortly`, that means that your machine does not have the proxy images locally and has begun downloading them. Your terminal will look as though it has exited the process and nothing is happening, but the downloads are going on behind the scenes. Try `git push developer-pop` every few minutes until the downloads are complete and the push goes through. The length of this process will depend entirely on the speed of your internet connection.
 
 ### 4) Configure origin server details
 Now that your configurations are running on the Dev Pop, you will need to configure your egress settings (origin server details) to tell the Dev Pop where to pass the HTTP request to. To do this you will use the Dev Pop UI's **Services** tab where you will find information about the repository you just pushed up. A page refresh might be needed.
@@ -32,7 +32,7 @@ Now that your configurations are running on the Dev Pop, you will need to config
 #### a) Connect Dev PoP to aperture
  The easiest way to do this is to [connect your Dev PoP to your section.io Aperture account]({{< relref "how-to/developer-pop/connect-to-aperture.md" >}}) and **import** these configurations.
 
-To do this : 
+To do this :
 
 1. Click on **Import** under the *Operations* column in the **Services** tab.
 2. Select the **Environment** you want to test.
