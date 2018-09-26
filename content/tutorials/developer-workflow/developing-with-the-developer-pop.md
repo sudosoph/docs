@@ -42,6 +42,6 @@ Congratulations! You have successfully set up the section.io Developer PoP! See 
 
 
 ### Further Reading
-For a guide on troubleshooting common Developer PoP issues, [click here]({{< relref "how-to/developer-pop/troubleshooting-developerpop.md" >}}).
+For a guide on troubleshooting common Developer PoP issues, [click here]({{< relref "how-to/developer-pop/troubleshoot-developerpop.md" >}}).
 
 For a guide on setting up DevPoP with a local server, [click here]({{< relref "how-to/developer-pop/dev-pop-with-local-server.md" >}}).
