@@ -41,27 +41,7 @@ Once you have made changes to your config, you will want to push them to the Dev
 Congratulations! You have successfully set up the section.io Developer PoP! See below for miscellaneous tips to help you get the most out of the software.
 
 
-### 4) Troubleshooting issues with the Developer Pop
+### Further Reading
+For a guide on troubleshooting common Developer PoP issues, [click here]({{< relref "how-to/developer-pop/troubleshooting-developerpop.md" >}}).
 
-  The Developer PoP is a still in beta and will occasionally have hiccups. This section details some common issues and how to deal with them.
-
-#### Network connectivity and computer sleep
-  Often if you put your computer to sleep with Minikube running, it will break Minikube's network adaptor, and you will get 503 errors without a clear cause when you resume operation. This will also prevent you from downloading proxy images as a part of a `git push`. In order to re-establish connectivity, you need to disconnect the network adapter and reconnect it. If using VirtualBox, do this by opening the VirtualBox UI, going to your VM's settings, clicking `network` and then changing the `attached to:` value from `NAT` to `not attached`, and then back to `NAT`. Toggling this will reset the adapter.
-
-#### Problems with pods in a namespace
-  Sometimes Minikube can fail at the namespace level — either by not properly provisioning all the containers it should, or failing to update existing containers after a new git push, or something else. If this happens, you can delete the namespace from the DevPop UI and push the repository back into Minikube by running `git push developer-pop` once the deleted namespace has disappeared from the DevPop UI. You can also accomplish this by renaming the git remote. This will re-trigger all of the container provisioning for the namespace.
-
-#### Minikube becomes unresponsive, or has other problems
-  Sometimes, Minikube becomes unstable and stops responding to requests altogether. In this case, you'll want to begin this whole process over again with a `minikube delete` and a `minikube start`. Note that sometimes (especially if you start Minikube again very shortly after the initial delete), Minikube will spin up on another IP address (say `192.168.99.101` instead of `192.168.99.100`). This is fine, but you'll need to adjust your hostfile and your git remote if this occurs. Alternatively, if you restart your computer and then start Minikube, it will return to the `193.168.99.100` address. Most Minikube problems not caused by some sort of configuration error can be fixed with a fresh boot of Minikube.
-
-
-### 5) Running Minikube with a Local Origin
-Although Minikube functions most smoothly when pointed at an origin server with a publicly available IP address, it is possible to connect a local development server to DevPop. The source of complexity here is dealing with the network bridge between the host machine and the Minikube virtual machine. The following are directions for an implementation of this:
-
-1. Start your local server on port:80.
-1. Start Minikube.
-1. Once Minikube is running and it's networking has been established, you should be able to visit your localhost server on both `127.0.0.1` and `192.168.99.1` (If not, subsequent steps will not work).
-1. If you can complete the previous step, then go into the DevPop UI and add both `192.168.99.1` and the relevant hostname (such as `www.example.com`) as the origin for the section.io configuration you wish to run in front of your origin server.
-1. In your hostfile, map the hostname you set in the previous step (`www.example.com`) to the IP address of Minikube (likely `192.168.99.100`).
-1. Visit your hostname `www.example.com` in your browser. If everything is rigged up correctly, then your browser will send the request to DevPoP on `192.168.99.100`, which will then pass it to the local origin server running on `192.168.99.1`. Note that this request must be made over HTTP and not HTTPS.
-
+For a guide on setting up DevPoP with a local server, [click here]({{< relref "how-to/developer-pop/dev-pop-with-local-server.md" >}}).
