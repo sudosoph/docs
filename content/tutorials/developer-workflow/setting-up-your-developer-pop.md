@@ -12,7 +12,14 @@ Minikube runs on your preference of virtual machine ([VirtualBox] is a free opti
 1. Verify that you have installed VirtualBox or another VM software.
 1. Download and install <a href="https://github.com/kubernetes/minikube/releases/tag/v0.26.1" target="Minikube" title="Minikube v0.26.1 download">Minikube v0.26.1</a>.
 1. Start minikube: `minikube start`
-1. Initialize the Developer PoP: `minikube ssh "docker run --rm --net=host -v /var/lib/localkube:/var/lib/localkube:ro sectionio/section-init"`
+1. Initialize the Developer PoP:
+```
+minikube ssh "docker run --rm --net=host -v /var/lib/localkube:/var/lib/localkube:ro sectionio/section-init"
+```
+ If you have installed Minikube v0.29.0 or later you will need to use this initialization command instead:
+```
+minikube ssh "docker run --rm --net=host -v /var/lib/minikube:/var/lib/localkube:ro -v /var/lib/minikube:/var/lib/minikube:ro sectionio/section-init"
+```
 
 Note that after each one of these terminal commands, you will need to wait a few moments for Minikube to fully launch all the section.io containers. If you, for example, try and do the git pushes in the next section immediately after completing the `minikube ssh` command above, you may find that the git daemon or some other relevant component has not yet come online. In this case, just wait for a few minutes — the exact time depends upon the speed of your internet connection and specifications of your machine. 
 
