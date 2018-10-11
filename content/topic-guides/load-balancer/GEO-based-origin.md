@@ -24,14 +24,14 @@ In your `default.vcl` file you can set a header that's recognizable in section.i
     "environments": {
         "Production": {
             "origin": {
-                "address": "100.100.100.100"
+                "address": "203.0.113.1"
             },
             "alternate_origins": {
                 "US_origin": {
-                    "address": "100.100.100.120"
+                    "address": "203.0.113.2"
                 },
                 "AU_origin": {
-                    "address": "100.100.100.130"
+                    "address": "203.0.113.3"
                 }
             }           
         },

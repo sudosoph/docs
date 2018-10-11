@@ -24,11 +24,11 @@ In your `default.vcl` file you can set a header that's recognizable in section.i
     "environments": {
         "Production": {
             "origin": {
-                "address": "100.100.100.100"
+                "address": "203.0.113.1"
             },
             "alternate_origins": {
                 "mobile_device": {
-                    "address": "100.100.100.120"
+                    "address": "203.0.113.2"
                 }
             }           
         },
@@ -41,14 +41,14 @@ Next we tell Varnish Cache to use this origin for requests if we detect the User
     sub devicedetect {
         # The VCL here is just an example, it is not a exhaustive device detection logic.
         if (req.http.User-Agent ~ "(?i)samsung|iphone|ipod|pixel") {
-            set req.http.x-device-type = "mobile";
+            set req.http.device-type = "mobile";
         }
     }
 
     sub vcl_recv {
         ...
         call devicedetect;
-        if ( req.http.x-device-type == "mobile" ) {
+        if ( req.http.device-type == "mobile" ) {
             set req.http.section-origin = "mobile_device";
         } 
         ...

@@ -25,11 +25,11 @@ In your `default.vcl` file you can set a header that's recognizable in section.i
     "environments": {
         "Production": {
             "origin": {
-                "address": "100.100.100.100"
+                "address": "203.0.113.1"
             },
             "alternate_origins": {
-                "assets_example_com_100_100_100_120": {
-                    "address": "100.100.100.120",
+                "assets_example_com": {
+                    "address": "203.0.113.2",
                     "host_header": "assets.example.com"
                 },
             }           
@@ -43,7 +43,7 @@ Next we need to tell Varnish Cache when to use and how to define this origin for
     sub vcl_recv {
         ...
         if (req.url ~ "/some-unique-url-for-static-assets") {
-            set req.http.section-origin = "assets_example_com_100_100_100_120";    
+            set req.http.section-origin = "assets_example_com";    
         }
         ...
     }
