@@ -51,7 +51,7 @@ Next we tell Varnish Cache to use this origin for requests depending on the GEO 
         ...
     }
 
-*Note 1:* Requests not from US/CA/AU/NZ will be directed at the default origin of `100.100.100.100`.
+*Note 1:* Requests not from US/CA/AU/NZ will be directed at the default origin of `203.0.113.1`.
 *Note 2:* If you are caching responses, make sure to `hash_data(req.http.section-origin)` to split the cache based on origin. 
 
 #### Overview

@@ -54,7 +54,7 @@ Next we tell Varnish Cache to use this origin for requests if we detect the User
         ...
     }
 
-*Note 1:* Requests from non-mobile devices will be directed at the default origin of `100.100.100.100`.
+*Note 1:* Requests from non-mobile devices will be directed at the default origin of `203.0.113.1`.
 *Note 2:* If you are caching responses, make sure to `hash_data(req.http.section-origin)` to split the cache based on origin. 
 
 #### Overview
