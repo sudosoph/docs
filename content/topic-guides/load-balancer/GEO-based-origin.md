@@ -1,5 +1,5 @@
 ---
-title: Load Balancing - GEO based origin selection
+title: GEO-based origin selection
 description: Use VCL to configure a layer 7 load balancer for differnet GEO locations.
 keywords: content delivery network, CDN, load balancer, VCL, HTTP
 aliases:
@@ -19,7 +19,7 @@ Prerequisites:
 In your `default.vcl` file you can set a header that's recognizable in section.io's `last-proxy` to determine which origin address and host header to make the request with. So you are going to need to define that origin first in your `section.config.json` file located in the root of your applications git repo. You will be adding a key called `alternate_origins` under `environments.Production`.
 
 #### `section.config.json`
-    
+
     ...
     "environments": {
         "Production": {
@@ -52,9 +52,8 @@ Next we tell Varnish Cache to use this origin for requests depending on the GEO 
     }
 
 *Note 1:* Requests not from US/CA/AU/NZ will be directed at the default origin of `203.0.113.1`.
-*Note 2:* If you are caching responses, make sure to `hash_data(req.http.section-origin)` to split the cache based on origin. 
+*Note 2:* If you are caching responses, make sure to `hash_data(req.http.section-origin)` to split the cache based on origin.
 
 #### Overview
 
 This use case is especially helpful if you are serving unique content to different geographic locations, such as offers only available in certain regions or pages in different languages or currencies or just to keep load separated between different origins. section.io handles all the internals of actually making the request to origins for each region and all you have to do is configure your reverse proxy setup in your git repo!
-
