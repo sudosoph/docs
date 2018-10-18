@@ -4,23 +4,19 @@ description: Use VCL to configure a layer 7 load balancer.
 keywords: content delivery network, CDN, load balancer, VCL, HTTP
 aliases:
   - /load-balancer/
-
 ---
 
 Load balancing distributes traffic across origin servers so that your website can handle more visitors at once and visitors are always directed to the best server for their requests. If one of your servers is not responding or a network is experiencing an outage, you can automatically redirect traffic to the closest functioning server so that your site stays up for all visitors.
 
 ## Technical details
 
-section.io provides a layer 7 load balancer to immediately route HTTP requests based on rules you set that can include request location, device or browser type, and cookies or headers. In addition, you can utilize our load balancer to randomly distribute requests to your origin servers so that no one server is overloaded. 
+section.io provides a layer 7 load balancer to immediately route HTTP requests based on rules you set that can include request location, device or browser type, and cookies or headers. In addition, you can utilize our load balancer to randomly distribute requests to your origin servers so that no one server is overloaded.
 
 section.io uses VCL to create common load balancing scenarios that can be easily set up in your section.io portal by editing your VCL files.
 
 ## Examples
 
-
-* **[Static asset origin](/docs/topic-guides/load-balancer/Static-asset-origin/)**.
-* **[GEO based origin selection](/docs/topic-guides/load-balancer/GEO-based-origin/)**.
-* **[Device based origin selection](/docs/topic-guides/load-balancer/Device-based-origin/)**.
+{{% children description="true" style="h3" %}}
 
 ### More examples coming soon
 
