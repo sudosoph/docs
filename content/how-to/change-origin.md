@@ -69,4 +69,12 @@ An examples of this use case would be to send any request to /assets/images/.\* 
 
 To implement this feature there are 2 elements to configure, Please see our Alternate origin documentation here: https://www.section.io/docs/multiple-origins/
 
+## Enable SNI
 
+If your origin has SNI enabled and serves multiple secure(HTTPS) websites then you should `Enable SNI` under `Origins` > `Common Settings` in the aperture portal.
+
+{{% figure src="/docs/images/enable_sni.png" %}}
+
+This will enable our platform to pass the server name through TLS/SNI when establishing a connection with your origin.
+
+This option is turned off by default.
