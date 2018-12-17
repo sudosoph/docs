@@ -6,7 +6,7 @@ aliases:
   - /synthetics/
 
 ---
-section.io offers free synthetic tests (comparable to WebPageTest, Pingdom, etc.) for any customer that signs up and begins their trail. This feature enables you to monitor your performance as we run synthetic tests against your domain and any of your pages.
+section.io offers free synthetic tests (comparable to WebPageTest, Pingdom, etc.) for any customer that signs up and begins their trial. This feature enables you to monitor your performance as we run synthetic tests against your domain and any of your pages.
 
 ## Setting up Synthetic Tests in section.io
 
