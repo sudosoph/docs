@@ -10,13 +10,10 @@ Section.io's Developer PoP runs on Kubernetes. Minikube is a prepackaged Kuberne
 Minikube runs on your preference of virtual machine ([VirtualBox] is a free option).
 
 1. Verify that you have installed VirtualBox or another VM software.
-1. Download and install <a href="https://github.com/kubernetes/minikube/releases/tag/v0.26.1" target="Minikube" title="Minikube v0.26.1 download">Minikube v0.26.1</a>.
+1. Download and install <a href="https://github.com/kubernetes/minikube/releases/tag/v0.32.0" target="Minikube" title="Minikube v0.32.0 download">Minikube v0.32.0</a>.
 1. Start minikube: `minikube start`
 1. Initialize the Developer PoP:
-```
-minikube ssh "docker run --rm --net=host -v /var/lib/localkube:/var/lib/localkube:ro sectionio/section-init"
-```
- If you have installed Minikube v0.29.0 or later you will need to use this initialization command instead:
+
 ```
 minikube ssh "docker run --rm --net=host -v /var/lib/minikube:/var/lib/minikube:ro sectionio/section-init"
 ```
