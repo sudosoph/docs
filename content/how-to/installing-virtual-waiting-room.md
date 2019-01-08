@@ -47,7 +47,7 @@ In the root of your repositoryas, add a folder titled `vwr` with the following f
 
 {{< gist section-io-gists bd435ecb59e11183c6e689af629b1a63 >}}
 
-## Step 3: Add GoSquared script provided by us.
+## Step 3: Add GoSquared script provided by Section.
 
 We will provide a gosquared script to be inserted in all pages of the website except the waiting room page. This script has to be inserted in the `<head>` tag and is used for tracking the number of users on the site. Since the script is fired after the *onLoad* event it does not effect the performance of the website.
 
