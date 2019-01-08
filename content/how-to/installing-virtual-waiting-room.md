@@ -20,7 +20,7 @@ The content of file should be:
 * Where “threshold” is the max number of customer you want on your site.
 * Where “ID” comes from end of URL when you are logged into gosquared.
 * Where “secret” is a string with no spaces that only you know.
-* Where "hostname" is the hostname used for the name of your application.
+* Where "hostname" is the first hostname(domain name) used in your Section Application.
 * Where "api_key" is a the api_key for your
 GoSquared project provided by us.
 
