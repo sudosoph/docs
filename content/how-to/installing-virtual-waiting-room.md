@@ -1,13 +1,13 @@
 ---
 title: Install Virtual Waiting Room
 description: How to set a limit on the number of visitors your site can safely handle.
-keywords: traffic management, varnish, VCL, traffic spikes
+keywords: traffic management, waiting room, traffic spikes, vwr
 aliases:
   - /overload-prevention/
 
 ---
 
-In order to use the Virtual Waiting Room feature, you must have Varnish Cache 4+ running on your application and add a GoSquared JavaScript snippet that section.io will provide. To setup the feature you will 1) add your gosquared credentials, 2) add VCL for virtual waiting room, and then 3) call the new VCL in your default VCL file. Optionally, you can 4) edit the default Virtual Waiting Room page that will be shown to your customers. The following page will walk you through each step.
+The Virtual Waiting Room allows you to control the number of concurrent users on your website and display a custom waiting room page. To setup the Virtual Waiting Room carry out the following steps
 
 ## Step 1: Add GoSquared Credentials
 
@@ -15,69 +15,76 @@ First, you need to add a file to the root of the repository called:
 gosquared-visitor-count
 
 The content of file should be:
-`<overflow number> <ID> <secret>`
+`<threshold> <ID> <secret> varnish <hostname> <api_key>`
 
-* Where “overflow number” is the max number of customer you want on your site
-* Where “ID” comes from end of URL when you are logged into gosquared
-* Where “secret” is a string with no spaces that only you know
+* Where “threshold” is the max number of customer you want on your site.
+* Where “ID” comes from end of URL when you are logged into gosquared.
+* Where “secret” is a string with no spaces that only you know.
+* Where "hostname" is the hostname used for the name of your application.
+* Where "api_key" is a the api_key for your
+GoSquared project provided by us.
 
 Example:
-`300 GSN-000000-M a000000000bc111111111d00000`
+`300 GSN-000000-M a000000000bc111111111d00000 varnish www.mysite.com jkfjijfejADFD`
 
-Where to find Gosquared ID:
+The GoSquared ID will provided by us.
 
-{{% figure src="/docs/images/gosquared-id.png" %}}
+## Step 2: Add a Virtual Waiting Room folder.
 
-## Step 2: Add VCL for Virtual Waiting
+In the root of your repositoryas, add a folder titled `vwr` with the following files :
 
-In the Varnish Cache folder of your repo, add section-user-throttling.vcl
-
-{{< gist section-io-gists 0596b0765194996048e279a072eab492 >}}
-
-## Step 3: Include Virtual Waiting Room VCL
-
-In the Varnish Cache file of your repo, edit the default.vcl to add the following:
-
-{{< gist mkilbo 45165c30ecf3ea141f2a12b91a486216 >}}
-
-The above code needs to be inserted separate to, and above any other instance of `sub vcl_recv`. 
-Be sure to update the secret and threshold values to match what you added for your GoSquared Credentials.
+- `vwr.json`
+- `waiting-room.html`
 
 
-### Note about Section-Visitors-Version:
+`vwr.json` will contain the configuration of your virtual waiting room and should have the following data.
+
+
+
+{{< gist section-io-gists 23679bef63d4f455c23f599a23a362fa >}}
+
+`waiting-room.html` will contain the HTML to be displayed in case the number of concurrent users on the site are more than the threshold set by you. Any CSS required to style the page should be included in this HTML file itself. Any images you wish to serve should be stored off domain (for e.g. in an S3 bucket) and then linked.
+
+{{< gist section-io-gists bd435ecb59e11183c6e689af629b1a63 >}}
+
+## Step 3: Add GoSquared script provided by us.
+
+We will provide a gosquared script to be inserted in all pages of the website except the waiting room page. This script has to be inserted in the `<head>` tag and is used for tracking the number of users on the site. Since the script is fired after the *onLoad* event it does not effect the performance of the website.
+
+---
+
+## Operations
+
+Once the initial setup is complete any future changes to *Threshold* and the *Waiting Room HTML* can be made easily through the interface provided under Quick Config in the Aperture portal at https://aperture.section.io
+
+
+{{% figure src="/docs/images/vwr_config.png" %}}
+
+
+### Increase/Decrease user threshold
+
+The maximum number of concurrent users can be increased/decreased easily by using the counter under the *Control Visitor Count* section.
+
+### Edit the Virtual Waiting Room HTML
+
+The HTML to be displayed when the users are put in a queue can be edited under the *Upload HTML* section. A preview of the page after it has been uploaded is provided under the *Preview HTML* tab.
+
+
+{{% figure src="/docs/images/vwr_preview.png" %}}
+
+
+### Toggle Virtual Waiting Room
+
+The Virtual Waiting Room can easily be turned on and off using the toggle provided under the *Control Visitor Count* section.
+
+
+---
+
+
+#### Note about Section-Visitors-Version:
 Section-Visitors-Version determines the name of the cookie issued to visitors to remember whether they have been granted access or blocked due to exceeding the threshold.
 
 When the threshold is increased, users with the “blocked” cookie will be given an opportunity to be granted access when their cookie expires after 3 minutes.
 
-When the threshold is decreased, users with the “allowed” cookie will still have access until their cookie expires after 1 hour but this may put the site under too much pressure. Change the Section-Visitors-Version to invalidate all existing issued cookies and immediately enforce the new threshold.
+When the threshold is decreased, the Section-Visitors-Version is incremented to invalidate all existing issued cookies and immediately enforce the new threshold.
 
-In our example VCL we’ve used POSIX time to determine the version as it is a new value every second. If you prefer, you can choose to increment another way.
-
-
-### Note about Section-Visitors-Fallback-Block-Percentage:
-As GoSquared is an external service, it is possible that the current user count may not be available and the system will not be able to determine if the threshold has been exceeded to make an appropriate decision to allow or block a new visitor. In this situation, new visitors will be randomly assigned to the “allowed” or “blocked” state based on the value of Section-Visitors-Fallback-Block-Percentage. That is, a percentage of “10” will randomly block 10% of new visitors until the current GoSquared user count data becomes available. A value of “0” will allow all new visitors and a value of “100” will block all new visitors.
-
-## Optional Step 4: Edit the Virtual Waiting Room Screen Served to Users
-The default Overload Page will show your customers a blank page with unstyled text saying “threshold exceeded”. To implement the virtual waiting room feature, first update the VCL with this default setting. Then go in and edit the VCL. Specifically, line 16 of the above gist that will be added to the default.vcl calls the html that will be displayed. To add your own HTML, simply replace the `<html>threshold exceeded</html>` with your own html. It is important to note that any assets you wish to include in this HTML need to either be included inline (makes the most sense with JavaScript or CSS) or fetched from an off-domain URL (images). This is necessary because once a client has been placed in the Virtual Waiting Room, their browser is temporarily blocked from making requests to any on-domain URL and will be unable to load any on-domain assets. 
-
-If you would also like to monitor how many users are currently being held in Overflow, simply create another GoSquared project with a new GoSquared ID and inject it into the HTML of the Overload page.
-This tracking ID would be different from the ID `GSN-000000-M` used to tracking how many active users are on the site.   
-
-## Operations
-
-### Increase user threshold
-Update both the threshold values in `gosquared-visitor-count` and VCL.
-
-e.g.
-
-`700 GSN-000000-M a000000000bc111111111d00000` and `set req.http.Section-Visitors-Threshold = 700;` in the VCL.
-
-
-### Decrease user threshold
-Update both the threshold values in `gosquared-visitor-count` and VCL.
-
-e.g.
-
-`100 GSN-000000-M a000000000bc111111111d00000` and `set req.http.Section-Visitors-Threshold = 100;` in VCL.
-
-You will also need to increment the overflow header version `set req.http.Section-Visitors-Version = "1479168057";` in VCL.

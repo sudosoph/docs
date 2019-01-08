@@ -9,3 +9,13 @@ https://gohugo.io/getting-started/installing
 
 ## Run hugo
 `hugo server --watch`
+
+### Issues
+
+With the latest version of the hugo (tested with version 0.53) you may run into the following error when building the docs locally :
+
+```
+/docs/themes/docdock/layouts/partials/logo.html:1:9": execute of template failed: template: partials/logo.html:1:9: executing "partials/logo.html" at <where .Site.Pages "S...>: error calling where: Source isn't a field of struct type *hugolib.Page
+```
+
+To fix this issue remove the word `.Source` from `.Source.Filename` in the file `/docs/themes/docdock/layouts/partials/logo.html` and build again.asasas
