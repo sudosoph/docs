@@ -86,5 +86,5 @@ Section-Visitors-Version determines the name of the cookie issued to visitors to
 
 When the threshold is increased, users with the “blocked” cookie will be given an opportunity to be granted access when their cookie expires after 3 minutes.
 
-When the threshold is decreased, the Section-Visitors-Version is incremented to invalidate all existing issued cookies and immediately enforce the new threshold.
+When the threshold is decreased, the Section-Visitors-Version is automatically incremented to invalidate all existing issued cookies and immediately enforce the new threshold.
 
