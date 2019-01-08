@@ -22,7 +22,7 @@ The content of file should be:
 * Where “secret” is a string with no spaces that only you know.
 * Where "hostname" is the first hostname(domain name) used in your Section Application.
 * Where "api_key" is a the api_key for your
-GoSquared project provided by us.
+GoSquared project provided by Section engineering team.
 
 Example:
 `300 GSN-000000-M a000000000bc111111111d00000 varnish www.mysite.com jkfjijfejADFD`
