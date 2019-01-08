@@ -27,7 +27,7 @@ GoSquared project provided by us.
 Example:
 `300 GSN-000000-M a000000000bc111111111d00000 varnish www.mysite.com jkfjijfejADFD`
 
-The GoSquared ID will provided by us.
+The GoSquared ID will provided by Section engineering team.
 
 ## Step 2: Add a Virtual Waiting Room folder.
 
