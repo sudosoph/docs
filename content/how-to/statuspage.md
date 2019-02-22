@@ -8,15 +8,17 @@ aliases:
 ---
 #### A Guide to Integrating StatusPage with Section to monitor and alert on delivery system health.
 
-The StatusPage integration allows customer stakeholders to sign up to be alerted via email, SMS, and Slack when the delivery system is unhealthy.  In addition, the integration will identify which leg (Origin > Section or Section > enduser) is down.  
+The StatusPage integration allows customer stakeholders to sign up to be alerted via email, SMS, and Slack when the delivery system is unhealthy.  In addition, the integration will identify and display which leg (Origin > Section or Section > end-user) is down.  
 
 
 
-StatusPage Integration
+StatusPage Setup
 
 To integrate StatusPage with Section:
 
-#### 1) step one
+#### 1) Step one
+#### 2) Step two
+#### 3) Step three
 
 
 You will see it under `Edge-access-log` documents in Kibana as `section_io_tag`
