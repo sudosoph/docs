@@ -6,7 +6,7 @@ aliases:
  
 
 ---
-#### A StatusPage Integration Guide to monitor and alert customers on their delivery system health.
+#### StatusPage Integration to monitor and alert customers to changes in their delivery system health
 
 Customer Use-Case
 
