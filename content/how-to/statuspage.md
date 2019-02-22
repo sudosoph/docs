@@ -1,12 +1,12 @@
 ---
-title: StatusPage Integration Guide
-description: Set up section.io so that it can log custom information in Varnish
-keywords: custom logging, logging, Edge logging, Varnish Cache logging, Kibana, Elastic Search, content delivery network, CDN
+title: StatusPage
+description: Integrate with StatusPage to monitor and alert when the delivery system is unhealthy.
+keywords: StatusPage, Alerting, Monitor
 aliases:
-  - /custom-logging/
+ 
 
 ---
-#### A Guide to logging custom information using Varnish Cache or at the Edge.
+#### A Guide to Integrating StatusPage with Section to monitor and alert when the delivery system si unhealthy.
 
 To help with debugging section.io allows several ways to log custom information then allow this information to be recorded and searchable in Kibana.
 
