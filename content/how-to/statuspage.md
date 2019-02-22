@@ -12,9 +12,9 @@ The StatusPage integration allows customer stakeholders to sign up to be alerted
 
 
 
-#### 1) Log using HTTP response header
+#### 1) StatusPage Integration
 
-Any `section-io-tag` HTTP response header received by Edge will be logged and indexed in Kibana edge-access-log documents as the `section_io_tag` field. This header can be set by origin or any proxy upstream of Edge.
+[Add Steps here]
 
 You will see it under `Edge-access-log` documents in Kibana as `section_io_tag`
 
