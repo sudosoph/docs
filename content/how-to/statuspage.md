@@ -1,5 +1,5 @@
 ---
-title: Custom logging
+title: StatusPage Integration Guide
 description: Set up section.io so that it can log custom information in Varnish
 keywords: custom logging, logging, Edge logging, Varnish Cache logging, Kibana, Elastic Search, content delivery network, CDN
 aliases:
