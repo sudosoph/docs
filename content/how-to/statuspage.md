@@ -6,7 +6,7 @@ aliases:
  
 
 ---
-#### A Guide to Integrating StatusPage with Section to monitor and alert on delivery system health.
+#### A StatusPage Integration Guide to monitor and alert customers on their delivery system health.
 
 Customer Use-Case
 
@@ -14,7 +14,7 @@ The StatusPage integration allows customer stakeholders to sign up to receive al
 
 Section Use-Case
 
-The integration will notify Section Engineers of the change in alert delevery health and allow them to manually create an incident to track, document, and log the issue to resolution. 
+The integration will notify Section Engineers of the change in alert delevery health and allow them to manually create an incident to log, document, and track the issue to resolution. 
 
 StatusPage Setup
 
