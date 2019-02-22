@@ -10,7 +10,7 @@ aliases:
 
 Customer Use-Case
 
-The StatusPage integration allows customer stakeholders to sign up to receive alerts via email, SMS, and Slack when the delivery system is unhealthy.  In addition, StatusPage will identify and display to the user which leg (Origin > Section or Section > end-user) is down.  
+The StatusPage integration allows customer stakeholders to sign up to receive alerts via email, SMS, and Slack when the delivery system is unhealthy.  In addition, StatusPage will identify and display to the user which leg (Origin > Section or Section > Client) is down.  
 
 Section Engineer Use-Case
 
