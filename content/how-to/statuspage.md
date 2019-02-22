@@ -14,7 +14,7 @@ The StatusPage integration allows customer stakeholders to sign up to receive al
 
 Section Engineer Use-Case
 
-The integration will notify Section Engineers of the change in alert delevery health and allow them to manually create an incident to log, document, and track the issue to resolution. 
+The integration will notify Section Engineers of a change to alert delevery health and allow them to manually create an incident to log, document, and track the issue to resolution. 
 
 StatusPage Setup
 
