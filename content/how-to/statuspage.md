@@ -8,9 +8,11 @@ aliases:
 ---
 #### A Guide to Integrating StatusPage with Section to monitor and alert on delivery system health.
 
-The StatusPage integration allows customer stakeholders to sign up to be alerted via email, SMS, and Slack when the delivery system is unhealthy.  In addition, the integration will identify and display which leg (Origin > Section or Section > end-user) is down.  
+Customer Use-Case
+The StatusPage integration allows customer stakeholders to sign up to receive alerts via email, SMS, and Slack when the delivery system is unhealthy.  In addition, StatusPage will identify and display to the user which leg (Origin > Section or Section > end-user) is down.  
 
-
+Section Use-Case
+The integration will notify Section Engineers of the change in alert delevery health and allow them to manually create an incident to track, document, and log the issue to resolution. 
 
 StatusPage Setup
 
