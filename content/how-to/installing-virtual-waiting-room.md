@@ -21,17 +21,16 @@ The content of file should be:
 * Where “ID” comes from end of URL when you are logged into gosquared.
 * Where “secret” is a string with no spaces that only you know.
 * Where "hostname" is the first hostname(domain name) used in your Section Application.
-* Where "api_key" is a the api_key for your
-GoSquared project provided by Section engineering team.
+* Where "api_key" is an api_key for your GoSquared project provided by Section engineering team.
 
 Example:
 `300 GSN-000000-M a000000000bc111111111d00000 varnish www.mysite.com jkfjijfejADFD`
 
-The GoSquared ID will provided by Section engineering team.
+The GoSquared ID will be provided by Section engineering team.
 
 ## Step 2: Add a Virtual Waiting Room folder.
 
-In the root of your repositoryas, add a folder titled `vwr` with the following files :
+In the root of your repository, add a folder titled `vwr` with the following files :
 
 - `vwr.json`
 - `waiting-room.html`
@@ -43,13 +42,13 @@ In the root of your repositoryas, add a folder titled `vwr` with the following f
 
 {{< gist section-io-gists 23679bef63d4f455c23f599a23a362fa >}}
 
-`waiting-room.html` will contain the HTML to be displayed in case the number of concurrent users on the site are more than the threshold set by you. Any CSS required to style the page should be included in this HTML file itself. Any images you wish to serve should be stored off domain (for e.g. in an S3 bucket) and then linked.
+`waiting-room.html` will contain the HTML to be displayed in case the number of concurrent users on the site is more than the threshold set by you. Any CSS required to style the page should be included in this HTML file itself. Any images you wish to serve should be stored off domain (for e.g. in an S3 bucket) and then linked.
 
 {{< gist section-io-gists bd435ecb59e11183c6e689af629b1a63 >}}
 
 ## Step 3: Add GoSquared script provided by Section.
 
-We will provide a gosquared script to be inserted in all pages of the website except the waiting room page. This script has to be inserted in the `<head>` tag and is used for tracking the number of users on the site. Since the script is fired after the *onLoad* event it does not effect the performance of the website.
+We will provide a gosquared script to be inserted in all pages of the website except the waiting room page. This script has to be inserted in the `<head>` tag and is used for tracking the number of users on the site. Since the script is fired after the *onLoad* event it does not affect the performance of the website.
 
 ---
 
