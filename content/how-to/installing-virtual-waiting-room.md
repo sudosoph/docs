@@ -1,7 +1,7 @@
 ---
 title: Install Virtual Waiting Room
 description: How to set a limit on the number of visitors your site can safely handle.
-keywords: traffic management, waiting room, traffic spikes, vwr
+keywords: traffic management,virtual waiting room, traffic spikes, vwr
 aliases:
   - /overload-prevention/
 
@@ -30,13 +30,13 @@ The GoSquared ID will be provided by Section engineering team.
 
 ## Step 2: Add a Virtual Waiting Room folder.
 
-In the root of your repository, add a folder titled `vwr` with the following files :
+In the root of your repository, add a folder titled `virtualwaitingroom` with the following files :
 
-- `vwr.json`
+- `virtualwaitingroom.json`
 - `waiting-room.html`
 
 
-`vwr.json` will contain the configuration of your virtual waiting room and should have the following data.
+`virtualwaitingroom.json` will contain the configuration of your virtual waiting room and should have the following data.
 
 
 
