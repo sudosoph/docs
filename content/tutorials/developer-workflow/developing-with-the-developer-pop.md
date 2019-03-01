@@ -22,7 +22,7 @@ If you visit your website at this point in the tutorial, you will likely see a b
 #### a) For Windows
 Right click on the `section.io-developer-pop-root` certificate in your downloads folder and select `install certificate`. Click through the wizard and install the certificate. Once installed, you should see the `DO_NOT_TRUST_sectionio_root` in the security tab of your browser dev tools.
 #### b) For Mac
-Double-click on the certificate in your downloads folder and add it to the appropriate keychain. Once completed, you should be able to see `DO_NOT_TRUST_sectionio_root` under Category `certificates`. As with Windows, once installed properly the `DO_NOT_TRUST_sectionio_root` should appear in the security section of dev tools.
+Double-click on the certificate in your downloads folder and add it to the appropriate keychain. Once completed, you should be able to see `DO_NOT_TRUST_sectionio_root` under Category `certificates`. Right click on the certificate and select `Get Info`. Under the `Trust` section select the option `Always Trust` for `When using this certificate`. As with Windows, once installed properly the `DO_NOT_TRUST_sectionio_root` should appear in the security section of dev tools.
 
 ### 3) Making changes to your configuration
 
