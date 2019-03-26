@@ -1,6 +1,6 @@
 ---
 title: Billing Portal
-description: Information on how to setup billing for section.io.
+description: Information on how to setup billing for Section.
 keywords: CDN, billing, account management
 aliases:
   - /billing-portal/
@@ -20,7 +20,7 @@ Update the contact information for your subscriptions or choose a password for y
 
 ## Subscriptions
 
-Provides an overview of each subscription on section.io.  Each website you set up on your section.io account will have a separate subscription so you can track billing separately for each website.  You can also attach different payment methods to each website.
+Provides an overview of each subscription on Section.  Each website you set up on your Section account will have a separate subscription so you can track billing separately for each website.  You can also attach different payment methods to each website.
 
 You can also cancel individual subscriptions from this interface.  Click on the "Cancel" link in the particular subscription.
 

@@ -1,13 +1,13 @@
 ---
 title: Loading your setup into the Developer PoP
-description: How to get your local development environment setup to test section.io CDN on your local machine.
+description: How to get your local development environment setup to test Section CDN on your local machine.
 keywords: content delivery network, CDN, virtual machine, vagrant, virtualbox, git, cli, local development, local machine, staging environment, developer pop
 weight: 2
 ---
 
 <!-- Run `minikube service -n section-shared developer-pop`. Your browser will open when the endpoint for the service becomes ready. -->
 
-### 1) Clone your application's git repository located in the **Advanced Config** menu in the section.io portal.
+### 1) Clone your application's git repository located in the **Advanced Config** menu in the Section portal.
   ![how to clone a repo](/docs/images/screenshots/dev-pop/how-to-clone-repo.png)
 
   Clone with `git clone <url-from-advanced-config>`
@@ -18,7 +18,7 @@ weight: 2
   * Click on the Operations tab.
   ![operations tab](/docs/images/screenshots/dev-pop/operations-tab.png)
 
-  * Enter the git commands you see here inside the repository you cloned down in step #1. Replace "**www.site.com**" with your domain which is visible in the section.io portal. (**note** : it won't actually break anything if you leave it as "site").
+  * Enter the git commands you see here inside the repository you cloned down in step #1. Replace "**www.site.com**" with your domain which is visible in the Section portal. (**note** : it won't actually break anything if you leave it as "site").
   ![domain name](/docs/images/screenshots/dev-pop/domain-name.png)
 
 ### 3) Push your configuration files to the Developer PoP
@@ -30,7 +30,7 @@ weight: 2
 Now that your configurations are running on the Dev Pop, you will need to configure your egress settings (origin server details) to tell the Dev Pop where to pass the HTTP request to. To do this you will use the Dev Pop UI's **Services** tab where you will find information about the repository you just pushed up. A page refresh might be needed.
 
 #### a) Connect Dev PoP to aperture
- The easiest way to do this is to [connect your Dev PoP to your section.io Aperture account]({{< relref "how-to/developer-pop/connect-to-aperture.md" >}}) and **import** these configurations.
+ The easiest way to do this is to [connect your Dev PoP to your Section Aperture account]({{< relref "how-to/developer-pop/connect-to-aperture.md" >}}) and **import** these configurations.
 
 To do this :
 
@@ -39,13 +39,13 @@ To do this :
 3. Click on **Import** to finish importing the configurations.
 
 {{% notice tip %}}
-If you have an account in the section.io management console you can link your Developer PoP to your account.
+If you have an account in the Section management console you can link your Developer PoP to your account.
 
 See [How to Connect Developer PoP to Aperture]({{< relref "how-to/developer-pop/connect-to-aperture.md" >}}) for more information.
 {{% /notice %}}
 
 #### b) Configure the service manually
-In the **Operations** column of the table, there will be a button for you to "Configure" that service. Do this if you do not have a section.io account. It will bring up a modal asking for the following information:
+In the **Operations** column of the table, there will be a button for you to "Configure" that service. Do this if you do not have a Section account. It will bring up a modal asking for the following information:
 
 1. Hosted Name: This is the host headers for your application (e.g. www.example.com).
 2. Origin Address: This is the either a domain name or IP address that points directly to your load balancer or webserver.

@@ -5,7 +5,7 @@ weight: 6
 
 For too long, CDNs have remained in the dark ages of waterfall processes with no integration into the agile development lifecycle. Agile methods just aren't something that CDNs understand.
 
-As application logic moves to the edge, section.io brings the tools and processes you need to build an ideal, flexible architecture.
+As application logic moves to the edge, Section brings the tools and processes you need to build an ideal, flexible architecture.
 
 By allowing any engineer in your team to run a [Developer PoP]({{< relref "tutorials/developer-workflow/developing-with-the-developer-pop.md" >}}), you can bring the Application Edge right down onto your laptop.
 

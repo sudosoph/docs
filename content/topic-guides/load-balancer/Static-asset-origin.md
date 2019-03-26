@@ -13,11 +13,11 @@ Below is an example of how to configure your Content Delivery Grid to direct all
 
 Prerequisites:
 
-* section.io account
-* section.io application running Varnish
+* Section account
+* Section application running Varnish
 * A separate origin for your static assets (e.g. S3 bucket)
 
-In your `default.vcl` file you can set a header that's recognizable in section.io's `last-proxy` to determine which origin address and host header to make the request with. So you are going to need to define that origin first in your `section.config.json` file located in the root of your applications git repo. You will be adding a key called `alternate_origins` under `environments.Production`.
+In your `default.vcl` file you can set a header that's recognizable in Section `last-proxy` to determine which origin address and host header to make the request with. So you are going to need to define that origin first in your `section.config.json` file located in the root of your applications git repo. You will be adding a key called `alternate_origins` under `environments.Production`.
 
 #### `section.config.json`
 
@@ -54,4 +54,4 @@ Next we need to tell Varnish Cache when to use and how to define this origin for
 
 #### Overview
 
-This use case is especially helpful if you are requesting your static assets on the same domain (e.g. `www.example.com`) to utilize HTTP/2, but want to take the load off your default origin when requesting static assets. section.io handles all the internals of actually making the request to your `assets` origin and all you have to do is configure your reverse proxy setup in your git repo!
+This use case is especially helpful if you are requesting your static assets on the same domain (e.g. `www.example.com`) to utilize HTTP/2, but want to take the load off your default origin when requesting static assets. Section handles all the internals of actually making the request to your `assets` origin and all you have to do is configure your reverse proxy setup in your git repo!

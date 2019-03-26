@@ -1,6 +1,6 @@
 ---
 title: Commercial Terms
-description: Commercial terms for use of section.io.
+description: Commercial terms for use of Section.
 keywords: content delivery network, CDN, Commercial Terms
 aliases:
   - /commercial-terms/
@@ -9,7 +9,7 @@ aliases:
 
 ## Per GB Rates
 
-Each 1000 pages served on the section.io platform includes 3GB of data.  Where data used exceeds 3GB on average per 1000 pages served in any billing period, the following excess GB charges will apply:
+Each 1000 pages served on the Section platform includes 3GB of data.  Where data used exceeds 3GB on average per 1000 pages served in any billing period, the following excess GB charges will apply:
 
 Region           | Rate per GB        
 ---------------- |------------:

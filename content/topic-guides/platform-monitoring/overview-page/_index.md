@@ -7,10 +7,10 @@ aliases:
 
 ---
 
-Each section.io environment has its own **overview page**. The overview page displays general information about the environment's proxy stack and HTTP request flow, any recent errors between section.io and the origin server, and a number of links to more detailed information about the environment such as DNS information and HTTP logs.
+Each Section environment has its own **overview page**. The overview page displays general information about the environment's proxy stack and HTTP request flow, any recent errors between Section and the origin server, and a number of links to more detailed information about the environment such as DNS information and HTTP logs.
 #### Proxy Stack
 
-All proxy stack configurations running on section.io begin with the edge proxy (the very first proxy that incoming HTTP requests hit when they enter section.io) and ends with the LastProxy (the last proxy incoming HTTP requests pass through before leaving section.io and hitting your origin server). The proxies in between can be configured to perfectly suite your needs using your environment's [advanced configuration](/docs/topic-guides/advanced-config/). On the overview page, we display a graphic detailing the proxies currently running in your environment's configuration and their current order.
+All proxy stack configurations running on Section begin with the edge proxy (the very first proxy that incoming HTTP requests hit when they enter Section) and ends with the LastProxy (the last proxy incoming HTTP requests pass through before leaving Section and hitting your origin server). The proxies in between can be configured to perfectly suite your needs using your environment's [advanced configuration](/docs/topic-guides/advanced-config/). On the overview page, we display a graphic detailing the proxies currently running in your environment's configuration and their current order.
 {{% figure src="/docs/images/proxy-stack.png" %}}
 
 #### HTTP Traffic Summary

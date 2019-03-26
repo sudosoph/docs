@@ -1,17 +1,17 @@
 ---
 title: Test Website Performance Locally
-description: A guide on testing a section.io configuration on your local machine before go-live.
+description: A guide on testing a Section configuration on your local machine before go-live.
 keywords: webpage test, testing, synthetics, local testing
 ---
 
-Instead of using WebPageTest, you may wish to test the site through section.io locally using your own browser. You can achieve this by changing how DNS to the site is resolved on your local test machine.
+Instead of using WebPageTest, you may wish to test the site through Section locally using your own browser. You can achieve this by changing how DNS to the site is resolved on your local test machine.
 
 Check out our [set of recommended tests](/docs/how-to/testing-effectively/) for help ensuring that you've covered all your bases.
 
 ### **1 Obtaining a test IP**
 For our managed customers, our engineers will provide you with a test IP and you can skip to part 2.
 
-For self serve customers, to find out the IP address of the section.io platform for your site, run the following command from a command prompt
+For self serve customers, to find out the IP address of the Section platform for your site, run the following command from a command prompt
 
 nslookup site_domain.c.section.io
 For www.example.com that would be, nslookup www.example.com.c.section.io
@@ -27,7 +27,7 @@ MacOS and Linux:  /etc/hosts
 
 
 ### **3 Change local DNS lookup file**
-Add a DNS entry into the file that will tell your test machine to send requests for that domain to the section.io platform instead of performing a DNS lookup.
+Add a DNS entry into the file that will tell your test machine to send requests for that domain to the Section platform instead of performing a DNS lookup.
 
 For the example from point 1) and 2) this would look like:
 203.0.113.1 www.example.com

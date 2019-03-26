@@ -33,6 +33,6 @@ Beyond the obvious performance benefits of caching a piece of the HTML document,
 
 ## Summary
 
-ISE is a technique that is implemented at the section.io level and allows us to cache as many valid responses as possible. Hole-punching is a design pattern implemented on your origin application that separates authenticated and unauthenticated information into separate requests to allow for maximum caching. HTML streaming offers quick time-to-first-bytes by selectively caching HTML documents.
+ISE is a technique that is implemented at the Section level and allows us to cache as many valid responses as possible. Hole-punching is a design pattern implemented on your origin application that separates authenticated and unauthenticated information into separate requests to allow for maximum caching. HTML streaming offers quick time-to-first-bytes by selectively caching HTML documents.
 
 For implementation questions on any of these, contact our engineering team at `support@section.io`

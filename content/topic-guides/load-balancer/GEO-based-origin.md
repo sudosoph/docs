@@ -12,11 +12,11 @@ Below is an example of how to configure your Content Delivery Grid to direct req
 
 Prerequisites:
 
-* section.io account
-* section.io application running Varnish
+* Section account
+* Section application running Varnish
 * A separate origin with content for users of different GEO locations
 
-In your `default.vcl` file you can set a header that's recognizable in section.io's `last-proxy` to determine which origin address and host header to make the request with. So you are going to need to define that origin first in your `section.config.json` file located in the root of your applications git repo. You will be adding a key called `alternate_origins` under `environments.Production`.
+In your `default.vcl` file you can set a header that's recognizable in Section `last-proxy` to determine which origin address and host header to make the request with. So you are going to need to define that origin first in your `section.config.json` file located in the root of your applications git repo. You will be adding a key called `alternate_origins` under `environments.Production`.
 
 #### `section.config.json`
 
@@ -56,4 +56,4 @@ Next we tell Varnish Cache to use this origin for requests depending on the GEO 
 
 #### Overview
 
-This use case is especially helpful if you are serving unique content to different geographic locations, such as offers only available in certain regions or pages in different languages or currencies or just to keep load separated between different origins. section.io handles all the internals of actually making the request to origins for each region and all you have to do is configure your reverse proxy setup in your git repo!
+This use case is especially helpful if you are serving unique content to different geographic locations, such as offers only available in certain regions or pages in different languages or currencies or just to keep load separated between different origins. Section handles all the internals of actually making the request to origins for each region and all you have to do is configure your reverse proxy setup in your git repo!

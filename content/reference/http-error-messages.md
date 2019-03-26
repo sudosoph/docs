@@ -1,6 +1,6 @@
 ---
 title: HTTP Error Messages
-description: How to review http response codes. How to upload a custom error page for your website with section.io.
+description: How to review http response codes. How to upload a custom error page for your website with Section.
 keywords: website performance, error message, http response code, content delivery network, CDN
 aliases:
   - /custom-errors/
@@ -12,7 +12,7 @@ If your origin server is down or running slowly, you or your users might be pres
 
 {{% figure src="/docs/images/generic-error-http.png" %}}
 
-This page is show where section.io responds with a HTTP 502 or HTTP 504 response code.
+This page is show where Section responds with a HTTP 502 or HTTP 504 response code.
 
 Have a look in Chrome's development tools, on the network tab, to discover the HTTP response code.
 

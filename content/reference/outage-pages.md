@@ -1,13 +1,13 @@
 ---
 title: Outage Pages
-description: Set up section.io so that it can serve an outage page during maintenace
+description: Set up Section so that it can serve an outage page during maintenace
 keywords: custom outage mapge, maintenance, custom html, content delivery network, CDN, scheduled maintenance.
 
 ---
 
 # A guide to setup custom outage pages
 
-section.io has an Outage Page feature that will allow multiple HTML pages to be uploaded on to the platform and displayed during maintenance or other planned down times.
+Section has an Outage Page feature that will allow multiple HTML pages to be uploaded on to the platform and displayed during maintenance or other planned down times.
 
 ## 1) Design an outage page
 
@@ -36,6 +36,6 @@ When you are ready for users to see the site again, click the Disengage button.
 
 ## 4) Outage page for specific Domains or URLs
 
-Right now the Outage Page portal covers all domains and URLs on a section.io environment.
+Right now the Outage Page portal covers all domains and URLs on a Section environment.
 If you wish to only display an outage page for a select domain or URL path, you will need to do so using Varnish Cache.
 See this [community article](https://community.section.io/t/how-to-display-a-custom-maintenance-page-using-varnish/112) for details.

@@ -1,6 +1,6 @@
 ---
 title: Set up HTTPS and HTTP/2
-description: Guide for adding HTTPS and HTTP/2 to your website with section.io using your own certificate or using our automated SSL certificates.
+description: Guide for adding HTTPS and HTTP/2 to your website with Section using your own certificate or using our automated SSL certificates.
 keywords: https, SSL, TLS, Let's Encrypt, EV, Extended Validation, SNI, Server Name Indication, website security, content delivery network, CDN
 aliases:
   - /https/
@@ -10,7 +10,7 @@ aliases:
 
 When your application is first created it will be served over HTTP and via HTTPS using a default network certificate. Once we detect DNS has been changed on to our platform we will provide a signed and valid certificate through [Let's Encrypt](https://letsencrypt.org/).
 
-If you have added [multiple domains](/docs/change-dns/#multiple-domains) to the application, a Let's Encrypt certificate will be provided for each domain. If you have provided your own custom certificate, you need to upload a certificate for each domain (even if they are listed as alternate names on the same certificate) using our [API](#certificate-api-upload). You can choose to upload a custom certificate for only some of the domains in the application if you choose, the others will use the Let's Encrypt certificate issues by section.io.
+If you have added [multiple domains](/docs/change-dns/#multiple-domains) to the application, a Let's Encrypt certificate will be provided for each domain. If you have provided your own custom certificate, you need to upload a certificate for each domain (even if they are listed as alternate names on the same certificate) using our [API](#certificate-api-upload). You can choose to upload a custom certificate for only some of the domains in the application if you choose, the others will use the Let's Encrypt certificate issues by Section.
 
 Each certificate has a short validity period and will be renewed 30 days prior to expiry. If you require wildcards, multi hostname or extended validation (EV) certificates you will need to provide your own certificate.
 
@@ -78,9 +78,9 @@ It is important that the private key is **not password protected**. Also, unlike
 
 In most scenarios the openssl software can help produce the required files and convert them to the appropriate format.
 
-### 3) Install the certificate in section.io
+### 3) Install the certificate in Section
 
-Once you have your certificate and key in the formats described above, you can install them into section.io.
+Once you have your certificate and key in the formats described above, you can install them into Section.
 
 Log in to [Aperture](https://aperture.section.io) for your application, and in the sidebar under the **Set up** header select **HTTPS**. Copy & paste the certificate files you prepared earlier into the input boxes as labeled, then click *Save Changes*. Make sure the certificates are in the proper order. For help on that, check out [our guide] (/docs/how-to/https/determine-tls-certificate-order)
 
@@ -123,14 +123,14 @@ with the following body payload:
 
 ### Server Name Indication
 
-Parts of the section.io platform are using shared infrastructure. One component important in this context is the TLS Offload Proxy, implicit in all Proxy Stacks. Its role is to accept end-user HTTP and HTTPS connections for multiple web applications on multiple domains, handle any TLS handshake and then route requests to the correct Proxy Stack.
+Parts of the Section platform are using shared infrastructure. One component important in this context is the TLS Offload Proxy, implicit in all Proxy Stacks. Its role is to accept end-user HTTP and HTTPS connections for multiple web applications on multiple domains, handle any TLS handshake and then route requests to the correct Proxy Stack.
 
 For non-HTTPS requests, routing is easily performed by parsing the Host header present in any standard HTTP/1.1 request. For HTTPS it is a little more complicated.
 
 Traditionally during an [SSL/TLS handshake](https://developer.mozilla.org/en-US/docs/Introduction_to_SSL#The_SSL_Handshake), the server provides its certificate (containing the domain names) to the client before the client has indicated which domain (or Host) its request is intended for.
 
-Thankfully TLS has since introduced the Server Name Indication [SNI](http://en.wikipedia.org/wiki/Server_Name_Indication) extension which provides a mechanism for the client to specify the intended Host of its request before the server responds with its certificate. SNI allows the TLS Offload Proxy in section.io to select the correct certificate to supply to the client and then continue routing the request to the correct Proxy Stack just as per a plain HTTP request.
+Thankfully TLS has since introduced the Server Name Indication [SNI](http://en.wikipedia.org/wiki/Server_Name_Indication) extension which provides a mechanism for the client to specify the intended Host of its request before the server responds with its certificate. SNI allows the TLS Offload Proxy in Section to select the correct certificate to supply to the client and then continue routing the request to the correct Proxy Stack just as per a plain HTTP request.
 
-When a certificate is provided in an application’s section.config.json file it is being used for HTTPS requests from SNI-enabled clients only. Some clients, eg old mobile browsers and most Windows XP browsers, do not support SNI and will not be able provide the necessary information for section.io to offer the correct certificate for HTTPS requests.
+When a certificate is provided in an application’s section.config.json file it is being used for HTTPS requests from SNI-enabled clients only. Some clients, eg old mobile browsers and most Windows XP browsers, do not support SNI and will not be able provide the necessary information for Section to offer the correct certificate for HTTPS requests.
 
 By default these clients will receive a fall-back certificate which is not valid for the Host their request is intended for and these clients will report a security error. If you need to support older non-SNI-capable clients, contact Section support to discuss adding your application’s Host name to the fall-back certificate.

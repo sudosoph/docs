@@ -1,6 +1,6 @@
 ---
 title: Proxy Contract
-description: Requirements to run a reverse proxy on section.io.
+description: Requirements to run a reverse proxy on Section.
 keywords: reverse proxy, CDN
 aliases:
   - /proxy-contract/
@@ -9,7 +9,7 @@ aliases:
 
 # Proxy Requirements
 
-The following defines the interaction between the proxy container and the section.io proxy hosting platform:
+The following defines the interaction between the proxy container and the Section proxy hosting platform:
 
 ## Essential
 
@@ -33,7 +33,7 @@ The following defines the interaction between the proxy container and the sectio
 
 ## Optional
 
- * Proxy should expect that `/opt/proxy_config/` directory will contain the configuration for this proxy. This will be the proxy-specific subdirectory from the section.io Application git repository. Assume the directory contents are read-only.
+ * Proxy should expect that `/opt/proxy_config/` directory will contain the configuration for this proxy. This will be the proxy-specific subdirectory from the Section Application git repository. Assume the directory contents are read-only.
 
 ## Things you can rely on
 

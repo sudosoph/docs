@@ -7,7 +7,7 @@ aliases:
 
 ---
 
-Out of the box, section.io brings up Varnish Cache  metrics. The following is a description of these metrics.
+Out of the box, Section brings up Varnish Cache  metrics. The following is a description of these metrics.
 
 ## Varnish Cache Glossary
 

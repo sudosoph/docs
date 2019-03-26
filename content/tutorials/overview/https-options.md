@@ -3,7 +3,7 @@ title: HTTPS Options
 weight: 9
 ---
 
-All section.io plans include a complete HTTPS solution.
+All Section plans include a complete HTTPS solution.
 
 On our platform you can:
 

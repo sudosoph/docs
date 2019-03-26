@@ -3,7 +3,7 @@ title: Proxy Options
 weight: 5
 ---
 
-Unlike Legacy CDNs which generally are fixed on a single proxy, section.io allows you to choose the proxies that suit your application architecture.
+Unlike Legacy CDNs which generally are fixed on a single proxy, Section allows you to choose the proxies that suit your application architecture.
 
 You can run a single proxy, or run multiple proxies to combine the power of many.
 

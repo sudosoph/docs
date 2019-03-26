@@ -1,13 +1,13 @@
 ---
 title: Quick Configuration
-description: How to use section.io toggles to update your Varnish Cache and modsecurity configurations.
+description: How to use Section toggles to update your Varnish Cache and modsecurity configurations.
 keywords: website performance, page speed, webpage speed, website security, varnish, VCL, modsecurity, CDN configuration
 aliases:
   - /basic-configuration/
 
 ---
 
-To make it easy to get started configuring your reverse proxies, section.io offers a few basic confguration options for [Varnish](#varnish) and [Modsecurity](#modsecurity). Check out our guide on [Advanced Configuration](/docs/topic-guides/advanced-config/) for more advanced configuration topics.
+To make it easy to get started configuring your reverse proxies, Section offers a few basic confguration options for [Varnish](#varnish) and [Modsecurity](#modsecurity). Check out our guide on [Advanced Configuration](/docs/topic-guides/advanced-config/) for more advanced configuration topics.
 
 ## Varnish
 

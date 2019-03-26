@@ -1,17 +1,17 @@
 ---
 title: Glossary
-description: Glossary of terms used by section.io.
+description: Glossary of terms used by Section.
 keywords: account management, proxy, proxy configuration, reverse proxies, content delivery network, CDN
 aliases:
   - /entities-and-nomenclature/
 
 ---
 
-Overview of the key entities and account structure referred to throughout section.io
+Overview of the key entities and account structure referred to throughout Section
 
 ## Account
 
-The Account is the master structure of section.io. Accounts may contain many Applications and Users.
+The Account is the master structure of Section. Accounts may contain many Applications and Users.
 
 ## Application
 
@@ -19,7 +19,7 @@ Generally an Application is defined by the url for a website or web Application.
 
 ## Environment
 
-Environment defines the functional space within which the Proxy Instance is working for the Application. section.io means Users can seamlessly move a Proxy Stack configuration between Environments.
+Environment defines the functional space within which the Proxy Instance is working for the Application. Section means Users can seamlessly move a Proxy Stack configuration between Environments.
 
 ## Users
 
@@ -37,7 +37,7 @@ Each User’s copy of the Proxy Stack for the application is referred to as an I
 
 ## Proxy
 
-A Proxy (or more technically correct “Reverse Proxy”) is the server handling requests within each environment (e.g. Varnish Cache ). The nature and configuration of the Proxy is subject to the changes a user may make in the respective environments. section.io’s commands can then be called to synchonise the configuration of the Proxies between the Instances in each Environment.
+A Proxy (or more technically correct “Reverse Proxy”) is the server handling requests within each environment (e.g. Varnish Cache ). The nature and configuration of the Proxy is subject to the changes a user may make in the respective environments. Section’s commands can then be called to synchonise the configuration of the Proxies between the Instances in each Environment.
 
 ## Proxy Stack
 
