@@ -13,8 +13,9 @@ The following defines the interaction between the proxy container and the sectio
 
 ## Essential
 
-* Proxy should listen on TCP :80 for HTTP/1.1 — never HTTPS or any other port.
+* Proxy should listen on TCP port 80 for HTTP/1.1 on its public interface — never HTTPS or any other port. It may listen on other ports on its loopback interface for internal use only.
 * Proxy must connect upstream to `next-hop:80` as HTTP, never HTTPS. The platform will ensure "next-hop" resolves to the next proxy in the chain or the origin — whichever is next upstream.
+  * The proxy must resolve the `next-hop` name first via `/etc/hosts` and then via the nameservers and other options defined by [/etc/resolv.conf](http://man7.org/linux/man-pages/man5/resolv.conf.5.html). All other DNS resolution (e.g. external resolvers) are unsupported and will be blocked by the firewall.
 * Proxy must handle logs according to these requirements:  
    * All HTTP access must be written to the container's stdout stream in either JSON format or [LTSV](http://ltsv.org/) format.
    * All diagnostic or error logs must be written to the container' stderr stream.
