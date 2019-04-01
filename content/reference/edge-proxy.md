@@ -1,13 +1,13 @@
 ---
 title: Edge Proxy
-description: Explanation for section.io's edge proxy, which handles a number of tasks before being passed to your proxy configuration.
+description: Explanation for Section edge proxy, which handles a number of tasks before being passed to your proxy configuration.
 keywords: edge proxy, tls, tls handshake, http2, http/2, proxy configuration, reverse proxies
 aliases:
   - /edge-proxy/
 
 ---
 
-Every section.io application proxy stack implicitly begins with the Edge proxy. The Edge proxy is the endpoint to which the User-Agent (eg web browser) connects and it has a few responsibilities:
+Every Section application proxy stack implicitly begins with the Edge proxy. The Edge proxy is the endpoint to which the User-Agent (eg web browser) connects and it has a few responsibilities:
 
 * Performing the TLS handshake for HTTPS connections
 * Routing requests to the corresponding application proxy stack
@@ -15,7 +15,7 @@ Every section.io application proxy stack implicitly begins with the Edge proxy. 
 * Request correlation
 * Serving custom error pages
 
-This enables a consistent experience on the section.io platform regardless of which proxies are in your application's stack or in which sequence they appear.
+This enables a consistent experience on the Section platform regardless of which proxies are in your application's stack or in which sequence they appear.
 
 ## IP geolocation
 
@@ -36,7 +36,7 @@ The latitude, longitude, country code, and city values are also available in the
 
 ## Client IP Detection
 
-Historically, section.io has logged a header called `remote_addr` that contained the connecting client's IP address. Due to GDPR compliance, however, the value of the address' last segment is now redacted and replaced with a zero. Despite this change, section.io still captures the connecting client's IP address and sends it upstream under a header called `True-Client-IP`. This header is not logged by our platform (and therefore is not visible in Kibana), but can be referenced within any proxy in your stack (varnish, pagespeed, etc.) and is visible to your origin server. `True-Client-IP` is the same IP address used for the IP geolocation.
+Historically, Section has logged a header called `remote_addr` that contained the connecting client's IP address. Due to GDPR compliance, however, the value of the address' last segment is now redacted and replaced with a zero. Despite this change, Section still captures the connecting client's IP address and sends it upstream under a header called `True-Client-IP`. This header is not logged by our platform (and therefore is not visible in Kibana), but can be referenced within any proxy in your stack (varnish, pagespeed, etc.) and is visible to your origin server. `True-Client-IP` is the same IP address used for the IP geolocation.
 
 This request header can be used in a number of ways:
 
@@ -45,7 +45,7 @@ This request header can be used in a number of ways:
  * Logging client usage
  * Rate limiting
 
-section.io also sets the [`X-Forwarded-For`](https://en.wikipedia.org/wiki/X-Forwarded-For) header if you need to use that, however this header will often be a list of IP addresses depending on how the request has been proxied prior to arriving at section.io and is not always reliable.
+Section also sets the [`X-Forwarded-For`](https://en.wikipedia.org/wiki/X-Forwarded-For) header if you need to use that, however this header will often be a list of IP addresses depending on how the request has been proxied prior to arriving at Section and is not always reliable.
 
 ## Request correlation
 
@@ -61,7 +61,7 @@ The format of the `section-io-id` identifier is subject to change without notice
 
 ## Content compresssion
 
-By default section.io will gzip responses to requests that can be compressed. This is typically text content like HTML, CSS & Javascript files. We will enable this compression even if your origin server does not send gzipped responses to improve performance for your site's visitors. In the unlikely scenario that compression causes issues for your site, you can disable this feature in [Advanced Configuration](/docs/advanced-configuration).
+By default Section will gzip responses to requests that can be compressed. This is typically text content like HTML, CSS & Javascript files. We will enable this compression even if your origin server does not send gzipped responses to improve performance for your site's visitors. In the unlikely scenario that compression causes issues for your site, you can disable this feature in [Advanced Configuration](/docs/advanced-configuration).
 
 Edit the `section.config.json` and add `"maintain_upstream_content_encoding": true` to the environment you want to disable gzip encoding on.
 

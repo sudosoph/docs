@@ -1,12 +1,12 @@
 ---
 title: Run multiple origins in one environment
-description: Set up section.io so that it can deliver content from multiple origin servers
+description: Set up Section so that it can deliver content from multiple origin servers
 keywords: multiple origins, multiple upstreams, origin address, origin server, origin, cache, cached data, content delivery network, CDN
 aliases:
   - /multiple-origins/
 
 ---
-#### A Guide to hooking up multiple origin servers to one section.io environment and orchestrating incoming HTTP traffic distribution among them.
+#### A Guide to hooking up multiple origin servers to one Section environment and orchestrating incoming HTTP traffic distribution among them.
 
 When you have a single origin or upstream server, your section.config.json file will look something like this:
 
@@ -17,7 +17,7 @@ When you have a single origin or upstream server, your section.config.json file 
 
 However, there are cases where it is useful to have two different upstream services — perhaps you want to make two backend systems appear on the same domain.
 
-section.io supports multiple origins in a single configuration which allows you to run multiple backends into one domain.
+Section supports multiple origins in a single configuration which allows you to run multiple backends into one domain.
 
 ## Adding More than One Origin Server
 
@@ -45,9 +45,9 @@ Here's an example of adding `origin2.example.com` to `section.config.json`
 
 Note that the alternate origin definition is a named object. We advise naming the alternate origin similarly to the `address` field.
 
-The `address` field tells section.io the IP address or DNS name that it should connect to. You will also want to specify the `host_header` that will be used on the HTTP requests that section.io makes to this upstream.
+The `address` field tells Section the IP address or DNS name that it should connect to. You will also want to specify the `host_header` that will be used on the HTTP requests that Section makes to this upstream.
 
-#### 2) Configure your section.io proxy stack to forward requests to the alternate origin
+#### 2) Configure your Section proxy stack to forward requests to the alternate origin
 
 Once you have established multiple origins by configuring your `section.config.json` file, you can choose to route incoming requests to different origins based on criteria of your choosing. When an incoming request hits the LastProxy(The final proxy in your chain), LastProxy looks for request headers and routes the request to the specified origin.
 
@@ -63,4 +63,4 @@ This `if` statement would be included in your existing `vcl_recv` function, or, 
 
 This example says "If the requested URL contains sitemap.xml, then add a new header, `section-origin`, with the value `origin2_example_com`".
 
-Now, when section.io receives a request for sitemap.xml it will add the HTTP request header, which signals the LastProxy to forward the request to the specified alternative origin instead of your primary origin.
+Now, when Section receives a request for sitemap.xml it will add the HTTP request header, which signals the LastProxy to forward the request to the specified alternative origin instead of your primary origin.

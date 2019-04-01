@@ -1,6 +1,6 @@
 ---
 title: API
-description: Guide for section.io API including definition, authentication, and version.
+description: Guide for Section API including definition, authentication, and version.
 keywords: API, Swagger, cURL, content delivery network, CDN
 aliases:
   - /api/
@@ -8,17 +8,17 @@ aliases:
 
 ## Introduction
 
-The section.io API makes it easy to automate gathering information and performing actions on your stack.
+The Section API makes it easy to automate gathering information and performing actions on your stack.
 
 All production API requests are made to: `https://aperture.section.io/api/<version>`
 
-Although you don’t *need* to use it, the section.io API definition is provided in Swagger notation. Swagger is a specification and tool ecosystem for describing, producing, and consuming RESTful web services. You can find out more about Swagger at <http://swagger.io/>
+Although you don’t *need* to use it, the Section API definition is provided in Swagger notation. Swagger is a specification and tool ecosystem for describing, producing, and consuming RESTful web services. You can find out more about Swagger at <http://swagger.io/>
 
 ## Authentication
 
 All of our API endpoints support Basic credentials. See https://en.wikipedia.org/wiki/Basic_access_authentication for more information.
 
-Use the username and password that you use to login to the section.io management interface.
+Use the username and password that you use to login to the Section management interface.
 
 `curl` examples will need to have `-u username:password` added to them. For example, `curl -X GET -u username:password --header "Accept: application/json" "https://aperture.section.io/api/v1/account"`.
 

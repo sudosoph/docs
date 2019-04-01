@@ -1,6 +1,6 @@
 ---
 title: Create a Free Certificate using Let's Encrypt
-description: How to provision a free SSL certificate in section.io portal.
+description: How to provision a free SSL certificate in Section portal.
 keywords: SSL, certificate, custom, upload, update, CDN configuration
 ---
 
@@ -18,7 +18,7 @@ The SSL information for the first domain in this application will automatically 
 Click the "**Renew certificate**" button. If you previously used a custom certificate, click the "**Switch to Let's Encrypt**" button.
 Let's Encrypt will run validation tests over the domain then provision a new certificate once validation is complete.
 
-If you have only recently performed Go-Live(pointed DNS at section.io) the validation process might require multiple attempts, as DNS propagation can take some time. So if your free certificate doesn't provision straightaway, click the "Renew certificate" button again in a few minutes. If it still doesn't provision after 3 or 4 attempts, contact our support team. 
+If you have only recently performed Go-Live(pointed DNS at Section) the validation process might require multiple attempts, as DNS propagation can take some time. So if your free certificate doesn't provision straightaway, click the "Renew certificate" button again in a few minutes. If it still doesn't provision after 3 or 4 attempts, contact our support team. 
 
 Once the certificate has been provisioned, it will automatically renew every 3 months.
 

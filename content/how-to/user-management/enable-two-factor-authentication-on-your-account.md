@@ -26,4 +26,4 @@ To enable two factor authentication:
 Upon enabling 2FA, it is immediately active for all future logins.
 {{% /notice %}}
 
-If you contact section.io support we can enforce 2FA to be required for all users invited to your account.
+If you contact Section support we can enforce 2FA to be required for all users invited to your account.

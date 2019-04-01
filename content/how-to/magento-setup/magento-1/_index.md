@@ -1,6 +1,6 @@
 ---
-title: Set up and optimize Magento 1 on section.io
-description: Guide set up a Magento 1 application on section.io
+title: Set up and optimize Magento 1 on Section
+description: Guide set up a Magento 1 application on Section
 keywords: cache, https, website performance, page speed, webpage speed, website security, content delivery network, CDN
 weight: 20
 ---
@@ -14,37 +14,37 @@ weight: 20
 
 Magento 1.9 and earlier does not support Varnish Cache out of the box. Support is instead provided by the [free Turpentine Magento extension].
 
-The Turpentine extension issues commands required for correct operation to a management port intended for Varnish Cache. A special “bridge” program listens on this port, and makes the section.io platform look like a normal Varnish Cache instance (Instead of a globally distributed platform that runs Varnish Cache for you).
+The Turpentine extension issues commands required for correct operation to a management port intended for Varnish Cache. A special “bridge” program listens on this port, and makes the Section platform look like a normal Varnish Cache instance (Instead of a globally distributed platform that runs Varnish Cache for you).
 
-Follow the **[official instructions](https://github.com/nexcess/magento-turpentine/wiki/Installation)** in order to install Turpentine. Since Varnish Cache itself is already configured inside section.io you’ll only need to complete the ‘Install this plugin’ steps.
+Follow the **[official instructions](https://github.com/nexcess/magento-turpentine/wiki/Installation)** in order to install Turpentine. Since Varnish Cache itself is already configured inside Section you’ll only need to complete the ‘Install this plugin’ steps.
 
-1.  Sign up & create an application at section.io using the final DNS name that your site will be accessed as.
+1.  Sign up & create an application at Section using the final DNS name that your site will be accessed as.
 2.  Download, install & configure the varnish-cli-bridge.
 3.  Follow the standard Magento+Turpentine instructions, with some exceptions (see below).
-4.  Apply the Varnish Cache configuration from within Turpentine Configuration, to update section.io.
-5.  Update your public DNS records to direct traffic to section.io for your site.
+4.  Apply the Varnish Cache configuration from within Turpentine Configuration, to update Section.
+5.  Update your public DNS records to direct traffic to Section for your site.
 
 ---
 
 ### Create an application
 
-section.io provides a customized Varnish Cache image already configured for Magento Turpentine. Create your application using the Stack “Varnish Cache v3 Magento Turpentine”.
+Section provides a customized Varnish Cache image already configured for Magento Turpentine. Create your application using the Stack “Varnish Cache v3 Magento Turpentine”.
 
 ---
 
 ### Set up the varnish-cli-bridge
 
-This program will listen for Varnish Cache commands and foward them to the section.io hosted Varnish Cache platform.
+This program will listen for Varnish Cache commands and foward them to the Section hosted Varnish Cache platform.
 
 #### Download
 
-Download the **[lastest section.io cli bridge here](https://github.com/section-io/varnish-cli-bridge/releases/)**. You will want the **varnish-cli-bridge-vN.N.N-linux-amd64.tar.gz** file.
+Download the **[lastest Section cli bridge here](https://github.com/section-io/varnish-cli-bridge/releases/)**. You will want the **varnish-cli-bridge-vN.N.N-linux-amd64.tar.gz** file.
 
 #### Collect configuration details
 
 There are 3 pieces of information required to run the bridge:
 
-1.  API endpoint: This URL uniquely identifies your application within section.io. Most often, you’ll need the “Production Varnish Cache Proxy API endpoint” from the Configuration &gt; API page in section.io’s management portal.
+1.  API endpoint: This URL uniquely identifies your application within Section. Most often, you’ll need the “Production Varnish Cache Proxy API endpoint” from the Configuration &gt; API page in Section’s management portal.
 2.  API username: This is a username that has permission to perform API actions.
 1.  API password: This is a password for the specified user to perform API actions.
 
@@ -99,15 +99,15 @@ Step 1-3: Skip these steps. There is no need to install or configure a local Var
 
 See the **[turpentine configuration guide](https://github.com/nexcess/magento-turpentine/wiki/Configuration)**.
 
-No special configuration is required to use Turpentine with the bridge & section.io.
+No special configuration is required to use Turpentine with the bridge & Section.
 
-#### Upload Turpentine configuration to section.io
+#### Upload Turpentine configuration to Section
 
-The configuration must be applied/uploaded into section.io by manually hitting the Apply Varnish Cache Configuration button on the Cache Management page.
+The configuration must be applied/uploaded into Section by manually hitting the Apply Varnish Cache Configuration button on the Cache Management page.
 
 #### Testing
 
 There are 2 recommended tests to validate your implementation:
 
 1.  Test Pages Are Coming From Cache - Reload your browser 3-5 times on a single page, You should start to see multiple Varnish Cache ID’s in the HTTP response headers (In a browser debugger such as Chromes debugger) and see page response times around ~50-100ms
-2.  Test Bans Are Reaching the section.io Platform - Using a Product page on your site refresh 3-5 times to ensure pages are in cache. Once the page is in cache, Add a product to your shopping cart. This will cause Turpentine to send a Ban statement to section.io to clear out the block on all pages for the user that contains the shopping cart. You should see the shopping cart updated successfully on page refresh.
+2.  Test Bans Are Reaching the Section Platform - Using a Product page on your site refresh 3-5 times to ensure pages are in cache. Once the page is in cache, Add a product to your shopping cart. This will cause Turpentine to send a Ban statement to Section to clear out the block on all pages for the user that contains the shopping cart. You should see the shopping cart updated successfully on page refresh.

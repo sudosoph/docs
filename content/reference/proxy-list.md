@@ -1,13 +1,13 @@
 ---
 title: Available Proxies
-description: Information on which reverse proxies are available to use on section.io's content delivery network.
+description: Information on which reverse proxies are available to use on Section content delivery network.
 keywords: content delivery network, CDN, varnish, turpentine, modsecurity, reverse proxies, proxy, proxy template
 aliases:
   - /proxy-list/
 
 ---
 
-section.io offers a number of different proxies that can be used in your reverse proxy chain. A proxy template is a combination of the proxy software (eg. Varnish Cache ) and a set of default files to configure the proxy (eg. the `default.vcl` file).
+Section offers a number of different proxies that can be used in your reverse proxy chain. A proxy template is a combination of the proxy software (eg. Varnish Cache ) and a set of default files to configure the proxy (eg. the `default.vcl` file).
 
 If you want to experiment with different proxies you can use our [developer POP](/docs/developer-pop/) to run your proxy stack on your local machine.
 
@@ -53,7 +53,7 @@ Varnish Cache  4.0 is available if you need this version
 
 ## Varnish Cache  v3
 
-If you have a need to run Varnish Cache 3, eg. you have existing v3 VCL you want to run in section.io, pick this one. This proxy also has ESI enabled to support the [Magento Turpentine extension]
+If you have a need to run Varnish Cache 3, eg. you have existing v3 VCL you want to run in Section, pick this one. This proxy also has ESI enabled to support the [Magento Turpentine extension]
 
 - Varnish Cache  3.0.5
 - Cookie VMOD - <https://www.varnish-cache.org/vmod/cookie>

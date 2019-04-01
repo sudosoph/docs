@@ -10,9 +10,9 @@ Load balancing distributes traffic across origin servers so that your website ca
 
 ## Technical details
 
-section.io provides a layer 7 load balancer to immediately route HTTP requests based on rules you set that can include request location, device or browser type, and cookies or headers. In addition, you can utilize our load balancer to randomly distribute requests to your origin servers so that no one server is overloaded.
+Section provides a layer 7 load balancer to immediately route HTTP requests based on rules you set that can include request location, device or browser type, and cookies or headers. In addition, you can utilize our load balancer to randomly distribute requests to your origin servers so that no one server is overloaded.
 
-section.io uses VCL to create common load balancing scenarios that can be easily set up in your section.io portal by editing your VCL files.
+Section uses VCL to create common load balancing scenarios that can be easily set up in your Section portal by editing your VCL files.
 
 ## Examples
 
@@ -25,4 +25,4 @@ section.io’s load balancing allows you to:
 * Direct traffic to different servers based on their response states so that users don’t get 502 errors.
 * Create unlimited custom rules to route traffic based on its characteristics.
 
-*Note:* If you have a specific request, please email support@section.io and we will get the docs up ASAP!
+*Note:* If you have a specific request, please email support@Section and we will get the docs up ASAP!

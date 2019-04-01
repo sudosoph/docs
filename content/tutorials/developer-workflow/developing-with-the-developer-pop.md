@@ -1,6 +1,6 @@
 ---
 title: Developing with the Developer PoP
-description: How to get your local development environment setup to test section.io CDN on your local machine.
+description: How to get your local development environment setup to test Section CDN on your local machine.
 keywords: content delivery network, CDN, virtual machine, vagrant, virtualbox, git, cli, local development, local machine, staging environment, developer pop
 weight: 3
 ---
@@ -38,7 +38,7 @@ Once you have made changes to your config, you will want to push them to the Dev
 4. If you have syntax errors git will provide feedback. You may need to make adjustments and go back to step 1.
 5. Go back to your browser, reload the page, and see what type of optimizations your changes made.
 
-Congratulations! You have successfully set up the section.io Developer PoP! See below for miscellaneous tips to help you get the most out of the software.
+Congratulations! You have successfully set up the Section Developer PoP! See below for miscellaneous tips to help you get the most out of the software.
 
 
 ### Further Reading

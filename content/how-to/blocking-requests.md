@@ -7,7 +7,7 @@ aliases:
 
 ---
 
-If visitors, crawlers, or spammers are degrading the performance of your site, it may be appropriate to block these from accessing your website content. Rather than letting these requests be processed by section.io and your origin server, you can block them as they enter section.io.
+If visitors, crawlers, or spammers are degrading the performance of your site, it may be appropriate to block these from accessing your website content. Rather than letting these requests be processed by Section and your origin server, you can block them as they enter Section.
 
 ## Block an IP address via Aperture UI
 
@@ -19,7 +19,7 @@ The simplest interface to view/edit these values is available via "Configuration
 
 For each requesting IP you wish to block requests from, click the "Add Another" button on the page and enter the address or range that you wish to block to the "IP address/CIDR block" text box. Once complete, press the "Save" button.
 
-Within a few seconds section.io will be blocking requests from your blacklist.
+Within a few seconds Section will be blocking requests from your blacklist.
 
 ## Manage your IP blacklist from within your application repository
 
@@ -49,6 +49,6 @@ The request blacklist is specified via an `ip_blacklist` property inside one of 
         }
     }
 
-The section.config.json file blacklist accepts individual IP addresses as well as entire subnets. This configuration file would block all requests from 192.0.2.1 and from the IP range of 198.51.100.0-198.51.100.255. The origin server would never even see the requests and the section.io platform would deliver 403 forbidden errors directly to the (likely malicious) clients.
+The section.config.json file blacklist accepts individual IP addresses as well as entire subnets. This configuration file would block all requests from 192.0.2.1 and from the IP range of 198.51.100.0-198.51.100.255. The origin server would never even see the requests and the Section platform would deliver 403 forbidden errors directly to the (likely malicious) clients.
 
  If you prefer, you can create a [custom response]({{< relref "/reference/http-error-messages.md#custom-error-messages" >}}) to entities on the IP blacklist.

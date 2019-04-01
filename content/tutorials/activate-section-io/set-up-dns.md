@@ -1,26 +1,26 @@
 ---
 title: Set up DNS
-description: A step-by-step guide on how to get started with section.io's CDG.
+description: A step-by-step guide on how to get started with Section CDG.
 keywords: guide, getting started, website performance, page speed, webpage speed, website security, content delivery network, CDN
 weight: 2
 
 ---
 
-To get your users to connect to section.io servers you need to make updates to DNS.
+To get your users to connect to Section servers you need to make updates to DNS.
 
-This DNS change will point the traffic to section.io servers.
+This DNS change will point the traffic to Section servers.
 
 {{% notice note %}}
 This tutorial works with a domain name that contains a prefix, like the **www.** prefix in **www.section.io**.
 
-If you are working with a site that doesn't have a prefix please look at [bare domain support with section.io]({{< relref "topic-guides/dns/bare-domains/_index.md" >}}).
+If you are working with a site that doesn't have a prefix please look at [bare domain support with Section]({{< relref "topic-guides/dns/bare-domains/_index.md" >}}).
 {{% /notice %}}
 
 ## Set up the CNAME record
 
 1. In the management console, click **DNS** in the left hand menu.
 ![DNS Menu in Management Console](/docs/images/screenshots/menu/highlight-dns-menu-option.png?height=80px)
-1. Copy the target CNAME record provided by section.io.
+1. Copy the target CNAME record provided by Section.
 ![CNAME value in Management Console](/docs/images/screenshots/dns/cname.png?height=80px)
 1. Go to your DNS Hosting Provider's configuration page and replace your existing CNAME record with the one from the previous step.
 

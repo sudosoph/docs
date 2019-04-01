@@ -1,12 +1,12 @@
 ---
 title: Tutorial Complete
-description: A step-by-step guide on how to get started with section.io's CDG.
+description: A step-by-step guide on how to get started with Section CDG.
 keywords: guide, getting started, website performance, page speed, webpage speed, website security, content delivery network, CDN
 weight: 4
 
 ---
 
-Your site is now running section.io.
+Your site is now running Section.
 
 There's a lot more you can discover that will improve your performance, scalability, availability and security.
 

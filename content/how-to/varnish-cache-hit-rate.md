@@ -9,9 +9,9 @@ aliases:
 
 The Varnish Cache  project provides some high level instructions on [improving cache hit rate](https://varnish-cache.org/docs/4.0/users-guide/increasing-your-hitrate.html).
 
-The following describes the work flow with section.io metrics and development processes to achieve optimal cache hit ratios.
+The following describes the work flow with Section metrics and development processes to achieve optimal cache hit ratios.
 
-> 1.  Review section.io Varnish Cache metrics
+> 1.  Review Section Varnish Cache metrics
 > 2.  Review http logs
 > 3.  Make changes to VCL locally
 > 4.  Confirm change has been effective -> Logs
@@ -21,7 +21,7 @@ The following describes the work flow with section.io metrics and development pr
 
 ## Review Varnish Cache Metrics
 
-Your section.io [Varnish Cache metrics](/docs/metrics-overview/) provide an overview of cache hit ratios for all asset types in addition to cache hit ratios by type.
+Your Section [Varnish Cache metrics](/docs/metrics-overview/) provide an overview of cache hit ratios for all asset types in addition to cache hit ratios by type.
 
 You can use these metrics to identify an object type for which you would like the cache hit ratio to be improved.
 
@@ -39,7 +39,7 @@ Review logs again to confirm a change in the cache hit behavior for the target a
 
 If required you can test the application locally to confirm the VCL changes have not affected the functionality of the application adversely for users.
 
-Sync your section.io repo with production and confirm cache hit rates are improving by reviewing your metrics.
+Sync your Section repo with production and confirm cache hit rates are improving by reviewing your metrics.
 
 ## Rinse and Repeat
 
@@ -62,5 +62,5 @@ Awesome! Steps 5 through 7 are meant to be an iterative process. Focus on big wi
 
 ### **Need Help?**
 
-section.io is here to help with setup and can be reached by emailing contact@section.io. If you want help with configuration you can ask us about consulting engagements, and if you want a fully managed service please contact us for a quote.
+Section is here to help with setup and can be reached by emailing contact@Section. If you want help with configuration you can ask us about consulting engagements, and if you want a fully managed service please contact us for a quote.
 

@@ -1,5 +1,5 @@
 # docs
-section.io documentation
+Section documentation
 
 ## Install hugo
 https://gohugo.io/getting-started/installing

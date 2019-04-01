@@ -1,6 +1,6 @@
 ---
 title: Understand if your cache is effective
-description: Guide for evaluating your website performance and how to use section.io to make improvements.
+description: Guide for evaluating your website performance and how to use Section to make improvements.
 keywords: cache, https, website performance, page speed, webpage speed, website security, content delivery network, CDN
 weight: 1
 ---
@@ -9,7 +9,7 @@ weight: 1
 
 **Why do you care?:** When a customer request is answered by the cache, the request did not need to be answered by your website server. This improves page load time for your users which can increase revenue and decreases work required by your servers which reduces cost.
 
-**How do you see it?:** This is the first chart we show you on the section.io dashboard. For the Bootcamp application, the url is **[here](https://aperture.section.io/account/1/application/1/environment/Production/overview)**.
+**How do you see it?:** This is the first chart we show you on the Section dashboard. For the Bootcamp application, the url is **[here](https://aperture.section.io/account/1/application/1/environment/Production/overview)**.
 
 
 {{% figure src="/docs/images/varnish-cache-usage-metrics.png" %}}

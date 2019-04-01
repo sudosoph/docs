@@ -1,6 +1,6 @@
 ---
 title: Enable Automatic SSL
-description: A step-by-step guide on how to get started with section.io's CDG.
+description: A step-by-step guide on how to get started with Section CDG.
 keywords: guide, getting started, website performance, page speed, webpage speed, website security, content delivery network, CDN
 weight: 3
 ---

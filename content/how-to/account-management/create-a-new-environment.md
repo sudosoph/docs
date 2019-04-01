@@ -4,7 +4,7 @@ description: A guide to adding an environment to an existing applications
 keywords: environment, application
 ---
 
-This is a guide for setting up a new environment within an existing section.io application.
+This is a guide for setting up a new environment within an existing Section application.
 
 ### 1) Log Into Aperture
 
@@ -17,7 +17,7 @@ This is a guide for setting up a new environment within an existing section.io a
 {{% figure src="/docs/images/screenshots/add-an-env/env-button.png" %}}
 
 ### 4) Fill in **New Environment Name**
-  This **environment name** becomes the name of a git branch within your application repository for the new environment's config. For a thorough explanation of how section.io applications and environments use git, see our [overview](/docs/topic-guides/account-management).
+  This **environment name** becomes the name of a git branch within your application repository for the new environment's config. For a thorough explanation of how Section applications and environments use git, see our [overview](/docs/topic-guides/account-management).
 
 ### 5) Fill in **Hostname**
-  Although section.io supports many domains on a single environment, creating a new environment only requires one. If you want to associate your new environment with multiple domains, you can do so once the environment is up and running.  
+  Although Section supports many domains on a single environment, creating a new environment only requires one. If you want to associate your new environment with multiple domains, you can do so once the environment is up and running.  

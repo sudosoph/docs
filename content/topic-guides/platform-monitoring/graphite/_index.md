@@ -1,6 +1,6 @@
 ---
 title: Graphite Monitoring 
-description: An overview of the Graphite tool and its application within the section.io platform
+description: An overview of the Graphite tool and its application within the Section platform
 keywords: monitoring, graphite, metrics, logs
 aliases:
   - /graphite/

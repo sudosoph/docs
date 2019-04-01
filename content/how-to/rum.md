@@ -1,26 +1,26 @@
 ---
 title: Set up Real User Monitoring
-description: section.io's real user monitoring
+description: Section real user monitoring
 keywords: content delivery network, CDN, rum, performance, baseline, testing
 aliases:
   - /rum/
 
 ---
-section.io offers free real user monitoring for any customer that signs up and begins their trial. This enables you to see how your own visitors are experiencing your website performance with the use of a simple JavaScript snippet. Data includes:
+Section offers free real user monitoring for any customer that signs up and begins their trial. This enables you to see how your own visitors are experiencing your website performance with the use of a simple JavaScript snippet. Data includes:
 
 * Back end, front end, and full page load time
 * Throughput
 * Traffic by user agent (browser, device type)
 
-## Setting up RUM in section.io
+## Setting up RUM in Section
 
-To add RUM to your website, simply [login to your section.io account](https://aperture.section.io/) and go to "Real User Monitoring" under "Set Up" in the left navigation. All you need to do is paste the `script` tag above your `</head>` tag in any HTML document you want to track.
+To add RUM to your website, simply [login to your Section account](https://aperture.section.io/) and go to "Real User Monitoring" under "Set Up" in the left navigation. All you need to do is paste the `script` tag above your `</head>` tag in any HTML document you want to track.
 
 ## Adding with Google Tag Manager
 
-To add the section.io RUM script within Google Tag Manager, please follow the steps below:
+To add the Section RUM script within Google Tag Manager, please follow the steps below:
 
-1) Get the RUM script from [your section.io account](https://aperture.section.io/) and go to "Real User Monitoring" under "Set Up" in the left navigation.
+1) Get the RUM script from [your Section account](https://aperture.section.io/) and go to "Real User Monitoring" under "Set Up" in the left navigation.
 
 2) Login to your Google Tag Manager account and navigate to the container with your domain you wish to add the script to.
 
@@ -28,7 +28,7 @@ To add the section.io RUM script within Google Tag Manager, please follow the st
 
 {{% figure src="/docs/images/add-tag.png" %}}
 
-4) Name the tag “section.io RUM”.
+4) Name the tag “Section RUM”.
 
 5) Under **Tag Configuration** choose custom HTML.
 
@@ -44,7 +44,7 @@ To add the section.io RUM script within Google Tag Manager, please follow the st
 
 ## Set up RUM with Classifications
 
-section.io RUM can also provide user statistics subdivided by page classifications, giving you pageload statistics for specific page classifications and site-wide statistics.
+Section RUM can also provide user statistics subdivided by page classifications, giving you pageload statistics for specific page classifications and site-wide statistics.
 
 ### To setup RUM with page classifications:
 
@@ -107,12 +107,12 @@ If you don't have any consistently applied body classes, you'll need to make som
 
 The only sections you should need to configure are the if-statements. The pageName variable will default to `Uncategorised`, but that default is overwritten if any if-statement resolves to true. The `bodyHasClass()` method will inspect the body for a given class and return a boolean, but you're free to make the if-logic pass in any other way that makes sense. In the example above, `Checkout` pages are identified by URL matching as opposed to HTML classnames. What matters is that pageName is set to the right value.
 
-#### 6) Contact section.io
+#### 6) Contact Section
 
-In order to go-live with your new RUM, you'll need a section.io engineer. Email us at `support@section.io`.
+In order to go-live with your new RUM, you'll need a Section engineer. Email us at `support@section.io`.
 
 ## Viewing your metrics
 
-To view your real user monitoring metrics [login to your section.io account](https://aperture.section.io/) and go to "Monitoring" under "Real time" in the left navigation. From there you can click on "Real User Monitoring" in the left hand corner of the screen to view your Data
+To view your real user monitoring metrics [login to your Section account](https://aperture.section.io/) and go to "Monitoring" under "Real time" in the left navigation. From there you can click on "Real User Monitoring" in the left hand corner of the screen to view your Data
 
 {{% figure src="/docs/images/grafana.png" title="Real User Monitoring in Grafana" %}}

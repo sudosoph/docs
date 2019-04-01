@@ -9,11 +9,11 @@ aliases:
 
 ---
 
-Configuring Varnish Cache to serve stale content is very useful for when your origin crashes. This behavior is achievable when running Varnish Cache as a reverse proxy within the section.io's Content Delivery Grid.
+Configuring Varnish Cache to serve stale content is very useful for when your origin crashes. This behavior is achievable when running Varnish Cache as a reverse proxy within the Section Content Delivery Grid.
 
 #### Prerequisites
 
-Make sure you have an [account on section.io](https://www.section.io/sign-up/), and have selected Varnish Cache to run in your proxy stack.
+Make sure you have an [account on Section](https://www.section.io/sign-up/), and have selected Varnish Cache to run in your proxy stack.
 
 _Note: This guide will be using VCL 4 syntax, so if you are interested in VCL 3 syntax please reach out to us at support@section.io._
 

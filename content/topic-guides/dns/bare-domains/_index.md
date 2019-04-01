@@ -32,6 +32,6 @@ That's fine. There are some DNS providers that allow you to fake the CNAME at th
 
 Ask your DNS provider if they support `ALIAS` records. This is where the DNS provider actually does the CNAME lookup on the DNS server. So instead of responding with a CNAME record for the user to look up, they do the lookup first. They then respond with the A records.
 
-If your DNS provider doesn't support `ALIAS` records, then you need to move DNS hosting. Section.io provides a high quality, global, anycast-based DNS service free of charge to our users. You could use our DNS hosting, or any provider that supports `ALIAS` records at the zone apex.
+If your DNS provider doesn't support `ALIAS` records, then you need to move DNS hosting. Section provides a high quality, global, anycast-based DNS service free of charge to our users. You could use our DNS hosting, or any provider that supports `ALIAS` records at the zone apex.
 
 If you have any questions, please ask in the Community Slack Channel. Join us at https://yxorp.section.io.

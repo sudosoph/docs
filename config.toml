@@ -2,7 +2,7 @@ baseURL = "https://www.section.io/docs/"
 languageCode = "en-us"
 DefaultContentLanguage = "en"
 
-title = "section.io Documentation"
+title = "Section Documentation"
 theme = "docdock"
 # themesdir = "../.."
 
@@ -32,7 +32,7 @@ url = "https://community.section.io/"
 weight = 11
 
 [[menu.shortcuts]]
-name = "<i class='fa fa-bookmark'></i> section.io Home"
+name = "<i class='fa fa-bookmark'></i> Section Home"
 identifier = "hugodoc"
 url = "https://www.section.io/"
 weight = 20

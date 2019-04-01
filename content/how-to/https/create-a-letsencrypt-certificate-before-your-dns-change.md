@@ -7,7 +7,7 @@ If you would like to create your free TLS certificates before you make your DNS 
 
 ## For users of Nginx
 
-1. Obtain the CNAME record for your application. You'll see this on the DNS menu in the section.io management console.
+1. Obtain the CNAME record for your application. You'll see this on the DNS menu in the Section management console.
 1. Add this block to your server's configuration, replacing `yourdomain.c.section.io` with the CNAME you obtained above:
 
 	```
@@ -17,11 +17,11 @@ If you would like to create your free TLS certificates before you make your DNS 
 	}
 	```
 
-1. Click **Renew Certificate** on the HTTPS menu within the section.io management console.
+1. Click **Renew Certificate** on the HTTPS menu within the Section management console.
 
 ## For users of Apache
 
-1. Obtain the CNAME record for your application. You'll see this on the DNS menu in the section.io management console.
+1. Obtain the CNAME record for your application. You'll see this on the DNS menu in the Section management console.
 1. Add this block to your server's configuration, replacing `yourdomain.c.section.io` with the CNAME you obtained above:
 
 	```
@@ -31,4 +31,4 @@ If you would like to create your free TLS certificates before you make your DNS 
 	</Location>
 	```
 
-1. Click **Renew Certificate** on the HTTPS menu within the section.io management console.
+1. Click **Renew Certificate** on the HTTPS menu within the Section management console.
