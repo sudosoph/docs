@@ -22,3 +22,6 @@ If you have only recently performed Go-Live(pointed DNS at section.io) the valid
 
 Once the certificate has been provisioned, it will automatically renew every 3 months.
 
+## AAAA DNS records 
+Domains that use both A and AAAA records will need to remove the AAAA record before attempting to provision the certificate. 
+This is because Section platform uses IPv4 and AAAA records are IPv6 which will be not pointing at Section platform leading to provision failure.
