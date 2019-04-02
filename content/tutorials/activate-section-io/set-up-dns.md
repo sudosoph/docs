@@ -24,7 +24,11 @@ If you are working with a site that doesn't have a prefix please look at [bare d
 ![CNAME value in Management Console](/docs/images/screenshots/dns/cname.png?height=80px)
 1. Go to your DNS Hosting Provider's configuration page and replace your existing CNAME record with the one from the previous step.
 
-1. Back in the management console, click **Verify**. You'll see a message that your DNS is correctly configured.
+{{% notice info %}}
+If there is an AAAA IPv6 record setup for the domain, it will need to be removed as Section platform uses IPv4.
+{{% /notice %}}
+
+4. Back in the management console, click **Verify**. You'll see a message that your DNS is correctly configured.
 
 {{% notice info %}}
 If you have any trouble, consider looking at our [HTTPS Troubleshooting guides]({{< relref "how-to/dns/check-your-current-dns-setup.md" >}}).
