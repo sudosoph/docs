@@ -18,7 +18,7 @@ To enable two factor authentication:
  1. Turn on two factor authentication and choose **Receive an SMS on each login**
 ![Enable Two Factor for Phone](/docs/images/screenshots/user/highlight-two-factor-for-phone.png?height=80px)
 1. If you want to use an authenticator app, like Google Authenticator or LastPass Authenticator:
- 1. Turn on two factor authentication and choose **Receive an SMS on each login**
+ 1. Turn on two factor authentication and choose **Store my code on a device**
 ![Enable Two Factor for Authenticator Apps](/docs/images/screenshots/user/highlight-two-factor-for-authenticator-apps.png?height=80px)
 1. Finally, for both options, click **Save**.
 
