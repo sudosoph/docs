@@ -4,7 +4,7 @@ description: A guide for connecting a local development server to the Developer 
 keywords: content delivery network, CDN, virtual machine, vagrant, virtualbox, git, cli, local development, local machine, staging environment, developer pop
 ---
 
-Although Minikube functions functions best when pointed at an origin server with a publicly available IP address, it is possible to connect DevPop to a local development server. The source of complexity here is dealing with the network bridge between the host machine and the Minikube virtual machine. The following is a set of directions for implementing this using virtual box and a local server running on port 90, but the necessary configuration may vary if you have an alternative setup.
+Although Minikube functions functions best when pointed at an origin server with a publicly available IP address, it is possible to connect DevPop to a local development server. The source of complexity here is dealing with the network bridge between the host machine and the Minikube virtual machine. The following is a set of directions for implementing this using virtual box and a local server running on port 80, but the necessary configuration may vary if you have an alternative setup.
 
 1. Start your local server on port 80.
 1. Start Minikube.
