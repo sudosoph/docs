@@ -77,7 +77,7 @@ Sets as cache-control maxage in the response headers sent downstream
 
 You can enable/disable image optimization by changing the value for the "enabled" option. When in a disabled state the module acts as a reverse proxy.
 
-### Store images in an S3 bucket
+### Store images in a S3 bucket
 
 Section provides storage for optimized images. If you want the optimized images to be stored in your own S3 bucket we can set it up for you.
 
