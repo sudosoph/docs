@@ -9,7 +9,7 @@ aliases:
 
 Use Kraken.io to optimize images and reduce page weight and load time.
 
-Deploying the Kraken edge module on Section’s Edge Compute Platform means you will immediately have access to Kraken Pro and all the advanced image optimization features included:
+Deploying the Kraken edge module on Section’s Edge Compute Platform means you will immediately have access to Kraken Enterprise and all the advanced image optimization features included:
 
 - Reduce page weight without sacrificing image quality
 - Speed up page delivery
