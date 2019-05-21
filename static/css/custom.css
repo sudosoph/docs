@@ -1,14 +1,58 @@
 
 /* override sidebar color */
 #sidebar {
-	background-color: #038754;
+	background-color: #E8E9E9;
+}
+
+#sidebar a {
+	font-size: 16px !important;
+	color: #404040 !important;
+}
+
+#sidebar a:hover {
+	color: #000 !important;
+}
+
+#sidebar h3 {
+	color: #000 !important;
+}
+
+/* Do not display side navigation */
+#navigation {
+	display: none;
 }
 
 #header-wrapper,
-.searchbox,
 #sidebar ul.topics > li.parent, #sidebar ul.topics > li.active {
-	background: #038754;
+	background: #E8E9E9;;
 }
+
+#header-wrapper {
+	border-bottom: 1px solid #E8E9E9;;
+}
+
+#header img {
+	width: 200px;
+}
+
+.searchbox {
+	border: 1px solid #f2f2f2;
+	background: #fff;
+	color: #404040;
+}
+
+.searchbox label {
+	color: inherit;
+}
+
+.searchbox input {
+	color: inherit;
+}
+
+.searchbox span {
+	color: inherit;
+}
+
 
 /* make forward and back arrows slim */
 .fa-chevron-right:before {
@@ -19,22 +63,41 @@
 	content: "\f104"
 }
 
-/* override header font */
-body,
-h1,
-h2 {
+/* override header font and color */
+body {
 	font-family: "Helvetica Neue", "Tahoma", "Geneva", "Arial", sans-serif;
 	letter-spacing: normal;
+}
+
+#body .padding {
+	padding: 1rem 7rem;
+}
+
+@media only all and (max-width: 47.938em) {
+	#body .padding {
+		padding: 1rem;
+	}
+}
+
+/* heading overrides */
+h1,
+h2,
+h3,
+h4,
+h5 {
+	color: #000;
+	font-weight: bold;
 }
 
 /* override text formatting */
 
 p {
-	line-height: 2;
+	line-height: 26px;
+	margin-bottom: 2.5rem;
+	font-size: 18px;
+	color: #404040;
 }
 
-.children-h2 p, 
-.children-h3 p {
- 	font-size: inherit;
- 	margin-bottom: 30px;
- }
+a {
+	color: #1d9ad1;
+}

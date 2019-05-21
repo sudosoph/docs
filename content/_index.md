@@ -1,8 +1,8 @@
 +++
-title = "Section Docs"
+title = "Section Product Documentation"
 +++
 
-# Section Documentation
+## Section Product Documentation
 
 Everything you need to know about Section
 
