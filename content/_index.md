@@ -1,10 +1,14 @@
 +++
-title = "Section Product Documentation"
+title = "Section Documentation"
 +++
 
-## Section Product Documentation
+# Section Documentation
 
-Everything you need to know about Section
+{{% figure src="https://www.section.io/images/section-diagram.gif" %}}
+
+## Getting started
+
+Here you will find all the information you need to built and maintain your customized edge workload, whether that be typical CDN workload like caching and WAF, custom build containers, or a combination of the two. 
 
 ## How the documentation is organized
 
@@ -15,7 +19,7 @@ Section has a lot of documentation. A high-level overview of how it’s organize
 * [How-to guides]({{< relref "how-to/_index.md" >}}) are recipes. They guide you through the steps involved in addressing key problems and use-cases. They are more advanced than tutorials and assume some knowledge of how Section works.
 * [Reference guides]({{< relref "reference/_index.md" >}}) contain technical reference for APIs and other aspects of Section.
 
-## first steps
+## First steps
 
 New to Section? Here are some places to start:
 

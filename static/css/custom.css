@@ -1,3 +1,17 @@
+@font-face {
+	font-family: "GTAmerica";
+	src: url("../fonts/GTAmerica-Regular.eot"); /* IE9 Compat Modes */
+	src: url("../fonts/GTAmerica-Regular.woff2") format("woff2"), /* Super Modern Browsers */
+		 url("../fonts/GTAmerica-Regular.woff") format("woff"); /* Pretty Modern Browsers */
+}
+
+@font-face {
+    font-family: "GTAmerica";
+    src: url("../fonts/GTAmerica-Bold.eot"); /* IE9 Compat Modes */
+	src: url("../fonts/GTAmerica-Bold.woff2") format("woff2"), /* Super Modern Browsers */
+		 url("../fonts/GTAmerica-Bold.woff") format("woff");/* Pretty Modern Browsers */
+    font-weight: bold;
+}
 
 /* override sidebar color */
 #sidebar {
@@ -53,6 +67,17 @@
 	color: inherit;
 }
 
+.topics>.dd-item>a {
+	padding: 8px 0px !important;
+}
+
+.topics>.active>a>span {
+	margin-left:16px;
+}
+
+.read-icon {
+	display: none !important;
+}
 
 /* make forward and back arrows slim */
 .fa-chevron-right:before {
@@ -65,7 +90,7 @@
 
 /* override header font and color */
 body {
-	font-family: "Helvetica Neue", "Tahoma", "Geneva", "Arial", sans-serif;
+	font-family: "GTAmerica", "Arial", sans-serif;
 	letter-spacing: normal;
 }
 
@@ -85,6 +110,7 @@ h2,
 h3,
 h4,
 h5 {
+	font-family: "GTAmerica", "Arial", sans-serif;
 	color: #000;
 	font-weight: bold;
 }
