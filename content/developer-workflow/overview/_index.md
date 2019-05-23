@@ -1,12 +1,13 @@
 ---
-title: Developer Workflow
+title: Overview
 description: How to get your local development environment setup to test Section CDN on your local machine.
 keywords: content delivery network, CDN, virtual machine, vagrant, virtualbox, git, cli, local development, local machine, staging environment, developer pop
-weight: 3
+weight: 1
 aliases:
   - /developer-pop/
   - /local-development/
   - /tutorials/developer-pop
+  - /tutorials/developer-workflow/
 ---
 
 Section.io’s local development environment is designed to develop and test changes to your content delivery configuration without having to work in production or spin up another copy of the production environment to test on.
@@ -15,7 +16,7 @@ This is done by replicating the production point of presence in a virtual machin
 
 Section.io’s local development environment is based on [git] and Kubernetes (provided by [Minikube]).
 
-[Let's get started by installing the Developer PoP core]({{< relref "tutorials/developer-workflow/setting-up-your-developer-pop.md" >}}).
+[Let's get started by installing the Developer PoP core]({{< relref "developer-workflow/how-tos/setting-up-your-developer-pop.md" >}}).
 
   [git]: http://git-scm.com/
   [Minikube]: https://github.com/kubernetes/minikube/releases/tag/v0.21.0

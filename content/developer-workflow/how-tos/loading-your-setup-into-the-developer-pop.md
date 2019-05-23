@@ -3,6 +3,8 @@ title: Loading your setup into the Developer PoP
 description: How to get your local development environment setup to test Section CDN on your local machine.
 keywords: content delivery network, CDN, virtual machine, vagrant, virtualbox, git, cli, local development, local machine, staging environment, developer pop
 weight: 2
+aliases:
+  - /tutorials/developer-workflow/loading-your-setup-into-the-developer-pop/
 ---
 
 <!-- Run `minikube service -n section-shared developer-pop`. Your browser will open when the endpoint for the service becomes ready. -->
@@ -52,7 +54,7 @@ In the **Operations** column of the table, there will be a button for you to "Co
 3. Origin Host Header: This is the host header the egress will use to send upstream (typically it's the same as your hosted name).
 
 
-Now, you're all set. [Let's see your new Developer PoP in action.]({{< relref "tutorials/developer-workflow/developing-with-the-developer-pop.md" >}}).
+Now, you're all set. [Let's see your new Developer PoP in action.]({{< relref "developer-workflow/how-tos/developing-with-the-developer-pop.md" >}}).
 
   [git]: http://git-scm.com/
   [Vagrant]: http://docs.vagrantup.com/v2/installation/

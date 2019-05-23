@@ -3,6 +3,8 @@ title: Setting up your Developer PoP
 description: How to get your local development environment setup to test Section CDN on your local machine.
 keywords: content delivery network, CDN, virtual machine, vagrant, virtualbox, git, cli, local development, local machine, staging environment, developer pop
 weight: 1
+aliases:
+  - /tutorials/developer-workflow/setting-up-your-developer-pop/
 ---
 
 Section Developer PoP runs on Kubernetes. Minikube is a prepackaged Kubernetes cluster that works on Windows, Mac, and Linux.
@@ -27,6 +29,6 @@ Disable repeating messages about the **kubectl** component you won't need: `mini
 
 Now your Developer PoP base is ready, but it has not yet launched any of the specific proxies in your configuration.
 
-Let's change that by [loading your Section setup into the Developer PoP]({{< relref "tutorials/developer-workflow/loading-your-setup-into-the-developer-pop.md" >}}).
+Let's change that by [loading your Section setup into the Developer PoP]({{< relref "developer-workflow/how-tos/loading-your-setup-into-the-developer-pop.md" >}}).
 
   [VirtualBox]: http://www.virtualbox.org/

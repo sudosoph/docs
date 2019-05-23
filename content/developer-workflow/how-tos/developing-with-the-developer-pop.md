@@ -3,6 +3,8 @@ title: Developing with the Developer PoP
 description: How to get your local development environment setup to test Section CDN on your local machine.
 keywords: content delivery network, CDN, virtual machine, vagrant, virtualbox, git, cli, local development, local machine, staging environment, developer pop
 weight: 3
+aliases:
+  - /tutorials/developer-workflow/developing-with-the-developer-pop/
 ---
 
 ### 1) Locally Override DNS to point at the Developer PoP
