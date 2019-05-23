@@ -4,7 +4,7 @@ title = "Section Documentation"
 
 # Section Documentation
 
-{{% figure src="https://www.section.io/images/section-diagram.gif" %}}
+{{% figure src="/docs/images/header2.jpg" width="600" class="header-image" %}}
 
 ## Getting started
 
@@ -23,5 +23,5 @@ Section has a lot of documentation. A high-level overview of how it’s organize
 
 New to Section? Here are some places to start:
 
-* [Take a tour of our platform]({{< relref "tutorials/overview" >}}) and get a rundown on all the features Section has to offer.
-* Create an account and [get started on the Section platform]({{< relref "tutorials/activate-section-io" >}}) in as little as 30 minutes. 
+* [Get started]({{< relref "getting-started/" >}}) and get a rundown on Section has to offer.
+* Create an account and [get started on the Section platform]({{< relref "getting-started/how-tos/going-live" >}}) in as little as 30 minutes.

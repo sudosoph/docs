@@ -1,6 +1,8 @@
 ---
 title: Agency Ready
 weight: 3
+aliases:
+  - /tutorials/overview/agency-ready/
 ---
 
 Section is built to streamline the process of managing groups of websites.
@@ -13,4 +15,4 @@ If you work at an agency, you're familiar with the unique challenges that come w
 
 Section account structure is set up to do just that. Additionally, the Section platform allows you to apply a single proxy configuration to groups of sites at once and update them all with the click of a button.
 
-Each site that runs on [Section Application Edge runs on a Global Network]({{< relref "tutorials/overview/global-network.md">}}).
+Each site that runs on [Section Application Edge runs on a Global Network]({{< relref "getting-started/overview/global-network.md">}}).

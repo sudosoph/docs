@@ -1,6 +1,8 @@
 ---
 title: Developer Ready
 weight: 6
+aliases:
+  - /tutorials/overview/developer-ready/
 ---
 
 For too long, CDNs have remained in the dark ages of waterfall processes with no integration into the agile development lifecycle. Agile methods just aren't something that CDNs understand.
@@ -15,4 +17,4 @@ Get it right on your laptop, then use Git to promote your work. Use feature bran
 
 No more worrying about whether your code will be affected by the CDN configuration when you release, and no need to be scared when you make changes to the CDN configuration.
 
-Of course, once you've released your application, you need [deep, real-time insights into your HTTP traffic]({{< relref "tutorials/overview/devops-ready.md" >}}).
+Of course, once you've released your application, you need [deep, real-time insights into your HTTP traffic]({{< relref "getting-started/overview/devops-ready.md" >}}).

@@ -1,6 +1,8 @@
 ---
 title: DNS Options
 weight: 8
+aliases:
+  - /tutorials/overview/dns-options/
 ---
 
 Section uses DNS to route requests to the most appropriate datacenter.
@@ -11,4 +13,4 @@ Section also includes a global anycast DNS network with all plans. This can be u
 
 Whilst you can choose to move your DNS to our nameservers, that's completely optional at all plan levels.
 
-[Learn more about Section HTTPS capabilities]({{< relref "tutorials/overview/https-options.md" >}}).
+[Learn more about Section HTTPS capabilities]({{< relref "getting-started/overview/https-options.md" >}}).

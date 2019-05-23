@@ -1,8 +1,10 @@
 ---
-title: Create an Application Edge
-description: A step-by-step guide on how to get started with Section CDG.
+title: Creating an application
+description: A step-by-step guide on how to get started with Section.
 keywords: guide, getting started, website performance, page speed, webpage speed, website security, content delivery network, CDN
 weight: 1
+aliases:
+  - /tutorials/activate-section-io/create-application-edge/
 ---
 
 1. On your main account dashboard, click **Create application**.
@@ -18,4 +20,4 @@ weight: 1
 1. Wait a moment while the system deploys your Application Edge. Click **I'll explore first**.
 ![Enter Account Name](/docs/images/screenshots/account/new-application-overview.png?height=80px)
 
-Your Application Edge is now ready for traffic. [The next step is to Set Up DNS.]({{< relref "tutorials/activate-section-io/set-up-dns.md" >}})
+Your Application Edge is now ready for traffic. [The next step is to Set Up DNS.]({{< relref "getting-started/how-tos/going-live/set-up-dns.md" >}})

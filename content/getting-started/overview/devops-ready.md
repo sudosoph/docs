@@ -1,6 +1,8 @@
 ---
 title: Devops Ready
 weight: 7
+aliases:
+  - /tutorials/overview/devops-ready/
 ---
 
 Whether a website is yours or your client's, you need to have the right information available to you immediately when you're running a mission critical application.
@@ -17,4 +19,4 @@ Legacy CDNs fall short of these needs in a couple of ways. Either their log ship
 
 Section also makes sure that these metrics and logs datasources are made available in familiar formats, so you can integrate them into your existing operational toolchain. Use your existing monitoring stack to get alerts, without "yet another alerting platform".
 
-Learn more about [Section DNS options]({{< relref "tutorials/overview/dns-options.md" >}}).
+Learn more about [Section DNS options]({{< relref "getting-started/overview/dns-options.md" >}}).

@@ -1,6 +1,8 @@
 ---
 title: Better than a CDN
 weight: 2
+aliases:
+  - /tutorials/overview/better-than-a-cdn/
 ---
 
 The Section platform provides superior application performance, availability, scalability, and security by putting architects, developers, and sysadmins in the driver's seat. 
@@ -21,4 +23,4 @@ Unlike with legacy CDNs, with Section:
 
 Section is ready to handle your workload regardless of the number of sites you have or the size of your traffic.
 
-[Find out about how Section is ready to help you manage multiple sites]({{< relref "tutorials/overview/agency-ready.md" >}}).
+[Find out about how Section is ready to help you manage multiple sites]({{< relref "getting-started/overview/agency-ready.md" >}}).

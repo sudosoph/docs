@@ -1,6 +1,8 @@
 ---
 title: Global Network
 weight: 4
+aliases:
+  - /tutorials/overview/global-network/
 ---
 The Section platform runs a high availability Global Network so that your Application Edge is ready when and where your customers need it.
 
@@ -25,4 +27,4 @@ If you have your own cloud services, you can run Section as a private setup with
 
 The Section platform can also be run on your origin infrastructure, such as a classic application delivery controller. You can deploy a single instance or a high availability cluster right in your own datacenter or cloud account.
 
-Section brings a wide variety of software that run be run in a point of presence. [Learn about the types of reverse proxy you can run inside Section]({{< relref "tutorials/overview/proxy-options.md" >}}).
+Section brings a wide variety of software that run be run in a point of presence. [Learn about the types of reverse proxy you can run inside Section]({{< relref "getting-started/overview/proxy-options.md" >}}).

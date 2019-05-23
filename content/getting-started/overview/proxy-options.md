@@ -1,6 +1,8 @@
 ---
 title: Proxy Options
 weight: 5
+aliases:
+  - /tutorials/overview/proxy-options/
 ---
 
 Unlike Legacy CDNs which generally are fixed on a single proxy, Section allows you to choose the proxies that suit your application architecture.
@@ -16,4 +18,4 @@ Depending on your need:
 
 These are just some of the reverse proxies that are available to you. Pick the right combination and painlessly change them as your requirements change.
 
-All these proxies are available throughout the entire [development lifecycle]({{< relref "tutorials/overview/developer-ready.md" >}}).
+All these proxies are available throughout the entire [development lifecycle]({{< relref "getting-started/overview/developer-ready.md" >}}).

@@ -3,6 +3,8 @@ title: Enable Automatic SSL
 description: A step-by-step guide on how to get started with Section CDG.
 keywords: guide, getting started, website performance, page speed, webpage speed, website security, content delivery network, CDN
 weight: 3
+aliases:
+  - /tutorials/activate-section-io/enable-automatic-ssl/
 ---
 
 ## Turning on automatic HTTPS
@@ -14,6 +16,4 @@ weight: 3
 
 {{% notice info %}}
 If you have any trouble, consider looking at our [HTTPS Troubleshooting guides]({{< relref "how-to/dns/check-your-current-dns-setup.md" >}}).
-
 {{% /notice %}}
-[That's it! Let's review what we've done.]({{< relref "tutorials/activate-section-io/tutorial-complete.md" >}})

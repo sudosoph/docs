@@ -1,5 +1,5 @@
 ---
-title: Section at a Glance
+title: Overview
 description: Training area, Section platform overview.
 keywords: Section, training, platform overview
 weight: 1
@@ -29,4 +29,4 @@ Once you have set up your website on Section, all requests for your website URL 
 
 A Section **configuration** is a collection of reverse proxies that can be hand-tailored to the needs of your website. Have lots of requests for static assets like images and CSS files weighing down your origin server? We have a proxy to deliver assets from cache. Dealing with bots and DDoS attacks? We have Web Application Firewall proxies to block them before they even reach your origin server. Need images to be dynamically optimized for different clients? We have a proxy for that. All of these and more can be mixed and matched to perfectly serve your website.
 
-The Section platform can work for you as a normal CDN, but it can do so much more. Let's see [how Section compares to a traditional CDN]({{< relref "tutorials/overview/like-a-cdn.md" >}}).
+The Section platform can work for you as a normal CDN, but it can do so much more. Let's see [how Section compares to a traditional CDN]({{< relref "getting-started/overview/like-a-cdn.md" >}}).

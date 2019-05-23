@@ -13,6 +13,10 @@
     font-weight: bold;
 }
 
+.header-image img {
+	border-left: 10px solid #000;
+}
+
 /* override sidebar color */
 #sidebar {
 	background-color: #E8E9E9;
@@ -92,6 +96,7 @@
 body {
 	font-family: "GTAmerica", "Arial", sans-serif;
 	letter-spacing: normal;
+	font-size: 16px !important;
 }
 
 #body .padding {
@@ -120,7 +125,7 @@ h5 {
 p {
 	line-height: 26px;
 	margin-bottom: 2.5rem;
-	font-size: 18px;
+	font-size: 16px;
 	color: #404040;
 }
 
