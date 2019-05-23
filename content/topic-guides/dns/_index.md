@@ -4,4 +4,4 @@ description = ""
 weight = 1
 +++
 
-{{% children %}}
+{{% children depth="3" %}}

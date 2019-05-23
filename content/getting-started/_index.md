@@ -20,4 +20,4 @@ We do not subscribe you to any email lists and you're guarenteed interaction wit
 
 Please read the following documents as they describe our core conpects, go live strategy, account schemas, and high level information to create an awesome edge platform.
 
-{{% children %}}
+{{% children depth="3" %}}

@@ -1,5 +1,5 @@
 ---
-title: Loading your setup into the Developer PoP
+title: Load your setup into the Developer PoP
 description: How to get your local development environment setup to test Section CDN on your local machine.
 keywords: content delivery network, CDN, virtual machine, vagrant, virtualbox, git, cli, local development, local machine, staging environment, developer pop
 weight: 2
@@ -54,7 +54,7 @@ In the **Operations** column of the table, there will be a button for you to "Co
 3. Origin Host Header: This is the host header the egress will use to send upstream (typically it's the same as your hosted name).
 
 
-Now, you're all set. [Let's see your new Developer PoP in action.]({{< relref "developer-workflow/how-tos/developing-with-the-developer-pop.md" >}}).
+Now, you're all set. [Let's see your new Developer PoP in action.]({{< relref "developer-workflow/tutorials/developing-with-the-developer-pop.md" >}}).
 
   [git]: http://git-scm.com/
   [Vagrant]: http://docs.vagrantup.com/v2/installation/

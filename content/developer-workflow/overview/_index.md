@@ -16,7 +16,7 @@ This is done by replicating the production point of presence in a virtual machin
 
 Section.io’s local development environment is based on [git] and Kubernetes (provided by [Minikube]).
 
-[Let's get started by installing the Developer PoP core]({{< relref "developer-workflow/how-tos/setting-up-your-developer-pop.md" >}}).
+[Let's get started by installing the Developer PoP core]({{< relref "developer-workflow/tutorials/setting-up-your-developer-pop.md" >}}).
 
   [git]: http://git-scm.com/
   [Minikube]: https://github.com/kubernetes/minikube/releases/tag/v0.21.0

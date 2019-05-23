@@ -20,4 +20,4 @@ aliases:
 1. Wait a moment while the system deploys your Application Edge. Click **I'll explore first**.
 ![Enter Account Name](/docs/images/screenshots/account/new-application-overview.png?height=80px)
 
-Your Application Edge is now ready for traffic. [The next step is to Set Up DNS.]({{< relref "getting-started/how-tos/going-live/set-up-dns.md" >}})
+Your Application Edge is now ready for traffic. [The next step is to Set Up DNS.]({{< relref "getting-started/tutorials/going-live/set-up-dns.md" >}})

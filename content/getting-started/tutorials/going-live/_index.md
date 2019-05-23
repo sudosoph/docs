@@ -24,5 +24,5 @@ At the end of this tutorial you'll have:
 * Free and automatically renewing SSL certificates.
 * All your HTTP traffic handled by Section.
 
-[Step 1: Creating your Application Edge]({{< relref "getting-started/how-tos/going-live/create-application-edge.md" >}}).
+[Step 1: Creating your Application Edge]({{< relref "getting-started/tutorials/going-live/create-application-edge.md" >}}).
 

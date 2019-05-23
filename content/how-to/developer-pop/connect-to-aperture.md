@@ -2,6 +2,8 @@
 title: Connect Developer PoP to Aperture
 description: How to get your local development environment setup to test Section CDN on your local machine.
 keywords: content delivery network, CDN, virtual machine, vagrant, virtualbox, git, cli, local development, local machine, staging environment, developer pop
+aliases:
+  - /how-to/developer-pop/connect-to-aperture/
 ---
 
 *Note: If you don't have an Aperture account and want to use the devpop to simply test reverse proxies, feel free to skip this section.*

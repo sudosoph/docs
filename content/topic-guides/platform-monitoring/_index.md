@@ -5,4 +5,4 @@ description = "An overview of the ways Section monitors your application interna
 
 The Section platform provides detailed logs and metrics on the performance of your websites and proxies. This section of the documentation contains details how our logs work and the available tools to access that information in the portal.
 
-{{% children %}}
+{{% children depth="3" %}}

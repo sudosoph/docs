@@ -35,4 +35,4 @@ If there is an AAAA IPv6 record setup for the domain, it will need to be removed
 If you have any trouble, consider looking at our [HTTPS Troubleshooting guides]({{< relref "how-to/dns/check-your-current-dns-setup.md" >}}).
 {{% /notice %}}
 
-[Let's proceed to step 3, enabling automatic SSL]({{< relref "getting-started/how-tos/going-live/enable-automatic-ssl.md" >}})
+[Let's proceed to step 3, enabling automatic SSL]({{< relref "getting-started/tutorials/going-live/enable-automatic-ssl.md" >}})

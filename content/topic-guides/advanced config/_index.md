@@ -10,4 +10,4 @@ In the repository you can see all the files in your repository, commits to those
 
 Inside Advanced Config, you should see one folder for every reverse proxy running on your application and one 'section.config.json' file, where you can add additional reverse proxies to your stack. **If you want to add a new reverse proxy your stack, check out our [guide](/docs/how-to/install-a-new-proxy).**
 
-{{% children %}}
+{{% children depth="3" %}}
