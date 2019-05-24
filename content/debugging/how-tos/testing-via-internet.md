@@ -2,6 +2,8 @@
 title: Run WebPagetest On Your Website
 description: A guide on testing the performance of your site using webpagetest.
 keywords: webpage test, testing, synthetic
+aliases:
+  - /how-to/testing/testing-via-internet/
 ---
 
 This is a guide to help you run some basic tests against your website using [webpagetest.org](http://webpagetest.org), a free real browser synthetic testing agent.

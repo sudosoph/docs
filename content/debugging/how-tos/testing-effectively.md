@@ -4,6 +4,7 @@ description: A recommended battery of tests to ensure optimal performance.
 keywords: webpagetest, performance testing, metrics, website performance, page speed, webpage speed, website security
 aliases:
   - /testing/
+  - /how-to/testing/testing-effectively/
 
 ---
 

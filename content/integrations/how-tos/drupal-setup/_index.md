@@ -1,8 +1,10 @@
 ---
-title: Set up Drupal on Section
+title: Drupal
 description: Guide for integrating Drupal apps with the Section platform.
 keywords: cache, https, website performance, page speed, webpage speed, website security, content delivery network, CDN, Drupal
 weight: 10
+aliases:
+  - /how-to/drupal-setup/
 ---
 
 Drupal is a popular CMS platform that needs extensive performance tuning.

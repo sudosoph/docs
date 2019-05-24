@@ -1,8 +1,10 @@
 ---
-title: Set up Magento on Section
+title: Magento
 description: Guide for evaluating your website performance and how to use Section to make improvements.
 keywords: cache, https, website performance, page speed, webpage speed, website security, content delivery network, CDN
 weight: 10
+aliases:
+  - /how-to/magento-setup/
 ---
 
 Magento is a popular eCommerce platform that needs extensive performance tuning.

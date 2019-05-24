@@ -32,7 +32,7 @@ aliases:
 Now that your configurations are running on the Dev Pop, you will need to configure your egress settings (origin server details) to tell the Dev Pop where to pass the HTTP request to. To do this you will use the Dev Pop UI's **Services** tab where you will find information about the repository you just pushed up. A page refresh might be needed.
 
 #### a) Connect Dev PoP to aperture
- The easiest way to do this is to [connect your Dev PoP to your Section Aperture account]({{< relref "how-to/developer-pop/connect-to-aperture.md" >}}) and **import** these configurations.
+ The easiest way to do this is to [connect your Dev PoP to your Section Aperture account]({{< relref "developer-workflow/how-tos/connect-to-aperture.md" >}}) and **import** these configurations.
 
 To do this :
 
@@ -43,7 +43,7 @@ To do this :
 {{% notice tip %}}
 If you have an account in the Section management console you can link your Developer PoP to your account.
 
-See [How to Connect Developer PoP to Aperture]({{< relref "how-to/developer-pop/connect-to-aperture.md" >}}) for more information.
+See [How to Connect Developer PoP to Aperture]({{< relref "developer-workflow/how-tos/connect-to-aperture.md" >}}) for more information.
 {{% /notice %}}
 
 #### b) Configure the service manually

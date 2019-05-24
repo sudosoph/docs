@@ -2,6 +2,8 @@
 title: Troubleshoot Developer PoP Issues
 description: How to deal with various issues that can arise while using DevPoP.
 keywords: content delivery network, CDN, virtual machine, vagrant, virtualbox, git, cli, local development, developer pop
+aliases:
+  - /how-to/developer-pop/troubleshoot-developerpop/
 ---
 
 The Developer PoP is a still in beta and will occasionally have hiccups. This section details some common issues and how to deal with them.

@@ -3,6 +3,8 @@ title: Set up and optimize Magento 1 on Section
 description: Guide set up a Magento 1 application on Section
 keywords: cache, https, website performance, page speed, webpage speed, website security, content delivery network, CDN
 weight: 20
+aliases:
+  - /how-to/magento-setup/magento-1/
 ---
 ## Options to optimize HTML:
 

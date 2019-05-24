@@ -2,6 +2,8 @@
 title: Test Website Performance Locally
 description: A guide on testing a Section configuration on your local machine before go-live.
 keywords: webpage test, testing, synthetics, local testing
+aliases:
+  - /how-to/testing/testing-locally/
 ---
 
 Instead of using WebPageTest, you may wish to test the site through Section locally using your own browser. You can achieve this by changing how DNS to the site is resolved on your local test machine.

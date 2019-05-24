@@ -44,6 +44,6 @@ Congratulations! You have successfully set up the Section Developer PoP! See bel
 
 
 ### Further Reading
-For a guide on troubleshooting common Developer PoP issues, [click here]({{< relref "how-to/developer-pop/troubleshoot-developerpop.md" >}}).
+For a guide on troubleshooting common Developer PoP issues, [click here]({{< relref "developer-workflow/how-tos/troubleshoot-developerpop.md" >}}).
 
-For a guide on setting up DevPoP with a local server, [click here]({{< relref "how-to/developer-pop/dev-pop-with-local-server.md" >}}).
+For a guide on setting up DevPoP with a local server, [click here]({{< relref "developer-workflow/how-tos/dev-pop-with-local-server.md" >}}).

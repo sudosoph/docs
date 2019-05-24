@@ -3,6 +3,8 @@ title: Set up a Magento 2 app on Section
 description: A guide for setting up a Magento 2 app on the Section platform.
 keywords: cache, https, website performance, page speed, webpage speed, website security, content delivery network, CDN
 weight: 10
+aliases:
+  - /how-to/magento-setup/magento-2/
 ---
 
 The following is a guide to going live on Section with a Magento 2 application.

@@ -2,6 +2,8 @@
 title: Update Git for a different developer pop ip address
 description: How to get your local development environment setup to test Section CDN on your local machine.
 keywords: content delivery network, CDN, virtual machine, vagrant, virtualbox, git, cli, local development, local machine, staging environment, developer pop
+aliases:
+  - /how-to/developer-pop/update-git-for-a-different-developer-pop-ip-address/
 ---
 
 It is possible your Developer PoP IP address may change.

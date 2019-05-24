@@ -5,6 +5,7 @@ keywords: users, portal, access, account, authentication
 aliases:
   - /user-security/
   - /how-to/user-security/
+  - /how-to/user-management/enable-two-factor-authentication-on-your-account/
 ---
 
 In addition to a strong password, your account can be further protected by enabling Two Factor Authentication.
