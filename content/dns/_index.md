@@ -1,9 +1,11 @@
-+++
-title = "Domains and DNS"
-description = ""
-weight = 900
-+++
+---
+title: "Domains and DNS"
+description: ""
+weight: 900
+aliases:
+  - /how-to/dns/
+---
 
-Discussions of key topics and concepts at a fairly high level and provide useful background information and explanation.
+### Table of contents
 
 {{% children depth="3" %}}

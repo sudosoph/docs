@@ -2,6 +2,7 @@
 title: "Section Documentation"
 aliases:
   - /tutorials/
+  - /reference/
 ---
 
 # Section Documentation

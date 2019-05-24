@@ -63,7 +63,7 @@ You can also clear the cache for the URL using the Aperture portal. The feature 
 
 {{% figure src="/docs/images/kraken-cache-clear.png" %}}
 
-When using Kraken behind Varnish be sure to [clear the Varnish cache]({{< relref "how-to/varnish-cache/clearing-the-cache.md" >}})  to see the updated image.
+When using Kraken behind Varnish be sure to [clear the Varnish cache]({{< relref "varnish-cache/how-tos/clearing-the-cache.md" >}})  to see the updated image.
 
 ### Set the Cache-Control time
 

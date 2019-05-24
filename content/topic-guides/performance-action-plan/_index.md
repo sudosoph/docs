@@ -7,7 +7,7 @@ aliases:
   - /action-plan/
 ---
 
-This tutorial will show you a repeatable process to optimize your Varnish Cache  configuration.
+This tutorial will show you a repeatable process to optimize your Varnish Cache configuration.
 
 ## In this tutorial
 

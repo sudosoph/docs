@@ -1,5 +1,5 @@
 ---
-title: Varnish Cache  and Section  
+title: Varnish Cache and Section  
 description: A high level overview of how Section runs Varnish Cache 
 keywords: [Varnish,caching]
 

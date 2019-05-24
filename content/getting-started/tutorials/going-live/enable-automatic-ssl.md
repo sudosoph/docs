@@ -15,5 +15,5 @@ aliases:
 ![HTTPS Menu in Management Console](/docs/images/screenshots/https/highlight-renew-certificate-button.png?height=80px)
 
 {{% notice info %}}
-If you have any trouble, consider looking at our [HTTPS Troubleshooting guides]({{< relref "how-to/dns/check-your-current-dns-setup.md" >}}).
+If you have any trouble, consider looking at our [HTTPS Troubleshooting guides]({{< relref "dns/how-tos/check-your-current-dns-setup.md" >}}).
 {{% /notice %}}

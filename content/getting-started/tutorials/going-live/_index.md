@@ -9,7 +9,7 @@ aliases:
   - /tutorials/activate-section-io/
   - /tutorials/activate-section-io/
   - /tutorials/overview/get-started/
-weight: 3
+weight: 1
 ---
 
 At this point you've talking to one of our engineers and have gotten setup with a Section user account.
