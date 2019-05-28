@@ -1,8 +1,10 @@
-+++
-title = "Monitoring"
-description = ""
-weight = 400
-+++
+---
+title: "Monitoring"
+description: ""
+weight: 400
+aliases:
+  - /topic-guides/platform-monitoring/
+---
 
 ### Table of contents
 

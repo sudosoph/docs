@@ -1,8 +1,10 @@
-+++
-title = "Getting Started"
-description = ""
-weight = 100
-+++
+---
+title: "Getting Started"
+description: ""
+weight: 100
+alises:
+  - /topic-guides/
+---
 
 If you don't have a Section account then this is a good place to get started.
 

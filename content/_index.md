@@ -17,10 +17,11 @@ Here you will find all the information you need to built and maintain your custo
 
 Section has a lot of documentation. A high-level overview of how it’s organized will help you know where to look for certain things:
 
-* [Tutorials]({{< relref "tutorials/_index.md" >}}) provide step-by-step instructions to implement something within Section.
-* [Topic guides]({{< relref "topic-guides/_index.md" >}}) discuss key topics and concepts at a fairly high level and provide useful background information and explanation.
-* [How-to guides]({{< relref "how-to/_index.md" >}}) are recipes. They guide you through the steps involved in addressing key problems and use-cases. They are more advanced than tutorials and assume some knowledge of how Section works.
-* [Reference guides]({{< relref "reference/_index.md" >}}) contain technical reference for APIs and other aspects of Section.
+* **General topic guides** which are key topics and concepts related to Section and they each have the following sections:
+  * **Overview** discuss key topics and concepts at a fairly high level and provide useful background information and explanation.
+  * **Tutorials** provide step-by-step instructions guides.
+  * **How-to guides** are recipes. They guide you through the steps involved in addressing key problems and use-cases. They are more advanced than tutorials and assume some knowledge of how Section works.
+  * **Reference guides** contain technical reference for APIs and other aspects of Section.
 
 ## First steps
 
