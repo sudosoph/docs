@@ -1,5 +1,5 @@
 ---
-title: Threat X WAF
+title: Overview
 description: Using the Threat X Web Application Firewall (WAF) inside Section.
 keywords: WAF, web application firewall, security, Layer 7 attacks
 aliases:

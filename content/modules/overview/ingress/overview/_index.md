@@ -1,5 +1,5 @@
 ---
-title: Edge Proxy
+title: Overview
 description: Explanation for Section edge proxy, which handles a number of tasks before being passed to your proxy configuration.
 keywords: edge proxy, tls, tls handshake, http2, http/2, proxy configuration, reverse proxies
 aliases:
@@ -7,6 +7,8 @@ aliases:
   - /reference/edge-proxy/
 
 ---
+
+## Ingress/Edge Proxy
 
 Every Section application proxy stack implicitly begins with the Edge proxy. The Edge proxy is the endpoint to which the User-Agent (eg web browser) connects and it has a few responsibilities:
 

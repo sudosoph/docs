@@ -27,7 +27,7 @@ After the completion of Step #1, you should be on the cache clearing management 
 
 #### a) Clearing Varnish Cache 
 
-  We have a whole article on [clearing the cache for Varnish Cache.]({{< relref "varnish-cache/how-tos/clearing-the-cache.md" >}}) Check it out.
+  We have a whole article on [clearing the cache for Varnish Cache.]({{< relref "modules/overview/varnish-cache/how-tos/clearing-the-cache.md" >}}) Check it out.
 
 #### b) Clearing Pagespeed Cache
 

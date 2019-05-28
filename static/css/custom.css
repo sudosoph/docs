@@ -13,10 +13,6 @@
     font-weight: bold;
 }
 
-.header-image img {
-	border-left: 10px solid #000;
-}
-
 /* override sidebar color */
 #sidebar {
 	background-color: #E8E9E9;

@@ -1,11 +1,11 @@
 ---
-title: Modules and Configuration
+title: Modules
 description: Information on which reverse proxies are available to use on Section content delivery network.
 keywords: content delivery network, CDN, varnish, turpentine, modsecurity, reverse proxies, proxy, proxy template
 aliases:
   - /proxy-list/
   - /reference/proxy-list/
-weight: 600
+weight: 150
 ---
 
 Section offers a number of different proxies that can be used in your reverse proxy chain. A proxy template is a combination of the proxy software (eg. Varnish Cache ) and a set of default files to configure the proxy (eg. the `default.vcl` file).

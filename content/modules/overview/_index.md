@@ -1,12 +1,12 @@
 ---
-title: "Overview"
+title: "Module List"
 description: ""
 weight: 1
 aliases:
   - /topic-guides/advanced-configuration/
 ---
 
-## Advanced Configuration
+## Configuration
 
 When you are ready to start creating more advanced configurations for your proxies, you can start editing the configuration files directly. All of the files in your repository can be accessed by visiting Repository under the Configuration menu in the left nav of Aperture. For more information on more basic configurations done through our GUI, check out [quick configuration](/docs/topic-guides/basic-configuration).
 

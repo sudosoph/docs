@@ -1,5 +1,5 @@
 ---
-title: Run PageSpeed on Section
+title: Overview
 description: Using Google's PageSpeed inside Section.
 keywords: content delivery network, CDN, pagespeed, reverse proxies, proxy, proxy template
 aliases:

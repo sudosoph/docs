@@ -7,7 +7,7 @@ aliases:
 
 # Section Documentation
 
-{{% figure src="/docs/images/header2.jpg" width="600" class="header-image" %}}
+{{% figure src="/docs/images/header-color.png" class="header-image" %}}
 
 ## Getting started
 
