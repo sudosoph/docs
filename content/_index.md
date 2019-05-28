@@ -27,5 +27,5 @@ Section has a lot of documentation. A high-level overview of how it’s organize
 
 New to Section? Here are some places to start:
 
-* [Get started]({{< relref "getting-started/" >}}) and get a rundown on Section has to offer.
+* [Get started]({{< relref "getting-started/_index.md" >}}) and get a rundown on Section has to offer.
 * Create an account and [get started on the Section platform]({{< relref "getting-started/tutorials/going-live" >}}) in as little as 30 minutes.
