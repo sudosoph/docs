@@ -1,4 +1,0 @@
-+++
-title = "Varnish Cache "
-description = ""
-+++
