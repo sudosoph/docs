@@ -10,7 +10,7 @@ If you don't have a Section account then this is a good place to get started.
 
 ### Signing up
 
-The Section sign up process is currently hidden from the general public. We believe that by engaging our Customer Reliability Engineers directly, you'll have a better experiance with the product and achieve better outcomes.
+The Section sign up process is currently hidden from the general public. We believe that by engaging our Customer Reliability Engineers directly, you'll have a better experience with the product and achieve better outcomes.
 
 Please email us on the contact form and an engineer will reach out to you directly: https://www.section.io/contact-us/
 
