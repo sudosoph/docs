@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Core Concepts
 description: Training area, Section platform overview.
 keywords: Section, training, platform overview
 weight: 1

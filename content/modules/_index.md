@@ -6,33 +6,34 @@ aliases:
   - /proxy-list/
   - /reference/proxy-list/
 weight: 150
+ordersectionsby: "title"
 ---
 
 Section offers a number of different proxies that can be used in your reverse proxy chain. A proxy template is a combination of the proxy software (eg. Varnish Cache ) and a set of default files to configure the proxy (eg. the `default.vcl` file).
 
 If you want to experiment with different proxies you can use our [developer POP](/docs/developer-pop/) to run your proxy stack on your local machine.
 
-## Varnish Cache  v6.0
+#### Varnish Cache v6.0
 
 - Varnish Cache  6.0.0
 - Std VMOD - <https://www.varnish-cache.org/docs/6.0/reference/vmod_std.generated.html>
 - Cookie, Header, Softpurge, Var, and Xkey VMODs - <https://github.com/varnish/varnish-modules#readme>
 
-## Varnish Cache  v5.2
+#### Varnish Cache v5.2
 
 - Varnish Cache  5.2.1
 - Std VMOD - <https://www.varnish-cache.org/docs/5.2/reference/vmod_std.generated.html>
 - Cookie, Header, Softpurge, Var, and Xkey VMODs - <https://github.com/varnish/varnish-modules#readme>
 - UUID VMOD - <https://github.com/Sharecare/libvmod-uuid#readme>
 
-## Varnish Cache  v5.1
+#### Varnish Cache v5.1
 
 - Varnish Cache  5.1.3
 - Std VMOD - <https://www.varnish-cache.org/docs/5.1/reference/vmod_std.generated.html>
 - Cookie, Header, Softpurge, Var, and Xkey VMODs - <https://github.com/varnish/varnish-modules#readme>
 - UUID VMOD - <https://github.com/Sharecare/libvmod-uuid#readme>
 
-## Varnish Cache  v4.1
+#### Varnish Cache v4.1
 
 Varnish Cache  4.1 is available if you need this version
 
@@ -41,7 +42,7 @@ Varnish Cache  4.1 is available if you need this version
 - Cookie, Header, Softpurge, Var, and Xkey VMODs - <https://github.com/varnish/varnish-modules#readme>
 - UUID VMOD - <https://github.com/Sharecare/libvmod-uuid#readme>
 
-## Varnish Cache  v4.0
+#### Varnish Cache  v4.0
 
 Varnish Cache  4.0 is available if you need this version
 
@@ -52,7 +53,7 @@ Varnish Cache  4.0 is available if you need this version
 - Header VMOD - <https://www.varnish-cache.org/vmod/header-manipulation>
 - UUID VMOD - <https://github.com/Sharecare/libvmod-uuid#readme>
 
-## Varnish Cache  v3
+#### Varnish Cache v3
 
 If you have a need to run Varnish Cache 3, eg. you have existing v3 VCL you want to run in Section, pick this one. This proxy also has ESI enabled to support the [Magento Turpentine extension]
 
@@ -61,34 +62,35 @@ If you have a need to run Varnish Cache 3, eg. you have existing v3 VCL you want
 - Maxmind GeoIP VMOD - <https://www.varnish-cache.org/vmod/maxmind-geoip>
 - Header VMOD - <https://www.varnish-cache.org/vmod/header-manipulation>
 
-## ModSecurity
+#### ModSecurity
 
 - apache 2.4.7
 - modsecurity 2.7.7
 - OWASP ModSecurity Core Rule Set ([commit c63affc9dfa6294ecf8782ae4d1f1fb2c9fd5a18]) included by default
 
-## PageSpeed
+#### PageSpeed
 
 - pagespeed 1.13.35.2
 
-## Threat-X
+#### Threat-X
 
 - Please contact support at [support@section.io](mailto:support@section.io) to configure your environment with Threat-X.
 
-  [Magento Turpentine extension]: https://github.com/nexcess/magento-turpentine
-  [commit c63affc9dfa6294ecf8782ae4d1f1fb2c9fd5a18]: https://github.com/SpiderLabs/owasp-modsecurity-crs/tree/c63affc9dfa6294ecf8782ae4d1f1fb2c9fd5a18
-
-## Kraken Image Optimizer
-  - kraken 1.2.0
+#### Kraken Image Optimizer
+  - kraken 2.0.0
   - Lossy and lossless compression.
   - Resizing of images.
 
-## Shield Square
-  - shieldsquare 0.0.1
+#### Shield Square
+  - shieldsquare 1.0.0
   - Intelligent Bot Blocking
 
-## Signal Sciences Web Application Firewall
+#### Signal Sciences Web Application Firewall
   - Please contact support at [support@section.io](mailto:support@section.io) to configure your environment with Signal Sciences.
 
-## OpenResty
+#### OpenResty
   - openresty 1.13.6.1
+
+## Table of contents
+
+{{% children depth="3" %}}

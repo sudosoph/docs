@@ -97,6 +97,9 @@ body {
 
 #body .padding {
 	padding: 1rem 7rem;
+	max-width: 1150px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 @media only all and (max-width: 47.938em) {
