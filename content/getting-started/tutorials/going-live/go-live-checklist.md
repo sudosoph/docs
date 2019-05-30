@@ -9,7 +9,7 @@ aliases:
 
 Section Customer Engineers work with customers to complete the steps in the Go-Live Checklist to launch an application.
 
-The Go-Live Check-list guides us systematically through a series of steps to generate a highly functional, secure, and customized edge computing application.
+The Go-Live Checklist guides us systematically through a series of steps to generate a highly functional, secure, and customized edge computing application.
 
  Step | Task | Status | Owner | ETA | Notes  
 ------|------|--------|-------|-----|-------
@@ -29,10 +29,10 @@ The Go-Live Check-list guides us systematically through a series of steps to gen
  14    | Project complete | Open | Customer | **PRODUCTION** -- **Milestone** |
 
 
-## Working Session
+## Working Session Checklist
 
 {{% notice info %}}
-The Working Session checklist is an expansion of Step 1 of the Go-Live Checklist.
+The Working Session Checklist is an expansion of Step 1 of the Go-Live Checklist.
 {{% /notice %}}
 
 
