@@ -7,9 +7,9 @@ aliases:
   - /tutorials/activate-section-io/go-live-checklist/
 ---
 
-## Go-Live Check-list
+Section Customer Engineers work with customers to complete the steps in the Go-Live Checklist to launch an application.
 
-The Go-Live Check-list below will be used by Section and a Section Customer to work systematically through a series of steps to generate a highly functional, secure and customized edge computing application.
+The Go-Live Check-list guides us systematically through a series of steps to generate a highly functional, secure, and customized edge computing application.
 
  Step | Task | Status | Owner | ETA | Notes  
 ------|------|--------|-------|-----|-------
@@ -22,32 +22,32 @@ The Go-Live Check-list below will be used by Section and a Section Customer to w
  7    | Conduct interactive workshop session | Open | Section | MM/DD/YYYY |
  8    | Introduction to section.io Support and Community | Open | Section | MM/DD/YYYY |
  9    | Functional testing of section.io configuration | Open | Section | MM/DD/YYYY |
- 10    | **GO LIVE** -- DNS change section.io | Open | Customer | **Milestone** |
+ 10    | DNS change section.io | Open | Customer | **GO LIVE** -- **Milestone** |
  11    | Monitor results for 7 days   | Open | Section | MM/DD/YYYY |
  12    | Performance review delivered containing recommendations for configuration changes | Open | Section | MM/DD/YYYY |
  13    | Deployed recommendations outlined in performance review | Open | Section & Customer | MM/DD/YYYY |
- 14    | Project complete | Open | Customer | **Milestone** |
+ 14    | Project complete | Open | Customer | **PRODUCTION** -- **Milestone** |
 
 
 ## Working Session
 
 {{% notice info %}}
-Working Session is expanded from Step 1 of the Go Live Check-list
+The Working Session checklist is an expansion of Step 1 of the Go-Live Checklist.
 {{% /notice %}}
 
 
- Step | Task | Status | Owner | ETA | Notes  
-------|------|--------|-------|-----|-------
- 1    | Collect user email to invite to account | Open | Section | MM/DD/YYYY |
- 2    | Review initial www.customer.com application | Open | Section | MM/DD/YYYY |
- 3    | Choose domain to use for working session | Open | Customer | MM/DD/YYYY |
- 4    | Determine the origin address/IP (optional) | Open | Customer | MM/DD/YYYY |
- 5    | Introduction to API | Open | Section | MM/DD/YYYY |
- 6    | Introduction to clone application endpoint | Open | Section | MM/DD/YYYY |
- 7    | Review Varnish Cache configuration | Open | Section | MM/DD/YYYY |
- 8    | Introduction to domains page | Open | Section | MM/DD/YYYY |
- 9    | Introduction to HTTPS and SSL | Open | Section | MM/DD/YYYY |
- 10    | DNS change and naming convention | Open | Section + Customers | **Milestone** |
- 11    | Introduction to environments | Open | Section | MM/DD/YYYY |
- 12    | Working session complete | Open | Customer | **Milestone** |
+ Step | Task | Status | Owner | Notes  
+------|------|--------|-------|-------
+ 1    | Collect user email to invite to account | Open | Section |
+ 2    | Review initial www.customer.com application | Open | Section |
+ 3    | Choose domain to use for working session | Open | Customer |
+ 4    | Determine the origin address/IP (optional) | Open | Customer | Needs to happed before DNS change
+ 5    | Introduction to API | Open | Section | https://aperture.section.io/api/ui/
+ 6    | Introduction to clone application endpoint | Open | Section | https://aperture.section.io/api/ui/#!/Application/applicationClone
+ 7    | Review Varnish Cache configuration | Open | Section |
+ 8    | Introduction to domains page | Open | Section |
+ 9    | Introduction to HTTPS and SSL | Open | Section |
+ 10    | DNS change and naming convention | Open | Section + Customer |
+ 11    | Introduction to environments | Open | Section |
+ 12    | Working session complete | **COMPLETE** -- **Milestone**  | Customer |
 
