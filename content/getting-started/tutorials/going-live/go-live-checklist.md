@@ -1,5 +1,5 @@
 ---
-title: Go Live Checklist
+title: Go-Live Checklist
 description: A convenient checklist for go-live on Section. 
 keywords: go-live, checklist, guide, getting started, website performance, page speed, webpage speed, website security, content delivery network, CDN
 weight: 1
@@ -51,3 +51,19 @@ The Working Session Checklist is an expansion of Step 1 of the Go-Live Checklist
  11    | Introduction to environments | Open | Section |
  12    | Working session complete | **COMPLETE** -- **Milestone**  | Customer |
 
+## Domains & Origins
+
+The Go-Live Checklist maps Domains, Origin Address, SSL type and Account for seemless change management.
+
+ ID | Domain | Origin Address | SSL Type | Account | Notes  
+------|------|--------|-------|-----|-------
+ 1    |  |  |  |  |
+ 2    |  |  |  |  |
+ 3    |  |  |  |  |
+ 4    |  |  |  |  |
+ 5    |  |  |  |  |
+ 6    |  |  |  |  |
+ 7    |  |  |  |  |
+ 8    |  |  |  |  |
+ 9    |  |  |  |  |
+ 10    |  |  |  |  |
