@@ -31,12 +31,15 @@ The Go-Live Check-list below will be used by Section and a Section Customer to w
 
 ## Working Session
 
+{{% notice info %}}
 Working Session is expanded from Step 1 of the Go Live Check-list
+{{% /notice %}}
+
 
  Step | Task | Status | Owner | ETA | Notes  
 ------|------|--------|-------|-----|-------
  1    | Collect user email to invite to account | Open | Section | MM/DD/YYYY |
- 2    | Review initial www.toyota.com application | Open | Section | MM/DD/YYYY |
+ 2    | Review initial www.customer.com application | Open | Section | MM/DD/YYYY |
  3    | Choose domain to use for working session | Open | Customer | MM/DD/YYYY |
  4    | Determine the origin address/IP (optional) | Open | Customer | MM/DD/YYYY |
  5    | Introduction to API | Open | Section | MM/DD/YYYY |
@@ -47,3 +50,4 @@ Working Session is expanded from Step 1 of the Go Live Check-list
  10    | DNS change and naming convention | Open | Section + Customers | **Milestone** |
  11    | Introduction to environments | Open | Section | MM/DD/YYYY |
  12    | Working session complete | Open | Customer | **Milestone** |
+
