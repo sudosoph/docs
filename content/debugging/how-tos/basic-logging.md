@@ -95,3 +95,5 @@ Click on the Kibana Settings tab and select the Indices and a log pattern. You c
 We will now do a demo search on the edge access log.
 
 The Edge Access log is the first log in the Section proxy stack and is often a useful log to investigate the interface between Section and the origin server.
+
+{{% figure src="/docs/images/debugging/basic11.png" %}}
