@@ -34,7 +34,7 @@ Open the HTTP Logs screen and view Kibana wrapped inside an iframe in Aperture.
 
 {{% figure src="/docs/images/debugging/basic2.png" %}}
 
-### Launch HTTP Logs in Full Screen
+### Launch HTTP Logs in Full Window
 
 Click the Open in New Window button which opens HTTP Logs Kibana screen in a full browser window. You are now in the Discover tab.
 
