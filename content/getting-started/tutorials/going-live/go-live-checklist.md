@@ -7,9 +7,10 @@ aliases:
   - /tutorials/activate-section-io/go-live-checklist/
 ---
 
-Section Customer Engineers work with customers to complete the steps in the Go-Live Checklist to launch an application.
+Section Customer Engineers work with customers to complete the steps in the Go-Live Checklist to launch an application. The Go-Live Checklist guides us systematically through a series of steps to generate a highly functional, secure, and customized edge computing application.
 
-The Go-Live Checklist guides us systematically through a series of steps to generate a highly functional, secure, and customized edge computing application.
+**PROJECT START DATE**: MM/DD/YYYY  
+**PROJECT END DATE**: MM/DD/YYYY
 
  Step | Task | Status | Owner | ETA | Notes  
 ------|------|--------|-------|-----|-------
@@ -29,12 +30,15 @@ The Go-Live Checklist guides us systematically through a series of steps to gene
  14    | Project complete | Open | Customer | **PRODUCTION** -- **Milestone** |
 
 
+
 ## Working Session Checklist
 
 {{% notice info %}}
 The Working Session Checklist is an expansion of Step 1 of the Go-Live Checklist.
 {{% /notice %}}
 
+**PROJECT START DATE**: MM/DD/YYYY  
+**PROJECT END DATE**: MM/DD/YYYY
 
  Step | Task | Status | Owner | Notes  
 ------|------|--------|-------|-------
@@ -53,7 +57,7 @@ The Working Session Checklist is an expansion of Step 1 of the Go-Live Checklist
 
 ## Domains & Origins
 
-The Go-Live Checklist maps Domains, Origin Address, SSL type and Account for seemless change management.
+The Go-Live Checklist tracks Domains, Origin Address, SSL type and Account for seemless change management.
 
  ID | Domain | Origin Address | SSL Type | Account | Notes  
 ------|------|--------|-------|-----|-------
