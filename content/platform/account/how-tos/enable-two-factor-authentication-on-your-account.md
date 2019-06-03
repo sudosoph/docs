@@ -3,9 +3,12 @@ title: Enable Two Factor Authentication on Your Account
 description: A guide for securing your user access.
 keywords: users, portal, access, account, authentication
 aliases:
+  - /platform/account/user-2fa
   - /user-security/
   - /how-to/user-security/
   - /how-to/user-management/enable-two-factor-authentication-on-your-account/
+  - /platform/how-tos/account/enable-two-factor-authentication-on-your-account/
+
 ---
 
 In addition to a strong password, your account can be further protected by enabling Two Factor Authentication.

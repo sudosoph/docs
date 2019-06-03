@@ -3,9 +3,11 @@ title: Add a user to your account
 description: Guide for adding additional users to your account.
 keywords: users, portal, access, account, authentication
 aliases:
+  - /platform/account/add-user
   - /add-users/
   - /how-to/add-users/
   - /how-to/user-management/add-a-user-to-your-account/
+  - /platform/how-tos/account/add-a-user-to-your-account/
 ---
 
 To invite a new user to your account:
