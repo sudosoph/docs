@@ -15,7 +15,17 @@ Section is built with operational visibility in mind. One aspect of this is prov
 
 All web access logs for all traffic flowing through the Section proxies are stored in Elasticsearch and retained for 7 days. We provide you with direct access to Elastic's Kibana tool for querying your log data.
 
-## Tutorial
+{{< youtube -NMpG78Dj1w >}}
+
+### Basic Search
+
+In this document we cover the basics of HTTP Logs for debugging on Kibana in Section's Aperture dashboard.
+
+### Custom Search
+
+In this document we cover custom HTTP Logs for debugging on Kibana in Section's Aperture dashboard.
+
+### Tutorial
 
 Please review our training [videos on youtube](https://www.youtube.com/watch?v=-NMpG78Dj1w&list=PLfMFVnIIzktEZqFAmwqam5Q1KoOH3-N8u).
 
