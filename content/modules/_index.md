@@ -93,4 +93,4 @@ If you have a need to run Varnish Cache 3, eg. you have existing v3 VCL you want
 
 ## Table of contents
 
-{{% children depth="3" %}}
+{{% children %}}
