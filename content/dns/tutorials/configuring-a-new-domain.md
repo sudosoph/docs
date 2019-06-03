@@ -27,7 +27,7 @@ Assume we added **www.example.com**
     * The value will be **www.example.com.c.section.io**
 1. Save your changes.
 
-You can test these configurations by utilizing [dig](https://linux.die.net/man/1/dig) to perform a DNS lookup to ensure the domain is pointed to your Section record. You can also use a web based tool to [perform DNS look ps](https://www.whatsmydns.net/#CNAME/www.example.com).
+You can test these configurations by utilizing [dig](https://linux.die.net/man/1/dig) to perform a DNS lookup to ensure the domain is pointed to your Section record. You can also use a web based tool to [perform DNS lookups](https://www.whatsmydns.net/#CNAME/www.example.com).
 
 Example dig command: `dig +trace www.example.com @8.8.8.8`
 
