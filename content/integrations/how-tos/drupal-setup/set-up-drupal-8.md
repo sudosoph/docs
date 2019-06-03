@@ -1,41 +1,41 @@
 ---
 title: Set up Drupal 8 on Section
-description: Guide for evaluating your website performance and how to use Section to make improvements using our Drupal Module.
+description: Guide to connecting a Drupal instance to the Section platform with our Drupal module.
 keywords: cache, website performance, page speed, webpage speed, Drupal
 weight: 10
 aliases:
   - /how-to/drupal-setup/drupal8/
 ---
 
-The following is a guide to installing the Section Drupal module into an existing Drupal 8 application. This module allows Section's global, distributed caching layer to quickly respond to invalidation events from a Drupal instance in exactly the same way that Drupal's internal cache or a local varnish cache running on the host machine does, ensuring that the content in Section's global caching layer is always up to date.
+The following is a guide to installing the Section Drupal module into an existing Drupal 8 application. This module allows Section's global, distributed caching layer to quickly respond to invalidation events from a Drupal instance in exactly the same way that Drupal's internal cache or a local varnish cache running on the host machine does, ensuring that the content in Section's global caching layer is never stale.
 
 ### Prerequisites
 
 * An existing Section application. For help setting up an application, [go here](https://www.section.io/docs/tutorials/activate-section-io/create-application-edge/)
-* A user account to be associated with the Drupal Module (many customers choose to create a user account that exists simply to authenticate cache clearing and is not associated with a specific real person). To create an account please visit [this link](https://www.section.io/public/register) and for help adding a new user to an app please [see here](https://www.section.io/docs/how-to/user-management/add-a-user-to-your-account/)
+* A user account to be associated with the Drupal Module (many customers choose to create a user account that exists simply to authenticate cache clearing and is not associated with a specific, real person). To create an account please visit [this link](https://www.section.io/public/register) and for help adding a new user to an app please [see here](https://www.section.io/docs/how-to/user-management/add-a-user-to-your-account/)
 * The Drupal 8 [purge module](https://www.drupal.org/project/purge) installed.
 
 ### Download the Section Purger
 
-This module can be found [here](https://github.com/section/drupal-purger). Download as a zip file and load into your Drupal instance. 
+This module can be found [here](https://github.com/section-io/drupal-purger). Download the latest release as a zip/tar file and load into your Drupal instance. We also support installing via composer.
 
 ### Enable Purge and Section Purger Modules
 
-Under `PURGE`, enable the `Purge`, `Purge Tokens`, and `Purge UI` submodules. We are also compatible with Drush but it is not required.
+Click the Extend tab in the admin console or otherwise navigate to `/admin/modules`. If the Purge module is installed correctly, this page should contain a section called PURGE with various available submodules. Enable the `Purge`, `Purge Tokens`, and `Purge UI` submodules. We are also compatible with Drush but it is not required.
 
 {{% figure src="/docs/images/drupal8-purge-modules.png" %}}
 
-You also need to enable a way to process cache invalidation items. You choices are the `Cron processor` and the `Late runtime processor`.The `Cron Processor` will process cache invalidations only when the cronjob is run (it runs automatically on a predefined schedule or you can initiate it manually from the admin console), while the `Late runtime processor` will initate cache bans as soon as a piece of content is changed. It does not matter to our module whether you choose either or both.
+You also need to enable a way to process cache invalidation items. You choices are the `Cron processor` and the `Late runtime processor`.The `Cron Processor` will process cache invalidations only when the cronjob is run (it runs automatically on a predefined schedule or you can initiate it manually from the admin console), while the `Late runtime processor` will initiate cache bans as soon as a piece of content is changed. It does not matter to our module whether you choose either or both.
 
 {{% figure src="/docs/images/drupal8-cron-options.png" %}}
 
-Finally, enable the Section Purger itself, along with the `Generic HTTP Tags Header` module. This module ensures that Drupal sends the appropriate cache tags that our module uses to evict expired assets from the cache.
+Finally, enable the Section Purger itself, along with the `Section HTTP Tags Header` module and the `Core Tags Queuer`. This module ensures that Drupal sends the appropriate cache tags that our module uses to evict expired assets from the cache.
 
 {{% figure src="/docs/images/drupal8-purger-modules.png" %}}
 
 ### Configure Full Page Cache Max Age
 
-Navigate to `/admin/config/development/performance` and set `Page Cache Max Age` to whatever value you prefer. Since the extension is clearing the cache whenever a change event occurs, there is no need to wait for object resources to expire naturally and you can safely choose 1 year.
+Navigate to `/admin/config/development/performance` and set `Page Cache Max Age` to whatever value you prefer. Since the extension is clearing the cache whenever a change event occurs, there is no need to wait for object resources to expire naturally and you can safely choose 1 year. Varnish Cache's default behavior is to cache according to the cache-control headers on the response, but Varnish Cache can also be configured to set its own internal TTL value for cached objects based on content-type, status, or other response attributes. For more information on this, please see our Varnish Cache guides.
 
 ### Enable the Section Purger within the Purge UI
 
@@ -47,6 +47,7 @@ Next, click on `Add Purger` to open the UI to create a new Purger and select `HT
 
 Next, click on the small arrow next to the purger and click `configure`. This will open the UI to fill in your account credentials and connect your Drupal module to the Section platform.
 
+*Note:* `The Drupal Site Name` field should be the full hostname of the site for which you are configuring the purger, and is only necessary when setting up a Drupal 8  multisite. If your Drupal instance is not a multi-site, then this field can be left blank.  
 Once here, input the details of the user account you would like to use to authenticate with our API. Once done, click `Save Configuration`. Once saved and configured properly, the status bar on the right hand side should show all green as pictured below.
 
 {{% figure src="/docs/images/drupal8-configure-purger.png" %}}
