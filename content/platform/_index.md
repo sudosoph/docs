@@ -1,5 +1,5 @@
 ---
-title: "Platform Overview"
+title: "Platform"
 description: ""
 weight: 120
 aliases:

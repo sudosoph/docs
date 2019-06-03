@@ -1,7 +1,9 @@
 ---
-title: Account
-description: Training area, Section platform overview.
+title: Account How-to
+description: Account How-to for Section platform overview.
 ---
+
+Account management how-to's.
 
 ### Table of contents
 
