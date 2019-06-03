@@ -18,6 +18,7 @@ aliases:
 | Edge Proxy | Ingress/Edge Proxy | Every application proxy stack begins with the Edge proxy. |   |   |
 | Proxy | Reverse Proxy | A Proxy or "Reverse Proxy” is the server handling requests within each environment e.g. Varnish Cache. |   |   |
 | Proxy Stack | Chained Proxies | Where more than one Proxy is “chained” together we refer to this as a Proxy Stack. |   |   |
+| Support | Customer Engineers | Section is a managed platform and Customer Engineers are ready to support. |   |   |
 
 ### Table of contents
 

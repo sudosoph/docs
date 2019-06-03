@@ -6,6 +6,8 @@ aliases:
   - /platform/account/add-user
   - /add-users/
   - /how-to/add-users/
+  - /how-to/user-management/
+  - /how-to/account-management/
   - /how-to/user-management/add-a-user-to-your-account/
   - /platform/how-tos/account/add-a-user-to-your-account/
 ---
