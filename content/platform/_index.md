@@ -7,11 +7,11 @@ aliases:
   - /platform/overview/
 ---
 
-| Component | Function | Description  |   |   |
+| Component | Function | Description  | Links |   |
 |:--|:--|---|---|---|
-| Aperture | Dashboard | Section web portal to manage the users, accounts, applications, environments, domains and logging. |   |   |
-| User | User management | When you first sign up for Section, you register on the platform with an email address. |   |   |
-| Account | Organization | After logging in for the first time as a user, your dashboard will prompt you to create an account for your organization. | [How-to](/docs/platform/how-tos/account/), [Reference](/docs/platform/reference/account-management/)  |   |
+| Aperture | Dashboard | Section web portal to manage the users, accounts, applications, environments, domains and logging. | [Overview](/docs/platform/aperture/) |   |
+| User | User management | Users can manage accounts, environments, applications etc. |   |   |
+| Account | Organization | Users can be associated with one or many accounts. Accounts represent organizations like businesses. | [How-to](/docs/platform/how-tos/account/), [Reference](/docs/platform/reference/account-management/)  |   |
 | Application | Website configuration | Configuration for your content-delivery and proxy setup, monitors HTTP traffic from the client through your proxy stack to your origin and back again, and manages the state of your website content. |   |   |
 | Environment | Staging, Development, Production etc  | An application supports multiple environments like staging, development, and production on git branches within the application repository. Each of these environments can have different proxy configurations. |   |   |
 | Domains | www.yourdomain.com | Each application can also have multiple domains for any number of websites with the same proxy configuration setup, greatly simplifying the management process for many similar sites. |   |   |

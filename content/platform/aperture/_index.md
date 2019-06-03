@@ -5,11 +5,11 @@ weight: 1
 
 ---
 
-Aperture is the Section managament dashboard and is a web-interface to management of applications, domains and all other components of a customers account.
+Aperture is the Section managament dashboard, a web user interface to manage applications, domains and all other components of a customers account.
 
-Section also provides an API for programmatic interaction with the Section platform. 
+Section also provides an [API](/api/) API for programmatic interaction with the Section platform.
 
-{{% figure src="/docs/images/platform/screencapture-aperture-section-io-account-1-application-1-environment-Production-overview.png" %}}
+{{% figure src="/docs/images/platform/screencapture-aperture.png" %}}
 
 ### Table of contents
 
