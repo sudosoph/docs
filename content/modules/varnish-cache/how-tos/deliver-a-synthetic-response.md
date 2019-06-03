@@ -34,3 +34,4 @@ sub vcl_synth {
 
 * [Redirect a request]({{< relref "modules/varnish-cache/how-tos/redirect-a-request.md" >}})
 * [Generate a 404 response]({{< relref "modules/varnish-cache/how-tos/respond-with-a-404.md" >}})
+* [Block a request]({{< relref "modules/varnish-cache/how-tos/block-a-request.md" >}})
