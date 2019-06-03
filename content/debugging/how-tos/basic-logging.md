@@ -8,19 +8,19 @@ aliases:
 
 ---
 
-In this document and video we get a basic demo of the HTTP Logs in Section's dashboard called Aperture.
+In this document and video we get a basic demo of how to search the HTTP Logs in Section's dashboard called Aperture.
 
 Use the Kibana 4 HTTP Logs to debug the proxy stack for possible issues with origin or the application in Section.
 
 {{< youtube -NMpG78Dj1w >}}
 
-Intro 0:00
-First time setup 1:33
-Basics 2:17
-Filters 3:26
-Manual search 5:28
-Tip 1 - faster work flow 6:52
-Tip 2 - CSV exporter 7:24
+* Intro 0:00
+* First time setup 1:33
+* Basics 2:17
+* Filters 3:26
+* Manual search 5:28
+* Tip 1 - faster work flow 6:52
+* Tip 2 - CSV exporter 7:24
 
 ### HTTP Logs
 
@@ -96,4 +96,10 @@ We will now do a demo search on the edge access log.
 
 The Edge Access log is the first log in the Section proxy stack and is often a useful log to investigate the interface between Section and the origin server.
 
-{{% figure src="/docs/images/debugging/basic11.png" %}}
+{{% figure src="/docs/images/debugging/edge1.png" %}}
+
+### Select _type edge-access.log
+
+Select the edge-access.log by selecting the popular _type filter and then click on the magnifying glass icon. This adds a search filter for the edge proxy. 
+
+{{% figure src="/docs/images/debugging/edge-log-animated.gif" %}}
