@@ -20,9 +20,9 @@ If you are working with a site that doesn't have a prefix please look at [bare d
 ## Set up the CNAME record
 
 1. In the management console, click **DNS** in the left hand menu.
-![DNS Menu in Management Console](/docs/images/screenshots/menu/highlight-dns-menu-option.png?height=80px)
+![DNS Menu in Management Console](/docs/images/screenshots/menu/highlight-dns-menu-option.png?height=500px)
 1. Copy the target CNAME record provided by Section.
-![CNAME value in Management Console](/docs/images/screenshots/dns/cname.png?height=80px)
+![CNAME value in Management Console](/docs/images/screenshots/dns/cname.png)
 1. Go to your DNS Hosting Provider's configuration page and replace your existing CNAME record with the one from the previous step.
 
 {{% notice info %}}
