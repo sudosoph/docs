@@ -32,4 +32,4 @@ To use Virtual Waiting Room on Section you will be set up with a GoSquared accou
 
 GoSquared provides analytics so you know how many users are on your website in real time. Section’s Virtual Waiting Room will use the real-time analytics from GoSquared to determine the number of users currently on your website. An easy to use interface is provided to control the number of concurrent users on the site. The application then displays the overload page when your maximum number of users has been reached.
 
-To add a Virtual Waiting Room to your Section application, check out the [instructions](https://www.section.io/docs/modules/virtual-waiting-room/how-tos/installing-virtual-waiting-room/).
+To add a Virtual Waiting Room to your Section application, check out the [instructions](/docs/modules/virtual-waiting-room/tutorials/installing-virtual-waiting-room/).
