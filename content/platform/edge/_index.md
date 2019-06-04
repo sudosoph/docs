@@ -80,3 +80,7 @@ Edit the `section.config.json` and add `"maintain_upstream_content_encoding": tr
     }
 
 Commit this change and all responses will retain the content-encoding that is sent from the origin.
+
+### Table of contents
+
+{{% children %}}

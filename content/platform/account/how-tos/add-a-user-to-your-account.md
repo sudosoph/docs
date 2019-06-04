@@ -16,7 +16,7 @@ aliases:
 
 To invite a new user to your account:
 
-{{< figure src="/docs/images/platform/invite-user-section.2019-06-04 12_49_51.gif" title="Invite a New User via email" >}}
+{{< figure src="/docs/images/platform/invite-user-section.2019-06-04 13_05_48.gif" title="Invite a New User via email" >}}
 
 1. Click on **Account** and then **Manage Users** in the top right of the management console.
 2. Enter the user details of the person you want to invite, and click **Invite User**.
