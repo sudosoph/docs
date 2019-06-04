@@ -4,6 +4,7 @@ description: ""
 weight: 1
 aliases:
   - /topic-guides/advanced-configuration/
+  - /platform/reference/configurations-with-git/
 ---
 
 ## Configuration
