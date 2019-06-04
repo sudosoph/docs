@@ -33,7 +33,6 @@ You choose the level of support which suits your needs.
 | Emergency Escalation       | Yes                           | Yes                |
 | Proxy Configuration        | No                            | Yes                |
 | Dedicated Support Engineer | No                            | Optional           |
-| Price                      | $750 pm                       | $1500 pm           |
 
 
 *Business hours defined as 8am US EST to 5pm US PT or 8am to 5pm AEST subject to your preferred support region.*
