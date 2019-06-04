@@ -1,11 +1,11 @@
 ---
-title: Glossary
-description: Glossary of terms used by Section.
+title: Terminology
+description: Definition of terms used by Section.
 keywords: account management, proxy, proxy configuration, reverse proxies, content delivery network, CDN
 aliases:
   - /entities-and-nomenclature/
   - /reference/entities-and-nomenclature/
-
+  - /platform/reference/entities-and-nomenclature/
 ---
 
 Overview of the key entities and account structure referred to throughout Section
