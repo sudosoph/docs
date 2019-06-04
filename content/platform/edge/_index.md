@@ -1,9 +1,10 @@
 ---
-title: Ingress/Edge Proxy
-description: Explanation for Section edge proxy, which handles a number of tasks before being passed to your proxy configuration.
-keywords: edge proxy, tls, tls handshake, http2, http/2, proxy configuration, reverse proxies
+title: Edge Proxy
+description: Explanation for Section ingress or edge proxy, which handles a number of tasks before being passed to your proxy configuration.
+keywords: ingress edge proxy, tls, tls handshake, http2, http/2, proxy configuration, reverse proxies
 aliases:
   - /edge-proxy/
+  - /platform/overview/ingress/
   - /reference/edge-proxy/
 
 ---

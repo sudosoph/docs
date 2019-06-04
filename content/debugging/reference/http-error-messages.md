@@ -24,7 +24,7 @@ Have a look in Chrome's development tools, on the network tab, to discover the H
 Here are some things to check:
 
 1. Is your server running? Sometimes your web server (for example, Apache or nginx) may not be running. It may be refusing TCP connections.
-1. Is your origin server address correct? Try browsing directly to your server IP (you may need to override DNS with hosts file entries). If not, [update your origin address]({{< relref "platform/how-tos/environment/change-origin.md" >}}).
+1. Is your origin server address correct? Try browsing directly to your server IP (you may need to override DNS with hosts file entries). If not, [update your origin address]({{< relref "platform/environment/how-tos/change-origin.md" >}}).
 
 ### HTTP 504
 

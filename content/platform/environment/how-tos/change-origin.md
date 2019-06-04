@@ -3,6 +3,7 @@ title: Change your Origin Address
 description: Guide for changing the origin address of a Section application.
 keywords: origin address, origin server, origin, cache, cached data, content delivery network, CDN
 aliases:
+  - /platform/how-tos/environment/change-origin/
   - /howto-change-origin/
   - /how-to/change-origin/
 

@@ -1,11 +1,12 @@
 ---
-title: Support plans
+title: Support
 description: Information on support levels for Section customers.
 keywords: support, customer service
 aliases:
   - /support/
   - /reference/support/
-
+  - /platform/reference/support/
+   
 ---
 
 [section.io] provides free online support and paid support options.

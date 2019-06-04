@@ -1,10 +1,11 @@
 ---
 title: Billing Portal
-description: Information on how to setup billing for Section.
+description: Information on how-to setup billing for Section.
 keywords: CDN, billing, account management
 aliases:
   - /billing-portal/
   - /topic-guides/billing-portal/
+  - /platform/reference/billing-portal/
 
 ---
 

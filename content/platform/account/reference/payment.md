@@ -5,6 +5,7 @@ keywords: CDN, billing, account management, payment, credit card
 aliases:
   - /payment/
   - /reference/payment/
+  - /platform/reference/payment/
 
 ---
 

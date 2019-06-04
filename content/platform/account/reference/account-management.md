@@ -3,6 +3,7 @@ title: Account Management
 description: Guide for setting up Section for multiple clients or websites. Reviews Section account structures and instructions to get started.
 keywords: CDN, development agency, client websites, billing, staging environment, test environment
 aliases:
+  - /platform/reference/account-management/
   - /agency-account-setup/
   - /topic-guides/account-management/
 weight: 1
