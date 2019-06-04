@@ -20,20 +20,20 @@ You choose the level of support which suits your needs.
 3. Managed Service - For development teams who would prefer [section.io]'s engineers to manage their content delivery solution and handle the reverse proxy configuration.
 
 
-| Support Item               | Basic              | Enterprise                    | Managed Service    |
-|----------------------------|--------------------|------------------------------ |--------------------|
-| Online self help           | Unlimited          | Unlimited                     | Unlimited          |
-| Support hours              | Business Hours*    | 24x7x365		              | 24x7x365           |
-| Slack Support              | Public Channel     | Public Channel                | Private Channel    |
-| Support Ticket System      | No                 | Yes                           | Yes                |
-| Phone Support              | No                 | No                            | Yes                |
-| Initial Response time      | Best Effort        | 15 minutes                    | 15 minutes         |
-| General Enquiries          | Yes                | Yes                           | Yes                |
-| Incident Reports           | Public Status Page | Public Status Page            | On Request         |
-| Emergency Escalation       | No                 | Yes                           | Yes                |
-| Proxy Configuration        | No                 | No                            | Yes                |
-| Dedicated Support Engineer | No                 | No                            | Optional           |
-| Price                      | Free               | $750 pm                       | $1500 pm           |
+| Support Item               | Enterprise                    | Managed Service    |
+|----------------------------|------------------------------ |--------------------|
+| Online self help           | Unlimited                     | Unlimited          |
+| Support hours              | 24x7x365                      | 24x7x365           |
+| Slack Support              | Public Channel                | Private Channel    |
+| Support Ticket System      | Yes                           | Yes                |
+| Phone Support              | No                            | Yes                |
+| Initial Response time      | 15 minutes                    | 15 minutes         |
+| General Enquiries          | Yes                           | Yes                |
+| Incident Reports           | Public Status Page            | On Request         |
+| Emergency Escalation       | Yes                           | Yes                |
+| Proxy Configuration        | No                            | Yes                |
+| Dedicated Support Engineer | No                            | Optional           |
+| Price                      | $750 pm                       | $1500 pm           |
 
 
 *Business hours defined as 8am US EST to 5pm US PT or 8am to 5pm AEST subject to your preferred support region.*
