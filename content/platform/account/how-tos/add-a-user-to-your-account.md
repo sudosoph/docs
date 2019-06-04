@@ -16,10 +16,10 @@ aliases:
 
 To invite a new user to your account:
 
-{{< figure src="/docs/images/platform/add-user-animated.gif" title="Invite a New User via email" >}}
+{{< figure src="/docs/images/platform/invite-user-section.2019-06-04 12_49_51.gif" title="Invite a New User via email" >}}
 
 1. Click on **Account** and then **Manage Users** in the top right of the management console.
-1. Enter the user details of the person you want to invite, and click **Invite User**.
+2. Enter the user details of the person you want to invite, and click **Invite User**.
 
 The invited user will receive an email inviting them to join Section and have immediate access to your account. Currently Section does not allow you to change the roles of these users, but if you want the user to have a different role (e.g. only be able to clear cache) please [submit a support ticket](https://support.section.io) and we will get the user's role changed as soon as possible.
 
