@@ -18,7 +18,8 @@ aliases:
 | [Edge Proxy](/docs/platform/edge/ "Edge Proxy overview") | Ingress / Edge Proxy | Every application proxy stack begins with the Edge proxy. |   |   |
 | [Proxy](/docs/platform/proxy/ "Reverse Proxy overview") | Reverse Proxy | A Proxy or "Reverse Proxy” is the server handling requests within each environment e.g. Varnish Cache. |   |   |
 | [Proxy Stack](/docs/platform/proxy-stack/ "Proxy Stack overview") | Chained Proxies | Where more than one Proxy is “chained” together we refer to this as a Proxy Stack. |   |   |
-| Support | Customer Engineers | Section is a managed platform and Customer Engineers are ready to support. |   |   |
+| [Modules](/docs/modules/ "Modules overview") | Software & Configuration | Section offers modules of open source and commercial software solutions that form a proxy stack. |   |   |
+| [Support](/docs/platform/support/ "Support overview") | Customer Engineers | Section is a managed platform and Customer Engineers are ready to support. |   |   |
 
 ### Table of contents
 

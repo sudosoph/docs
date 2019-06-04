@@ -7,7 +7,7 @@ weight: 1
 
 ### User management
 
-* [Add a user by email invite](/platform/account/how-tos/add-a-user-to-your-account/ "Add user by email")
+* [Add a user by email invite](/docs/platform/account/how-tos/add-a-user-to-your-account/ "Add user by email")
 
 ### Table of contents
 

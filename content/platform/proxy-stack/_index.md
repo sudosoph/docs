@@ -7,7 +7,7 @@ weight: 1
 
 ### Proxy Stack
 
-Proxy Stack examples
+Proxy Stacks are chained Proxies (or Reverse Proxies) and are composed of pre-packaged by Section [Modules](/docs/modules/ "Modules overview"). These Modules are chained together to give combined functionality. 
 
 #### A simple proxy stack
 
