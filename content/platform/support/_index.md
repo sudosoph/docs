@@ -9,15 +9,12 @@ aliases:
    
 ---
 
-[section.io] provides free online support and paid support options.
-
-You choose the level of support which suits your needs.
+[section.io] provides paid support options. You choose the level of support which suits your needs.
 
 ## Support Plans
 
-1. Basic - [section.io] supports platform availability and functionality in business hours.
-2. Enterprise - for teams needing immediate, 24x7 platform support.
-3. Managed Service - For development teams who would prefer [section.io]'s engineers to manage their content delivery solution and handle the reverse proxy configuration.
+1. Enterprise - for teams needing immediate, 24x7 platform support.
+2. Managed Service - For development teams who would prefer [section.io]'s engineers to manage their content delivery solution and handle the reverse proxy configuration.
 
 
 | Support Item               | Enterprise                    | Managed Service    |
