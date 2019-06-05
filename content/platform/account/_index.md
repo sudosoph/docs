@@ -4,6 +4,7 @@ description: "Account management"
 weight: 1
 aliases:
   - /platform/how-tos/account/
+  - /docs/platform/user/
 
 ---
 

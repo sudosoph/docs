@@ -1,5 +1,5 @@
 ---
-title: Application Reference
+title: Reference
 description:  Application Reference for Section.io
 ---
 

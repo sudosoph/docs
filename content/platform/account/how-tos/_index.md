@@ -1,5 +1,5 @@
 ---
-title: Account How-tos
+title: How-tos
 description: Account How-tos for Section platform overview.
 aliases:
   - /platform/how-tos/account/

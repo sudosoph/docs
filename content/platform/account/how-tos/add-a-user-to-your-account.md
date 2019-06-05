@@ -10,6 +10,7 @@ aliases:
   - /how-to/account-management/
   - /how-to/user-management/add-a-user-to-your-account/
   - /platform/how-tos/account/add-a-user-to-your-account/
+  - /docs/platform/account/how-tos/add-a-user-to-your-account/
 ---
 
 ### Invite a New User via email

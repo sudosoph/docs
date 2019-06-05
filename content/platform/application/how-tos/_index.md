@@ -1,5 +1,5 @@
 ---
-title: Application How-tos
+title: How-tos
 description: Application How-to for Section.io
 ---
 

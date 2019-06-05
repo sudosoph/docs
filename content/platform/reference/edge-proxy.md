@@ -6,6 +6,7 @@ aliases:
   - /edge-proxy/
   - /platform/overview/ingress/
   - /reference/edge-proxy/
+  - /docs/platform/edge/edge-proxy/
 
 ---
 
