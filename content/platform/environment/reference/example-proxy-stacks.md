@@ -1,7 +1,9 @@
 ---
-title: "Proxy Stack"
-description: "Proxy Stack: Section managemenet dashboard"
+title: "Example Proxy Stacks"
+description: "Example Proxy Stacks: Section management dashboard"
 weight: 1
+aliases:
+  - /docs/platform/proxy-stack/
 
 ---
 
@@ -20,7 +22,3 @@ Proxy Stacks are chained Proxies (or Reverse Proxies) and are composed of pre-pa
 #### A complex proxy stack
 
 {{< figure src="/docs/images/platform/proxy-stack-complex-animated.gif" title="Complex proxy stack" >}}
-
-### Table of contents
-
-{{% children %}}

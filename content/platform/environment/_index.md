@@ -6,6 +6,6 @@ weight: 1
 
 Environment management in the Section platform.
 
-### Table of contents
+#### Table of contents
 
-{{% children depth="3" %}}
+{{% children depth="4" %}}
