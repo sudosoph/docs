@@ -1,5 +1,5 @@
 ---
-title: "Aperture"
+title: "Aperture overview"
 description: "Aperture: Section managemenet dashboard"
 weight: 1
 aliases:

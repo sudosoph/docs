@@ -1,8 +1,10 @@
 ---
-title: Environment How-tos
+title: How-tos
 description: Environment how-tos in Section.io platform.
 ---
 
-### Table of contents
+## Environment How-Tos
+
+#### Table of contents
 
 {{% children depth="3" %}}
