@@ -12,7 +12,7 @@ Section Developer PoP runs on Kubernetes. Minikube is a prepackaged Kubernetes c
 Minikube runs on your preference of virtual machine ([VirtualBox] is a free option).
 
 1. Verify that you have installed VirtualBox or another VM software.
-1. Download and install <a href="https://github.com/kubernetes/minikube/releases" target="Minikube" title="Minikube download">Minikube</a> (v0.29.0 and later supported).
+1. Download and install <a href="https://github.com/kubernetes/minikube/releases/tag/v0.35.0" target="Minikube" title="Minikube v0.35.0 download">Minikube v0.35.0</a>. Version 0.35 is supported. https://github.com/kubernetes/minikube/releases/tag/v0.35.0
 1. Start minikube: `minikube start`
 1. Initialize the Developer PoP:
 
