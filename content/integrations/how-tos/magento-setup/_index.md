@@ -15,4 +15,6 @@ Section delivers huge speed improvements to all versions of Magento through full
 
 For [Magento 2.x](/docs/integrations/how-tos/magento-setup/set-up-magento-2/ "Magento 2.x") , support for Varnish Cache to cache page content is integrated into Magento. Section offers ["Instant Global Cache"](/docs/integrations/how-tos/magento-setup/set-up-magento-2/ "Instant Global Cache"), an extension that will let you get setup with Varnish Cache and distribute it globally on Section’s CDN directly from the Magento Admin portal.
 
-[For Magento 1.x]({{< relref "how-to/magento-setup/magento-1/_index.md" >}}), Varnish Cache support is provided by HTML Streaming, Anonymous user caching or the [free Turpentine Magento extension]
+For [Magento 1.x](/docs/integrations/how-tos/magento-setup/set-up-magento-1/ "Magento 1.x Varnish cache clear"), Varnish Cache support is provided by HTML Streaming, Anonymous user caching or the free Turpentine Magento extension.
+
+
