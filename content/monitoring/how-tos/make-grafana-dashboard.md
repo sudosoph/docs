@@ -37,3 +37,9 @@ In order for these changes to be permanent you **MUST** remove the `system` tag 
 
 
 {{% figure src="/docs/images/add-dashboard-duplicate.png" %}}
+
+### Create a graph that visualizes Grafite metrics.
+
+1. Select the graph option on a new dashboard:
+
+{{% figure src="/docs/images/monitoring/create-a-new-dashboard.gif" %}}
