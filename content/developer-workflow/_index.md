@@ -1,9 +1,9 @@
 +++
-title = "Developer workflow"
+title = "Developer Workflow"
 description = ""
 weight = 1000
 +++
 
 ### Table of contents
 
-{{% children depth="3" %}}
+{{% children depth="5" %}}

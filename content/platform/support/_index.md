@@ -9,38 +9,12 @@ aliases:
    
 ---
 
-[section.io] provides paid support options. You choose the level of support which suits your needs.
-
-## Support Plans
-
-1. Enterprise - for teams needing immediate, 24x7 platform support.
-2. Managed Service - For development teams who would prefer [section.io]'s engineers to manage their content delivery solution and handle the reverse proxy configuration.
-
-
-| Support Item               | Enterprise                    | Managed Service    |
-|----------------------------|------------------------------ |--------------------|
-| Online self help           | Unlimited                     | Unlimited          |
-| Support hours              | 24x7x365                      | 24x7x365           |
-| Slack Support              | Public Channel                | Private Channel    |
-| Support Ticket System      | Yes                           | Yes                |
-| Phone Support              | No                            | Yes                |
-| Initial Response time      | 15 minutes                    | 15 minutes         |
-| General Enquiries          | Yes                           | Yes                |
-| Incident Reports           | Public Status Page            | On Request         |
-| Emergency Escalation       | Yes                           | Yes                |
-| Proxy Configuration        | No                            | Yes                |
-| Dedicated Support Engineer | No                            | Optional           |
-
-
-*Business hours defined as 8am US EST to 5pm US PT or 8am to 5pm AEST subject to your preferred support region.*
-
-## Need More Help?
+Section is a managed platform and provides paid support options. You choose the level of support which suits your needs.
 
 If you would like Section’s engineers to take a deeper look at your code, application, hosting or performance and security mangement practices generally, consider our [professional services] offerings.
 
 Our engineers can also provide you with a kickstarter package to get your proxy configuration tuned up or set up and running faster.
 
+**For more information contact [support](/consulting/ "Consulting")**
 
-  [section.io]: /
-  [professional services]: /consulting/
-  [fully managed service]: /fully-managed-service/
+[professional services]: /consulting/

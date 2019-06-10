@@ -1,5 +1,5 @@
 ---
-title: Devlop with the Developer PoP
+title: Develop with the Developer PoP
 description: How to get your local development environment setup to test Section CDN on your local machine.
 keywords: content delivery network, CDN, virtual machine, vagrant, virtualbox, git, cli, local development, local machine, staging environment, developer pop
 weight: 3
