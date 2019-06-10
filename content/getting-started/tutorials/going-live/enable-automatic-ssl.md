@@ -10,9 +10,9 @@ aliases:
 ## Turning on automatic HTTPS
 
 1. In the management console, click **HTTPS** in the left hand menu.
-![HTTPS Menu in Management Console](/docs/images/screenshots/menu/highlight-https-menu-option.png?height=80px)
+![HTTPS Menu in Management Console](/docs/images/screenshots/menu/highlight-https-menu-option.png?height=500px)
 1. Click **Renew Certificate**. You'll get a message saying that your certificates have been set up.
-![HTTPS Menu in Management Console](/docs/images/screenshots/https/highlight-renew-certificate-button.png?height=80px)
+![HTTPS Menu in Management Console](/docs/images/screenshots/https/highlight-renew-certificate-button.png)
 
 {{% notice info %}}
 If you have any trouble, consider looking at our [HTTPS Troubleshooting guides]({{< relref "dns/how-tos/check-your-current-dns-setup.md" >}}).

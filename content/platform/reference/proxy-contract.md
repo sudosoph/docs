@@ -5,6 +5,8 @@ keywords: reverse proxy, CDN
 aliases:
   - /proxy-contract/
   - /reference/proxy-contract/
+  - /platform/reference/proxy-contract/
+  - /docs/platform/proxy/proxy-contract/
 
 ---
 
