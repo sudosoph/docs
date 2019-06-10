@@ -10,13 +10,12 @@ aliases:
   - /tutorials/developer-workflow/
 ---
 
-Section.io’s local development environment is designed to develop and test changes to your content delivery configuration without having to work in production or spin up another copy of the production environment to test on.
+Section’s local development environment is designed to develop and test changes to your edge compute platform configuration without having to work in production, or spin up another copy of the production environment to test on.
 
-This is done by replicating the production point of presence in a virtual machine (VM) running on your computer. You now have the ability to test all the levels of your architecture and see what works best before actually putting it in front of your website and users.
+This is done by replicating the production point of presence in a virtual machine (VM) running on your computer. 
 
-Section.io’s local development environment is based on [git] and Kubernetes (provided by [Minikube]).
+You will have the ability to test all the levels of your architecture and see what works best before actually putting it in front of your website and users.
 
-[Let's get started by installing the Developer PoP core]({{< relref "developer-workflow/tutorials/setting-up-your-developer-pop.md" >}}).
+Section’s local development environment is based on a git workflow and Kubernetes provided by Minikube.
 
-  [git]: http://git-scm.com/
-  [Minikube]: https://github.com/kubernetes/minikube/releases/tag/v0.21.0
+Let's get started by [installing the Developer PoP core]({{< relref "developer-workflow/tutorials/setting-up-your-developer-pop.md" >}}).
