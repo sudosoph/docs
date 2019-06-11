@@ -1,5 +1,5 @@
 ---
-title: Set up Section Developer PoP
+title: Set-up Section Developer PoP
 description: How to get your local development environment setup to test Section Edge Compute on your local machine.
 keywords: content delivery network, CDN, virtual machine, vagrant, virtualbox, git, cli, local development, local machine, staging environment, developer pop
 weight: 1
@@ -19,14 +19,12 @@ Minikube runs in the free and open source [VirtualBox].
 
 **Start Minikukbe** 
 
-Start Minikube.
+`minikube start`
 
-```
-minikube start
-```
 Minikube will start as below.
 
 ```
+minikube start
 😄  minikube v0.35.0 on darwin (amd64)
 🔄  Restarting existing virtualbox VM for "aperture" ...
 ⌛  Waiting for SSH access ...
