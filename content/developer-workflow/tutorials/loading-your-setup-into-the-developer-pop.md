@@ -19,7 +19,25 @@ aliases:
 ### 2) Add the Dev PoP remote to your repository.
   * Open the Dev Pop UI: `minikube service -n section-shared developer-pop`
 
-{{< figure src="/docs/images/dev/section-shared-dev-pop.png" title="Section shared dev pop" >}}
+{{< figure src="/docs/images/dev/get-ready-section.png" title="Section app ready to connect to Aperture" >}}
+
+**Connect Aperture**
+
+{{< figure src="/docs/images/dev/connect-aperture.png" title="Connect to Aperture button" >}}
+
+**Grant Access**
+
+> The application section.io-Developer-PoP is requesting access to your Section accounts.
+
+> Upon approval, your browser will be redirected to the following URL with an access token appended:
+
+> http://192.168.99.102:32080/app/aperture-connected.html
+> Allow access?
+
+
+{{< figure src="/docs/images/dev/grant-access.png" title="Grant Access" >}}
+
+**Operations**
 
   * Click on the Operations tab.
 
@@ -28,7 +46,6 @@ aliases:
 ```
 Setup new repository
 git remote add developer-pop http://192.168.99.101:30090/www.site.com.git
-git push developer-pop
 ```
 
   * Enter the git commands you see here inside the repository you cloned down in step #1. Replace "**www.site.com**" with your domain which is visible in the Section portal. (**note** : it won't actually break anything if you leave it as "site").
@@ -55,7 +72,11 @@ error: failed to push some refs to 'http://192.168.99.101:30090/www.site.com.git
 ```
 
 
-  If you get this message `Pulling required proxy images, please try again shortly`, that means that your machine does not have the proxy images locally and has begun downloading them. Your terminal will look as though it has exited the process and nothing is happening, but the downloads are going on behind the scenes. Try `git push developer-pop` every few minutes until the downloads are complete and the push goes through. The length of this process will depend entirely on the speed of your internet connection.
+{{% notice tip %}}
+  If you get this message "Pulling required proxy images, please try again shortly", that means that your machine does not have the proxy images locally and has begun downloading them. 
+{{% /notice %}}
+
+Your terminal will look as though it has exited the process and nothing is happening, but the downloads are going on behind the scenes. Try `git push developer-pop` every few minutes until the downloads are complete and the push goes through. The length of this process will depend entirely on the speed of your internet connection.
 
 ```
 ➜  bootcamp.section.io git:(Production) git push developer-pop
@@ -71,17 +92,26 @@ To http://192.168.99.101:30090/www.site.com.git
  * [new branch]      Production -> Production
 ```
 
-### 4) Configure origin server details
-Now that your configurations are running on the Dev Pop, you will need to configure your egress settings (origin server details) to tell the Dev Pop where to pass the HTTP request to. To do this you will use the Dev Pop UI's **Services** tab where you will find information about the repository you just pushed up. A page refresh might be needed.
+{{< figure src="/docs/images/dev/services.png" title="Services in Dev PoP" >}}
 
-#### a) Connect Dev PoP to aperture
- The easiest way to do this is to [connect your Dev PoP to your Section Aperture account]({{< relref "developer-workflow/how-tos/connect-to-aperture.md" >}}) and **import** these configurations.
+**Expand Services**
+
+{{< figure src="/docs/images/dev/expanded.png" title="Expanded Dev PoP" >}}
+
+### 4) Configure origin server details
+Now that your configurations are running on the Dev Pop, you will need to configure your origin server details (egress settings) to tell the Dev Pop where to pass the HTTP request to. To do this you will use the Dev Pop UI's **Services** tab where you will find information about the repository you just pushed up. A page refresh might be needed.
+
+#### a) Connect Dev PoP to Aperture
+ Make sure to connect your Dev PoP to your [Aperture account]({{< relref "developer-workflow/how-tos/connect-to-aperture.md" >}}) and **import** the Environment configurations.
 
 To do this :
 
 1. Click on **Import** under the *Operations* column in the **Services** tab.
-2. Select the **Environment** you want to test.
+2. Select the **Environment** you want to test. i.e Production
 3. Click on **Import** to finish importing the configurations.
+
+{{< figure src="/docs/images/dev/import-env.gif" title="Import ENV" >}}
+
 
 {{% notice tip %}}
 If you have an account in the Section management console you can link your Developer PoP to your account.

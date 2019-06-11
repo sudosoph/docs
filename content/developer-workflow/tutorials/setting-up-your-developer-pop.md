@@ -53,25 +53,34 @@ Depending on the speed of your internet connection and the power of your compute
 {{% /notice %}}
 
 
-**Initialized Namespaces** 
+**Initialize Namespaces** 
 
 ```
-namespace "section-bootstrap" configured
-serviceaccount "section-bootstrap" configured
-clusterrolebinding "section-bootstrap-cluster-admin" configured
-deployment "bootstrap" configured
-namespace "section-shared" configured
-service "developer-pop" configured
+Unable to find image 'sectionio/section-init:latest' locally
+latest: Pulling from sectionio/section-init
+96ac93103c33: Pull complete
+7f806fcb5e6c: Pull complete
+9f61142fa1a0: Pull complete
+fd79b6758639: Pull complete
+c99a605ef53e: Pull complete
+Digest: sha256:6619bbb259d0b4f20f8064385a4dad3b1529f825f76ae10867cae11d6a092332
+Status: Downloaded newer image for sectionio/section-init:latest
+namespace "section-bootstrap" created
+serviceaccount "section-bootstrap" created
+clusterrolebinding "section-bootstrap-cluster-admin" created
+deployment "bootstrap" created
+namespace "section-shared" created
+service "developer-pop" created
 ```
 
+**Developer PoP Ready**
 
 Now your Developer PoP base is ready, but it has not yet launched any of the specific proxies in your configuration.
 
 Let's change that by **[loading your Section setup into the Developer PoP]({{< relref "developer-workflow/tutorials/loading-your-setup-into-the-developer-pop.md" >}})**.
 
 
-
-
+**Time to Setup**
 
 After each one of these terminal commands, you will need to wait a few moments for Minikube to fully launch all the Section containers. 
 
