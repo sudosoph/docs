@@ -48,13 +48,17 @@ Clone with `git clone <url-from-advanced-config>`
 
 {{< figure src="/docs/images/dev/operations.png" title="Operations" >}}
 
-```
-Setup new repository
-git remote add developer-pop http://192.168.99.101:30090/www.site.com.git
-```
+#### Add Dev PoP Remote to Local Application Repository
 
-  * Enter the git commands you see here inside the repository you cloned down in step #1. Replace "**www.site.com**" with your domain which is visible in the Section portal. (**note** : it won't actually break anything if you leave it as "site").
+Enter the git commands you see here inside the repository you cloned down in Step 1.
 
+```
+cd www.site.com
+git remote add developer-pop http://<IP-From-Operations-Tab>:30090/www.site.com.git
+```
+{{% notice tip %}}
+  Replace www.site.com with your domain which is visible in the Section portal. It won't actually break anything if you leave it as "site".
+{{% /notice %}}
 
 #### 3. Push your configuration files to the Developer PoP
   Once you have added the git remote you can push to the Dev PoP by running: `git push developer-pop`
@@ -81,7 +85,9 @@ error: failed to push some refs to 'http://192.168.99.101:30090/www.site.com.git
   If you get this message "Pulling required proxy images, please try again shortly", that means that your machine does not have the proxy images locally and has begun downloading them. 
 {{% /notice %}}
 
-Your terminal will look as though it has exited the process and nothing is happening, but the downloads are going on behind the scenes. Try `git push developer-pop` every few minutes until the downloads are complete and the push goes through. The length of this process will depend entirely on the speed of your internet connection.
+Your terminal will look as though it has exited the process and nothing is happening, but the downloads are going on behind the scenes. 
+
+Try `git push developer-pop` every few minutes until the downloads are complete and the push goes through. The length of this process will depend entirely on the speed of your internet connection and the power of your computer.
 
 ```
 ➜  bootcamp.section.io git:(Production) git push developer-pop
@@ -104,12 +110,12 @@ To http://192.168.99.101:30090/www.site.com.git
 {{< figure src="/docs/images/dev/expanded.png" title="Expanded Dev PoP" >}}
 
 #### 4. Configure origin server details
-Now that your configurations are running on the Dev Pop, you will need to configure your origin server details (egress settings) to tell the Dev Pop where to pass the HTTP request to. To do this you will use the Dev Pop UI's **Services** tab where you will find information about the repository you just pushed up. A page refresh might be needed.
+Now that your configurations are running on the Dev Pop, you will need to configure your origin server details to tell the Dev Pop where to pass the HTTP request. 
+
+Use the Dev Pop UI's **Services** tab where you will find information about the repository you just pushed up. A page refresh might be needed.
 
 #### (a) Connect Dev PoP to Aperture
  Make sure to connect your Dev PoP to your [Aperture account]({{< relref "developer-workflow/how-tos/connect-to-aperture.md" >}}) and **import** the Environment configurations.
-
-To do this :
 
 1. Click on **Import** under the *Operations* column in the **Services** tab.
 2. Select the **Environment** you want to test. i.e Production
@@ -120,8 +126,7 @@ To do this :
 
 {{% notice tip %}}
 If you have an account in the Section management console you can link your Developer PoP to your account.
-
-See [How to Connect Developer PoP to Aperture]({{< relref "developer-workflow/how-tos/connect-to-aperture.md" >}}) for more information.
+See <a href="/docs/developer-workflow/how-tos/connect-to-aperture/" title="How to Connect Developer PoP to Aperture">How to Connect Developer PoP to Aperture</a> for more information. 
 {{% /notice %}}
 
 #### (b) Configure the service manually
