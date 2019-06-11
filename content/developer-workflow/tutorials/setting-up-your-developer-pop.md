@@ -19,12 +19,12 @@ Minikube runs in the free and open source [VirtualBox].
 
 **Start Minikukbe** 
 
-Start minikube
+Start Minikube.
 
 ```
 minikube start
 ```
-minikube started
+Minikube will start as below.
 
 ```
 😄  minikube v0.35.0 on darwin (amd64)
@@ -48,6 +48,11 @@ minikube started
 minikube ssh "docker run --rm --net=host -v /var/lib/minikube:/var/lib/minikube:ro sectionio/section-init"
 ```
 
+{{% notice info %}}
+Depending on the speed of your internet connection and the power of your computer, the initiation of the Developer PoP can take several minutes.
+{{% /notice %}}
+
+
 **Initialized Namespaces** 
 
 ```
@@ -66,9 +71,7 @@ Let's change that by **[loading your Section setup into the Developer PoP]({{< r
 
 
 
-{{% notice info %}}
-Depending on the speed of your internet connection and the power of your computer, the initiation of the Developer PoP can take several minutes.
-{{% /notice %}}
+
 
 After each one of these terminal commands, you will need to wait a few moments for Minikube to fully launch all the Section containers. 
 
@@ -82,3 +85,5 @@ Disable repeating messages about the **kubectl** component you won't need: `mini
 
 
   [VirtualBox]: http://www.virtualbox.org/
+
+Next, [loading your Section setup into the Developer PoP]({{< relref "developer-workflow/tutorials/loading-your-setup-into-the-developer-pop.md" >}})
