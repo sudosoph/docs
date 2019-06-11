@@ -1,6 +1,6 @@
 ---
-title: Basic logging
-description: Basic logging using Kibana
+title: Basic Logging
+description: Basic logging and search using Kibana
 keywords: custom logging, logging, Edge logging, Varnish Cache logging, Kibana, Elastic Search, content delivery network, CDN
 aliases:
   - /basic-logging/

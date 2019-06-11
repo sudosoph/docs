@@ -1,5 +1,5 @@
 ---
-title: Setup Developer PoP
+title: Load Setup Into Developer PoP
 description: How to get your local development environment setup to test Section CDN on your local machine.
 keywords: content delivery network, CDN, virtual machine, vagrant, virtualbox, git, cli, local development, local machine, staging environment, developer pop
 weight: 2
@@ -10,23 +10,28 @@ aliases:
 
 <!-- Run `minikube service -n section-shared developer-pop`. Your browser will open when the endpoint for the service becomes ready. -->
 
-### 1) Clone your application's git repository located in the **Advanced Config** menu in the Section portal.
-  ![how to clone a repo](/docs/images/dev/advanced-config-git.png)
+#### 1. Clone application's git repository
 
-  Clone with `git clone <url-from-advanced-config>`
+Clone your application's git repository located in the **Advanced Config** menu in the Section portal.
 
-  {{< figure src="/docs/images/dev/bootcamp-url.png" title="URL from GIT repo" >}}
+{{< figure src="/docs/images/dev/bootcamp-url.png" title="URL from GIT repo" >}}
 
-### 2) Add the Dev PoP remote to your repository.
+Clone with `git clone <url-from-advanced-config>`
+
+![how to clone a repo](/docs/images/dev/advanced-config-git.png)
+
+
+
+#### 2. Add the Dev PoP remote to your repository
   * Open the Dev Pop UI: `minikube service -n section-shared developer-pop`
 
 {{< figure src="/docs/images/dev/get-ready-section.png" title="Section app ready to connect to Aperture" >}}
 
-**Connect Aperture**
+#### Connect Aperture
 
 {{< figure src="/docs/images/dev/connect-aperture.png" title="Connect to Aperture button" >}}
 
-**Grant Access**
+#### Grant Access
 
 > The application section.io-Developer-PoP is requesting access to your Section accounts.
 
@@ -35,10 +40,9 @@ aliases:
 > http://192.168.99.102:32080/app/aperture-connected.html
 > Allow access?
 
-
 {{< figure src="/docs/images/dev/grant-access.png" title="Grant Access" >}}
 
-**Operations**
+#### Operations
 
   * Click on the Operations tab.
 
@@ -52,7 +56,7 @@ git remote add developer-pop http://192.168.99.101:30090/www.site.com.git
   * Enter the git commands you see here inside the repository you cloned down in step #1. Replace "**www.site.com**" with your domain which is visible in the Section portal. (**note** : it won't actually break anything if you leave it as "site").
 
 
-### 3) Push your configuration files to the Developer PoP
+#### 3. Push your configuration files to the Developer PoP
   Once you have added the git remote you can push to the Dev PoP by running: `git push developer-pop`
 
 ```
@@ -95,14 +99,14 @@ To http://192.168.99.101:30090/www.site.com.git
 
 {{< figure src="/docs/images/dev/services.png" title="Services in Dev PoP" >}}
 
-**Expand Services**
+#### Expand Services
 
 {{< figure src="/docs/images/dev/expanded.png" title="Expanded Dev PoP" >}}
 
-### 4) Configure origin server details
+#### 4. Configure origin server details
 Now that your configurations are running on the Dev Pop, you will need to configure your origin server details (egress settings) to tell the Dev Pop where to pass the HTTP request to. To do this you will use the Dev Pop UI's **Services** tab where you will find information about the repository you just pushed up. A page refresh might be needed.
 
-#### a) Connect Dev PoP to Aperture
+#### (a) Connect Dev PoP to Aperture
  Make sure to connect your Dev PoP to your [Aperture account]({{< relref "developer-workflow/how-tos/connect-to-aperture.md" >}}) and **import** the Environment configurations.
 
 To do this :
@@ -120,7 +124,7 @@ If you have an account in the Section management console you can link your Devel
 See [How to Connect Developer PoP to Aperture]({{< relref "developer-workflow/how-tos/connect-to-aperture.md" >}}) for more information.
 {{% /notice %}}
 
-#### b) Configure the service manually
+#### (b) Configure the service manually
 In the **Operations** column of the table, there will be a button for you to "Configure" that service. Do this if you do not have a Section account. It will bring up a modal asking for the following information:
 
 1. Hosted Name: This is the host headers for your application (e.g. www.example.com).
