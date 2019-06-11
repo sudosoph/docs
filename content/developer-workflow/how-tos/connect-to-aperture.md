@@ -6,7 +6,9 @@ aliases:
   - /how-to/developer-pop/connect-to-aperture/
 ---
 
-*Note: If you don't have an Aperture account and want to use the devpop to simply test reverse proxies, feel free to skip this section.*
+{{% notice info %}}
+DIf you don't have an Aperture account and want to use the devpop to simply test reverse proxies, feel free to skip this section.*
+{{% /notice %}}
 
 In the upper right hand corner of the devpop UI, there is a **Connect to Aperture** button. When clicking this it will redirect you to Aperture and prompt you to login and authorize the devpop. If you are successful then the **Connect to Aperture** button will be replaced with a blinking blue icon followed by your email address.
 

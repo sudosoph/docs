@@ -10,23 +10,66 @@ aliases:
 <!-- Run `minikube service -n section-shared developer-pop`. Your browser will open when the endpoint for the service becomes ready. -->
 
 ### 1) Clone your application's git repository located in the **Advanced Config** menu in the Section portal.
-  ![how to clone a repo](/docs/images/screenshots/dev-pop/how-to-clone-repo.png)
+  ![how to clone a repo](/docs/images/dev/advanced-config-git.png)
 
   Clone with `git clone <url-from-advanced-config>`
+
+  {{< figure src="/docs/images/dev/bootcamp-url.png" title="URL from GIT repo" >}}
 
 ### 2) Add the Dev PoP remote to your repository.
   * Open the Dev Pop UI: `minikube service -n section-shared developer-pop`
 
+{{< figure src="/docs/images/dev/section-shared-dev-pop.png" title="Section shared dev pop" >}}
+
   * Click on the Operations tab.
-  ![operations tab](/docs/images/screenshots/dev-pop/operations-tab.png)
+
+{{< figure src="/docs/images/dev/operations.png" title="Operations" >}}
+
+```
+Setup new repository
+git remote add developer-pop http://192.168.99.101:30090/www.site.com.git
+git push developer-pop
+```
 
   * Enter the git commands you see here inside the repository you cloned down in step #1. Replace "**www.site.com**" with your domain which is visible in the Section portal. (**note** : it won't actually break anything if you leave it as "site").
-  ![domain name](/docs/images/screenshots/dev-pop/domain-name.png)
+
 
 ### 3) Push your configuration files to the Developer PoP
   Once you have added the git remote you can push to the Dev PoP by running: `git push developer-pop`
 
+```
+git push developer-pop
+Counting objects: 176, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (132/132), done.
+Writing objects: 100% (176/176), 306.64 KiB | 38.33 MiB/s, done.
+Total 176 (delta 37), reused 176 (delta 37)
+remote: Resolving deltas: 100% (37/37), done.
+remote:
+remote: varnish image not found, pulling from repository
+remote: modsecurity image not found, pulling from repository
+remote: Pulling required proxy images, please try again shortly
+To http://192.168.99.101:30090/www.site.com.git
+ ! [remote rejected] Production -> Production (pre-receive hook declined)
+error: failed to push some refs to 'http://192.168.99.101:30090/www.site.com.git'
+```
+
+
   If you get this message `Pulling required proxy images, please try again shortly`, that means that your machine does not have the proxy images locally and has begun downloading them. Your terminal will look as though it has exited the process and nothing is happening, but the downloads are going on behind the scenes. Try `git push developer-pop` every few minutes until the downloads are complete and the push goes through. The length of this process will depend entirely on the speed of your internet connection.
+
+```
+➜  bootcamp.section.io git:(Production) git push developer-pop
+Counting objects: 176, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (132/132), done.
+Writing objects: 100% (176/176), 306.64 KiB | 61.33 MiB/s, done.
+Total 176 (delta 37), reused 176 (delta 37)
+remote: Resolving deltas: 100% (37/37), done.
+remote: Validating configuration for proxy varnish...
+remote: Validating configuration for proxy modsecurity...
+To http://192.168.99.101:30090/www.site.com.git
+ * [new branch]      Production -> Production
+```
 
 ### 4) Configure origin server details
 Now that your configurations are running on the Dev Pop, you will need to configure your egress settings (origin server details) to tell the Dev Pop where to pass the HTTP request to. To do this you will use the Dev Pop UI's **Services** tab where you will find information about the repository you just pushed up. A page refresh might be needed.
