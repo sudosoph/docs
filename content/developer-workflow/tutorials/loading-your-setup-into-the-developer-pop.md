@@ -1,10 +1,11 @@
 ---
-title: Load your setup into the Developer PoP
+title: Setup Developer PoP
 description: How to get your local development environment setup to test Section CDN on your local machine.
 keywords: content delivery network, CDN, virtual machine, vagrant, virtualbox, git, cli, local development, local machine, staging environment, developer pop
 weight: 2
 aliases:
   - /tutorials/developer-workflow/loading-your-setup-into-the-developer-pop/
+  - /docs/developer-workflow/tutorials/loading-your-setup-into-the-developer-pop/
 ---
 
 <!-- Run `minikube service -n section-shared developer-pop`. Your browser will open when the endpoint for the service becomes ready. -->
