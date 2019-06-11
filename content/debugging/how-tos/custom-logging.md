@@ -11,6 +11,8 @@ aliases:
 
 To help with debugging Section allows several ways to log custom information then allow this information to be recorded and searchable in Kibana.
 
+{{< youtube FpUrkuFI_uc >}}
+
 
 #### 1) Log using HTTP response header
 
