@@ -14,10 +14,10 @@ This is a guide for setting up a new environment within an existing Section appl
 ### 2) Click on the Application in which you want the new environment
   The number of options that appear here will vary depending on the number of applications associated with your account.
 
-{{% figure src="/docs/images/screenshots/add-an-env/select-application.png" %}}
+![Select Application](/docs/images/select-app.png?height=190px)
 ### 3) Click on the **Create Environment** button
 
-{{% figure src="/docs/images/screenshots/add-an-env/env-button.png" %}}
+{{% figure src="/docs/images/environment-button.png" %}}
 
 ### 4) Fill in **New Environment Name**
   This **environment name** becomes the name of a git branch within your application repository for the new environment's config. For a thorough explanation of how Section applications and environments use git, see our [overview](/docs/topic-guides/account-management).

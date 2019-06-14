@@ -44,7 +44,7 @@ Sometimes you may wish to start an application from scratch or simply remove an 
 #### 1) Navigate to application's Overview Page
 and click on Actions, then select Delete Application from the drop down menu. Note, if your site is currently live on the Section platform you may wish to point the DNS record for the site away from us before deletion, as deleting the application will cause an outage until you create a new one to replace it.
 
-{{% figure src="/docs/images/delete-application.png" %}}
+{{% figure src="/docs/images/delete-app.png" %}}
 
 You will then need to confirm this action by typing in the full name for the application.
 
