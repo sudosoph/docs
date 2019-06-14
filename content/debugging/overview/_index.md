@@ -2,6 +2,7 @@
 title: Overview
 description: An overview of the platform's HTTP logging functionality.
 keywords: monitoring, graphite, metrics, logs
+weight: 1
 aliases:
   - /graphite/
   - /topic-guides/platform-monitoring/http-logs/
@@ -24,6 +25,10 @@ You can then take these searches and turn them into different Graphs in the “V
 
 If you want to analyze your website using Graphite, start by grouping metrics such as error rates, cache hit and miss rates and then apply functions to help smooth data points for bigger trends or show variance between individual data sets.
 
-### Table of contents
+### Related
 
-{{% children depth="3" %}}
+* [Basic Logging and Search](/docs/debugging/how-tos/basic-logging/ "Basic Logging and Search")
+* [Custom Logging and Search](/docs/debugging/how-tos/custom-logging/ "Custom Logging and Search")
+* [Debugging Howtos](/docs/debugging/how-tos/ "Debugging Howtos")
+* [Debugging Reference Guides](/docs/debugging/reference/ "Debugging Reference Guides")
+
