@@ -7,9 +7,9 @@ aliases:
 
 Unlike Legacy CDNs which generally are fixed on a single proxy, Section allows you to choose the proxies that suit your application architecture.
 
-Depending on your need, you can run a single proxy or run multiple proxies to combine the power of many:
+Depending on your needs, you can run a single module or combine multiple modules for enhanced performance benefit:
 
-* **Performance**: Varnish Cache  (versions 3, 4, and 5). Google's PageSpeed. Nginx, and Nginx+Lua.
+* **Performance**: Varnish Cache  (versions 3, 4, 5, 6). Google's PageSpeed. Nginx, and Nginx+Lua.
 * **Scalability**: Varnish Cache . Nginx.
 * **Availability**: Varnish Cache . Nginx+Lua.
 * **Security**: ModSecurity. ThreatX. Signal Sciences.
