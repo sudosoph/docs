@@ -28,7 +28,6 @@ graph LR;
 {{<mermaid align="center">}}
 graph LR;
     A[Web Browser] -->|"HTTP(S)"| B(Section)
-    B -->|"HTTP(S)"| A
     B -->|"HTTP(S)"| C[Application Server]
     C -->|"HTTPS(S)"| D[Database]
     style B fill:#47dd47
