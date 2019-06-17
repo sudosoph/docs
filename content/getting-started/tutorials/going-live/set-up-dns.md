@@ -14,7 +14,7 @@ This DNS change will point the traffic to Section servers.
 {{% notice note %}}
 This tutorial works with a domain name that contains a prefix, like the **www.** prefix in **www.section.io**.
 
-If you are working with a site that doesn't have a prefix please look at [bare domain support with Section]({{< relref "topic-guides/dns/bare-domains/_index.md" >}}).
+If you are working with a site that doesn't have a prefix please look at [bare domain support]({{< relref "/dns/reference/bare-domains/_index.md" >}})  with Section.
 {{% /notice %}}
 
 ## Set up the CNAME record
@@ -35,4 +35,4 @@ If there is an AAAA IPv6 record setup for the domain, it will need to be removed
 If you have any trouble, consider looking at our [HTTPS Troubleshooting guides]({{< relref "dns/how-tos/check-your-current-dns-setup.md" >}}).
 {{% /notice %}}
 
-[Let's proceed to step 3, enabling automatic SSL]({{< relref "getting-started/tutorials/going-live/enable-automatic-ssl.md" >}})
+Let's proceed to step 3, [Enabling Automatic SSL]({{< relref "getting-started/tutorials/going-live/enable-automatic-ssl.md" >}})

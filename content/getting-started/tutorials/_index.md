@@ -5,7 +5,7 @@ keywords: Section, training, platform overview
 weight: 1.5
 ---
 
-These tutorials will assist you setting up and configuring Section.
+This tutorial will assist you setting up and configuring Section.
 
 ### Table of contents
 

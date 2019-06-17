@@ -12,7 +12,7 @@ aliases:
 weight: 1
 ---
 
-At this point you've talking to one of our engineers and have gotten setup with a Section user account.
+At this point you've been talking to one of our engineers and have gotten setup with a Section user account.
 
 ### Next steps
 

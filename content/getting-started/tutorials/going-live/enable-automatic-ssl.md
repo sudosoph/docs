@@ -14,6 +14,8 @@ aliases:
 1. Click **Renew Certificate**. You'll get a message saying that your certificates have been set up.
 ![HTTPS Menu in Management Console](/docs/images/screenshots/https/highlight-renew-certificate-button.png)
 
+Congratulations! You are now live with Section.
+
 {{% notice info %}}
 If you have any trouble, consider looking at our [HTTPS Troubleshooting guides]({{< relref "dns/how-tos/check-your-current-dns-setup.md" >}}).
 {{% /notice %}}

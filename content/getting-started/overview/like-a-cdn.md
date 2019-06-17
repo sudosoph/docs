@@ -11,4 +11,4 @@ Section is like a traditional Content Delivery Network in the following ways:
 * it will cache this content on servers located around the globe and serves clients from a geographically optimal server.
 * it supports immediate cache clear, with cache clear performance of around 200 milliseconds.
 
-However, Section is more than just a traditional a Content Delivery Network. Find out why [Section is not a CDN]({{< relref "getting-started/overview/better-than-a-cdn.md" >}}).
+However, Section is more than just a traditional a Content Delivery Network. Find out why Section is [Better than a CDN]({{< relref "getting-started/overview/better-than-a-cdn.md" >}}).

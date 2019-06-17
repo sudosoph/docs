@@ -27,4 +27,4 @@ If you have your own cloud services, you can run Section as a private setup with
 
 The Section platform can also be run on your origin infrastructure, such as a classic application delivery controller. You can deploy a single instance or a high availability cluster right in your own datacenter or cloud account.
 
-Section brings a wide variety of software that run be run in a point of presence. [Learn about the types of reverse proxy you can run inside Section]({{< relref "getting-started/overview/proxy-options.md" >}}).
+Section brings a wide variety of software that can be run in a point of presence. Learn about the types of reverse [ Proxy Options ]({{< relref "getting-started/overview/proxy-options.md" >}}) you can run inside Section.
