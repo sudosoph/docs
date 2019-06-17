@@ -13,7 +13,7 @@ Section is a proxy service, so at the end of the day, any requests for your site
 
 When your first setup your site on Section we resolve the DNS of the hostname you enter and set that as the origin address. This origin address is stored in a JSON file in the root of the git repository for your application. You can view this by going to <https://aperture.section.io/>, selecting your site and then going to the “Advanced Config” page.
 
-{{% figure src="/docs/images/howto-change-origin-repository.png" %}}
+![Change Origin Repository](/docs/images/change-origin-repository.png?height=410px)
 
 This gives you a view of the git repository for your site. From there you can open `section.config.json`.
 
@@ -21,7 +21,7 @@ This is the configuration file for your site on Section. It contains the proxy s
 
 Each environment has its own section in the file where you can specify config options for that environment. There are a number of possible config settings but for now the one we are interested in is `origin.address`.
 
-{{% figure src="/docs/images/howto-change-origin-configfile.png" %}}
+![Change Origin Config File](/docs/images/change-origin-configfile.png?height=410px)
 
 To change the address of your production environment Click the Edit button on the page. This will open the online file editor. From there you can change the value of the origin address to the new IP address or CNAME. To save the change, put a description in the Commit Message field (remember, this is all git) and click Commit. This will do a git commit & push which will trigger a deploy to the Section delivery nodes to apply the new orgin address.
 
@@ -75,7 +75,7 @@ To implement this feature there are 2 elements to configure, Please see our Alte
 
 If your origin has SNI enabled and serves multiple secure(HTTPS) websites using different SSL certificates then you should `Enable SNI` under `Origins` > `Common Settings` in the aperture portal.
 
-{{% figure src="/docs/images/enable_sni.png" %}}
+{{% figure src="/docs/images/enable-sni.png" %}}
 
 This will enable our platform to pass the server name through TLS/SNI when establishing a connection with your origin.
 

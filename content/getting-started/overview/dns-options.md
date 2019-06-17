@@ -13,4 +13,4 @@ Section also includes a global anycast DNS network with all plans. This can be u
 
 Whilst you can choose to move your DNS to our nameservers, that's completely optional at all plan levels.
 
-[Learn more about Section HTTPS capabilities]({{< relref "getting-started/overview/https-options.md" >}}).
+Learn more about Section [HTTPS Options]({{< relref "getting-started/overview/https-options.md" >}}) and capabilities.

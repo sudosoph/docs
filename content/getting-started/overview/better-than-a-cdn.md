@@ -23,4 +23,4 @@ Unlike with legacy CDNs, with Section:
 
 Section is ready to handle your workload regardless of the number of sites you have or the size of your traffic.
 
-[Find out about how Section is ready to help you manage multiple sites]({{< relref "getting-started/overview/agency-ready.md" >}}).
+Find out about how Section is [Agency Ready]({{< relref "getting-started/overview/agency-ready.md" >}}) to help you manage multiple sites.

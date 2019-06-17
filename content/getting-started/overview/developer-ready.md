@@ -17,4 +17,4 @@ Get it right on your laptop, then use Git to promote your work. Use feature bran
 
 No more worrying about whether your code will be affected by the CDN configuration when you release, and no need to be scared when you make changes to the CDN configuration.
 
-Of course, once you've released your application, you need [deep, real-time insights into your HTTP traffic]({{< relref "getting-started/overview/devops-ready.md" >}}).
+Of course, once you've released your application, Section is [DevOps Ready]({{< relref "getting-started/overview/devops-ready.md" >}}) to help you attain deep, real-time insights into your HTTP traffic.

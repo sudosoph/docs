@@ -1,5 +1,5 @@
 ---
-title: Custom logging
+title: Custom Logging
 description: Set up Section so that it can log custom information in Varnish
 keywords: custom logging, logging, Edge logging, Varnish Cache logging, Kibana, Elastic Search, content delivery network, CDN
 aliases:
@@ -10,6 +10,8 @@ aliases:
 #### A Guide to logging custom information using Varnish Cache or at the Edge.
 
 To help with debugging Section allows several ways to log custom information then allow this information to be recorded and searchable in Kibana.
+
+{{< youtube FpUrkuFI_uc >}}
 
 
 #### 1) Log using HTTP response header
