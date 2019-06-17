@@ -1,5 +1,5 @@
 ---
-title: Whitelist an IP Address/CIDR Range
+title: Whitelist an IP Address or a CIDR Range
 description: How to Whitelist an IP address/CIDR range in ThreatX?
 keywords: Section, training, platform overview
 weight: 1
@@ -7,7 +7,7 @@ weight: 1
 
 ## Overview
 
-The ThreatX portal allows you to easily block an IP Address or a CIDR range by adding it to whitelist.
+By whitelisting an IP address or a CIDR range you can instruct Threat-X to not inspect requests from those IPs. The ThreatX portal allows you to easily whitelist an IP Address or a CIDR range.
 
 ## Whitelist an IP Address/CIDR range
 
