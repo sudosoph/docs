@@ -16,14 +16,14 @@ In addition to a strong password, your account can be further protected by enabl
 To enable two factor authentication:
 
 1. Click on the user icon in the top right corner of the management console and click **Profile**.
-![User Profile Option](/docs/images/screenshots/menu/highlight-user-profile-option.png?height=80px)
+![User Profile Option](/docs/images/user-profile-option.png?height=150px)
 1. If you want to use SMS verification:
  1. Ensure your phone number is correct
  1. Turn on two factor authentication and choose **Receive an SMS on each login**
-![Enable Two Factor for Phone](/docs/images/screenshots/user/highlight-two-factor-for-phone.png?height=80px)
+![Enable Two Factor for Phone](/docs/images/turn-on-2FA.png?height=320px)
 1. If you want to use an authenticator app, like Google Authenticator or LastPass Authenticator:
  1. Turn on two factor authentication and choose **Store my code on a device**
-![Enable Two Factor for Authenticator Apps](/docs/images/screenshots/user/highlight-two-factor-for-authenticator-apps.png?height=80px)
+![Enable Two Factor for Authenticator Apps](/docs/images/turn-on-2FA-for-apps.png?height=350px)
 1. Finally, for both options, click **Save**.
 
 {{% notice tip %}}

@@ -10,7 +10,7 @@ Varnish Cache gives you the ability to modify, add, and remove HTTP headers on t
 
 ## Request Headers
 
-The [vcl_recv](https://varnish-cache.org/docs/trunk/users-guide/vcl-built-in-subs.html#vcl-recv) sub routine is called at the beginning of a request and where we will be modifying the request headers. We will be adding the header `hello` with value of `world`, and removing the `user-agent` header.
+The [vcl_recv](https://varnish-cache.org/docs/trunk/users-guide/vcl-built-in-subs.html#vcl-recv) sub routine is called at the beginning of a request and this is where we will be modifying the request headers. We will be adding the header `hello` with value of `world`, and removing the `user-agent` header.
 
 ```js
 sub vcl_recv {
