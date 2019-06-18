@@ -7,9 +7,10 @@ aliases:
   - /topic-guides/platform-monitoring/graphite/
 ---
 
-## Graphite
 
-By toggling the view at the top of the monitoring screen from "Grafana Dashboards" to "Graphite Metrics", you can pull your own data directly using the same data source that Grafana uses. Although Section provides a number of useful dashboards in Grafana, you can use these graphite metrics to [build your own](/docs/monitoring/how-tos/make-grafana-dashboard). You can click “Open in new window,” located at the top of the frame, to have more space to work.
+By toggling the view at the top of the monitoring screen from "Grafana Dashboards" to "Graphite Metrics" (pictured below), you can pull your own data directly using the same data source that Grafana uses. Although Section provides a number of useful dashboards in Grafana, you can use these graphite metrics to [build your own](/docs/monitoring/how-tos/make-grafana-dashboard). You can click “Open in new window,” located at the top of the frame, to have more space to work.
+
+{{% figure src="/docs/images/monitoring/select-graphite.png" %}}
 
 You will see some folder on the left with different environments. The first environment will usually be your production environment, the second your development environment, and then any other environments. To see production data for Varnish, you would go to the first environment > section hosted > Varnish Cache.
 

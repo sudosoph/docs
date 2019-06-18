@@ -1,5 +1,5 @@
 ---
-title: Alerting with metrics
+title: Set up alerting with metrics
 description: Guide for setting up 3rd party alerts on Section to monitor your website.  
 keywords: metrics, alerting, alerts, monitor, umpire, new relic, pingdom, website performance, website security, content delivery network, CDN
 aliases:
