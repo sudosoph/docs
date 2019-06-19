@@ -16,9 +16,21 @@ To create a dashboard from scratch:
 1. Click on the **Grafana** logo in the left hand corner.  
 2. Open the **Dashboards** dropdown.  
 3. Click on **New**.  
-4. Select the type of panel you want to display (Graph, singlestat, table, pie chart, etc).  
+4. Select the type of panel you want to display (Graph, singlestat, table, pie chart, etc).
+5. Click on the **Panel Title** and then click on th edit button as depicted below:
 
-{{% figure src="/docs/images/add-dashboard-scratch.png" %}}
+{{% figure src="/docs/images/monitoring/create-a-new-dashboard.gif" %}}
+6. From here, simply designate the desired metrics to display. A completed example is pictured below:
+{{% figure src="/docs/images/monitoring/grafana-dashboard-metrics.png" %}}
+This screenshot contains several features of interest:
+
+  a) Note that the **Panel Data Source** dropdown must be changed to **Graphite**. This connects the dashboard to the graphite metrics associated with your account.
+
+  b) In order to query the data set and see a visualization, you will need to specify a query. Above the Panel data source tab, you will see an empty query with a **select metric** option. Click here to begin enumerating the query. Section already provides dashboards for a number of common queries by default, but you can use this technique to visualize any relevant metrics that are not already being reported. For help determining what metrics are available, visit our [documentation on Graphite](/docs/monitoring/overview/graphite/)
+
+  c) Grafana dashboards can perform and visualize multiple queries simultaneously. This allows you to compare two separate metric values, such as 4xx and 5xx errors.
+
+Finally, save your changes by clicking the **Save** icon on the top of the screen.
 
 ### Duplicating an existing dashboard
 

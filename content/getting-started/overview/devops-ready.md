@@ -15,8 +15,8 @@ DevOps teams need a few things to get their job done well:
 * **Incident detection**: Section allows you to configure alerts for any metric in the platform.
 * **Incident management**: when things go wrong, use the real time metrics to identify problems and then dig right into the HTTP logs to isolate individual requests.
 
-Legacy CDNs fall short of these needs in a couple of ways. Either their log shipping latency is too slow (sometimes an hour after your problem started), or they fail to process those logs into meaningful and actionable information.
+Legacy CDNs fall short of these needs in a couple of ways: either their log shipping latency is too slow (sometimes an hour after your problem started), or they fail to process those logs into meaningful and actionable information.
 
 Section also makes sure that these metrics and logs datasources are made available in familiar formats, so you can integrate them into your existing operational toolchain. Use your existing monitoring stack to get alerts, without "yet another alerting platform".
 
-Learn more about [Section DNS options]({{< relref "getting-started/overview/dns-options.md" >}}).
+Learn more about Section [DNS Options]({{< relref "getting-started/overview/dns-options.md" >}}).

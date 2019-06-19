@@ -21,4 +21,4 @@ aliases:
 ![Enter Account Name](/docs/images/screenshots/account/set-up-complete.png)
 ![Enter Account Name](/docs/images/screenshots/account/new-application-overview.png)
 
-Your Application Edge is now ready for traffic. [The next step is to Set Up DNS.]({{< relref "getting-started/tutorials/going-live/set-up-dns.md" >}})
+Your Application Edge is now ready for traffic. The next step is to [Set Up DNS.]({{< relref "getting-started/tutorials/going-live/set-up-dns.md" >}})
