@@ -19,3 +19,11 @@ With the latest version of the hugo (tested with version 0.53) you may run into 
 ```
 
 To fix this issue remove the word `.Source` from `.Source.Filename` in the file `/docs/themes/docdock/layouts/partials/logo.html` and build again.asasas
+
+You might need to change remote url for push
+
+`git remote set-url origin git@github.com:section-io/docs.git`
+
+You might want to disable fast rendering
+
+`hugo server --watch --disableFastRender`
