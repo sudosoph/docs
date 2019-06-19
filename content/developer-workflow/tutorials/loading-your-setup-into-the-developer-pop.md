@@ -124,7 +124,7 @@ Use the Dev Pop UI's **Services** tab where you will find information about the 
 {{< figure src="/docs/images/dev/import-env.gif" title="Import ENV" >}}
 
 {{% notice tip %}}
-To Import an Application and its Environments you must be invited as a User for that Account. This is done via Aperture, Account > Manage Users > Invite User. 
+To Import an Application and its Environments you must be invited as a User for that Account. This is done via Aperture: Account > Manage Users > Invite User. 
 {{% /notice %}}
 
 #### (b) Configure the service manually
