@@ -139,10 +139,5 @@ a {
 /* clippy fix */
 
 code + .copy-to-clipboard {
-  margin-left: -2px;
-  border-left: 0 !important;
-  font-size: inherit !important;
-  vertical-align: middle;
-  height: 21px;
   width: 19.6px;
-  top: 0px; }
+}
