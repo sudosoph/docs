@@ -6,7 +6,7 @@ keywords: dns, domain configuration
 
 ## Overview
 
-This tutorial will walk you through the steps needed to add a domain to an existing Section application. If you wish to set up an entirely separate application for this domain please follow the [getting started guide]({{< relref "getting-started/tutorials/going-live" >}}).
+This guide will walk you through the steps needed to add a domain to an existing Section environment. This guide is for anyone who wants to set up another domain/website with the same caching/module configuration as another website already running on the Section platform. For example, say that I already have www.example.com running on Section with properly caching and image optimization modules configured properly.  If you wish to set up an entirely separate application for this domain please follow the [getting started guide]({{< relref "getting-started/tutorials/going-live" >}}).
 
 ### Step 1 - Adding the domain
 
@@ -38,4 +38,3 @@ All domains added to the Section platform will generate a unique CNAME record. T
 ### Step 3 - SSL Certificate
 
 Follow the how to guide on [provisioning an SSL certificate]({{< relref "ssl/how-tos/create-a-free-tls-certificate-using-letsencrypt.md" >}}).
-

@@ -1,5 +1,5 @@
 ---
-title: Set up DNS on Section
+title: Use Section hosted DNS
 description: Guide for changing your DNS to go live with Section.
 keywords: DNS, DNS records, DNS hosting, bare domain, zone apex, naked domain and root domain
 aliases:
