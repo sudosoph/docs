@@ -4,6 +4,7 @@ description: How to upload a custom SSL certificate in the Section portal.
 keywords: SSL, certificate, custom, upload, update, CDN configuration
 aliases:
   - /how-to/https/upload-a-custom-certificate/
+  - /ssl/how-tos/upload-a-custom-certificate/ 
 ---
 
 ## 1) Navigate to HTTPS 

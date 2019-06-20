@@ -4,6 +4,7 @@ description: How to determine custom TLS certificate order
 keywords: SSL, certificate, custom, upload, update, CDN configuration
 aliases:
   - /how-to/https/determine-tls-certificate-order/
+  - /ssl/how-tos/determine-tls-certificate-order/ 
 ---
 ## Getting started
 
