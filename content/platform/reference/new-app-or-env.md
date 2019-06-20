@@ -7,7 +7,9 @@ keywords: reverse proxy, CDN
 When you want to add a domain to Section, it is sometimes unclear where that domains should fit into your existing [account](/docs/platform/account/), [application](/docs/platform/application/), and [environment](/docs/platform/environment/) structure. This guide will help you decide whether it is most appropriate to create a new application, create a new environment, or add a new domain to an existing environment.
 
 #### My new website is a staging/uat site for a production site that I have running or want to run on Section.
-The purpose of Section's application-environment structure is to streamline the configuration testing and promotion process. As far as this scenario is concerned, the definition of an application is a git repository, and the definition of an environment is a branch within that repository. This makes promoting changes from a staging environment to a production environment as simple as a git merge and push. If you want to add a staging site to Section, the best solution for most use cases is to add a new environment to the same application (or use the Staging environment that comes by default whenever you create a new environment).
+The purpose of Section's application-environment structure is to streamline the configuration testing and promotion process for modules in your stack. With respect to configuration, the definition of an application is a git repository, and the definition of an environment is a branch within that repository. This makes testing changes to the staging environment and then promoting them to the production environment as simple as a git merge and push.
+
+If you want to add a staging site to Section, the best solution for most use cases is to add a new environment to the same application (or use the Staging environment that comes by default whenever you create a new environment).
 
 **Summary**: we recommend adding a new staging site to an existing application as a new environment.
 

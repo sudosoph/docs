@@ -6,7 +6,8 @@ keywords: dns, domain configuration
 
 ## Overview
 
-This guide will walk you through the steps needed to add a domain to an existing Section environment. This guide is for anyone who wants to set up another domain/website with the same caching/module configuration as another website already running on the Section platform. For example, say that I already have www.example.com running on Section with properly caching and image optimization modules configured properly.  If you wish to set up an entirely separate application for this domain please follow the [getting started guide]({{< relref "getting-started/tutorials/going-live" >}}).
+This guide will walk you through the steps needed to add a domain to an existing Section environment. For help understanding whether adding an new domain to an
+existing environment is best for your use case, please [visit this guide](/docs/platform/reference/new-app-or-env/). If you wish to set up an entirely separate application for this domain please follow the [getting started guide]({{< relref "getting-started/tutorials/going-live" >}}).
 
 ### Step 1 - Adding the domain
 
