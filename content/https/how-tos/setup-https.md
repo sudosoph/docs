@@ -3,7 +3,6 @@ title: Set up HTTPS and HTTP/2
 description: Guide for adding HTTPS and HTTP/2 to your website with Section using your own certificate or using our automated SSL certificates.
 keywords: https, SSL, TLS, Let's Encrypt, EV, Extended Validation, SNI, Server Name Indication, website security, content delivery network, CDN
 aliases:
-  - /https/
   - /setup-https/
   - /how-to/setup-https/
 

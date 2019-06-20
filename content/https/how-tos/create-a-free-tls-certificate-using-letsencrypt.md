@@ -4,11 +4,14 @@ description: How to provision a free SSL certificate in Section portal.
 keywords: SSL, certificate, custom, upload, update, CDN configuration
 aliases:
   - /how-to/https/create-a-free-tls-certificate-using-letsencrypt/
+  - /ssl/how-tos/create-a-free-tls-certificate-using-letsencrypt/
 ---
 
 ## Get started
 
 Log into your Aperture dashboard and under **Set up** navigate to the **HTTPS** page.
+
+{{< figure src="/docs/images/https/https-aperture.gif" title="HTTPS in Aperture" >}}
 
 
 ## Select domain

@@ -3,6 +3,7 @@ title: "Check your current HTTPS setup"
 description: ""
 aliases:
   - /how-to/https/check-your-current-https-setup/
+  - /ssl/how-tos/check-your-current-https-setup/
 ---
 
 ## Using the command line - OpenSSL

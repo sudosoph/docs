@@ -3,6 +3,7 @@ title: "Create a Let's Encrypt Certificate Before your DNS Change"
 description: ""
 aliases:
   - /how-to/https/create-a-letsencrypt-certificate-before-your-dns-change/
+  - /ssl//how-tos/create-a-letsencrypt-certificate-before-your-dns-change/ 
 ---
 
 If you would like to create your free TLS certificates before you make your DNS change, you need to configure your server.
