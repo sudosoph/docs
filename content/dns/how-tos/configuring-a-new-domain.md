@@ -9,6 +9,8 @@ keywords: dns, domain configuration
 This guide will walk you through the steps needed to add a domain to an existing Section environment. For help understanding whether adding an new domain to an
 existing environment is best for your use case, please [visit this guide](/docs/platform/reference/new-app-or-env/). If you wish to set up an entirely separate application for this domain please follow the [getting started guide]({{< relref "getting-started/tutorials/going-live" >}}).
 
+Note as well [the DNS guidelines for running multiple domains on one environment](docs/dns/reference/dns-with-multiple-domains/)
+
 ### Step 1 - Adding the domain
 
 1. Navigate to the **DNS** section of your existing Section application.
