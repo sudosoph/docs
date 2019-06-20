@@ -3,6 +3,8 @@ title: Going Live
 description: A step-by-step guide on how to get started with Section CDG.
 keywords: guide, getting started, website performance, page speed, webpage speed, website security, content delivery network, CDN
 aliases:
+  - /go-live/
+  - /going-live/
   - /quickstart/
   - /create-application/
   - /tutorials/create-application/
