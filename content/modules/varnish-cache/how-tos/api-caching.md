@@ -2,6 +2,8 @@
 title: API Caching 
 description: How-to use Varnish to cache an API.
 keywords: API, API caching, varnish, Varnish Cache, JSON
+aliases:
+  - /api-caching/
 
 ---
 
