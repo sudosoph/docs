@@ -1,7 +1,7 @@
 ---
 title: API Caching 
 description: How-to use Varnish to cache an API.
-keywords: API, API caching, varnish, Varnish Cache, JSON
+keywords: API, API caching, varnish, Varnish Cache, JSON, JSON API caching
 aliases:
   - /api-caching/
 
@@ -14,6 +14,8 @@ Varnish Cache can be used to cache an API. By caching a JSON RESTFul API an appl
 This how-to describes using the Varnish Module on the Section platform to cache an Application Programming Interface (API).
 
 For example, an application running in a Section NodeJS Module on the Edge can cache commonly used API routes in a "varnishapi" Varnish Cache Module.
+
+### section.config.json
 
 The section.config.json could look like;
 
@@ -54,7 +56,7 @@ But, will pass all other routes to other proxies;
 
 
 
-## VCL syntax
+### VCL syntax
 
 Example VCL is used in the "varnishapi" module to cache API's. 
 
