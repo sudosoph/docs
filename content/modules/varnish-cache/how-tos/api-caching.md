@@ -44,13 +44,13 @@ The section.config.json could look like;
 
 In our example we will cache the following routes; 
 
-{{< highlight js >}}
+{{< highlight bash >}}
 /api
 {{< / highlight >}}
 
 But, will pass all other routes to other proxies;
 
-{{< highlight js >}}
+{{< highlight bash >}}
 /
 {{< / highlight >}}
 
