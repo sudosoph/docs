@@ -40,4 +40,4 @@ All domains added to the Section platform will generate a unique CNAME record. T
 
 ### Step 3 - SSL Certificate
 
-Follow the how to guide on [provisioning an SSL certificate]({{< relref "ssl/how-tos/create-a-free-tls-certificate-using-letsencrypt.md" >}}).
+Follow the how to guide on [provisioning an SSL certificate]({{< relref "https/how-tos/create-a-free-tls-certificate-using-letsencrypt.md" >}}).

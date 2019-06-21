@@ -1,10 +1,12 @@
 ---
 title: How-Tos
-description: Training area, Section platform overview.
+description: ThreatX Howtos - Section platform overview.
 keywords: Section, training, platform overview
 weight: 2
 
 ---
+
+ThreatX on Section howtos. 
 
 ### Table of contents
 

@@ -123,10 +123,8 @@ Use the Dev Pop UI's **Services** tab where you will find information about the 
 
 {{< figure src="/docs/images/dev/import-env.gif" title="Import ENV" >}}
 
-
 {{% notice tip %}}
-If you have an account in the Section management console you can link your Developer PoP to your account.
-See <a href="/docs/developer-workflow/how-tos/connect-to-aperture/" title="How to Connect Developer PoP to Aperture">How to Connect Developer PoP to Aperture</a> for more information. 
+To Import an Application and its Environments you must be invited as a User for that Account. This is done via Aperture: Account > Manage Users > Invite User. 
 {{% /notice %}}
 
 #### (b) Configure the service manually
