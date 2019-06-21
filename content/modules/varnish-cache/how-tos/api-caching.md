@@ -41,14 +41,13 @@ The section.config.json could look like;
 In our example we will cache the following routes; 
 
 {{< highlight js >}}
-/blogs
-/posts
+/api
 {{< / highlight >}}
 
-But, will NOT cache;
+But, will pass all other routes to other proxies;
 
 {{< highlight js >}}
-/comments
+/
 {{< / highlight >}}
 
 
@@ -57,7 +56,7 @@ But, will NOT cache;
 
 Example VCL is used in the "varnishapi" module to cache API's. 
 
-{{< highlight js >}}
+{{< highlight bash >}}
 sub vcl_recv {
 
     if (req.method != "GET" && req.method != "HEAD" && req.method != "PURGE") {
