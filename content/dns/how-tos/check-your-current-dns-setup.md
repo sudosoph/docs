@@ -71,10 +71,10 @@ example.com.            86400   IN      RRSIG   NS 8 2 86400 20171015113637 2017
 
 1. Check your output. The last section contains most of the useful information.
 
-Notice the line `www.example.com.        86400   IN      A       93.184.216.34`. This means that the DNS lookup retrieved an A record pointing to 93.184.216.34 for the "www" subdomain. All queries for www.example.com will be instructed to visit that IP address.The record has a TTL of 86400 seconds (24 hours), meaning that DNS servers are instructed to cache this value for 24 hours and any DNS changes will take up to that long to be completely propagated globally.
+Notice the line `www.example.com.        86400   IN      A       93.184.216.34`. This means that the DNS lookup retrieved an A record pointing to 93.184.216.34 for the "www" subdomain. All queries for www.example.com will be instructed to visit that IP address. The record has a TTL of 86400 seconds, meaning that DNS servers are instructed to cache this value for 24 hours and any DNS changes will take up to that long to be completely propagated globally.
 
 Another feature of interest is the following: `example.com.            86400   IN      NS      b.iana-servers.net.`. This specifies the name servers for your DNS hosting company and the place where your DNS configuration is managed.
 
-After a successful DNS change onto Section, your main website domain (www.example.com) should have a CNAME record (or an ALIAS record in the case of a bare domain) pointing towards the section CNAME record visible on the DNS tab in the Section portal. For example:
+After a successful DNS change onto Section, your main website domain (**www.example.com**) should have a CNAME record (or an ALIAS record in the case of a bare domain) pointing towards the section CNAME record visible on the DNS tab in the Section portal. For example:
 
     www.example.com.        86400   IN      CNAME       www.example.com.c.section.io   
