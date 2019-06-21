@@ -7,15 +7,12 @@ aliases:
 
 ---
 
-Bare Domains are DNS records without www, also called Zone Apex, Naked Domain and Root Domain. To go live on Section you need to setup a CNAME record pointing to the Section platform.
+Bare Domains are DNS records without www, also called Zone Apex, Naked Domain and Root Domain. In order to go live on Section, you need to setup a CNAME record pointing to the Section platform. While this is simple to do for any subdomain such as www, creating a CNAME record for a bare domain can cause some problems. This is because a CNAME record trumps all other records and can cause issues with MX records — potentially leading to broken email etc.
 
-Within the DNS system, you cannot use a CNAME for your bare domain (e.g. domain.com) and then define additional resource records for the same zone.
+There are several workarounds to this problem:
 
-This means that if you were to setup a CNAME on your bare domain you would get unpredictable results and most likely break other records that also exist at the bare domain - such as MX records required for your email to work.
+1.  Switch to running your site on “www”. This means that users will type in www.domain.com to get to your website. You would then setup a HTTP 301 redirect from the bare domain to the www version so that users (and SEO) are automatically redirected to the “www” site. With this configuration fully in place, the bare domain points to the origin, www points to Section, and the origin servers redirects to the www. For a deeper discussion of the impact of serving your website off of the www instead of the bare domain, see [this article](/docs/dns/reference/bare-domains/).
 
-We recommend using Section Hosted DNS so that you do not need to create a CNAME for your bare domain, as your DNS is already hosted with us. If you want to continue to use your current provider, there are 2 work arounds:
-
-1.  Switch to running your site on “www”. This means that users will type in www.domain.com to get to your website. You would setup a HTTP 301 redirect from the bare domain to the www version so that users (and SEO) are automatically redirected to the “www” site.
-2.  Use a DNS provider that supports a special `ALIAS`/`ANAME` record type at the bare domain.
+2.  Use a DNS provider that supports a special `ALIAS`/`ANAME` record type at the bare domain. These records are like CNAME records but do not cause the issues described above. If your DNS hosting provider does not support ALIAS/ANAME records, you can switch to [Section hosted DNS](/docs/dns/how-tos/set-up-dns-on-section/).
 
 For technical background on CNAME’s and the bare domains see: [RFC 1034 section 3.6.2](https://tools.ietf.org/html/rfc1034#section-3.6.2).
