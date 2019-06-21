@@ -8,7 +8,7 @@ aliases:
 
 ## From a terminal
 
-1. Run `dig +trace www.yourdomain.com`
+1. Run `dig +trace www.yourdomain.com`. If you are unable to run this command locally, leverage an online tool such as <a href="http://www.kloth.net/services/dig.php" title="Kloth online dig service" target="kloth">Kloth</a>.
  {{%expand "Click to expand an example" %}}
 
 ```
@@ -69,12 +69,12 @@ example.com.            86400   IN      RRSIG   NS 8 2 86400 20171015113637 2017
 ```
 {{% /expand%}}
 
-1. Check your output. There are few interesting things to note. We're mostly interested in the last section.
+1. Check your output. The last section contains most of the useful information.
 
-See the line `www.example.com.        86400   IN      A       93.184.216.34`? This means that "www" is pointing at 93.184.216.34. It has a TTL of 86400 seconds (24 hours), meaning that any DNS changes will take up to 24 hours to be completely propagated globally.
+Notice the line `www.example.com.        86400   IN      A       93.184.216.34`. This means that the DNS lookup retrieved an A record pointing to 93.184.216.34 for the "www" subdomain. All queries for www.example.com will be instructed to visit that IP address. The record has a TTL of 86400 seconds, meaning that DNS servers are instructed to cache this value for 24 hours and any DNS changes will take up to that long to be completely propagated globally.
 
-Also interesting are two lines that look like `example.com.            86400   IN      NS      b.iana-servers.net.`. This tells you your DNS hosting company, where you control your DNS configuration.
+Another feature of interest is the following: `example.com.            86400   IN      NS      b.iana-servers.net.`. This specifies the name servers for your DNS hosting company and the place where your DNS configuration is managed.
 
-## Online Tools
+After a successful DNS change onto Section, your main website domain (**www.example.com**) should have a CNAME record (or an ALIAS record in the case of a bare domain) pointing towards the section CNAME record visible on the DNS tab in the Section portal. For example:
 
-If the above is unavailable leverage an online tool such as <a href="http://www.kloth.net/services/dig.php" title="Kloth online dig service" target="kloth">Kloth</a>.
+    www.example.com.        86400   IN      CNAME       www.example.com.c.section.io   

@@ -1,5 +1,5 @@
 ---
-title: Set up DNS on Section
+title: Use Section hosted DNS
 description: Guide for changing your DNS to go live with Section.
 keywords: DNS, DNS records, DNS hosting, bare domain, zone apex, naked domain and root domain
 aliases:
@@ -18,15 +18,17 @@ To enable Hosted DNS with Section:
 
 1) Navigate to the DNS page for your Section application's hosted environment (eg Production).
 
-2) Below the "Change your DNS to go live" heading you should find another heading labeled "Section Hosted DNS". The paragraph that follows will describe the DNS zone name that we have detected that your domain belongs to. If we have detected this zone correctly, and you have access to the DNS *registrar* to change the name servers for this zone, you can proceed.
+2) Below the "Change your DNS to go live" heading you should find another heading labeled "Section Hosted DNS". The paragraph that follows will describe the DNS zone name that we have detected that your domain belongs to. If we have detected this zone correctly, and you have access to your DNS *registrar* to change the name servers for this zone, you can proceed.
 
-**Please note** that you need to change you name servers via the organisation through which you purchased the domain name. This may not necessarily be the same as where you currently manage your DNS records.
+**Please note**: Although DNS hosting and DNS registration are often thought of as the same thing and many companies offer both services, they are distinct and can be provided by different companies. The majority of the DNS record changes described in our DNS documentation (making CNAME or ALIAS changes for example) happen in your **DNS hosting** console, but changing your name servers must be done with your **DNS Registrar**.
+
+Your DNS registrar is the organization from which you purchased your actual domain name, not necessarily where your records are maintained and hosted — although again these often go together in practice. Your DNS registrar is the authority on what DNS servers are allowed to answer DNS queries for your website. Inputting Section nameservers into your DNS registrar gives us permission to respond to DNS queries for your site. Note as well that it is possible to enable the Section DNS zone and check to make sure all the records are correct **before** you change nameservers. We can provision a DNS zone before this change is made but not answer queries.
 
 3) Click the `Enable Hosted DNS` button. The DNS page will refresh after a few moments with new instructions.
 
-4) Our system will have attempted to copy the most common DNS records from your existing DNS hosting provider into our database but it can miss some records. Follow the link in "Step 1" of the new DNS page to view the records that have been copied. Verify that the existing records are correct and add any missing records.
+4) For your convenience, our system will at this point attempt to copy the most common DNS records from your existing DNS hosting provider into our database, but it can miss some records. Follow the link in "Step 1" of the new DNS page to view the records that have been copied. Verify that the existing records are correct and add any missing records.
 
-5) When you have verified and corrected the copied records, return the the DNS page for you Section application's environment. "Step 2" on this page lists the new name servers that you will need to enter for your zone at your DNS registrar. Once this is done the change may take up to 48 hours to propagate to all DNS servers globally, after that you can manage you DNS records via Section and your old DNS hosting provider is not used.
+5) When you have verified and corrected the copied records, return the the DNS page for your Section application's environment. "Step 2" on this page lists the new name servers that you will need to enter for your zone at your DNS registrar. Once this is done the change may take up to 48 hours to propagate to all DNS servers globally — after that you can manage your DNS records via Section and your old DNS hosting provider is not used. You will want to wait the full 48 hours and check DNS propagation globally before you turn off your old DNS hosting.
 
 6) Click the `Verify` button on the DNS page to test if HTTP requests for your site are reaching the Section endpoints.
 

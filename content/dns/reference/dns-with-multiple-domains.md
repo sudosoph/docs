@@ -10,15 +10,15 @@ aliases:
 
 ---
 
-The Section platform  will only respond to requests using exactly the same domain name that was used to create the application on Section. For example, if you register your application on Section as `www.example.com` but then choose to create a `blog.example.com` CNAME record directed at the `www.example.com.c.section.io.` endpoint specified on your application's DNS page in the Aperture portal, visitors to the `http://blog.example.com` will receive an error page displaying `HTTP 409 Conflict`.
+The Section platform will only accept requests with a domain name that is explicitly added to an environment. For example, if you add www.example.com to Section as **www.example.com** but then choose to create a **blog.example.com** CNAME record pointing at **www.example.com.c.section.io.**, visitors to `http://blog.example.com` will receive an error page displaying **HTTP 409 Conflict**.
+
+This is because blog.example.com has not been explicitly associated with a Section environment.In this case you would need to add **blog.example.com** to a Section environment and then create a **blog.example.com.c.section.io** CNAME record for **blog.example.com** in your DNS hosting console. The same is true if you register a bare domain record such as **example.com**. Each domain must be specified in full in order for the request to be accepted by Section.  
 
 If you would like your Section application to respond to multiple domains, you can add them on bottom of the the Domains page under *Domains*. You can also add or delete additional domains via our API by using the following commands:
 
 `POST /account/{accountId}/application/{applicationId}/environment/{environmentName}/domain/{hostName}`
 
 `DELETE /account/{accountId}/application/{applicationId}/environment/{environmentName}/domain/{hostName}`
-
-Note: Domains can only be added to a root application (ie pathPrefix of /). Domains added to this application's environment will also be used for the corresponding environment in the sub-apps.
 
 Please review our [HTTPS setup page](/docs/setup-https) to ensure all of your domains are properly covered by either our automated HTTPS or your own custom certificates to prevent certificate errors.
 
