@@ -1,7 +1,7 @@
 ---
 title: API Caching 
 description: How-to use Varnish to cache an API.
-keywords: API, API caching, varnish, Varnish Cache, block, 403
+keywords: API, API caching, varnish, Varnish Cache, JSON
 
 ---
 
@@ -138,5 +138,5 @@ sub vcl_hash {
 {{< / highlight >}}
 
 {{% notice note %}}
-Replace CUSTOMER with a custom header i.e. Section or MyAwesomeAPI.
+Replace CUSTOMER-API with a custom header i.e. Section or MyAwesomeAPI.
 {{% /notice %}}
