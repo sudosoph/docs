@@ -6,6 +6,8 @@ weight: 1
 aliases:
   - /topic-guides/performance-action-plan/review-your-metrics/
 ---
-**WHY** To understand how to improve your site, you first need a benchmark for where you are now.
+**Why is it important that I review my metrics?**<br/>
+To understand how to improve your site, you first need a benchmark for where you are currently.
 
-**HOW** After you go live, wait about an hour for data to populate.  While Section’s real time reporting will show data inside the first minute of go live, you should wait an hour for trends to emerge. Then use the evaluation guide above to look at your key metrics.
+**How do I review my metrics?** <br/>
+After you go live, wait about an hour for data to populate. While Section’s real time reporting will show data inside the first minute of go live, you should wait an hour for trends to emerge. Then, use the evaluation guide above to look at your key metrics.
