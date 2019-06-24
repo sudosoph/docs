@@ -9,4 +9,5 @@ aliases:
 
 Before you make any changes to your cache configuration, we recommend you test them locally first. In order to test, you need to setup your local environment.
 
-**How do I start my own Environment?** Make sure you have git, vagrant, and virtual box on your local machine. Download section’s command line interface and run the section up command as described [here](https://www.section.io/docs/local-development/). If you do not want to do this step, you can skip it and make your changes live on production.
+**How do I start my own Environment?** <br/>
+Make sure you have git and virtual box on your local machine. Download section’s command line interface and run the section up command as described [here](https://www.section.io/docs/local-development/). If you do not want to do this step, you can skip it and make your changes live on production.

@@ -18,5 +18,5 @@ The chart below is an example of the very first chart we show you on the Section
 
 ![Cache Chart](/docs/images/cache-chart.png?height=510px)
 
-For more detailed information, such as the absolute number of requests and size of those requests, log in to your aperture account and view Trending Metrics **[here](https://aperture.section.io/account/1/application/1/environment/Production/metrics##1)**.
+For more detailed information, such as the absolute number of requests and size of those requests, log in to your aperture account and view Trending Metrics **[here](https://aperture.section.io)**.
 

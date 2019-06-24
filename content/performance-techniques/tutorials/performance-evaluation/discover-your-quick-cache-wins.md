@@ -24,10 +24,10 @@ Most of the time, Images and CSS will be the easiest to get some cache wins, and
 **How do I see my wins?** <br/>
 There are two dashboards in Grafana under `Real Time -> Monitoring` to understand content type caching.
 
-First is request performance which shows throughput and time to serve by status. The example for Bootcamp can be found **[here](https://aperture.section.io/account/1/application/1/grafana-web)**.
+First is request performance under `Content Delivery Grid - Request Performance` which shows throughput and time to serve by status. The example for Bootcamp can be found **[here](https://aperture.section.io/account/1/application/1/grafana-web)**.
 
-{{% figure src="/docs/images/Performance Techniques/HTTP-response-metrics.png" %}}
+![HTTP Response by Asset Type](/docs/images/Performance Techniques/HTTP-response-by-asset-type-metrics.png?height=200px)
 
-Second is asset cache hit rates which shows the hit rate by content type. You can access this for Bootcamp **[here](https://aperture.section.io/account/1/application/1/grafana-web)**.
+Second is asset cache hit rates under `Content Delivery Grid - Varnish Cache Hit Rates` which shows the hit rate by content type. You can access this for Bootcamp **[here](https://aperture.section.io/account/1/application/1/grafana-web)**.
 
 ![Hit rate for HTTP requests](/docs/images/Performance Techniques/http-cache-hit-rate-metrics.png?height=350px)
