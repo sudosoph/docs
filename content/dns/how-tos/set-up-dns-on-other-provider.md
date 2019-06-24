@@ -7,18 +7,7 @@ aliases:
   - /how-to/dns/set-up-dns-on-other-provider/
 ---
 
-To continue hosting with your current provider you'll need to go to your domain name provider and replace any existing 'CNAME' or A records with the 'CNAME' we've provided for you in your account. After making the DNS change (and allowing time for your DNS ttl expiry) you will start to see metrics showing in the Production environment for your site.
-
-If your site doesn’t send the right HTTP headers or you have other things preventing the site from caching (like [client-side cookies]) then you can modify the way your reverse proxies interact with your site using Section’s local development environment.
-
-Follow the steps below to create a DNS (Domain Name System) record that directs traffic to your website via Section.
-
-1.  Remove any existing the CNAME or A record for your site.
-2.  Add the CNAME record “your.site.name.here.c.section.io.” to the DNS configuration for your site name. To confirm this record, visit your overview page and click on DNS.
-
-Note: DNS changes may take some time.
-
-To stay with Section, don’t remove or change the DNS record, even after verification succeeds. Once you have changed your DNS, please ensure you've setup [HTTPS](/docs/setup-https).
+To use Section with outside DNS, simply go to your DNS hosting provider's console and perform the steps necessary to [add a new domain to Section](/docs/dns/how-tos/configuring-a-new-domain/). If you have not yet gone through the [going live tutorial](/docs/getting-started/tutorials/going-live/) please visit it for a more in depth view of the entire process
 
 ### DNS Resources
 Each registrar has its own method of adding CNAME records. Below are some links to instructions on adding DNS records
@@ -43,7 +32,7 @@ for common hosts and DNS providers.
   * <a href="http://help.dnsmadeeasy.com/managed-dns/records/cname-record/">DNS Made Easy</a>
 
   * <a href="https://my.bluehost.com/cgi/help/559">Bluehost</a>
-  
+
   * <a href="https://support.dnsimple.com/articles/record-editor/">DNSimple</a>
 
   * <a href="https://support.hostgator.com/articles/cpanel/how-to-change-dns-zones-mx-cname-and-a-records">Hostgator</a>
