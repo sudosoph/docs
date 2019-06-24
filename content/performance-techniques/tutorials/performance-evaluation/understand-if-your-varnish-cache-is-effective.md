@@ -14,7 +14,7 @@ Caching is how effectively customer requests are being answered by the cache. A 
 When a customer request is answered by the cache, the request did not need to be answered by your website server. This improves page load time for your users which can increase revenue. Furthermore, caching decreases work required by your servers thus reducing cost.
 
 **Where can I see my cache information?**<br/>
-A cache information chart is the very first piece we show you on the Section dashboard. It displays all cache information about your website application. Below is an example for the Bootcamp application.
+The chart below is an example of the very first chart we show you on the Section dashboard. It displays all cache information about your website application. Below is the example for the Bootcamp application.
 
 ![Cache Chart](/docs/images/cache-chart.png?height=510px)
 
