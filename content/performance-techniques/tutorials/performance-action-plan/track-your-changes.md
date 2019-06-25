@@ -7,6 +7,6 @@ aliases:
   - /topic-guides/performance-action-plan/track-your-changes/
 ---
 
-**WHY**  Everytime you change your configuraiton, Section will log that history. This allows you to see what was changed and then review metrics to see how your site performed before and after the change.
+**WHY:** Everytime you change your configuration, Section will log that history. This allows you to see what was changed and then review metrics to see how your site performed before and after the change.
 
-**HOW** In the repository tab under commits you will see a list of the commits that have been made to your application. You can see what that looks like for Bootcamp [here](https://aperture.section.io/account/1/application/1/repository##repo%2Fcommits%2FProduction).
+**HOW:** In the repository tab under commits you will see a list of the commits that have been made to your application. You can see what that looks like for Bootcamp [here](https://aperture.section.io/account/1/application/1/repository##repo%2Fcommits%2FProduction).
