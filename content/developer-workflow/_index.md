@@ -1,6 +1,6 @@
 +++
 title = "Developer Workflow"
-description = ""
+description = "Developer Workflow on the Section Edge platform."
 weight = 1000
 +++
 

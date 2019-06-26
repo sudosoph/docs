@@ -1,6 +1,6 @@
 ---
 title: "Monitoring"
-description: ""
+description: "Monitoring on the Section Edge platform."
 weight: 400
 aliases:
   - /topic-guides/platform-monitoring/

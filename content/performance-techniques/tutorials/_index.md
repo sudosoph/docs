@@ -1,11 +1,11 @@
 ---
 title: Tutorials
-description: Getting Started Tutorials
+description: Performance Techniques for the Section Edge Platform.
 keywords: Section, training, platform overview
 weight: 1.5
 ---
 
-These tutorials will assist you setting up and configuring Section.
+These docs are tutorials are Performance Techniques for the Section Compute platform.
 
 ### Table of contents
 
