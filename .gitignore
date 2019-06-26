@@ -1,2 +1,4 @@
 /public/*
 !/public/.gitkeep
+# Mac OS X hidden files
+.DS_Store
