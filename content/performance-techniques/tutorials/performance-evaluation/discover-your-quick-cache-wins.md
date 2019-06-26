@@ -24,10 +24,10 @@ Most of the time, images and CSS will be the easiest place to boost cache rate. 
 **How do I see my wins?** <br/>
 There are two dashboards in Grafana under `Real Time -> Monitoring` to understand content type caching.
 
-The **request performance** dashboard shows throughput and time to serve by status. You can access this for Bootcamp **[here](https://aperture.section.io/account/1/application/1/grafana-web)**.
+The **request performance** dashboard shows throughput and time to serve by status on the [Bootcamp Grafana](https://aperture.section.io/account/1/application/1/grafana-web).
 
-![HTTP Response by Asset Type](/docs/images/Performance Techniques/HTTP-response-by-asset-type-metrics.png?height=200px)
+![HTTP Response by Asset Type](/docs/images/performance-techniques/HTTP-response-by-asset-type-metrics.png)
 
-The **asset cache hit rates** dashboard shows the hit rate by content type. You can access this for Bootcamp **[here](https://aperture.section.io/account/1/application/1/grafana-web)**.
+The **asset cache hit rates** dashboard shows the hit rate by content type on the [Bootcamp Grafana](https://aperture.section.io/account/1/application/1/grafana-web).
 
-![Hit rate for HTTP requests](/docs/images/Performance Techniques/http-cache-hit-rate-metrics.png?height=350px)
+![Hit rate for HTTP requests](/docs/images/performance-techniques/http-cache-hit-rate-metrics.png)
