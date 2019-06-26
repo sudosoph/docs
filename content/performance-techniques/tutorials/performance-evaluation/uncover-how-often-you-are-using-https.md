@@ -1,5 +1,5 @@
 ---
-title: Uncover what percent of Traffic is over HTTPS
+title: Uncover how often you are using HTTPS
 description: Guide for evaluating your website performance and how to use Section to make improvements.
 keywords: cache, https, website performance, page speed, webpage speed, website security, content delivery network, CDN
 weight: 3

@@ -19,15 +19,15 @@ You can view your hit rates, volume of requests, and time to serve for each of t
 **Why is it important?** <br/>
 Understanding which types are being requested the most, require the most time to serve, and are being cached most frequently helps you understand where your quick wins are to get started optimizing your cache configurations.
 
-Most of the time, Images and CSS will be the easiest to get some cache wins, and HTML is the most likely to give you your biggest performance and scalability wins as the hit rate increases.
+Most of the time, images and CSS will be the easiest place to boost cache rate. HTML, on the other hand, can be more difficult to cache successfully but often provides the largest  performance and scalability wins as the hit rate increases.
 
 **How do I see my wins?** <br/>
 There are two dashboards in Grafana under `Real Time -> Monitoring` to understand content type caching.
 
-First is request performance under `Content Delivery Grid - Request Performance` which shows throughput and time to serve by status. The example for Bootcamp can be found **[here](https://aperture.section.io/account/1/application/1/grafana-web)**.
+The **request performance** dashboard shows throughput and time to serve by status. You can access this for Bootcamp **[here](https://aperture.section.io/account/1/application/1/grafana-web)**.
 
 ![HTTP Response by Asset Type](/docs/images/Performance Techniques/HTTP-response-by-asset-type-metrics.png?height=200px)
 
-Second is asset cache hit rates under `Content Delivery Grid - Varnish Cache Hit Rates` which shows the hit rate by content type. You can access this for Bootcamp **[here](https://aperture.section.io/account/1/application/1/grafana-web)**.
+The **asset cache hit rates** dashboard shows the hit rate by content type. You can access this for Bootcamp **[here](https://aperture.section.io/account/1/application/1/grafana-web)**.
 
 ![Hit rate for HTTP requests](/docs/images/Performance Techniques/http-cache-hit-rate-metrics.png?height=350px)
