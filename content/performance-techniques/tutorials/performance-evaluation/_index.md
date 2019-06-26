@@ -7,6 +7,6 @@ aliases:
   - /topic-guides/performance-evaluation/
 ---
 
-This tutorial will show how to evaluate your website so you can understand how you are performing today.
+This tutorial will demonstrate how to evaluate your website's performance so you can make real-time critical decisions.
 
 {{% children description="true" style="h3" %}}
