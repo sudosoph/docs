@@ -6,7 +6,10 @@ aliases:
   - /topic-guides/platform-monitoring/
 ---
 
-This section details the traffic monitoring features that Section provides. For detailed information on using the overview page, Graphite, and Grafana to analyze your web traffic, please see visit the **Platform Monitoring** page linked below. 
+These docs explain the Section traffic monitoring features based on [Graphite]({{< relref "/monitoring/overview/graphite/_index.md" >}}) and [Grafana]({{< relref "/monitoring/overview/grafana/_index.md" >}})
+
+To analyze your web traffic, please see visit [Platform Monitoring]({{< relref "/monitoring/overview/_index.md" >}}).
+
 ### Table of contents
 
 {{% children depth="3" %}}
