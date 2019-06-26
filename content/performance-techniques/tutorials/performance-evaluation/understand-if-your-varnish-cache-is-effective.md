@@ -1,5 +1,5 @@
 ---
-title: Understand if your cache is effective
+title: Understanding Cache Effectiveness
 description: Guide for evaluating your website performance and how to use Section to make improvements.
 keywords: cache, https, website performance, page speed, webpage speed, website security, content delivery network, CDN
 weight: 1
