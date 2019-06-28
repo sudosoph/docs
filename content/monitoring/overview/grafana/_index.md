@@ -15,7 +15,7 @@ You can also toggle the display and time frame for each of the graphs just above
 
 You can open up Grafana in a new window for better viewing by clicking “Open in new window” button at the top of the frame.
 
-{{% figure src="/docs/images/grafana-new-window.png" %}}
+{{% figure src="/docs/images/monitoring/grafana-new-window-aperture.png" %}}
 
 #### Traffic Summary
 

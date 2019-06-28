@@ -11,13 +11,13 @@ Each Section environment has its own **overview page**. The overview page displa
 #### Module Stack
 
 All module stack configurations running on Section begin with the edge module (the very first module that incoming HTTP requests hit when they enter Section) and ends with the LastProxy (the last module that incoming HTTP requests pass through before leaving Section and hitting your origin server). The modules in between can be configured to perfectly suite your needs using your environment's [advanced configuration](/docs/modules/). On the overview page, we display a graphic detailing the proxies currently running in your environment's configuration and their current order.
-{{% figure src="/docs/images/proxy-stack.png" %}}
+{{% figure src="/docs/images/monitoring/bootcamp-proxy-stack.png" %}}
 
 #### HTTP Traffic Summary
 
 We also show you an overview graph that can be toggled between three metrics: Number of HTTP responses served per minute, Breakdown of error requests for the last hour, and Downstream response bandwidth served per minute. This data is pulled from [Graphite](/docs/monitoring/overview/graphite) in the **Metrics** view, so you can go here to dig deeper into the data.
 
-{{% figure src="/docs/images/http-response-count.png" %}}
+{{% figure src="/docs/images/monitoring/bootcamp-http-response-count.png" %}}
 
 Number of HTTP responses served per minute gives you a quick sense of the overall volume of traffic hitting your website, including all HTML content and all static resources like images & CSS files. This view is great for a general, low-resolution picture of how your site is doing.
 
