@@ -1,5 +1,5 @@
 ---
-title: Block a request 
+title: Block a request
 description: Guide to block a request using Varnish Cache.
 keywords: varnish, Varnish Cache, block, 403
 
