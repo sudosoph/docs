@@ -8,16 +8,20 @@ aliases:
 
 ---
 
-If visitors, crawlers, or spammers are degrading the performance of your site, it may be appropriate to block these from accessing your website content.
+**If visitors, crawlers, or spammers are degrading the performance of your site, it may be appropriate to block these from accessing your website content.**
 
 Rather than letting these requests be processed by Section and your origin server, you can block them as they enter Section.
 
-There are two approaches to Blocking IP.
+There are two approaches to Blocking IP's.
 
 1. IP Restrictions screen in Aperture web dashboard
 2. section.config.json in Advanced Config & git workflow
 
 The simplest interface to view/edit these values is available via "Configuration" > "IP Restrictions".
+
+{{% notice info %}}
+Note that blocking an IP within Aperture as described above adds the IP to the file ``section.config.json`` behind the scenes.
+{{% /notice %}}
 
 ## 1. Block IP via Aperture IP Restrictions
 
@@ -33,9 +37,7 @@ Within a few seconds Section will be blocking requests from your blacklist.
 
 The IP blacklist is stored in the ``section.config.json`` file in the root of the git repository for your web site. You can view this by going to <https://aperture.section.io/>, selecting your site and then going to the "Advanced Config" page.
 
-{{% notice info %}}
-Note that blocking an IP within Aperture as described above adds the IP to the file ``section.config.json`` behind the scenes.
-{{% /notice %}}
+
 
 {{< figure src="/docs/images/platform/advanced-config.gif" title="Simple proxy stack" >}}
 
