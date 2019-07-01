@@ -1,6 +1,6 @@
 +++
 title = "Varnish Cache"
-description = "Varnich Cache Module on the Section Platform"
+description = "Varnish Cache Module on the Section Platform"
 +++
 
 These docs cover the Varnish Cache Module on the Section platform.
