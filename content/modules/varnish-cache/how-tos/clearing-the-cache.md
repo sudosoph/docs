@@ -26,3 +26,16 @@ NOTE: This may cause increased load on your origin server and also slow down you
 You can think of bans as a way to purge or filter out object that are already in the cache. Keep in mind that this method does not ban future requests from being stored in the cache.
 
 Support for bans are built into Varnish Cache so to learn how to use bans, see the [Varnish Cache  documentation](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html#bans).
+
+
+
+<script type="text/javascript" async src="https://play.vidyard.com/embed/v4.js"></script>
+<img
+  style="width: 50%; margin: auto; display: block;"
+  class="vidyard-player-embed"
+  src="https://play.vidyard.com/S5Bwvod8tW7DQL6fY5343Z.jpg"
+  data-uuid="S5Bwvod8tW7DQL6fY5343Z"
+  data-v="4"
+  data-type="inline"
+/>
+
