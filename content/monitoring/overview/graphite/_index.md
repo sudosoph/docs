@@ -14,7 +14,7 @@ By toggling the view at the top of the monitoring screen from "Grafana Dashboard
 
 You will see some folder on the left with different environments. The first environment will usually be your production environment, the second your development environment, and then any other environments. To see production data for Varnish, you would go to the first environment > section hosted > Varnish Cache.
 
-{{% figure src="/docs/images/graphite-metrics-folders.png" %}}
+![Metrics folders](/docs/images/graphite-metrics-folders.png?height=200px)
 
 You can use this data to create graphs. For example: Varnish Cache > content_type > text-html > status > 200 > time_taken > mean will show me the mean time it took to serve a successful html doc.
 

@@ -9,13 +9,13 @@ aliases:
 
 The Grafana view shows you aggregate level visualization using queries from Graphite. We’ve created 4 dashboards that can be accessed in the top right of the Grafana frame under the section "Content Delivery Grid."
 
-{{% figure src="/docs/images/grafana-navigate-metrics.png" %}}
+{{% figure src="/docs/images/monitoring/navigate-grafana-metrics.png" %}}
 
 You can also toggle the display and time frame for each of the graphs just above the "Content Delivery Grid" button.
 
 You can open up Grafana in a new window for better viewing by clicking “Open in new window” button at the top of the frame.
 
-{{% figure src="/docs/images/grafana-new-window.png" %}}
+![New window grafana](/docs/images/monitoring/grafana-new-window-aperture.png?height=600px)
 
 #### Traffic Summary
 
