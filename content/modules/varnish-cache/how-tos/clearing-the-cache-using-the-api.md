@@ -5,7 +5,7 @@ aliases:
 ---
 
 1. From the management console, click **API** in the top menu. This will bring you to a UI for all our API routes grouped by category.
-![API Link](/docs/images/screenshots/menu/highlight-api-option.png?height=80px)
+![API Link](/docs/images/varnish-cache/api-option.png?height=80px)
 1. Scroll through the list, Click **Show/Hide** on the **Proxy** group, then click on the **POST** method ending with **state**.
 ![Varnish Cache Clear API Method](/docs/images/screenshots/swagger-ui/highlight-varnish-cache-clear-api-operation.png?height=350px)
 1. Here, you'll see an interface to help build your API call. Enter your **account id**, **application id**, **environment name**, and **proxy name**.<br/>These can be obtained from the URL in the management console (go to your aperture homepage and look at the URL - the numbers go accountId -> applicationId -> environmentId). Your **proxy name** is probably `varnish`, but you can also clear cache for other caching proxies.
