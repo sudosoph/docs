@@ -21,8 +21,11 @@ Understanding which types are being requested the most, require the most time to
 
 Most of the time, images and CSS will be the easiest place to boost cache rate. HTML, on the other hand, can be more difficult to cache successfully but often provides the largest  performance and scalability wins as the hit rate increases.
 
-**How do I see my wins?** <br/>
+**How do I see my wins?**
+
 There are two dashboards in Grafana under `Real Time -> Monitoring` to understand content type caching.
+
+{{< figure src="/docs/images/performance/grafana-graphite.png" title="Grafana or Graphite" >}}
 
 The **request performance** dashboard shows throughput and time to serve by status on the [Bootcamp Grafana](https://aperture.section.io/account/1/application/1/grafana-web).
 
