@@ -10,13 +10,13 @@ If you don't have a Section account then this is a good place to get started.
 
 ### Signing up
 
-The Section sign up process is currently hidden from the general public. We believe that by engaging our Customer Reliability Engineers directly, you'll have a better experience with the product and achieve better outcomes.
-
-Please email us on the contact form and an engineer will reach out to you directly: https://www.section.io/contact-us/
+Please contact us and a Section engineer will reach out to you directly: https://www.section.io/contact-us/
 
 {{% notice note %}}
 We do not subscribe you to any email lists and guarantee a direct interaction with an engineer who will understand the problem you are looking to solve.
 {{% /notice %}}
+
+By engaging Section's Customer Reliability Engineers, you'll have a great experience getting set up on Section's Edge Compute Platform and quickly achieve the outcomes you are seeking.
 
 ### General topic guides
 
