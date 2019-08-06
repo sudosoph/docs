@@ -7,7 +7,7 @@ weight: 1
 
 ## Overview
 
-This tutorial will guide you through the process to adding the Kraken module to your proxy stack with default configuration files.
+This tutorial will guide you through the process to adding the ThreatX module to your proxy stack with default configuration files.
 
 ## Setting up Threat X in Section
 
@@ -15,7 +15,7 @@ You can add Threat X to your Section setup Content Delivery Grid very quickly. T
 
 When creating your application you will want to select the **Threat-X** on the second page of the setup process.
 
-{{% figure src="/docs/images/select-threatx.png" %}}
+{{% figure src="/docs/images/select-threatx2.png" %}}
 
 If you already have an application on Section add the following object to your **proxystack** array in your **section.config.json** file located in the root of your repository.
 
@@ -52,10 +52,16 @@ Contact Section support at support@section.io. Our engineers will organize an ac
 
 ### Step 4 - Deploy
 
-Commit your changes and push them to the desired branch you are working on. If you run into any issues please contact support@section.io
+Commit your changes and push them to the desired branch you are working on. Now, when you select the **Advanced Config** option in the left sidebar you  will see the newly added **threatx** folder under your root directory. If you run into any issues please contact support@section.io
 
 
 ### Step 5 - Switch to auto blocking
 
 Threat X will then be running on your site, inspecting your traffic. This period is referred to as "baselining" and allows the system to form a behavioral map of what good, normal traffic looks like for your website.
 After a while, look at the threats that are hitting your site with a representative from Threat X. Together you will assess the results of baselining mode and look for any false positives - this is where Threat X has detected an attack that could be a result of intended behavior or bugs in your site. As a last step the Threat X module will be switched from inspection mode to blocking mode.
+
+____
+
+You are now setup with ThreatX as part of your Section proxy stack. If you have any questions reach please contact section support at support@section.io
+
+____
