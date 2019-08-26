@@ -41,3 +41,19 @@ You can enable/disable image optimization by changing the value for the "enabled
 - `"s3" : {}`
 
 Section provides storage for optimized images. If you want the optimized images to be stored in your own S3 bucket we can set it up for you.
+
+### Image Resizing
+
+Section Kraken module can use querystrings to resize using the following strategies: auto, exact, fill, fit, landscape, portrait. See Kraken docs for details: https://kraken.io/docs/image-resizing
+
+Querystring paramaters accepted:
+- `strategy`  - string indicating strategy to be used
+- `width` - positive integer 
+- `height` - positive integer 
+- `background` - hex value of background, only used for fill strategy
+
+Example simple usage:
+`www.example.com/image.png?strategy=auto&width=100&height=200`
+
+Example advanced usage:
+`www.example.com/image.png?strategy=fill&width=100&height=200&background=000000`
