@@ -37,4 +37,9 @@ To add a proxy, we need to insert a json object containing the proxy's name and 
 Note that different proxies have different ways of specifying the image.  
 
 ## 2) Deploy your new configuration
-Once you've made the above changes to your configuration files, you're going to need a Section engineer to deploy the new configuration. Once you've changed the config.json file to your liking, please send us a [support ticket](https://support.section.io/hc/en-us/requests/new) so we can push those changes live for you.
+
+Section has a git-ops workflow. Deployment is via git commits. Free and open source proxy Modules like Varnish do not require Section engineers. 
+
+However, paid proxies like Kraken or ThreatX require Section engineering initialization and setup at the beginning of a proxy life-cycle. After initial setup, normal git-ops will trigger deployment of changes to environments such as Production or Staging. 
+
+If you need to contact a Section engineer please send us a [support ticket](https://support.section.io/hc/en-us/requests/new).
