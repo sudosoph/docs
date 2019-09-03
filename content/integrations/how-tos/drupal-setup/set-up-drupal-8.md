@@ -17,7 +17,7 @@ The following is a guide to installing the Section Drupal module into an existin
 * The Drupal 8 [key module](https://www.drupal.org/project/key) installed.
 * Drush installed if you want to purge any invalidation type over CLI. (requires purge 8.x-3.x-dev or newer for Drush 9 support)
 * Modify your VCL to disable cache on certain pages like admin panel. [Here's an example](https://gitlab.wklive.net/snippets/32), but lots will probably need to be changed for section. 
-  * The blocks of code within `if (req.method == "BAN")` and `if (req.method == "PURGE")` are not necessary on section because bans are handle via the API. 
+  * The blocks of code within `if (req.method == "BAN")` and `if (req.method == "PURGE")` are not necessary on section because bans are handled via the API. 
   * You may also want to pass on pages with certain cache tags:
     * `obj.http.Cache-Tags ~ "config:user.role.authenticated"`
     *  `obj.http.Cache-Tags ~ "config:user.role.administrator"` and/or
