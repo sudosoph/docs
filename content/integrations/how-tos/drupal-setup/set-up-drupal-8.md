@@ -14,6 +14,14 @@ The following is a guide to installing the Section Drupal module into an existin
 * An existing Section application. For help setting up an application, [go here](https://www.section.io/docs/tutorials/activate-section-io/create-application-edge/)
 * A user account to be associated with the Drupal Module (many customers choose to create a user account that exists simply to authenticate cache clearing and is not associated with a specific, real person). To create an account please visit [this link](https://www.section.io/public/register) and for help adding a new user to an app please [see here](https://www.section.io/docs/how-to/user-management/add-a-user-to-your-account/)
 * The Drupal 8 [purge module](https://www.drupal.org/project/purge) installed.
+* The Drupal 8 [key module](https://www.drupal.org/project/key) installed.
+* Drush installed if you want to purge any invalidation type over CLI. (requires purge 8.x-3.x-dev or newer for Drush 9 support)
+* Modify your VCL to disable cache on certain pages like admin panel. [Here's an example](https://gitlab.wklive.net/snippets/32), but lots will probably need to be changed for section. 
+  * The blocks of code within `if (req.method == "BAN")` and `if (req.method == "PURGE")` are not necessary on section because bans are handled via the API. 
+  * You may also want to pass on pages with certain cache tags:
+    * `obj.http.Cache-Tags ~ "config:user.role.authenticated"`
+    *  `obj.http.Cache-Tags ~ "config:user.role.administrator"` and/or
+    *  `obj.http.Cache-Tags ~ "config:system.menu.admin"`
 
 ### Download the Section Purger
 
@@ -32,6 +40,12 @@ You also need to enable a way to process cache invalidation items. You choices a
 Finally, enable the Section Purger itself, along with the `Section HTTP Tags Header` module and the `Core Tags Queuer`. This module ensures that Drupal sends the appropriate cache tags that our module uses to evict expired assets from the cache.
 
 {{% figure src="/docs/images/drupal8-purger-modules.png" %}}
+
+### Safely store your Aperture Password with the key module
+
+Navigate to `/admin/config/system/keys/add` and input your section.io password. Use key type `Authentication`, and choose whichever key provider you find to be the safest in your particular environment. (More info on this in the [key module documentation](https://www.drupal.org/docs/8/modules/key)).
+
+{{% figure src="/docs/images/drupal8-purger-key.png" %}}
 
 ### Configure Full Page Cache Max Age
 
@@ -53,3 +67,23 @@ Once here, input the details of the user account you would like to use to authen
 {{% figure src="/docs/images/drupal8-configure-purger.png" %}}
 
 {{% figure src="/docs/images/drupal8-purger-all-green.png" %}}
+
+## Check the logs to confirm that queuer is working (optional)
+
+You can set the logging levels from the block on the right sidebar on the purge page. 
+
+(`/admin/config/development/performance/purge`)
+
+
+{{% figure src="/docs/images/drupal8-purger-logging.png" %}}
+
+You can view the logs at `/admin/reports/dblog`
+
+{{% figure src="/docs/images/drupal8-purger-logs.png" %}}
+
+
+## Raise the timeout if necessary
+
+If you are seeing timeout errors connecting to aperture, raise the timeout in the purger settings.
+
+{{% figure src="/docs/images/drupal8-purger-timeout.png" %}}
