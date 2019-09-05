@@ -25,7 +25,7 @@ The following is a guide to installing the Section Drupal module into an existin
 
 ### Download the Section Purger
 
-This module can be found [here](https://github.com/section-io/drupal-purger). Download the latest release as a zip/tar file and load into your Drupal instance. We also support installing via composer.
+This module can be found [here](https://github.com/section/section_purger). Download the latest release as a zip/tar file and load into your Drupal instance. We also support installing via composer.
 
 ### Enable Purge and Section Purger Modules
 
