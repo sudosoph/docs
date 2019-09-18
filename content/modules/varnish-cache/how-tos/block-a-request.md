@@ -29,5 +29,21 @@ sub vcl_synth {
 {{< / highlight >}}
 
 {{% notice note %}}
-This is just an example of how to block a request using Varnish Cache. You can utilize many different patterns to block a request. E.g. check for user agents, country codes, IP addresses, etc.
+This is just an example of how to block a request using Varnish Cache. You can utilize many different patterns to block a request. E.g. check for user agents, country codes (example below), IP addresses, etc.
 {{% /notice %}}
+
+###Blocking traffic based on GEO Region
+
+The section.io platform performs GEO region lookup at the Edge and sets a custom header “section-io-geo-country” that contains the ISO 3166-1 alpha-2 country code such as US for the United States, or AU for Australia. There are also a number of other header that are set which can be useful.See: https://www.section.io/docs/edge-proxy/#ip-geolocation 12
+
+You can then use the section-io-geo-countryvalue to block traffic in Varnish.
+
+{{< highlight js >}}
+sub vcl_recv {
+	if(req.http.section-io-geo-country == "XX") {
+		return (synth(403, "Forbidden"));
+	}
+}
+{{< highlight js >}}
+
+Replace XX with the country code you would like to block.You can block multiple countries by using | e.g.req.http.section-io-geo-country == "XX|YY|ZZ"
