@@ -54,24 +54,21 @@ In `vcl_synth` we need to check the `resp.status` for a 503 code as this is the 
 
 This part is where we actually tell Varnish Cache to serve stale content is the restart count is greater than 0 and the grace period plus the time to live is greater than 0. If both cases match, we serve the stale content.
 
-    sub vcl_hit {
-        if (obj.ttl < 0s && obj.ttl + obj.grace > 0s) {
-            if (req.restarts == 0) {
-                set req.http.sie-enabled = true;
-                return (fetch);
-            } else {
-                set req.http.sie-abandon = true;
-                return (deliver);
-            }
-        }
-
-        if (obj.ttl >= 0s) {
-            return (deliver);
-        }
-
-        return (fetch);
-        # Varnish Cache 5 needs to not fetch -> return (miss);
-    }
+{{< highlight js >}}   
+   sub vcl_hit {
+     if (obj.ttl >= 0s) {
+          // A pure unadulterated hit, deliver it
+          return (deliver);
+     }
+     if (obj.ttl + obj.grace > 0s) {
+          // Object is in grace, deliver it
+          // Automatically triggers a background fetch
+          return (deliver);
+     }
+     // fetch & deliver once we get the result
+     return (miss);
+}
+{{< / highlight >}}
 
 ## Testing
 
