@@ -18,10 +18,11 @@ The following is a guide to installing the Section Drupal module into an existin
 * Drush installed if you want to purge any invalidation type over CLI. (requires purge 8.x-3.x-dev or newer for Drush 9 support)
 * Modify your VCL to disable cache on certain pages like admin panel. [Here's an example](https://gitlab.wklive.net/snippets/32), but lots will probably need to be changed for section. 
   * The blocks of code within `if (req.method == "BAN")` and `if (req.method == "PURGE")` are not necessary on section because bans are handled via the API. 
-  * You may also want to pass on pages with certain cache tags:
-    * `obj.http.Cache-Tags ~ "config:user.role.authenticated"`
-    *  `obj.http.Cache-Tags ~ "config:user.role.administrator"` and/or
-    *  `obj.http.Cache-Tags ~ "config:system.menu.admin"`
+  * You may also want to prevent caching (pass) on pages with certain cache tags:
+    * `obj.http.Section-Cache-Tags ~ "4bt8"` (hash of `config:user.role.authenticated`)
+    *  `obj.http.Section-Cache-Tags ~ "3vnt"` (hash of `config:user.role.administrator`) and/or
+    *  `obj.http.Section-Cache-Tags ~ "r8q3"` (hash of `config:system.menu.admin`)
+  * Alternately you can pass on caching pages if there is a session cookie.
 
 ### Download the Section Purger
 
@@ -33,11 +34,11 @@ Click the Extend tab in the admin console or otherwise navigate to `/admin/modul
 
 {{% figure src="/docs/images/drupal8-purge-modules.png" %}}
 
-You also need to enable a way to process cache invalidation items. You choices are the `Cron processor` and the `Late runtime processor`.The `Cron Processor` will process cache invalidations only when the cronjob is run (it runs automatically on a predefined schedule or you can initiate it manually from the admin console), while the `Late runtime processor` will initiate cache bans as soon as a piece of content is changed. It does not matter to our module whether you choose either or both.
+You also need to enable a way to process cache invalidation items. You choices are the `Cron processor` and the `Late runtime processor`.The `Cron Processor` will process cache invalidations only when the cronjob is run (it runs automatically on a predefined schedule or you can initiate it manually from the admin console), while the `Late runtime processor` will process the purge queue when a page is requested. It does not matter to our module whether you choose either or both, however in production environments, you should only be using cron as there would be a significant page load time increase with the late runtime processor as it would need to make an api request every time a purge is in the queue, and if the request times out the end-user may get a 500 internal server error thrown by Drupal.
 
 {{% figure src="/docs/images/drupal8-cron-options.png" %}}
 
-Finally, enable the Section Purger itself, along with the `Section HTTP Tags Header` module and the `Core Tags Queuer`. This module ensures that Drupal sends the appropriate cache tags that our module uses to evict expired assets from the cache.
+Finally, enable the Section Purger module and the `Core Tags Queuer`. This module ensures that Drupal sends the appropriate cache tags that our module uses to evict expired assets from the cache.
 
 {{% figure src="/docs/images/drupal8-purger-modules.png" %}}
 
@@ -55,13 +56,16 @@ Navigate to `/admin/config/development/performance` and set `Page Cache Max Age`
 
 Navigate to `/admin/config/development/performance`. If your installation of the purge module succeeded, you'll see a `Purge` tab next to the `Performance` tab at the top of the page.
 
-Next, click on `Add Purger` to open the UI to create a new Purger and select `HTTP Purger`. Once created, you should see a flash message informing you that the purger has been successfully created.
+Next, click on `Add Purger` to open the UI to create a new Purger and select `Section Bundled Purger`. Once created, you should see a flash message informing you that the purger has been successfully created.
+The Section Bundled Purger combines API requests for tags, which reduces processing time on the origin, and potentially page load time if you are using the late runtime processor (cron is best for production environments).
 
 {{% figure src="/docs/images/drupal8-purger-ui.png" %}}
 
 Next, click on the small arrow next to the purger and click `configure`. This will open the UI to fill in your account credentials and connect your Drupal module to the Section platform.
 
-*Note:* `The Drupal Site Name` field should be the full hostname of the site for which you are configuring the purger, and is only necessary when setting up a Drupal 8  multisite. If your Drupal instance is not a multi-site, then this field can be left blank.  
+*Note:* The `Drupal Site Name` field should be the full hostname of the site for which you are configuring the purger, and is only necessary when setting up a Drupal 8  multisite. If your Drupal instance is not a multi-site, then this field can be left blank. 
+*Note:* `Varnish Proxy Instance Name` field will usually be varnish. This name is defined in the section config in your application's repository. This is useful if, for example you have multiple varnish instances that handle different things. You can set up a purger for each instance of varnish (if using Drupal site name, this would be per-instance and per-site-name)
+
 Once here, input the details of the user account you would like to use to authenticate with our API. Once done, click `Save Configuration`. Once saved and configured properly, the status bar on the right hand side should show all green as pictured below.
 
 {{% figure src="/docs/images/drupal8-configure-purger.png" %}}
@@ -84,6 +88,6 @@ You can view the logs at `/admin/reports/dblog`
 
 ## Raise the timeout if necessary
 
-If you are seeing timeout errors connecting to aperture, raise the timeout in the purger settings.
+If you are seeing timeout errors connecting to aperture, raise the timeout in the purger settings. We recommend a timeout of 2, but feel free to increase this to 5 when using the cron processor.
 
 {{% figure src="/docs/images/drupal8-purger-timeout.png" %}}
