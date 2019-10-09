@@ -30,7 +30,7 @@ location /examplePath1/ {
     proxy_set_header Host $host;
 
     # This sends the request to the local NodeJS server.
-    include /etc/nginx/node.conf;
+    include /etc/nginx/section.module/node.conf;
 }
 ```
 
