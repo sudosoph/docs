@@ -22,8 +22,6 @@ If you would like your Section application to respond to multiple domains, you c
 
 Please review our [HTTPS setup page](/docs/setup-https) to ensure all of your domains are properly covered by either our automated HTTPS or your own custom certificates to prevent certificate errors.
 
-*Note*: Wildcard domains (i.e. `*.example.com`) can be supported, please [contact Section support](https://support.section.io/) to set this up.
-
 If the additional domain names should redirect to the canonical domain name to improve search engine ranking, this can be achieved with a basic Varnish Cache configuration, for example:
 
     vcl 4.0;
