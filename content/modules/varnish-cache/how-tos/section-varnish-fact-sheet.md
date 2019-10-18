@@ -1,0 +1,101 @@
+---
+title: Section.io Varnish Fact Sheet
+description: Section.io Varnish Fact Sheet
+keywords: API, API caching, quick facts, Varnish, varnish, Varnish Cache, JSON, JSON API caching
+aliases:
+  - /section-varnish/
+
+---
+
+## Fundamentals
+
+* Varnish is a HTTP caching reverse proxy
+* "Varnish decides whether it can store the content or not based on the response it gets back from the backend"
+* the origin or backend can instruct Varnish to cache the content with the HTTP response header Cache-Control
+* Varnish by default does not cache cookies or other sensitive client side content
+* Varnish has a conservative approach to caching to avoid cache leaking sensitive data i.e. shopping cart or personalization information
+* Varnish policies can be changed by Varnish Configuration Language or VCL
+* delivery from cache is usually in milliseconds
+* Varnish is highly performant, is usually twice as fast as a backend server and is Varnish is usually constrained by networks
+
+Source: [Varnish 6.3 Official Docs - Starting Varnish](https://varnish-cache.org/docs/6.3/tutorial/starting_varnish.html)
+
+## Varnish Resources
+
+* [Varnish Software Book](https://info.varnish-software.com/the-varnish-book): [Intro](https://book.varnish-software.com/4.0/chapters/Introduction.html)
+* [Varnish Blog](https://info.varnish-software.com/blog?hsLang=en-us) 
+* [Varnish Latest Official Docs](https://varnish-cache.org/docs/trunk/)
+* [Varnish Source Code](https://github.com/varnishcache/varnish-cache)
+* [Varnish modifications](https://github.com/nigoroll/varnish-modules)
+
+## Varnish Basics
+
+The Varnish Configuration Language (VCL) is a domain-specific language for caching HTTP requests.
+
+* Varnish Configuration Language (VCL) implements a state machine.
+* Varnish uses VCL (Varnish Configuration Language) to run as a ‘state machine’. 
+* Various Varnish states are thought of, and implemented as subroutines.
+* Varnish includes built-in subroutines via builtin.vcl.
+* VCL has functions, legal return actions and variables.
+* VCL functions can be extended by *vmods* (Varnish modifications).
+* Varnish on Section has a preinstalled set of [vmods](https://github.com/nigoroll/varnish-modules). 
+* Each URL in the cache is hashed and accessible via a hash key based on host-headers, IP or other criteria via VCL logic or VMODs.
+
+## Varnish Receive and Respond
+
+The two most important Varnish states or subroutines or subs are "received request"`vcl_recv` and "backend response" `vcl_backend_response`.
+
+* "received request" (vcl_recv)
+* "backend response" (vcl_backend_response)
+
+
+## Varnish Flow Described
+
+
+Each HTTP request flows by switching between Varnish cache states such as `recv`, `hit`, `miss` or `pass` by calling return functions which use VCL logic to determine which state is next. For each state there is a VCL subroutine patterned like `recv` as `vcl_recv`. 
+
+| State | Subroutine | Name | Description
+|:--|:--|:--|---|
+| [recv](https://varnish-cache.org/docs/trunk/users-guide/vcl-built-in-subs.html#vcl-recv "vcl_recv") | [vcl_recv](https://book.varnish-software.com/4.0/chapters/VCL_Subroutines.html#vcl-vcl-recv "vcl_recv") | Received | HTTP request is completely received, parsed and can then be inspected and modified by this routine. vcl_receive subroutine is terminated by calling return() and can `fail`, `synth`, `restart`, `pass`, `pipe`, `hash`, `purge` and `vcl(label)`.|
+| [hash](https://varnish-cache.org/docs/trunk/users-guide/vcl-built-in-subs.html#vcl-hash "vcl_hash") | [vcl_hash](https://book.varnish-software.com/4.0/chapters/VCL_Subroutines.html#vcl-vcl-hash "vcl_hash") |  Hash | Creates a unique hash key for each cached object. By default, the builtin `vcl_hash` uses hostname or IP address and adds the requested URL to the cache hash. `vcl_hash` always runs the `lookup` action on the hash key and determines the next state / sub-routine i.e. `hit`, `miss`, `pass` or `purge` etc. |
+| [hit](https://varnish-cache.org/docs/trunk/users-guide/vcl-built-in-subs.html#vcl-hit "vcl_hit") | [vcl_hit](https://book.varnish-software.com/4.0/chapters/VCL_Subroutines.html#vcl-vcl-hit "vcl_hit") | Hit | Called by vcl_hash via the lookup operation and finds or "hits" a cache object. High hit rates are optimal for website performance.|
+| [miss](https://book.varnish-software.com/4.0/chapters/VCL_Subroutines.html#vcl-vcl-miss "vcl_miss") | [vcl_miss](https://varnish-cache.org/docs/trunk/users-guide/vcl-built-in-subs.html#vcl-miss "vcl_miss") | Miss | If a requested object is not found by a lookup of the cache hash key, it is declared a miss by the vcl_miss subroutine. vcl_miss decides if a document should be retrieved from a backend by returning `fetch`. |
+| [pipe](https://varnish-cache.org/docs/trunk/users-guide/vcl-built-in-subs.html#vcl-pipe "vcl_pipe") | vcl_pipe | Pipe | Pipes a HTTP request direct to backend or origin, passing back and forwards with no other VCL running. Basically turns Varnish into a dump TCP/IP proxy. |
+| [fetch](https://book.varnish-software.com/4.0/chapters/VCL_Subroutines.html#vcl-vcl-backend-fetch "vcl_backend_fetch") | [vcl_backend_fetch](https://varnish-cache.org/docs/trunk/users-guide/vcl-built-in-subs.html#vcl-backend-fetch "vcl-backend-fetch") | Backend Fetch | `vcl_backend_fetch` can be called from `vcl_miss` or `vcl_pass`. It typically alters the request before it gets to the backend or origin. |
+| [response](https://book.varnish-software.com/4.0/chapters/VCL_Basics.html#vcl-vcl-backend-response "vcl_backend_response") | [vcl_backend_response](https://varnish-cache.org/docs/trunk/users-guide/vcl-built-in-subs.html#vcl-backend-response "vcl-backend-response") | Backend Response | `vcl_backend_response` is designed to avoid caching cookies and other probably undesired data. Called after response headers are retrieved from the backend/origin. Returns `vcl_deliver`.|
+| [deliver](https://book.varnish-software.com/4.0/chapters/VCL_Subroutines.html#vcl-vcl-deliver "vcl_backend_deliver") | [vcl_deliver](https://varnish-cache.org/docs/trunk/users-guide/vcl-built-in-subs.html#vcl-deliver "vcl-deliver") | Deliver | Usually the last exit point for HTTP request flows and is often used to add or remove debug-headers. Cached content is ready to be delivered to client of user. |
+| [synth](https://book.varnish-software.com/4.0/chapters/VCL_Subroutines.html#vcl-vcl-backend-fetch "vcl_synth") | [vcl_synth](https://varnish-cache.org/docs/trunk/users-guide/vcl-built-in-subs.html#vcl-synth "vcl_synth") | Synth | `vcl_synth` is called to deliver a synthetic object, generated in VCL and not fetched from the backend. |
+
+## Varnish Flow
+
+![Varnish Flow Diagram](http://book.varnish-software.com/4.0/_images/simplified_fsm.svg)
+
+Source: [Varnish Software Book](https://info.varnish-software.com/the-varnish-book)
+
+
+## Varnish Modifications
+
+Varnish modifications or vmods pre-installed on Section. This is a collection of modules ("vmods") extending Varnish VCL used for describing HTTP request/response policies with additional capabilities.
+
+| VMOD | Name | Description
+|:--|:--|---|
+| [cookie](https://github.com/varnish/varnish-modules/blob/master/docs/vmod_cookie.rst "cookie") | Cookie | HTTP request is received and can then be inspected and modified by this routine. |
+| [vsthrottle](https://github.com/nigoroll/varnish-modules/blob/master/docs/vmod_vsthrottle.rst "vsthrottle - Throttling VMOD") | Throttling VMOD | A Varnish vmod for rate-limiting traffic on a single Varnish server. Offers a simple interface for throttling traffic on a per-key basis to a specific request rate. |
+| [header](https://github.com/nigoroll/varnish-modules/blob/master/docs/vmod_header.rst "Header VMOD for Varnish") | Header VMOD for Varnish | Varnish Module for manipulation of duplicated HTTP headers, for instance multiple Set-Cookie headers. |
+| [saintmode](https://github.com/nigoroll/varnish-modules/blob/master/docs/vmod_saintmode.rst " Saint mode backend director") |  Saint mode backend director | Saintmode lets you deal with a backend that is failing in random ways for specific requests. It maintains a blacklist per backend, marking the backend as sick for specific objects. When the number of objects marked as sick for a backend reaches a set threshold, the backend is considered sick for all requests. Each blacklisted object carries a TTL, which denotes the time it will stay blacklisted. |
+| [softpurge](https://github.com/nigoroll/varnish-modules/blob/master/docs/vmod_softpurge.rst "Softpurge") | Softpurge | Softpurge is cache invalidation in Varnish that reduces TTL but keeps the grace value of a resource. It is not safe to use with Varnish 5.0 onwards, use vmod-purge from Varnish 5.2 instead. |
+| [tcp](https://github.com/nigoroll/varnish-modules/blob/master/docs/vmod_tcp.rst "TCP vmod") | TCP vmod | The TCP vmod opens for access and modification of client TCP connection attributes from VCL. |
+| [var](https://github.com/nigoroll/varnish-modules/blob/master/docs/vmod_var.rst "var") | var | This VMOD implements basic variable support in VCL. |
+| [xkey](https://github.com/nigoroll/varnish-modules/blob/master/docs/vmod_xkey.rst "xkey") | xkey - Surrogate keys support for Varnish Cache | This vmod adds secondary hashes to objects, allowing fast purging on all objects with this hash key. |
+| [bodyaccess](https://github.com/nigoroll/varnish-modules/blob/master/src/vmod_bodyaccess.c "Body access") | Body access | Undocumented VMOD giving access to body objects. |
+
+
+## Builtin VCL
+
+* The built-in standard [Varnish builtin.vcl](https://github.com/varnishcache/varnish-cache/blob/master/bin/varnishd/builtin.vcl)
+
+>"Make sure you understand this: Your own VCL-configuration will not overwrite this builtin configuration, it will just be prepended to each sub. Unless your VCL code executes a terminating statement (e.g. return(pass)) it will continue into these default subs."
+
+Source: [Varnish Examples](https://varnish-cache.org/trac/wiki/VCLExamples)
+
+This document is inspired by [Integralist](https://www.integralist.co.uk/posts/fastly-varnish/)
