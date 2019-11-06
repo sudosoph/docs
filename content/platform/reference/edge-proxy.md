@@ -28,6 +28,9 @@ For each incoming request, the Edge proxy attempts to resolve the client's conne
 
 * `section-io-geo-country-code` - the [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country code such as `US` for the United States, or `AU` for Australia.
 * `section-io-geo-country-name` - the country name such as `United States` or `Australia`.
+* `section-io-geo-country` - the country code such as `AU`.
+* `section-io-geo-region` - the country code such as `Western Australia`.
+* `section-io-geo-asn` - ASN number `64098`.
 * `section-io-geo-region-code` - examples include `CA` and `VA` for US IPs or `NSW` for Australian IPs.
 * `section-io-geo-region-name` - examples include `California` and `Virginia` for US IPs or `New South Wales` for Australian IPs.
 * `section-io-geo-city` - examples include `New York`, `Mountain View`, `Sydney`, and `Drummoyne`.
