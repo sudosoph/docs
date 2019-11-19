@@ -11,6 +11,8 @@ ordersectionsby: "title"
 
 Section offers a number of different modules that can be used in your edge deployment.
 
+Section also allows you to build your own modules and run custom workloads on our edge network throughout the world. You can get started with building your own module with the example module assets provided by Section : **[Module Build Assets](https://github.com/section/module-build-assets)**.
+
 A module template is a combination of the module software (eg. Varnish Cache) and a set of default files to configure the module (eg. the `default.vcl` file).
 
 If you want to experiment with different modules you can use our [Developer Workflow](/docs/developer-pop/) to run your edge deployment on your local machine.
