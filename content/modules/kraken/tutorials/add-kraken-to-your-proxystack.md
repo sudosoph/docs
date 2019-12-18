@@ -16,7 +16,7 @@ This tutorial will guide you through the process to adding the Kraken module to 
 ```
 {
     "name": "kraken",
-    "image": "kraken:2.0.0"
+    "image": "kraken:2.1.0"
 }
 ```
 

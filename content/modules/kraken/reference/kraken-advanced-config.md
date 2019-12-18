@@ -42,14 +42,18 @@ You can enable/disable image optimization by changing the value for the "enabled
 
 Section provides storage for optimized images. If you want the optimized images to be stored in your own S3 bucket we can set it up for you.
 
+- `"optimize_paths" : ["/images/", "/media/"]`
+
+You can provide a list of path prefixes for which you want the Kraken module to attempt optimization. The Kraken module optimizes by default the image extensions **png,jpeg,jpg,gif and webp**. For any other assets you can use the above feature. For example using a prefix */images* as shown above will instruct the Kraken module optimize all images which have the prefix */images* in their URL.
+
 ### Image Resizing
 
 Section Kraken module can use querystrings to resize using the following strategies: auto, exact, fill, fit, landscape, portrait. See Kraken docs for details: https://kraken.io/docs/image-resizing
 
 Querystring paramaters accepted:
 - `strategy`  - string indicating strategy to be used
-- `width` - positive integer 
-- `height` - positive integer 
+- `width` - positive integer
+- `height` - positive integer
 - `background` - hex value of background, only used for fill strategy
 
 Example simple usage:
