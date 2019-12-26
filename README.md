@@ -1,29 +1,55 @@
 # docs
-Section documentation
 
-## Install hugo
-https://gohugo.io/getting-started/installing
+Section documentation at https://section.io/docs
 
-## Clone recursively
-`git clone --recursive https://github.com/section-io/docs.git`
+## Dependencies
 
-## Run hugo
-`hugo server --watch`
+The website is built with Hugo.
 
-### Issues
+Make sure you have [Hugo](https://gohugo.io/getting-started/installing/) installed on your system.
 
-With the latest version of the hugo (tested with version 0.53) you may run into the following error when building the docs locally :
+If you are using macOS and [Homebrew](https://brew.sh), you can set up your development environment by running:
 
-```
-/docs/themes/docdock/layouts/partials/logo.html:1:9": execute of template failed: template: partials/logo.html:1:9: executing "partials/logo.html" at <where .Site.Pages "S...>: error calling where: Source isn't a field of struct type *hugolib.Page
+``` bash
+brew bundle --file=Brewfile.development
 ```
 
-To fix this issue remove the word `.Source` from `.Source.Filename` in the file `/docs/themes/docdock/layouts/partials/logo.html` and build again.
+## Setup
 
-You might need to change remote url for push
+Clone the repository and all the needed bits by running:
 
-`git remote set-url origin git@github.com:section-io/docs.git`
+``` bash
+git clone --recursive https://github.com/section-io/docs.git
+```
 
-You might want to disable fast rendering
+(We use a Hugo theme, which lives as a git submodule under `themes/`)
 
-`hugo server --watch --disableFastRender`
+## Local dev
+
+Start a local instance of the website by running:
+
+``` bash
+hugo server
+```
+
+The output will tell you what port the website is running on, but it should almost always be running at http://localhost:1313/
+
+Hugo will automatically rebuild and reload the website when you make changes.
+
+## Publishing changes
+
+Make your changes locally, then submit a PR on GitHub.
+
+## Known issues
+
+1. You might need to change remote url for push:
+
+   ```
+   git remote set-url origin git@github.com:section-io/docs.git
+   ```
+
+1. You might want to disable fast rendering:
+
+   ```
+   hugo server --watch --disableFastRender
+   ```
