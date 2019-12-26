@@ -11,6 +11,7 @@
 
     --MENU-SEARCH-BG-color:#f2f2f2; /* Search field background color (by default borders + icons) */
     --MENU-SEARCH-BOX-color: #f2f2f2; /* Override search field border color */
+    --MENU-SEARCH-BOX-PLACEHOLDER-TEXT-color:#565656; /* Override search field border color */
     --MENU-SEARCH-BOX-ICONS-color: #09090b; /* Override search field icons color */
 
     --MENU-SECTIONS-ACTIVE-BG-color:#F5F6F7; /* Background color of the active section and its childs */
@@ -88,6 +89,9 @@ a:hover {
 #sidebar .searchbox {
 	border-color: var(--MENU-SEARCH-BOX-color);
     background: var(--MENU-SEARCH-BG-color);
+}
+#sidebar .searchbox #search-by::placeholder {
+  color: var(--MENU-SEARCH-BOX-PLACEHOLDER-TEXT-color);
 }
 #sidebar ul.topics > li.parent, #sidebar ul.topics > li.active {
     background: var(--MENU-SECTIONS-ACTIVE-BG-color);
