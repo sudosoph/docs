@@ -1,0 +1,5 @@
+{{ range first 1 (where .Site.Menus.shortcuts "Identifier" "homepage") }}
+<a href="{{ .URL }}">
+  <img src="https://www.section.io/images/section-logo.svg" alt="Section logo">
+</a>
+{{ end }}
