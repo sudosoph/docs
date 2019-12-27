@@ -3,7 +3,7 @@ languageCode = "en-us"
 DefaultContentLanguage = "en"
 
 title = "Section Documentation"
-theme = "docdock"
+theme = "hugo-theme-learn"
 # themesdir = "../.."
 
 [params]
@@ -12,7 +12,7 @@ noHomeIcon = false # default is false
 noSearch = false # default is false
 showVisitedLinks = true # default is false
 # themeStyle = "theme" # overide base css
-themeVariant = "" # choose theme variant "green", "gold" , "gray", "blue" (default)
+themeVariant = "section" # choose theme variant "green", "gold" , "gray", "blue" (default), or "section" (which lives at static/css/theme-section.css)
 ordersectionsby = "weight" # ordersectionsby = "title"
 
 [outputs]
@@ -20,19 +20,19 @@ home = [ "HTML", "RSS", "JSON"]
 
 
 [[menu.shortcuts]]
-pre = "<h3>More</h3>"
-name = "<i class='fa fa-github'></i> Github repo"
-identifier = "ds"
+identifier = "github"
+name = "<i class='fa fa-code fa-fw'></i> GitHub repo"
 url = "https://github.com/section-io/docs"
 weight = 10
 
 [[menu.shortcuts]]
-name = "<i class='fa fa-camera'></i> Community"
+identifier = "community"
+name = "<i class='fa fa-camera fa-fw'></i> Community"
 url = "https://community.section.io/"
-weight = 11
+weight = 15
 
 [[menu.shortcuts]]
-name = "<i class='fa fa-bookmark'></i> Section Home"
-identifier = "hugodoc"
+identifier = "homepage"
+name = "<i class='fa fa-bookmark fa-fw'></i> Section Home"
 url = "https://www.section.io/"
 weight = 20

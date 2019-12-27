@@ -7,7 +7,9 @@ aliases:
 
 # Section Docs
 
-{{% figure src="/docs/images/header-color.png" class="header-image" %}}
+<p style="margin: 64px 0; text-align: center; font-family: gt-fine; font-size: 72px; line-height: 0.9; font-weight: 700;">
+What will you create?
+</p>
 
 ## Getting started
 
