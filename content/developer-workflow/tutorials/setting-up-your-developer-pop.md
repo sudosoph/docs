@@ -12,8 +12,8 @@ Section Developer PoP runs on Kubernetes. Minikube is a miniature, prepackaged K
 Minikube runs in the free and open source [VirtualBox].
 
 1. Verify that you have installed VirtualBox
-1. Download and install <a href="https://github.com/kubernetes/minikube/releases/tag/v0.35.0" target="Minikube" title="Minikube v0.35.0 download">Minikube v0.35.0</a>. Version 0.35.0 is the Section supported version of Minikube. https://github.com/kubernetes/minikube/releases/tag/v0.35.0
-1. Download and install <a href="https://kubernetes.io/docs/tasks/tools/install-kubectl" target="kubectl" title="kubctl v1.14.3 download">kubectl v1.14.3</a>. Version v1.14.3 is the Section supported version of kubectl. https://kubernetes.io/docs/tasks/tools/install-kubectl
+1. Download and install <a href="https://github.com/kubernetes/minikube/releases/tag/v1.5.2" target="Minikube" title="Minikube v1.5.2 download">Minikube v1.5.2</a>. Version 1.5.2 is the Section supported version of Minikube. https://github.com/kubernetes/minikube/releases/tag/v1.5.2
+1. Download and install <a href="https://kubernetes.io/docs/tasks/tools/install-kubectl" target="kubectl" title="kubectl v1.16.2 download">kubectl v1.16.2</a>. Version v1.16.2 is the Section supported version of kubectl. https://kubernetes.io/docs/tasks/tools/install-kubectl
 1. Start minikube: `minikube start`
 1. Initialize the Developer PoP
 
@@ -21,23 +21,23 @@ Minikube runs in the free and open source [VirtualBox].
 
 `minikube start`
 
-Minikube will start as below on MacOS.
+Minikube will start as below on Ubuntu 18.04.
 
 ```
 minikube start
-😄  minikube v0.35.0 on darwin (amd64)
-🔄  Restarting existing virtualbox VM for "aperture" ...
-⌛  Waiting for SSH access ...
-📶  "aperture" IP address is 192.168.99.101
-🐳  Configuring Docker as the container runtime ...
-✨  Preparing Kubernetes environment ...
-🚜  Pulling images required by Kubernetes v1.13.4 ...
-🔄  Relaunching Kubernetes v1.13.4 using kubeadm ...
-⌛  Waiting for pods: apiserver proxy etcd scheduler controller addon-manager dns
-📯  Updating kube-proxy configuration ...
-🤔  Verifying component health ......
-💗  kubectl is now configured to use "aperture"
-🏄  Done! Thank you for using minikube!
+🙄  minikube v1.5.2 on Ubuntu 18.04
+✨  Automatically selected the 'virtualbox' driver (alternates: [none])
+💿  Downloading VM boot image ...
+    > minikube-v1.5.1.iso.sha256: 65 B / 65 B [--------------] 100.00% ? p/s 0s
+    > minikube-v1.5.1.iso: 143.76 MiB / 143.76 MiB [-] 100.00% 4.14 MiB p/s 35s
+🔥  Creating virtualbox VM (CPUs=2, Memory=2000MB, Disk=20000MB) ...
+🐳  Preparing Kubernetes v1.16.2 on Docker '18.09.9' ...
+💾  Downloading kubeadm v1.16.2
+💾  Downloading kubelet v1.16.2
+🚜  Pulling images ...
+🚀  Launching Kubernetes ... 
+⌛  Waiting for: apiserver
+🏄  Done! kubectl is now configured to use "minikube"
 ```
 
 **Initialize the Developer PoP**
