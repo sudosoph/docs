@@ -7,7 +7,7 @@ weight: 1
 
 ## Overview
 
-This tutorial will guide you through the process to adding the Templarbit Shield module to your proxy stack with default configuration files. This tutorial assumes you've cloned your application's git repository to your local machine.
+This tutorial will guide you through the process of adding the Templarbit Shield module to your proxy stack with default configuration files. This tutorial assumes you've cloned your application's git repository to your local machine.
 
 ### Step 1 - Updating section.config.json
 
