@@ -30,6 +30,7 @@ If you want to experiment with different modules you can use our [Developer Work
 | [ShieldSquare](/docs/modules/shieldsquare/ "ShieldSquare overview") | Bot Management | Non-human bot traffic detection and management. |
 | [Signal Sciences](/docs/modules/signal-sciences/ "Signal Sciences overview") | Web Application Firewall | Real-time protection for an application under attack and integrates into devops toolchains. |
 | [SiteSpect](/docs/modules/sitespect/ "SiteSpect overview") | A/B Testing | Javascript and Tag Free A/B testing. |
+| [Templarbit Shield](/docs/modules/templarbit/ "Templarbit Shield overview") | Web Application Firewall | Intelligent application protection. |
 | [ThreatX](/docs/modules/threat-x/ "ThreatX overview") | Web Application Firewall | Web Application Firewall based on dynamic rules. |
 | [Varnish Cache](/docs/modules/varnish-cache/ "Varnish overview") | Cache | Latest version of Varnish Cache completely customizable. |
 | [Virtual Waiting Room](/docs/modules/virtual-waiting-room/ "Virtual Waiting Room overview") | Traffic Management | Manage user experience during extreme traffic events. |

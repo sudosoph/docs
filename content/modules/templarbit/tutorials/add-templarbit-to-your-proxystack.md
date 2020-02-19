@@ -34,7 +34,7 @@ You can add this module at any index in your proxystack array. We'd recommend ad
 
 The `templarbit-agent.json` file will have the following format :
 
-{{< gist section-io-gists 9ca61344b6a22e8c5ac5cf9e7e46eef3 >}}
+{{< gist section-io-gists 795b96cc45155b32485c9fe6b127cea9 >}}
 
 The `property-id` and `secret-key` will be provided to you by Templarbit portal once you've registered. See https://www.templarbit.com/shield/
 
