@@ -59,17 +59,3 @@ make deploy
 Changes are deployed by the Jenkins roughly every 5 minutes.
 
 The version of Hugo used to build the production site is in the `Dockerfile`.
-
-## Known issues
-
-1. You might need to change remote url for push:
-
-   ```
-   git remote set-url origin git@github.com:section-io/docs.git
-   ```
-
-1. You might want to disable fast rendering:
-
-   ```
-   hugo server --watch --disableFastRender
-   ```
