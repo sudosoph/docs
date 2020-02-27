@@ -40,6 +40,26 @@ Hugo will automatically rebuild and reload the website when you make changes.
 
 Make your changes locally, then submit a PR on GitHub.
 
+### Production
+
+To build for production:
+
+```
+make build
+```
+
+This will build the site and publish the output into `public/`.
+
+To deploy the site to production, run:
+
+```
+make deploy
+```
+
+Changes are deployed by the Jenkins roughly every 5 minutes.
+
+The version of Hugo used to build the production site is in the `Dockerfile`.
+
 ## Known issues
 
 1. You might need to change remote url for push:
