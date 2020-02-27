@@ -6,7 +6,9 @@ RUN apk update && \
         wget && \
     update-ca-certificates
 
-RUN wget https://github.com/gohugoio/hugo/releases/download/v0.64.1/hugo_0.64.1_Linux-64bit.tar.gz -O hugo.tar.gz && \
+ENV HUGO_VERSION=0.65.3
+
+RUN wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}//hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz -O hugo.tar.gz && \
     tar -xzf hugo.tar.gz && \
     rm hugo.tar.gz && \
     mv hugo /usr/bin && \
