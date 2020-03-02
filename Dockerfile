@@ -16,10 +16,10 @@ RUN wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hug
     mv hugo /usr/bin && \
     chmod 755 /usr/bin/hugo
 
-RUN mkdir -p /src
-WORKDIR /src
-COPY . /src/
-
 # awscli
 RUN apt-get install -y python-pip
 RUN pip install awscli
+
+RUN mkdir -p /src
+WORKDIR /src
+COPY . /src/
