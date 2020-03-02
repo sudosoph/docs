@@ -1,7 +1,7 @@
 .PHONY: test build generate inspect deploy
 
 export PATH := bin:$(PATH)
-IMAGE_NAME=section-docs
+IMAGE_NAME=section.io.invalid/docs
 
 all: build generate
 
