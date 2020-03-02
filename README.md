@@ -1,6 +1,6 @@
 # docs
 
-Section documentation at https://section.io/docs
+Section documentation at https://www.section.io/docs
 
 ## Dependencies
 
@@ -42,10 +42,16 @@ Make your changes locally, then submit a PR on GitHub.
 
 ### Production
 
-To build for production:
+To create a build environment, run:
 
 ```
 make build
+```
+
+To generate the static site, run:
+
+```
+make generate
 ```
 
 This will build the site and publish the output into `public/`.
@@ -59,3 +65,9 @@ make deploy
 Changes are deployed by the Jenkins roughly every 5 minutes.
 
 The version of Hugo used to build the production site is in the `Dockerfile`.
+
+You can inspect the build environment by running:
+
+```
+make inspect
+```
