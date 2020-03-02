@@ -19,3 +19,7 @@ RUN wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hug
 RUN mkdir -p /src
 WORKDIR /src
 COPY . /src/
+
+# awscli
+RUN apt-get install -y python-pip
+RUN pip install awscli
