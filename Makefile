@@ -15,4 +15,6 @@ inspect:
 	docker run --rm -ti --volume "$$(pwd):/src" $(IMAGE_NAME) bash
 
 deploy:
-	aws s3 sync --acl public-read --delete public/ s3://section-www.section.io/docs/
+	@# capture AWS environment variables from the environment, and inject them into the container
+	@env | grep ^AWS > .env
+	docker run --env-file .env --rm --volume "$$(pwd)/public:/src/public" $(IMAGE_NAME) aws s3 sync --acl public-read --delete public/ s3://section-www.section.io/docs/
