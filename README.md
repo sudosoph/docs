@@ -1,6 +1,6 @@
 # docs
 
-Section documentation at https://section.io/docs
+Section documentation at https://www.section.io/docs
 
 ## Dependencies
 
@@ -40,16 +40,34 @@ Hugo will automatically rebuild and reload the website when you make changes.
 
 Make your changes locally, then submit a PR on GitHub.
 
-## Known issues
+### Production
 
-1. You might need to change remote url for push:
+To create a build environment, run:
 
-   ```
-   git remote set-url origin git@github.com:section-io/docs.git
-   ```
+```
+make build
+```
 
-1. You might want to disable fast rendering:
+To generate the static site, run:
 
-   ```
-   hugo server --watch --disableFastRender
-   ```
+```
+make generate
+```
+
+This will build the site and publish the output into `public/`.
+
+To deploy the site to production, run:
+
+```
+make deploy
+```
+
+Changes are deployed by the Jenkins roughly every 5 minutes.
+
+The version of Hugo used to build the production site is in the `Dockerfile`.
+
+You can inspect the build environment by running:
+
+```
+make inspect
+```
