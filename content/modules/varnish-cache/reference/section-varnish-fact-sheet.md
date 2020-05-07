@@ -25,10 +25,10 @@ Source: [Varnish 6.3 Official Docs - Starting Varnish](https://varnish-cache.org
 
 ## Varnish Basics
 
-The Varnish Configuration Language (VCL) is a domain-specific language for caching HTTP requests. The language is specific to the domain of caching HTTP requests and responses. 
+The Varnish Configuration Language (VCL) is a domain-specific language for caching HTTP requests. The language is specific to the domain of caching HTTP requests and responses.
 
 * Varnish Configuration Language (VCL) implements a state machine.
-* Varnish uses VCL (Varnish Configuration Language) to run as a ‘state machine’. 
+* Varnish uses VCL (Varnish Configuration Language) to run as a ‘state machine’.
 * Various Varnish states are thought of, and implemented as subroutines.
 * Varnish includes built-in subroutines via builtin.vcl.
 * VCL has functions, legal return actions and variables.
@@ -51,7 +51,7 @@ Source: [Varnish Software Book](https://info.varnish-software.com/the-varnish-bo
 
 ## Varnish Flow Described
 
-Each HTTP request flows by switching between Varnish cache states such as `recv`, `hit`, `miss` or `pass` by calling `return` functions which use VCL logic to determine which state is next. For each state `recv` there is a VCL subroutine `vcl_recv`. 
+Each HTTP request flows by switching between Varnish cache states such as `recv`, `hit`, `miss` or `pass` by calling `return` functions which use VCL logic to determine which state is next. For each state `recv` there is a VCL subroutine `vcl_recv`.
 
 | State | Subroutine | Name | Description
 |:--|:--|:--|---|
@@ -72,7 +72,7 @@ Varnish modifications or vmods pre-installed on Section. This is a collection of
 
 | VMOD | Name | Description
 |:--|:--|---|
-| [cookie](https://github.com/varnish/varnish-modules/blob/master/docs/vmod_cookie.rst "cookie") | Cookie | HTTP request is received and can then be inspected and modified by this routine. |
+| [cookie](https://varnish-cache.org/docs/trunk/reference/vmod_cookie.html?highlight=cookie "cookie") | Cookie | HTTP request is received and can then be inspected and modified by this routine. |
 | [vsthrottle](https://github.com/nigoroll/varnish-modules/blob/master/docs/vmod_vsthrottle.rst "vsthrottle - Throttling VMOD") | Throttling VMOD | A Varnish vmod for rate-limiting traffic on a single Varnish server. Offers a simple interface for throttling traffic on a per-key basis to a specific request rate. |
 | [header](https://github.com/nigoroll/varnish-modules/blob/master/docs/vmod_header.rst "Header VMOD for Varnish") | Header VMOD for Varnish | Varnish Module for manipulation of duplicated HTTP headers, for instance multiple Set-Cookie headers. |
 | [saintmode](https://github.com/nigoroll/varnish-modules/blob/master/docs/vmod_saintmode.rst " Saint mode backend director") |  Saint mode backend director | Saintmode lets you deal with a backend that is failing in random ways for specific requests. It maintains a blacklist per backend, marking the backend as sick for specific objects. When the number of objects marked as sick for a backend reaches a set threshold, the backend is considered sick for all requests. Each blacklisted object carries a TTL, which denotes the time it will stay blacklisted. |
@@ -81,7 +81,6 @@ Varnish modifications or vmods pre-installed on Section. This is a collection of
 | [var](https://github.com/nigoroll/varnish-modules/blob/master/docs/vmod_var.rst "var") | var | This VMOD implements basic variable support in VCL. |
 | [xkey](https://github.com/nigoroll/varnish-modules/blob/master/docs/vmod_xkey.rst "xkey") | xkey - Surrogate keys support for Varnish Cache | This vmod adds secondary hashes to objects, allowing fast purging on all objects with this hash key. |
 | [bodyaccess](https://github.com/nigoroll/varnish-modules/blob/master/src/vmod_bodyaccess.c "Body access") | Body access | Undocumented VMOD giving access to body objects. |
-
 
 ## Builtin VCL
 
@@ -94,7 +93,7 @@ Source: [Varnish Examples](https://varnish-cache.org/trac/wiki/VCLExamples)
 ## Varnish Resources
 
 * [Varnish Software Book](https://info.varnish-software.com/the-varnish-book): [Intro](https://book.varnish-software.com/4.0/chapters/Introduction.html)
-* [Varnish Blog](https://info.varnish-software.com/blog?hsLang=en-us) 
+* [Varnish Blog](https://info.varnish-software.com/blog?hsLang=en-us)
 * [Varnish Latest Official Docs](https://varnish-cache.org/docs/trunk/)
 * [Varnish Source Code](https://github.com/varnishcache/varnish-cache)
 * [Varnish modifications](https://github.com/nigoroll/varnish-modules)

@@ -31,7 +31,7 @@ Please review our training [videos on youtube](https://www.youtube.com/watch?v=-
 
 ## Security Concerns
 
-Section records logs of the URLs and query strings of all requests. If your site uses the URL or query string to transmit sensitive information, please be aware that this data will be captured in the logs. If possible, consider changing your design to send the sensitive information in the request body, or unlogged request headers, instead. See also the [OWASP Code Review Top 9](https://www.owasp.org/index.php/The_Owasp_Code_Review_Top_9#Using_HTTP_GET_query_strings) and [CWE-598: Information Exposure Through Query Strings in GET Request](https://cwe.mitre.org/data/definitions/598.html) for more information.
+Section records logs of the URLs and query strings of all requests. If your site uses the URL or query string to transmit sensitive information, please be aware that this data will be captured in the logs. If possible, consider changing your design to send the sensitive information in the request body, or unlogged request headers, instead. See also the [The OWASP Foundation's recommendations on query strings](https://owasp.org/www-community/vulnerabilities/Information_exposure_through_query_strings_in_url) and [CWE-598: Information Exposure Through Query Strings in GET Request](https://cwe.mitre.org/data/definitions/598.html) for more information.
 
 ## Table of Contents
 

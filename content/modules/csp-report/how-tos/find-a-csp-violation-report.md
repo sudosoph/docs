@@ -7,21 +7,23 @@ weight: 1
 
 ## Overview
 
-Utilize Section's powerful logging feature to quickly track down which part of a website or application is violating Content Security Policy directives. 
+Utilize Section's powerful logging feature to quickly track down which part of a website or application is violating Content Security Policy directives.
 
 ### Step 1 - Setup CSP Report module
 
-Follow the instructions from [this page for more details](/docs/modules/csp-report/add-csp-report-to-your-proxystack/)
+Follow the instructions from [this page for more details](/docs/modules/csp-report/tutorials/add-csp-report-to-your-proxystack/)
 
 ### Step 2 - Search Section logs for violations
 
-1. Log into your Section portal and click `HTTP Logs` from the left nav-bar. 
+1. Log into your Section portal and click `HTTP Logs` from the left nav-bar.
 
 2. Replace the `*` in the search box with the following querie
+
 ```
 _type:openresty-access-log AND uri_path:"/.well-known/csp_reporting"
 ```
-3. Then add the field `Referrer` as a column. 
+
+3. Then add the field `Referrer` as a column.
 
 ![Show CSP violation reports in logs](/docs/images/csp-reporting-logging.png)
 
