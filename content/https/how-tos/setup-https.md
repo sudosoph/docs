@@ -16,9 +16,10 @@ Each certificate has a short validity period and will be renewed 30 days prior t
 
 ## Add custom certificate through aperture
 
-To use a custom certificate for your application you will need to obtain a certificate and private key pair. For production use you should use a certificate signed by a trusted root Certificate Authority (CA). In development scenarios, you may find a [self-signed certificate is sufficient](https://info.ssl.com/ssl-made-easy-for-beginners/).
+To use a custom certificate for your application you will need to obtain a certificate and private key pair. For production use you should use a certificate signed by a trusted root Certificate Authority (CA). In development scenarios, you may find a [self-signed certificate is sufficient](https://en.wikipedia.org/wiki/Self-signed_certificate) ([Beginners guide](https://www.ssl.com/faqs/faq-what-is-ssl/)) ([Certificate Generation](https://www.thenativeweb.io/blog/2017-12-29-11-51-the-openssl-beginners-guide-to-creating-ssl-certificates/))
 
 ### 1) Get your properly-formatted certificate
+
 You will need to ensure you have the public certificate in Base64-encoded DER-encoded (PEM) format. It will look something like this:
 
     -----BEGIN CERTIFICATE-----
@@ -90,7 +91,7 @@ Once you have saved your public certificates and private key, when you come back
 
 ## Upload a certificate using the API
 
-### 1) To add an additional domain certificate  to your application via the API:
+### 1) To add an additional domain certificate  to your application via the API
 
 `POST /account/{accountId}/application/{applicationId}/environment/{environmentName}/domain/{hostName}`
 
@@ -103,8 +104,7 @@ If there is no body payload, the domain name will have a Let's Encrypt certifica
         "private_key": "string"
     }
 
-
-### 2) To remove a domain via the API:
+### 2) To remove a domain via the API
 
 `DELETE /account/{accountId}/application/{applicationId}/environment/{environmentName}/domain/{hostName}`
 
@@ -114,12 +114,10 @@ To add a custom certificate to an existing domain via the API:
 
 with the following body payload:
 
-
     {
         "public_certificates": "string",
         "private_key": "string"
     }
-
 
 ### Server Name Indication
 

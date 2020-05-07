@@ -48,10 +48,10 @@ Historically, Section has logged a header called `remote_addr` that contained th
 
 This request header can be used in a number of ways:
 
- * Fraud detection
- * IP Whitelist/Blacklisting, including [restricting access to particular urls](https://community.section.io/t/can-i-whitelist-ip-addresses-for-my-admin-routes-and-deny-everyone-else-access/164).
- * Logging client usage
- * Rate limiting
+* Fraud detection
+* IP Whitelist/Blacklisting, including [restricting access to particular urls](https://community.section.io/t/can-i-whitelist-ip-addresses-for-my-admin-routes-and-deny-everyone-else-access/164).
+* Logging client usage
+* Rate limiting
 
 Section also sets the [`X-Forwarded-For`](https://en.wikipedia.org/wiki/X-Forwarded-For) header if you need to use that, however this header will often be a list of IP addresses depending on how the request has been proxied prior to arriving at Section and is not always reliable.
 
@@ -69,7 +69,7 @@ The format of the `section-io-id` identifier is subject to change without notice
 
 ## Content compresssion
 
-By default Section will gzip responses to requests that can be compressed. This is typically text content like HTML, CSS & Javascript files. We will enable this compression even if your origin server does not send gzipped responses to improve performance for your site's visitors. In the unlikely scenario that compression causes issues for your site, you can disable this feature in [Advanced Configuration](/docs/advanced-configuration).
+By default Section will gzip responses to requests that can be compressed. This is typically text content like HTML, CSS & Javascript files. We will enable this compression even if your origin server does not send gzipped responses to improve performance for your site's visitors. In the unlikely scenario that compression causes issues for your site, you can disable this feature in [Advanced Configuration](/docs/topic-guides/advanced-config/).
 
 Edit the `section.config.json` and add `"maintain_upstream_content_encoding": true` to the environment you want to disable gzip encoding on.
 
