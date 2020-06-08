@@ -1,6 +1,6 @@
 ---
 title: How-Tos
-description: Training area, Section platform overview.
+description: How-to guides.
 keywords: Section, training, platform overview
 weight: 2
 

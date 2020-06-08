@@ -3,6 +3,8 @@ title: Kraken Advanced Configuration
 description: Settings Available for the Kraken module
 keywords: Section, training, platform overview
 weight: 1
+aliases:
+  - /modules/kraken/reference/kraken-advanced-config/
 ---
 
 ## Kraken Module Settings

@@ -1,11 +1,13 @@
 ---
-title: Add CSP Report to your proxystack
-description: Adding CSP Report to your Section proxy stack.
-keywords: content delivery network, CDN, CSP, Report, security, reverse proxies, proxy, proxy template
-weight: 1
+title: Set up
+description: Set up guide
+weight: 1.5
+aliases:
+  - /modules/csp-report/tutorials/
+  - /modules/csp-report/tutorials/add-csp-report-to-your-proxystack/
 ---
 
-## Overview
+## Guide to add CSP Report to your module stack
 
 This tutorial will guide you through the process of adding the CSP Report module to your proxy stack with default configuration files. This tutorial assumes you've cloned your application's git repository to your local machine.
 

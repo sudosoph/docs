@@ -1,8 +1,11 @@
 ---
-title: Add  Kraken to your proxystack
+title: Set up
 description: Adding Kraken to your Section proxy stack.
 keywords: content delivery network, CDN, kraken, image optimization, reverse proxies, proxy, proxy template
 weight: 1
+aliases:
+  - /modules/kraken/tutorials/add-kraken-to-your-proxystack/
+  - /modules/kraken/tutorials/
 ---
 
 ## Overview
