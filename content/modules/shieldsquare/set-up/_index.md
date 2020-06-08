@@ -1,8 +1,11 @@
 ---
-title: Add  Shieldsquare to your proxystack
+title: Set up
 description: Adding Shieldsquare to your Section proxy stack.
 keywords: content delivery network, CDN, shieldsquare, bot blocking, reverse proxies, proxy, proxy template, WAF
 weight: 1
+aliases:
+  - /modules/shieldsquare/tutorials/
+  - /modules/shieldsquare/tutorials/add-shieldsquare-to-your-proxystack/
 ---
 
 ## Overview
