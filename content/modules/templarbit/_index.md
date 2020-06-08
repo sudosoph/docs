@@ -1,10 +1,15 @@
-+++
-title = "Templarbit Shield"
-description = "Templarbit Shield WAF on the Section edge compute platform."
-+++
+---
+title: Templarbit
+description: Using the Templarbit Shield WAF module inside Section.
+keywords: WAF, security, templarbit, shield
+aliases:
+  - /templarbit/
+  - /topic-guides/templarbit/
+  - /modules/templarbit/overview/
+  - /modules/templarbit/reference/
+  - /modules/templarbit/tutorials/
+  - /modules/templarbit/tutorials/add-templarbit-to-your-proxystack/
+  - /modules/templarbit/how-tos/
+---
 
-Use Templarbit Shield for protection that stops malicious traffic and prevents sensitive data exposure without adding overhead.
-
-### Table of contents
-
-{{% children depth="3" %}}
+The Templarbit Shield WAF is no longer available on the Section platform.
