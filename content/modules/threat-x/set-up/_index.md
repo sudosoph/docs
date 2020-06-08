@@ -1,8 +1,11 @@
 ---
-title: Add ThreatX to your proxystack
+title: Set up
 description: Adding ThreatX to your Section proxy stack.
 keywords: content delivery network, CDN, waf, web applicatio firewall, threatx, reverse proxies, proxy, proxy template
 weight: 1
+aliases:
+  - /modules/threatx/tutorials/
+  - /modules/threatx/tutorials/add-threatx-to-your-proxystack/
 ---
 
 ## Overview
