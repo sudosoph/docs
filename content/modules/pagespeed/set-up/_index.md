@@ -1,8 +1,11 @@
 ---
-title: Add PageSpeed to your proxystack
+title: Set up
 description: Adding PageSpeed to your Section proxy stack.
 keywords: content delivery network, CDN, pagespeed, reverse proxies, proxy, proxy template
 weight: 1
+aliases:
+  - /modules/pagespeed/tutorials/
+  - /modules/pagespeed/tutorials/add-pagespeed-to-proxystack/
 ---
 
 ## Overview

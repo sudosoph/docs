@@ -3,6 +3,8 @@ title: PageSpeed Advanced Configuration
 description: More advanced configuration using PageSpeed
 keywords: pagespeed, configuration
 weight: 1
+aliases:
+  - /modules/pagespeed/reference/pagespeed-advanced-config/
 ---
 
 ## Overview

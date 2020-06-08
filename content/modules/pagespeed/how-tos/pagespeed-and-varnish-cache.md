@@ -3,6 +3,8 @@ title: PageSpeed with Varnish Cache
 description: Adding PageSpeed to your Section proxy stack alongside Varnish Cache.
 keywords: content delivery network, CDN, pagespeed, reverse proxies, proxy, proxy template
 weight: 1
+aliases:
+  - /modules/pagespeed/reference/pagespeed-and-varnish-cache/
 ---
 
 ## Overview
