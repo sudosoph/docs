@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: OpenResty
 description: OpenResty Module overview
 weight: 1
 aliases:

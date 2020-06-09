@@ -1,5 +1,5 @@
 ---
-title: Add Virtual Waiting Room to your proxystack
+title: Set up
 description: How to set a limit on the number of visitors your site can safely handle.
 keywords: traffic management,virtual waiting room, traffic spikes, vwr
 aliases:

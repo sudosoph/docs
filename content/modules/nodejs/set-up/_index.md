@@ -56,7 +56,7 @@ location ~ "/examplePath2/" {
 
 Your NodeJS application will live entirely in the `nodejs` directory and needs to satisfy the following requirements.
 
-[NodeJS Contract]({{< relref "modules/nodejs/reference/nodejs-contract.md" >}})
+[NodeJS Contract]({{< relref "modules/nodejs/_index.md" >}})
 
 Here is an example application that will work out of the box with Section NodeJS module. [NodeJS Example Nuxt App](https://github.com/section/nodejs-example) 
 
