@@ -1,10 +1,11 @@
 ---
-title: Static asset origin
+title: Configure static asset origin
 description: Use VCL to configure a layer 7 load balancer for static assets.
 keywords: content delivery network, CDN, load balancer, VCL, HTTP
 aliases:
   - /load-balancer/Static-asset-origin/
   - /topic-guides/load-balancer/static-asset-origin/
+  - /modules/varnish-cache/reference/static-asset-origin
 
 ---
 

@@ -1,10 +1,11 @@
 ---
-title: Sample Varnish Cache Snippets
+title: Use Varnish Cache snippets
 description: A collection of Varnish Cache snippets to help get your Varnish Cache proxy up and running.
 keywords: [Varnish, snippets, caching, HTTPS, blocking, Wordpress]
 aliases:
   - /threat-x/
   - /topic-guides/advanced-config/sample-varnish-snippets/
+  - /modules/varnish-cache/reference/sample-varnish-snippets/
 ---
 
 ## Varnish Cache Configuration

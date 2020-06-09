@@ -1,10 +1,11 @@
 ---
-title: Varnish Cache Metrics
+title: View Varnish Cache metrics
 description: Guide for understanding Varnish Cache Counters and other Varnish Cache  metrics.
 keywords: varnish, Varnish Cache , cache, cached data, Varnish Cache counters, vcl, Varnish Cache configuration language, metrics
 aliases:
   - /varnish-metrics/
   - /reference/varnish-metrics/
+  - /modules/varnish-cache/reference/varnish-metrics/
 
 ---
 

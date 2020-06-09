@@ -5,6 +5,7 @@ keywords: content delivery network, CDN, load balancer, VCL, HTTP
 aliases:
   - /Device-based-origin/
   - /topic-guides/load-balancer/device-based-origin/
+  - /modules/varnish-cache/reference/device-based-origin/
 
 ---
 

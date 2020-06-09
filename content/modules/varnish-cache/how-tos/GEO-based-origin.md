@@ -1,11 +1,11 @@
 ---
-title: GEO-based origin selection
+title: Configure GEO-based origin selection
 description: Use VCL to configure a layer 7 load balancer for differnet GEO locations.
 keywords: content delivery network, CDN, load balancer, VCL, HTTP
 aliases:
   - /GEO-based-origin/
   - /topic-guides/load-balancer/geo-based-origin/
-
+  - /modules/varnish-cache/reference/geo-based-origin/
 ---
 
 ## GEO based origin selection

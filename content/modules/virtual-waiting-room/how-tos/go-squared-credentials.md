@@ -1,14 +1,15 @@
 ---
-title: GoSquared Credentials
+title: Acquire GoSquared Credentials
 description: Using the GoSquared API for the user count.
 keywords: Section, training, virtual waiting room, platform overview
 weight: 1
+aliases:
+  - /modules/virtual-waiting-room/references/go-squared-credentials/
 ---
 
-##  GoSquared Credentials File
+## GoSquared Credentials File
 
-
-### `gosquared-visitor-count`
+`gosquared-visitor-count`
 
 You need to add a file to the root of the repository called:
 `gosquared-visitor-count`

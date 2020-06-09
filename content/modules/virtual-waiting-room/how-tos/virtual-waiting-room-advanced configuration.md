@@ -1,11 +1,11 @@
 ---
-title: Virtual Waiting Room Advanced Configuration
+title: Using Virtual Waiting Room Advanced Configuration
 description: Settings Available for the Virtual Waiting Room module
 keywords: Section, training, virtual waiting room, platform overview
 weight: 1
+aliases:
+  - /modules/virtual-waiting-room/references/virtual-waiting-room-advanced-configuration/
 ---
-
-
 
 ## Virtual Waiting Module Settings
 
@@ -13,17 +13,11 @@ Once your application has been set up with Virtual Waiting Room you will find th
 
 ### `virtualwaitingroom.json`
 
-
-
 `virtualwaitingroom.json` will contain the configuration of your virtual waiting room and should have the following data.
-
-
 
 {{< gist section-io-gists 23679bef63d4f455c23f599a23a362fa >}}
 
-
 The settings are as follows :
-
 
 - `"api_key" : "<YourGoSquaredAPIKey>"`
 
@@ -32,7 +26,6 @@ This will be provided by the Sectin support team.
 - `"threshold" : 1000`
 
 Threshold is the max number of concurrent customers you want on your site.
-
 
 - `"enabled" : true/false`
 

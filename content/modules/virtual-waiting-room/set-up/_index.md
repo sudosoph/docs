@@ -5,6 +5,8 @@ keywords: traffic management,virtual waiting room, traffic spikes, vwr
 aliases:
   - /overload-prevention/
   - /how-to/installing-virtual-waiting-room/
+  - /modules/virtual-waiting-room/tutorials/installing-virtual-waiting-room/
+  - /modules/virtual-waiting-room/tutorials/
 
 ---
 
@@ -54,6 +56,3 @@ We will provide a gosquared script to be inserted in all pages of the website ex
 ### Step 5 - Deploy
 
 Commit your changes and push them to the desired branch you are working on. If you run into any issues please contact support@section.io
-
----
-

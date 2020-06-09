@@ -1,9 +1,10 @@
 ---
-title: Dynamic Content Caching
+title: Configure Dynamic Content Caching
 description: An overview of the different ways to cache dynamic content on the platform.
 keywords: dynamic caching, caching, cache
 aliases:
   - /topic-guides/dynamic-caching/
+  - /modules/varnish-cache/reference/dynamic-caching/
 
 ---
 
