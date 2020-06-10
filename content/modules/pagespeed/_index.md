@@ -1,12 +1,28 @@
-+++
-title = "PageSpeed"
-description = "Apache Foundation PageSpeed Front End Optimization on Section Edge Compute platform."
-+++
+---
+title: PageSpeed
+description: Using Apache PageSpeed module on Section edge compute.
+keywords: content delivery network, CDN, PageSpeed, reverse proxies, proxy, proxy template
+aliases:
+  - /pagespeed/
+  - /how-to/pagespeed/
+  - /modules/pagespeed/overview/
+  - /modules/pagespeed/reference/
+  - /modules/pagespeed/reference/available-versions/
+weight: 1
+---
 
-These docs describe Apache Foundation (formerly Google) PageSpeed for Nginx on the Section Edge Compute Platform.
+## What does it do
 
-By running the PageSpeed module on the Section platform you can optimize images, minify JavaScript and CSS files, defer JavaScript libraries and more.
+The Apache Mod PageSpeed project is used to improve your website's performance by rewriting web pages and optimizing static assets.
 
-### Table of contents
+You can accomplish many things with PageSpeed like: optimizing images, minifying JavaScript and CSS files, defer JavaScript libraries, and much more.
 
-{{% children depth="3" %}}
+Below are the following steps you will need to take to get PageSpeed up and running within your reverse proxy stack.
+
+## Setting up PageSpeed in Section
+
+Follow the tutorial on how to [Add PageSpeed to your Section application]({{< relref "modules/pagespeed/set-up/_index.md" >}}).
+
+## Available Versions
+
+- PageSpeed 1.13.35.2
