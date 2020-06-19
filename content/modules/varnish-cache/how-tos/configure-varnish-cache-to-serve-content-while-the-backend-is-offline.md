@@ -15,7 +15,7 @@ Configuring Varnish Cache to serve stale content is very useful for when your or
 
 Make sure you have an [account on Section](https://www.section.io/sign-up/), and have selected Varnish Cache to run in your proxy stack.
 
-_Note: This guide will be using VCL 4 syntax, so if you are interested in VCL 3 syntax please reach out to us at support@section.io._
+_Note: This guide will be using VCL 4 syntax, so if you are interested in VCL 3 syntax please reach out to us at support@section.io and we can provide you instructions to upgrade your Varnish instance to support VCL 4_
 
 ## Set up
 
@@ -42,8 +42,7 @@ You will need to check for the backend response status, from your origin server,
 In `vcl_synth` we need to check the `resp.status` for a 503 code as this is the code set by `return(abandon)`. If this is the case, we will utilize `restart` to run through the VCL code again.
 
     sub vcl_synth {
-        if (resp.status == 503 && req.http.sie-enabled) {
-            unset req.http.sie-enabled;
+        if (resp.status == 503) {
             return (restart);
         }
 
@@ -52,9 +51,9 @@ In `vcl_synth` we need to check the `resp.status` for a 503 code as this is the 
 
 ### Step 3 - `vcl_hit`
 
-This part is where we actually tell Varnish Cache to serve stale content is the restart count is greater than 0 and the grace period plus the time to live is greater than 0. If both cases match, we serve the stale content.
+This part is where we actually tell Varnish Cache to serve stale content. If you are not using your own `sub vcl_hit` then this is the built in `sub vcl_hit` routine. A great explanation of the following code is provided in the [Varnish docs](https://varnish-cache.org/docs/trunk/users-guide/vcl-grace.html#the-effect-of-grace-and-keep)
 
-{{< highlight js >}}   
+{{< highlight js >}}
    sub vcl_hit {
      if (obj.ttl >= 0s) {
           // A pure unadulterated hit, deliver it
