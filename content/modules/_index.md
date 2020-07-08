@@ -27,7 +27,7 @@ If you want to experiment with different modules you can use our [Developer Work
 | [Node.js](/docs/modules/nodejs/ "Node.js overview") | Edge Compute | Node.js Javascript application module running on Section compute edge. |
 | [OpenResty](/docs/modules/openresty/ "OpenResty overview") | Edge Compute | Nginx and Lua based scriptable web platform. |
 | [PageSpeed](/docs/modules/pagespeed/ "PageSpeed overview") | Front End Optimization | Optimize images, minify Javascript and CSS, defer Javascript libraries and more. |
-| [ShieldSquare](/docs/modules/shieldsquare/ "ShieldSquare overview") | Bot Management | Non-human bot traffic detection and management. |
+| [Radware Bot Manager](/docs/modules/radware-bot-manager/ "Radware Bot Manager overview") | Bot Management | Non-human bot traffic detection and management. |
 | [Signal Sciences](/docs/modules/signal-sciences/ "Signal Sciences overview") | Web Application Firewall | Real-time protection for an application under attack and integrates into devops toolchains. |
 | [SiteSpect](/docs/modules/sitespect/ "SiteSpect overview") | A/B Testing | Javascript and Tag Free A/B testing. |
 | [Templarbit Shield](/docs/modules/templarbit/ "Templarbit Shield overview") | Web Application Firewall | Intelligent application protection. |
