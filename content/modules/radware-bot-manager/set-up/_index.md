@@ -1,16 +1,17 @@
 ---
 title: Set up
-description: Adding Shieldsquare to your Section proxy stack.
-keywords: content delivery network, CDN, shieldsquare, bot blocking, reverse proxies, proxy, proxy template, WAF
+description: Adding Radware Bot Manager to your Section proxy stack.
+keywords: content delivery network, CDN, Radware Bot Manager, bot blocking, reverse proxies, proxy, proxy template, WAF
 weight: 1
 aliases:
   - /modules/shieldsquare/tutorials/
   - /modules/shieldsquare/tutorials/add-shieldsquare-to-your-proxystack/
+  - /modules/shieldsquare/set-up/
 ---
 
 ## Overview
 
-This tutorial will guide you through the process to adding the Shieldsquare module to your proxy stack with default configuration files. This tutorial assumes you've cloned your application's git repository to your local machine.
+This tutorial will guide you through the process to adding the Radware Bot Manager module to your proxy stack with default configuration files. This tutorial assumes you've cloned your application's git repository to your local machine.
 
 ### Step 1 - Updating section.config.json
 
@@ -18,8 +19,8 @@ This tutorial will guide you through the process to adding the Shieldsquare modu
 
 ```
 {
-    "name": "shieldsquare",
-    "image": "shieldsquare:1.0.0"
+    "name": "radware-bot-manager",
+    "image": "radware-bot-manager:1.0.0"
 }
 ```
 
@@ -29,8 +30,8 @@ You can add this module at any index in your proxystack array. We'd recommend ad
 
 ### Step 2 - Adding default files
 
-1. Create a `shieldsquare` directory in the root of your repository.
-1. Create the following files under the **shieldsquare** directory:
+1. Create a `radware-bot-manager` directory in the root of your repository.
+1. Create the following files under the **Radware Bot Manager** directory:
     * shieldsquare.json
 
 ### Step 3 - Populate the shieldsquare.json file
